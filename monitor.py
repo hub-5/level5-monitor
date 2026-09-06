@@ -194,12 +194,30 @@ def is_internal(url: str, domain: str) -> bool:
     return netloc == domain or netloc.endswith("." + domain)
 
 
+def seed_scope_prefix(seed: str) -> str:
+    """Prefijo de ruta al que se limita el rastreo de un sitio: la propia
+    URL semilla, terminada en "/". Así, dos entradas en el mismo dominio
+    pero con rutas distintas (p. ej. inazuma.jp/victory-road/ e
+    inazuma.jp/re/) no se mezclan entre sí ni siguen enlaces del resto del
+    dominio."""
+    return seed if seed.endswith("/") else seed + "/"
+
+
+def in_scope(url: str, domain: str, scope_prefix: str, seed: str) -> bool:
+    if not is_internal(url, domain):
+        return False
+    if url == seed:
+        return True
+    return url.startswith(scope_prefix)
+
+
 def crawl_site(site: dict, state_pages: dict, session: requests.Session,
                 delay: float, timeout: int) -> CrawlResult:
     name = site["name"]
     seed = site["seed"]
     domain = site["domain"].lower()
     max_pages = int(site.get("max_pages", 60))
+    scope_prefix = seed_scope_prefix(seed)
 
     result = CrawlResult(site_name=name)
 
@@ -213,7 +231,7 @@ def crawl_site(site: dict, state_pages: dict, session: requests.Session,
     # vez que cambia el orden. Ordenar alfabéticamente hace el recorrido
     # determinista: mismas páginas visitadas mientras el sitio no cambie.
     for sm_url in sorted(discover_sitemap_urls(seed, session)):
-        if is_internal(sm_url, domain) and sm_url not in seen:
+        if in_scope(sm_url, domain, scope_prefix, seed) and sm_url not in seen:
             to_visit.append(sm_url)
             seen.add(sm_url)
 
@@ -283,7 +301,7 @@ def crawl_site(site: dict, state_pages: dict, session: requests.Session,
             link = link.split("#", 1)[0]
             if link in seen:
                 continue
-            if is_internal(link, domain):
+            if in_scope(link, domain, scope_prefix, seed):
                 seen.add(link)
                 to_visit.append(link)
 

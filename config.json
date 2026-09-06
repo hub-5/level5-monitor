@@ -1,46 +1,64 @@
 {
   "sites": [
     {
-      "name": "LEVEL-5 (web corporativa)",
+      "name": "LEVEL-5 (portada)",
       "seed": "https://www.level5.co.jp/",
       "domain": "level5.co.jp",
-      "max_pages": 60
+      "max_pages": 1
     },
     {
-      "name": "Professor Layton",
-      "seed": "https://www.layton.jp/",
-      "domain": "layton.jp",
-      "max_pages": 60
+      "name": "Blog de Akihiro Hino",
+      "seed": "https://www.level5.co.jp/blog/",
+      "domain": "level5.co.jp",
+      "max_pages": 40
     },
     {
-      "name": "Inazuma Eleven",
-      "seed": "https://www.inazuma.jp/",
-      "domain": "inazuma.jp",
-      "max_pages": 60
+      "name": "LEVEL-5 TGS2026",
+      "seed": "https://www.level5.co.jp/tgs2026/",
+      "domain": "level5.co.jp",
+      "max_pages": 40
     },
     {
-      "name": "Yo-kai Watch",
-      "seed": "https://www.youkai-watch.jp/",
-      "domain": "youkai-watch.jp",
-      "max_pages": 60
-    },
-    {
-      "name": "Fantasy Life i",
+      "name": "Fantasy Life i (FLI)",
       "seed": "https://www.fantasylife.jp/fli/",
       "domain": "fantasylife.jp",
       "max_pages": 40
     },
     {
-      "name": "Decapolice",
-      "seed": "https://www.decapolice.jp/",
-      "domain": "decapolice.jp",
-      "max_pages": 30
+      "name": "Inazuma Eleven: Victory Road (IEVR)",
+      "seed": "https://www.inazuma.jp/victory-road/",
+      "domain": "inazuma.jp",
+      "max_pages": 40
     },
     {
-      "name": "Holy Horror Mansion",
-      "seed": "https://www.holy-horror.jp/",
+      "name": "Professor Layton: New World of Steam (PLNWOS)",
+      "seed": "https://www.layton.jp/jouki/",
+      "domain": "layton.jp",
+      "max_pages": 40
+    },
+    {
+      "name": "Holy Horror Mansion (HHM)",
+      "seed": "https://www.holy-horror.jp",
       "domain": "holy-horror.jp",
-      "max_pages": 20
+      "max_pages": 40
+    },
+    {
+      "name": "Inazuma Eleven RE (IERE)",
+      "seed": "https://www.inazuma.jp/re/",
+      "domain": "inazuma.jp",
+      "max_pages": 40
+    },
+    {
+      "name": "Decapolice (DP)",
+      "seed": "https://www.decapolice.jp",
+      "domain": "decapolice.jp",
+      "max_pages": 40
+    },
+    {
+      "name": "Snack World RELOADED (SWRE)",
+      "seed": "https://www.snack-world.jp/reloaded/",
+      "domain": "snack-world.jp",
+      "max_pages": 40
     }
   ],
   "request_delay_seconds": 0.35,
