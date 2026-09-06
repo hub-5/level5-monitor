@@ -1,31 +1,38 @@
 {
-  "last_run": "2026-09-06T15:18:27+00:00",
+  "last_run": "2026-09-06T15:24:51+00:00",
   "pages": {
     "https://secure.level5.co.jp/inquiry/": {
       "etag": "",
       "hash": "99c5657adad0188e9a3faff69d17d096290816e155abc03e703ad9cc0171f8be",
-      "last_checked": "2026-09-06T15:15:21+00:00",
+      "last_checked": "2026-09-06T15:21:59+00:00",
       "last_modified": "",
       "title": "ãåãåããï½æ ªå¼ä¼ç¤¾ã¬ãã«ãã¡ã¤ã"
+    },
+    "https://secure.level5.co.jp/inquiry/com/index.php": {
+      "etag": "",
+      "hash": "89358009de47307a568bc60a83142587c86d5d4a9b2cc389dda880ab0a1b9f26",
+      "last_checked": "2026-09-06T15:21:47+00:00",
+      "last_modified": "",
+      "title": "その他のお問い合わせ｜株式会社レベルファイブ"
     },
     "https://www.decapolice.jp/": {
       "etag": "",
       "hash": "975c5a4f71deba43ced5b298ef6d606439cd53e5b0194121f6bd58adb4bc9343",
-      "last_checked": "2026-09-06T15:18:09+00:00",
+      "last_checked": "2026-09-06T15:24:33+00:00",
       "last_modified": "",
       "title": "ãã«ããªã¹"
     },
     "https://www.decapolice.jp/en/": {
       "etag": "",
       "hash": "089c1475f12a8b57c665f3441c6332cf0fc91fd90a4db4aa277609a04a5a5994",
-      "last_checked": "2026-09-06T15:18:12+00:00",
+      "last_checked": "2026-09-06T15:24:42+00:00",
       "last_modified": "",
       "title": "DECAPOLICE"
     },
     "https://www.fantasylife.jp/fli/": {
       "etag": "",
       "hash": "52e0446bc29d97e9a4f463de7ecd042ffd9c8793fc4fd36e04153b4c0cd19b12",
-      "last_checked": "2026-09-06T15:17:42+00:00",
+      "last_checked": "2026-09-06T15:24:08+00:00",
       "last_modified": "",
       "title": "ãã¡ã³ã¿ã¸ã¼ã©ã¤ãï½ ã°ã«ã°ã«ã®ç«ã¨æãã¬ããå°å¥³"
     },
@@ -46,14 +53,14 @@
     "https://www.fantasylife.jp/fli/dlc1/": {
       "etag": "",
       "hash": "588cf29c96d1a4d8ce32e3855a6c063f3d68b07a34f2d8e5a46f6118218ca47c",
-      "last_checked": "2026-09-06T15:18:06+00:00",
+      "last_checked": "2026-09-06T15:24:23+00:00",
       "last_modified": "",
       "title": "ver.2.0 ç¡æå¤§åã¢ãããã¼ã | ãã¡ã³ã¿ã¸ã¼ã©ã¤ãï½ ã°ã«ã°ã«ã®ç«ã¨æãã¬ããå°å¥³"
     },
     "https://www.fantasylife.jp/fli/en/": {
       "etag": "",
       "hash": "8bf6d30b4cf2cd9957ca26a238d846664f3cd5080d791f05abcc7912fa13adba",
-      "last_checked": "2026-09-06T15:18:01+00:00",
+      "last_checked": "2026-09-06T15:24:19+00:00",
       "last_modified": "",
       "title": "FANTASY LIFE i: The Girl Who Steals Time"
     },
@@ -67,23 +74,51 @@
     "https://www.fantasylife.jp/fli/fr/": {
       "etag": "",
       "hash": "24a951de888d1411a43284ee470bb05754ffc56d2e55e53f128de4b185c13a9f",
-      "last_checked": "2026-09-06T15:17:52+00:00",
+      "last_checked": "2026-09-06T15:24:13+00:00",
       "last_modified": "",
       "title": "FANTASY LIFE i : La voleuse de temps"
     },
     "https://www.fantasylife.jp/fli/guide/cross-save/": {
       "etag": "",
       "hash": "e95c83e8b68d56a8b04ae775bd2e3dd7f53529dcb86015d6c781c16ff5d68858",
-      "last_checked": "2026-09-06T15:17:58+00:00",
+      "last_checked": "2026-09-06T15:24:09+00:00",
       "last_modified": "",
       "title": "ã¯ã­ã¹ã»ã¼ããè¡ãæ¹æ³ | ãã¡ã³ã¿ã¸ã¼ã©ã¤ãï½ ã°ã«ã°ã«ã®ç«ã¨æãã¬ããå°å¥³"
     },
     "https://www.fantasylife.jp/fli/guide/faq/": {
       "etag": "",
       "hash": "df62845b0d8a93f53f5473a1cbded55e6fbcd7f51f93f4138e6a95d9ce348b20",
-      "last_checked": "2026-09-06T15:18:04+00:00",
+      "last_checked": "2026-09-06T15:24:24+00:00",
       "last_modified": "",
       "title": "ãããããè³ªå | ãã¡ã³ã¿ã¸ã¼ã©ã¤ãï½ ã°ã«ã°ã«ã®ç«ã¨æãã¬ããå°å¥³"
+    },
+    "https://www.fantasylife.jp/fli/guide/password/": {
+      "etag": "",
+      "hash": "730cac1cbc868ab02d722700e861d64da4c0d830de1cd894d6da2f7f393c1121",
+      "last_checked": "2026-09-06T15:24:20+00:00",
+      "last_modified": "",
+      "title": "ãããã¨ã°å ¥åæ¹æ³ | ãã¡ã³ã¿ã¸ã¼ã©ã¤ãï½ ã°ã«ã°ã«ã®ç«ã¨æãã¬ããå°å¥³"
+    },
+    "https://www.fantasylife.jp/fli/guide/troubleshooting/": {
+      "etag": "",
+      "hash": "3976104c40a143d55dd6c3e55eb58190390c20152b4948987a7a4b1abeb77de7",
+      "last_checked": "2026-09-06T15:24:11+00:00",
+      "last_modified": "",
+      "title": "ãã©ãã«ã·ã¥ã¼ãã£ã³ã° | ãã¡ã³ã¿ã¸ã¼ã©ã¤ãï½ ã°ã«ã°ã«ã®ç«ã¨æãã¬ããå°å¥³"
+    },
+    "https://www.fantasylife.jp/fli/guideline/": {
+      "etag": "",
+      "hash": "ecffe28ec4b7af6f70feaee91f13d8baea6156cd79c0de91d7fdaffb2a798571",
+      "last_checked": "2026-09-06T15:24:19+00:00",
+      "last_modified": "",
+      "title": "åç»ã»éæ­¢ç»æç¨¿ã«é¢ããã¬ã¤ãã©ã¤ã³ | ãã¡ã³ã¿ã¸ã¼ã©ã¤ãï½ ã°ã«ã°ã«ã®ç«ã¨æãã¬ããå°å¥³"
+    },
+    "https://www.fantasylife.jp/fli/ios-android/": {
+      "etag": "",
+      "hash": "39fb6bf0b0ccf186d037b1869a1570e4c7fd1dca06955365083124925520932f",
+      "last_checked": "2026-09-06T15:24:28+00:00",
+      "last_modified": "",
+      "title": "ã¹ãã¼ããã©ã³ã«ç»å ´ï¼ | ãã¡ã³ã¿ã¸ã¼ã©ã¤ãï½ ã°ã«ã°ã«ã®ç«ã¨æãã¬ããå°å¥³"
     },
     "https://www.fantasylife.jp/fli/it/": {
       "etag": "",
@@ -99,6 +134,13 @@
       "last_modified": "",
       "title": "ã¢ãããã¼ãæ å ± | ãã¡ã³ã¿ã¸ã¼ã©ã¤ãï½ ã°ã«ã°ã«ã®ç«ã¨æãã¬ããå°å¥³"
     },
+    "https://www.fantasylife.jp/fli/patchnote/ver_1_1_4/": {
+      "etag": "",
+      "hash": "be303425de387c539c4ec4095021ff86e90e8d0cf3d1b972b8919878bfe081aa",
+      "last_checked": "2026-09-06T15:24:23+00:00",
+      "last_modified": "",
+      "title": "ã¢ãããã¼ãæ å ± | ãã¡ã³ã¿ã¸ã¼ã©ã¤ãï½ ã°ã«ã°ã«ã®ç«ã¨æãã¬ããå°å¥³"
+    },
     "https://www.fantasylife.jp/fli/patchnote/ver_1_3_0/": {
       "etag": "",
       "hash": "ccf234484155200f45c753734bab1ce9938ff5f0350204bc04e369ebba353e00",
@@ -109,7 +151,7 @@
     "https://www.fantasylife.jp/fli/patchnote/ver_1_3_1/": {
       "etag": "",
       "hash": "ca37dbfe4b32bfb8de598b9979b4237af3ebb2b9e9594092aad309c1eac3f067",
-      "last_checked": "2026-09-06T15:17:50+00:00",
+      "last_checked": "2026-09-06T15:24:12+00:00",
       "last_modified": "",
       "title": "ã¢ãããã¼ãæ å ± | ãã¡ã³ã¿ã¸ã¼ã©ã¤ãï½ ã°ã«ã°ã«ã®ç«ã¨æãã¬ããå°å¥³"
     },
@@ -130,28 +172,42 @@
     "https://www.fantasylife.jp/fli/patchnote/ver_1_5_0/": {
       "etag": "",
       "hash": "18aad5768c196707b2c1cf040be1a11bc61d1e9e4859ef41cc4db22075a9e732",
-      "last_checked": "2026-09-06T15:17:45+00:00",
+      "last_checked": "2026-09-06T15:24:17+00:00",
       "last_modified": "",
       "title": "ã¢ãããã¼ãæ å ± | ãã¡ã³ã¿ã¸ã¼ã©ã¤ãï½ ã°ã«ã°ã«ã®ç«ã¨æãã¬ããå°å¥³"
     },
     "https://www.fantasylife.jp/fli/patchnote/ver_2_0_0/": {
       "etag": "",
       "hash": "f3fc0adcbfeb863b386fda50019f4fd614a713dee868906d2dfc0bac017b7df1",
-      "last_checked": "2026-09-06T15:17:47+00:00",
+      "last_checked": "2026-09-06T15:24:27+00:00",
       "last_modified": "",
       "title": "ã¢ãããã¼ãæ å ± | ãã¡ã³ã¿ã¸ã¼ã©ã¤ãï½ ã°ã«ã°ã«ã®ç«ã¨æãã¬ããå°å¥³"
     },
     "https://www.fantasylife.jp/fli/patchnote/ver_2_0_2/": {
       "etag": "",
       "hash": "88f43b67287906d005a7ae2b145fbe48011cd06b450a48de6c1d33ec0b8389e8",
-      "last_checked": "2026-09-06T15:17:53+00:00",
+      "last_checked": "2026-09-06T15:24:15+00:00",
+      "last_modified": "",
+      "title": "ã¢ãããã¼ãæ å ± | ãã¡ã³ã¿ã¸ã¼ã©ã¤ãï½ ã°ã«ã°ã«ã®ç«ã¨æãã¬ããå°å¥³"
+    },
+    "https://www.fantasylife.jp/fli/patchnote/ver_2_0_3/": {
+      "etag": "",
+      "hash": "5da5cba0af8609025926ce449ce0156ac03e432fc16d089c3a3db85c746d55c0",
+      "last_checked": "2026-09-06T15:24:16+00:00",
+      "last_modified": "",
+      "title": "ã¢ãããã¼ãæ å ± | ãã¡ã³ã¿ã¸ã¼ã©ã¤ãï½ ã°ã«ã°ã«ã®ç«ã¨æãã¬ããå°å¥³"
+    },
+    "https://www.fantasylife.jp/fli/patchnote/ver_2_1_0_ver_2_1_1/": {
+      "etag": "",
+      "hash": "e25b1c246e0cd70c8fe54f0bca8fb8322da10669c125a00a11cd19c16563e601",
+      "last_checked": "2026-09-06T15:24:30+00:00",
       "last_modified": "",
       "title": "ã¢ãããã¼ãæ å ± | ãã¡ã³ã¿ã¸ã¼ã©ã¤ãï½ ã°ã«ã°ã«ã®ç«ã¨æãã¬ããå°å¥³"
     },
     "https://www.fantasylife.jp/fli/patchnote/ver_2_1_2/": {
       "etag": "",
       "hash": "71e076c811895b08806b8e8651e3f462b0bee475e4c079063b284980ea263b94",
-      "last_checked": "2026-09-06T15:17:46+00:00",
+      "last_checked": "2026-09-06T15:24:28+00:00",
       "last_modified": "",
       "title": "ã¢ãããã¼ãæ å ± | ãã¡ã³ã¿ã¸ã¼ã©ã¤ãï½ ã°ã«ã°ã«ã®ç«ã¨æãã¬ããå°å¥³"
     },
@@ -161,6 +217,20 @@
       "last_checked": "2026-09-06T15:17:56+00:00",
       "last_modified": "",
       "title": "ã¢ãããã¼ãæ å ± | ãã¡ã³ã¿ã¸ã¼ã©ã¤ãï½ ã°ã«ã°ã«ã®ç«ã¨æãã¬ããå°å¥³"
+    },
+    "https://www.fantasylife.jp/fli/patchnote/ver_2_2_1/": {
+      "etag": "",
+      "hash": "0879d967db1be3249ea26ba6bbfb904e2c45bbb1f47bc27f133d43e2d71f5b0d",
+      "last_checked": "2026-09-06T15:24:10+00:00",
+      "last_modified": "",
+      "title": "ã¢ãããã¼ãæ å ± | ãã¡ã³ã¿ã¸ã¼ã©ã¤ãï½ ã°ã«ã°ã«ã®ç«ã¨æãã¬ããå°å¥³"
+    },
+    "https://www.fantasylife.jp/fli/photo-contest/": {
+      "etag": "",
+      "hash": "edce145d9aa88fb3f4dc5eee6efc42997bafc4549495334e8e28f3dac3749867",
+      "last_checked": "2026-09-06T15:24:14+00:00",
+      "last_modified": "",
+      "title": "ãã¡ã³ã¿ã¸ã¼ã©ã¤ãï½ãã©ãã³ã³ãã¹ã"
     },
     "https://www.fantasylife.jp/fli/product/?product=dwl": {
       "etag": "",
@@ -176,12 +246,26 @@
       "last_modified": "",
       "title": "ååæ å ± | ãã¡ã³ã¿ã¸ã¼ã©ã¤ãï½ ã°ã«ã°ã«ã®ç«ã¨æãã¬ããå°å¥³"
     },
+    "https://www.fantasylife.jp/fli/sale/": {
+      "etag": "",
+      "hash": "282ca45b29f8b8d953ba0e91617777dfa010773d53b37fca7c5e05b871b9b47f",
+      "last_checked": "2026-09-06T15:24:24+00:00",
+      "last_modified": "",
+      "title": "2026 Summer 30% OFF | ãã¡ã³ã¿ã¸ã¼ã©ã¤ãï½ ã°ã«ã°ã«ã®ç«ã¨æãã¬ããå°å¥³"
+    },
     "https://www.fantasylife.jp/fli/special/": {
       "etag": "",
       "hash": "0710ff3882615ed340f6db64328165bc4f9da8b1ab4a5a012cabf64e37ad9a2c",
       "last_checked": "2026-09-06T15:17:52+00:00",
       "last_modified": "",
       "title": "æ ãããã¡ã³ã¿ã¸ã¼ã©ã¤ãæ¸åºã¸ããããï¼"
+    },
+    "https://www.fantasylife.jp/fli/streamer-kit/": {
+      "etag": "",
+      "hash": "cfd7ff0112dcaa32b26952efb4c60ff970d81d23ad38ad40553e836f30da2f58",
+      "last_checked": "2026-09-06T15:24:09+00:00",
+      "last_modified": "",
+      "title": "ã¹ããªã¼ãã¼ã­ãã | ãã¡ã³ã¿ã¸ã¼ã©ã¤ãï½ ã°ã«ã°ã«ã®ç«ã¨æãã¬ããå°å¥³"
     },
     "https://www.fantasylife.jp/fli/switch2-edition/": {
       "etag": "",
@@ -207,21 +291,42 @@
     "https://www.fantasylife.jp/fli/topics/250518/": {
       "etag": "",
       "hash": "b146e2b5c20235ffabf9a97263a99d639c8cf9eef0ad3e0b6d03fc818258cbd0",
-      "last_checked": "2026-09-06T15:17:50+00:00",
+      "last_checked": "2026-09-06T15:24:18+00:00",
+      "last_modified": "",
+      "title": "ãããã¯ã¹ | ãã¡ã³ã¿ã¸ã¼ã©ã¤ãï½ ã°ã«ã°ã«ã®ç«ã¨æãã¬ããå°å¥³"
+    },
+    "https://www.fantasylife.jp/fli/topics/250520/": {
+      "etag": "",
+      "hash": "925611afb6f3d2c8cf9939f0289786abed679252ca22775fe928e791fbb0a4ab",
+      "last_checked": "2026-09-06T15:24:17+00:00",
+      "last_modified": "",
+      "title": "ãããã¯ã¹ | ãã¡ã³ã¿ã¸ã¼ã©ã¤ãï½ ã°ã«ã°ã«ã®ç«ã¨æãã¬ããå°å¥³"
+    },
+    "https://www.fantasylife.jp/fli/topics/250523_01/": {
+      "etag": "",
+      "hash": "3ec3199c97c912960a3368c66b0cab251fb5727a04597229b816fa4c3cb8d127",
+      "last_checked": "2026-09-06T15:24:16+00:00",
+      "last_modified": "",
+      "title": "ãããã¯ã¹ | ãã¡ã³ã¿ã¸ã¼ã©ã¤ãï½ ã°ã«ã°ã«ã®ç«ã¨æãã¬ããå°å¥³"
+    },
+    "https://www.fantasylife.jp/fli/topics/250524/": {
+      "etag": "",
+      "hash": "93a878f25e226ae3e14184d757ed8b0bb638072539b72f3c2b0757c52347687a",
+      "last_checked": "2026-09-06T15:24:29+00:00",
       "last_modified": "",
       "title": "ãããã¯ã¹ | ãã¡ã³ã¿ã¸ã¼ã©ã¤ãï½ ã°ã«ã°ã«ã®ç«ã¨æãã¬ããå°å¥³"
     },
     "https://www.fantasylife.jp/fli/topics/250527/": {
       "etag": "",
       "hash": "9e4142968ba861097a3dc34b712cbeb735f04772d57229f4652f43c0c1453a51",
-      "last_checked": "2026-09-06T15:18:02+00:00",
+      "last_checked": "2026-09-06T15:24:20+00:00",
       "last_modified": "",
       "title": "ãããã¯ã¹ | ãã¡ã³ã¿ã¸ã¼ã©ã¤ãï½ ã°ã«ã°ã«ã®ç«ã¨æãã¬ããå°å¥³"
     },
     "https://www.fantasylife.jp/fli/topics/250602/": {
       "etag": "",
       "hash": "cb86a04a205e3b3de90ea7d95473921fe05b91fc3fdd53fbbff63f4a6e3a78c1",
-      "last_checked": "2026-09-06T15:17:47+00:00",
+      "last_checked": "2026-09-06T15:24:11+00:00",
       "last_modified": "",
       "title": "ãããã¯ã¹ | ãã¡ã³ã¿ã¸ã¼ã©ã¤ãï½ ã°ã«ã°ã«ã®ç«ã¨æãã¬ããå°å¥³"
     },
@@ -235,14 +340,14 @@
     "https://www.fantasylife.jp/fli/topics/250619/": {
       "etag": "",
       "hash": "eb9ddc4c1159b13107564cdea8613ce53eb4523cf60fcd0785436ee2cbe95747",
-      "last_checked": "2026-09-06T15:18:00+00:00",
+      "last_checked": "2026-09-06T15:24:13+00:00",
       "last_modified": "",
       "title": "ãããã¯ã¹ | ãã¡ã³ã¿ã¸ã¼ã©ã¤ãï½ ã°ã«ã°ã«ã®ç«ã¨æãã¬ããå°å¥³"
     },
     "https://www.fantasylife.jp/fli/topics/250620/": {
       "etag": "",
       "hash": "895458c3e9007f7a1889412034f4b326b0b0df9b1b1b4ae87d0c3e4f28fea5f1",
-      "last_checked": "2026-09-06T15:17:58+00:00",
+      "last_checked": "2026-09-06T15:24:22+00:00",
       "last_modified": "",
       "title": "ãããã¯ã¹ | ãã¡ã³ã¿ã¸ã¼ã©ã¤ãï½ ã°ã«ã°ã«ã®ç«ã¨æãã¬ããå°å¥³"
     },
@@ -260,52 +365,87 @@
       "last_modified": "",
       "title": "ãããã¯ã¹ | ãã¡ã³ã¿ã¸ã¼ã©ã¤ãï½ ã°ã«ã°ã«ã®ç«ã¨æãã¬ããå°å¥³"
     },
+    "https://www.fantasylife.jp/fli/topics/250923/": {
+      "etag": "",
+      "hash": "3bc244c9fc2f2fdb35fecf4bbd9f18f70c7a870a9645fff889431c1814c47a2a",
+      "last_checked": "2026-09-06T15:24:21+00:00",
+      "last_modified": "",
+      "title": "ãããã¯ã¹ | ãã¡ã³ã¿ã¸ã¼ã©ã¤ãï½ ã°ã«ã°ã«ã®ç«ã¨æãã¬ããå°å¥³"
+    },
+    "https://www.fantasylife.jp/fli/topics/251020/": {
+      "etag": "",
+      "hash": "78640a9488f8aca959d905824b4d017b9bc0ad8ee80c9b917eb95b5cd3ef05d1",
+      "last_checked": "2026-09-06T15:24:27+00:00",
+      "last_modified": "",
+      "title": "ãããã¯ã¹ | ãã¡ã³ã¿ã¸ã¼ã©ã¤ãï½ ã°ã«ã°ã«ã®ç«ã¨æãã¬ããå°å¥³"
+    },
     "https://www.fantasylife.jp/fli/topics/maintenance/": {
       "etag": "",
       "hash": "360562675b5dd76005675fcefbc082baff43b55d7cff42cd56e22a3983dbcaad",
-      "last_checked": "2026-09-06T15:17:51+00:00",
+      "last_checked": "2026-09-06T15:24:31+00:00",
       "last_modified": "",
       "title": "ã·ã¹ãã ã¡ã³ããã³ã¹ã®ãç¥ãã | ãã¡ã³ã¿ã¸ã¼ã©ã¤ãï½ ã°ã«ã°ã«ã®ç«ã¨æãã¬ããå°å¥³"
     },
     "https://www.fantasylife.jp/fli/world/": {
       "etag": "",
       "hash": "9dee25abf67b2fd8e94d0fa7cfcafa4b9711d0e09a68bdf870ded2fb8bffb95b",
-      "last_checked": "2026-09-06T15:18:04+00:00",
+      "last_checked": "2026-09-06T15:24:30+00:00",
       "last_modified": "",
       "title": "ãã«ããã«ã¼ãå¤§é¸ | ãã¡ã³ã¿ã¸ã¼ã©ã¤ãï½ ã°ã«ã°ã«ã®ç«ã¨æãã¬ããå°å¥³"
+    },
+    "https://www.fantasylife.jp/fli/zh-cn/": {
+      "etag": "",
+      "hash": "1f0ef5a639a2cead9c343615fc0fc569ce3faca528a74228fa7c6df431569748",
+      "last_checked": "2026-09-06T15:24:08+00:00",
+      "last_modified": "",
+      "title": "幻想生活ｉ 转圈圈的龙和偷取时间的少女"
     },
     "https://www.holy-horror.jp/": {
       "etag": "",
       "hash": "4a879eb355bfe4915e987ec94ea3be124be1f711c1e12a609e0edd3bbede14fb",
-      "last_checked": "2026-09-06T15:18:20+00:00",
+      "last_checked": "2026-09-06T15:24:44+00:00",
       "last_modified": "",
       "title": "ãã¼ãªã¼ãã©ã¼ãã³ã·ã§ã³"
     },
     "https://www.holy-horror.jp/en/": {
       "etag": "",
       "hash": "41ee9bed0dcfbaf4bf7d2275f68eeffac35093b8cf60fb192eafe7ebcfff8f6b",
-      "last_checked": "2026-09-06T15:18:23+00:00",
+      "last_checked": "2026-09-06T15:24:47+00:00",
       "last_modified": "",
       "title": "HOLY HORROR MANSION"
     },
     "https://www.inazuma.jp/": {
       "etag": "",
       "hash": "e9fa5b8d5a605794408ad0b614f87ea2c1fae0f4edd3eb4cf03e6edc254c1a35",
-      "last_checked": "2026-09-06T15:16:24+00:00",
+      "last_checked": "2026-09-06T15:22:49+00:00",
       "last_modified": "",
       "title": "ã¤ããºãã¤ã¬ãã³ã·ãªã¼ãº"
+    },
+    "https://www.inazuma.jp/17th-wallpaper/": {
+      "etag": "",
+      "hash": "b7cec6c67d15a8b89ba95d3664336c47b08827fc3ce82a85e6187ccbb6914e4e",
+      "last_checked": "2026-09-06T15:23:12+00:00",
+      "last_modified": "",
+      "title": "ãã¤ããºãã¤ã¬ãã³ã17å¨å¹´è¨å¿µ å£ç´ãã¦ã³ã­ã¼ã"
     },
     "https://www.inazuma.jp/18th/": {
       "etag": "",
       "hash": "99d3a278e2ee2ef4d3b43df2ab175be35756b93ed734a634ee9a1b9d21344c15",
-      "last_checked": "2026-09-06T15:16:31+00:00",
+      "last_checked": "2026-09-06T15:23:23+00:00",
       "last_modified": "",
       "title": "ã¤ãã¤ã¬ã®æ¥ ç¹è¨­ãã¼ã¸"
+    },
+    "https://www.inazuma.jp/archive/eiga/01/": {
+      "etag": "",
+      "hash": "dc6f6eafd28a50e1749f3c2d0c620b9374b15b9a88cdb4856ae2099521e54ff9",
+      "last_checked": "2026-09-06T15:22:52+00:00",
+      "last_modified": "",
+      "title": "åå ´çã¤ããºãã¤ã¬ãã³ æå¼·è»å£ãªã¼ã¬è¥²æ¥"
     },
     "https://www.inazuma.jp/archive/eiga/03/": {
       "etag": "",
       "hash": "a2baeb3cdc70347c9c46ddf0e30fabf8da75a5fed6a50682c99a9e78b82c7c74",
-      "last_checked": "2026-09-06T15:16:36+00:00",
+      "last_checked": "2026-09-06T15:23:18+00:00",
       "last_modified": "",
       "title": "åå ´ç ã¤ããºãã¤ã¬ãã³GO vs ãã³ãã¼ã«æ¦æ©"
     },
@@ -330,10 +470,17 @@
       "last_modified": "",
       "title": "ã¤ããºãã¤ã¬ãã³2 è å¨ã®ä¾µç¥è ãã¡ã¤ã¢ï¼ããªã¶ã¼ã | ããããã¼ã«ãã­ã³ãã£ã¢"
     },
+    "https://www.inazuma.jp/gogalaxy/": {
+      "etag": "",
+      "hash": "0be2a1f33ed82ea8339143240896505224d08865b13dab57907a1921d95a7308",
+      "last_checked": "2026-09-06T15:23:19+00:00",
+      "last_modified": "",
+      "title": "ã¤ããºãã¤ã¬ãã³GO ã®ã£ã©ã¯ã·ã¼ ããã°ãã³ï¼ã¹ã¼ãã¼ãã´ã¡"
+    },
     "https://www.inazuma.jp/gostrikers/": {
       "etag": "",
       "hash": "9739b14ed5b7cb232d22a2f5e859293e887643632a34ceffee19d650c1810a97",
-      "last_checked": "2026-09-06T15:16:53+00:00",
+      "last_checked": "2026-09-06T15:22:58+00:00",
       "last_modified": "",
       "title": "ã¤ããºãã¤ã¬ãã³GO ã¹ãã©ã¤ã«ã¼ãº 2013"
     },
@@ -344,12 +491,33 @@
       "last_modified": "",
       "title": "ã¤ããºãã¦ã©ã¼ã«ã¼"
     },
+    "https://www.inazuma.jp/inazuma123/": {
+      "etag": "",
+      "hash": "d851617c9adb12a55fde4cbe5404cea49bed0db7cc04b59ccec0de8566e56522",
+      "last_checked": "2026-09-06T15:23:09+00:00",
+      "last_modified": "",
+      "title": "ã¤ããºãã¤ã¬ãã³1ã»2ã»3!! åå å®ä¼èª¬"
+    },
     "https://www.inazuma.jp/movie/streaming/": {
       "etag": "",
       "hash": "2dac71c53a7756af1fadbaaaf6a8fec93d990b6ded4c885c806a76dab1758862",
       "last_checked": "2026-09-06T15:16:36+00:00",
       "last_modified": "",
       "title": "é ä¿¡æ å ± | ã¤ããºãã¤ã¬ãã³ã»ã¶ã»ã ã¼ãã¼ 2025 ãåå ´ç ã¤ããºãã¤ã¬ãã³ æ°ããªãè±éãã¡ã®åºç« ããæ ç» ã¤ããºãã¤ã¬ãã³ç·éç·¨ ä¼èª¬ã®ã­ãã"
+    },
+    "https://www.inazuma.jp/movie/topics/241108/": {
+      "etag": "",
+      "hash": "ab59d767b67bb65f837a6caaaf9fe6420edb5e352449916c9ca565776c28bbe6",
+      "last_checked": "2026-09-06T15:23:16+00:00",
+      "last_modified": "",
+      "title": "ãããã¯ã¹ | ã¤ããºãã¤ã¬ãã³ã»ã¶ã»ã ã¼ãã¼ 2025 ãåå ´ç ã¤ããºãã¤ã¬ãã³ æ°ããªãè±éãã¡ã®åºç« ããæ ç» ã¤ããºãã¤ã¬ãã³ç·éç·¨ ä¼èª¬ã®ã­ã"
+    },
+    "https://www.inazuma.jp/movie/topics/241206/": {
+      "etag": "",
+      "hash": "00c8a5e81ef5241cb31a18d004f4df4ee9e83e4b38eeb9bef414e88d97421c5d",
+      "last_checked": "2026-09-06T15:23:11+00:00",
+      "last_modified": "",
+      "title": "ãããã¯ã¹ | ã¤ããºãã¤ã¬ãã³ã»ã¶ã»ã ã¼ãã¼ 2025 ãåå ´ç ã¤ããºãã¤ã¬ãã³ æ°ããªãè±éãã¡ã®åºç« ããæ ç» ã¤ããºãã¤ã¬ãã³ç·éç·¨ ä¼èª¬ã®ã­ã"
     },
     "https://www.inazuma.jp/movie/topics/241227/": {
       "etag": "",
@@ -365,12 +533,54 @@
       "last_modified": "",
       "title": "ã¤ããºãã¤ã¬ãã³ RE"
     },
+    "https://www.inazuma.jp/strikers/": {
+      "etag": "",
+      "hash": "cdd8f315d1f89f84d68cc078a6ebb6396f09d7d50be251e2bb9931a9ff3b364f",
+      "last_checked": "2026-09-06T15:22:50+00:00",
+      "last_modified": "",
+      "title": "ã¤ããºãã¤ã¬ãã³ ã¹ãã©ã¤ã«ã¼ãº 2012ã¨ã¯ã¹ããªã¼ã"
+    },
+    "https://www.inazuma.jp/topics/190926/": {
+      "etag": "",
+      "hash": "453fdbe16b7696612fa2d5e972a75afc6158c4ec3db76cdaaa5770d794a17b01",
+      "last_checked": "2026-09-06T15:23:13+00:00",
+      "last_modified": "",
+      "title": "ãããã¯ã¹ | ã¤ããºãã¤ã¬ãã³ã·ãªã¼ãº"
+    },
     "https://www.inazuma.jp/topics/240328/": {
       "etag": "",
       "hash": "2adab4ec655413e9296bd977e7a56dfdabce00cb5336bd5aeb93e56f3f10971f",
       "last_checked": "2026-09-06T15:16:50+00:00",
       "last_modified": "",
       "title": "ãããã¯ã¹ | ã¤ããºãã¤ã¬ãã³ã·ãªã¼ãº"
+    },
+    "https://www.inazuma.jp/victory-road/beta-test/": {
+      "etag": "",
+      "hash": "3bc6bb7733a7de0d5b0b57077630e2c29a821a70c5a1c7cabe036080a8bc5af2",
+      "last_checked": "2026-09-06T15:22:56+00:00",
+      "last_modified": "",
+      "title": "å ¨ä¸çãã¼ã¿ãã¹ãä½é¨ç | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
+    },
+    "https://www.inazuma.jp/victory-road/beta-test/maintenance/": {
+      "etag": "",
+      "hash": "00948c4fd689543cf546622896516dd279f6e4e33fb559dc10d6d377e752eeaa",
+      "last_checked": "2026-09-06T15:23:02+00:00",
+      "last_modified": "",
+      "title": "ã¡ã³ããã³ã¹ã®ãç¥ãã | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
+    },
+    "https://www.inazuma.jp/victory-road/beta-test/news_2504/": {
+      "etag": "",
+      "hash": "c575fb16d0572ac30fad949421fdd011f4d23aaef6a6568a08cf6aac5fcb6048",
+      "last_checked": "2026-09-06T15:22:57+00:00",
+      "last_modified": "",
+      "title": "å ¨ä¸çãã¼ã¿ãã¹ãä½é¨çâä¸çã«å»ãï¼ã¤ããºããã¼ã¯â é ä¿¡çµäºã®ãç¥ãã | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
+    },
+    "https://www.inazuma.jp/victory-road/beta-test/patchnote/ver_1_1_7/": {
+      "etag": "",
+      "hash": "5d1d992260a57593d1a844bcf18225a2f732d6f57c8a01883928a75588cba6c2",
+      "last_checked": "2026-09-06T15:23:01+00:00",
+      "last_modified": "",
+      "title": "ããããã¼ã | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
     },
     "https://www.inazuma.jp/victory-road/beta-test/patchnote/ver_1_1_8/": {
       "etag": "",
@@ -379,17 +589,31 @@
       "last_modified": "",
       "title": "ããããã¼ã | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
     },
+    "https://www.inazuma.jp/victory-road/beta-test/patchnote/ver_1_2_0_switch/": {
+      "etag": "",
+      "hash": "81507fe8123d832ee4152d7de80c98cccb2f0fa4f5f14caaccf944708431b0f9",
+      "last_checked": "2026-09-06T15:22:58+00:00",
+      "last_modified": "",
+      "title": "ããããã¼ã | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
+    },
     "https://www.inazuma.jp/victory-road/beta-test/tournament/vote/": {
       "etag": "",
       "hash": "353bb867286a5051caae0bb6d76d00c5aa8942a317b7180af1c26a8d1c062553",
-      "last_checked": "2026-09-06T15:16:33+00:00",
+      "last_checked": "2026-09-06T15:22:52+00:00",
       "last_modified": "",
       "title": "ã´ã£ã¯ããªã¼ã­ã¼ããã¼ãã¡ã³ã&#946; ã­ã£ã©ã¯ã¿ã¼äººæ°æç¥¨ | ã´ã£ã¯ããªã¼ã­ã¼ããã¼ãã¡ã³ã&#946; | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­"
+    },
+    "https://www.inazuma.jp/victory-road/beta-test/troubleshooting/": {
+      "etag": "",
+      "hash": "30917f7b0a4095394957cf7e107d874617ccf1f168976afbe8bb913aad6f6879",
+      "last_checked": "2026-09-06T15:23:23+00:00",
+      "last_modified": "",
+      "title": "ãã©ãã«ã·ã¥ã¼ãã£ã³ã° | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
     },
     "https://www.inazuma.jp/victory-road/character/": {
       "etag": "",
       "hash": "b7f91c8aaa3b7de3fa26f22a0ca8d554f28000431174065c8b6709049c2226ae",
-      "last_checked": "2026-09-06T15:16:45+00:00",
+      "last_checked": "2026-09-06T15:22:55+00:00",
       "last_modified": "",
       "title": "ã­ã£ã©ã¯ã¿ã¼ | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
     },
@@ -403,7 +627,7 @@
     "https://www.inazuma.jp/victory-road/competition/": {
       "etag": "",
       "hash": "56ee3779fef09ffba8d4abfc4d1f3c4dc16fb8d04da1d6da8f91c1f21fd9f87d",
-      "last_checked": "2026-09-06T15:16:53+00:00",
+      "last_checked": "2026-09-06T15:23:15+00:00",
       "last_modified": "",
       "title": "å¯¾æ¦ | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
     },
@@ -421,6 +645,13 @@
       "last_modified": "",
       "title": "ã¯ã­ã¹ã»ã¼ããè¡ãæ¹æ³ | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
     },
+    "https://www.inazuma.jp/victory-road/guide/faq/": {
+      "etag": "",
+      "hash": "02bed7a367dc8f08a9215a9dd2d92d6fe1979864cc886d10ca3e2029a2c10d90",
+      "last_checked": "2026-09-06T15:22:59+00:00",
+      "last_modified": "",
+      "title": "ãããããè³ªå | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
+    },
     "https://www.inazuma.jp/victory-road/inadai/": {
       "etag": "",
       "hash": "2e2ed9ab35e0b97c572b5f9a9e8fcbd9519c64e36eb15eb91ad52982011bdbbc",
@@ -428,10 +659,17 @@
       "last_modified": "",
       "title": "ã¤ããã¤ | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
     },
+    "https://www.inazuma.jp/victory-road/inazuma-research/": {
+      "etag": "",
+      "hash": "adc88e8549cbad2becba32626a3a6a9f82f6cc81d570d4913c81b5fc0cae7366",
+      "last_checked": "2026-09-06T15:23:22+00:00",
+      "last_modified": "",
+      "title": "INAZUMA RESEARCHï½ã¤ããºãã¤ã¬ãã³è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
+    },
     "https://www.inazuma.jp/victory-road/mode/": {
       "etag": "",
       "hash": "d624c5dda6500b3101c18e157a433f46077d38e5eacd467fd8b7acaa55e00d4b",
-      "last_checked": "2026-09-06T15:16:34+00:00",
+      "last_checked": "2026-09-06T15:23:17+00:00",
       "last_modified": "",
       "title": "ã¢ã¼ãç´¹ä» | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
     },
@@ -445,7 +683,7 @@
     "https://www.inazuma.jp/victory-road/patchnote/ps-steam/ver_1_2_4/": {
       "etag": "",
       "hash": "08716361e8c7ec52d8ee70ec7472f447bc041602a9383d11ed70e82e2c40e53b",
-      "last_checked": "2026-09-06T15:16:40+00:00",
+      "last_checked": "2026-09-06T15:23:06+00:00",
       "last_modified": "",
       "title": "ver.1.2.4é ä¿¡ã®ãç¥ãã | ã¢ãããã¼ãæ å ± | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
     },
@@ -456,10 +694,17 @@
       "last_modified": "",
       "title": "ver.1.3.2é ä¿¡ã®ãç¥ãã | ã¢ãããã¼ãæ å ± | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
     },
+    "https://www.inazuma.jp/victory-road/patchnote/ps-steam/ver_1_3_4/": {
+      "etag": "",
+      "hash": "d001b743d21b36bb7a0860784a7d10af7a628484ec6a147d41da1288f5e0602d",
+      "last_checked": "2026-09-06T15:23:10+00:00",
+      "last_modified": "",
+      "title": "ver.1.3.4é ä¿¡ã®ãç¥ãã | ã¢ãããã¼ãæ å ± | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
+    },
     "https://www.inazuma.jp/victory-road/patchnote/ps-steam/ver_1_4_2/": {
       "etag": "",
       "hash": "d44d11f28a8e90a0a8e63f6f864cf3f7a31cca7e48a9a3611ed2627e09276706",
-      "last_checked": "2026-09-06T15:16:54+00:00",
+      "last_checked": "2026-09-06T15:23:05+00:00",
       "last_modified": "",
       "title": "ver.1.4.2é ä¿¡ã®ãç¥ãã | ã¢ãããã¼ãæ å ± | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
     },
@@ -477,6 +722,27 @@
       "last_modified": "",
       "title": "ver.2.0.2é ä¿¡ã®ãç¥ãã | ã¢ãããã¼ãæ å ± | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
     },
+    "https://www.inazuma.jp/victory-road/patchnote/ps-steam/ver_3_0_1/": {
+      "etag": "",
+      "hash": "432e05bfd081c50daa3d9061629d1d2a09590a61bdfb90ca2e1fd0b9af9c05b5",
+      "last_checked": "2026-09-06T15:23:04+00:00",
+      "last_modified": "",
+      "title": "ver.3.0.1é ä¿¡ã®ãç¥ãã | ã¢ãããã¼ãæ å ± | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
+    },
+    "https://www.inazuma.jp/victory-road/patchnote/ps-steam/ver_3_1_1/": {
+      "etag": "",
+      "hash": "5c7db3fd3978a5792d5d15cc5fbb193910d5c0198ca1aa7526113a6790de6721",
+      "last_checked": "2026-09-06T15:23:08+00:00",
+      "last_modified": "",
+      "title": "ver.3.1.1é ä¿¡ã®ãç¥ãã | ã¢ãããã¼ãæ å ± | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
+    },
+    "https://www.inazuma.jp/victory-road/patchnote/ps-steam/ver_5_0_1/": {
+      "etag": "",
+      "hash": "92972b51de91e4fc97175bd6f025935eccfc49baf1d5948a7f21f3b9c4285ad8",
+      "last_checked": "2026-09-06T15:23:16+00:00",
+      "last_modified": "",
+      "title": "ver.5.0.1é ä¿¡ã®ãç¥ãã | ã¢ãããã¼ãæ å ± | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
+    },
     "https://www.inazuma.jp/victory-road/patchnote/ps-steam/ver_7_0_1/": {
       "etag": "",
       "hash": "ae2e7bd8a4264f814a27c91df1e35ba989a78fb8c61e7f4aa59613564c8c9669",
@@ -490,6 +756,13 @@
       "last_checked": "2026-09-06T15:16:59+00:00",
       "last_modified": "",
       "title": "ver.7.0.2é ä¿¡ã®ãç¥ãã | ã¢ãããã¼ãæ å ± | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
+    },
+    "https://www.inazuma.jp/victory-road/patchnote/switch/251114/": {
+      "etag": "",
+      "hash": "525d1968bdfebb4711e76a9f40e9db5e1256020f870e829ae1980738f5419894",
+      "last_checked": "2026-09-06T15:23:18+00:00",
+      "last_modified": "",
+      "title": "ã¯ã­ã¹ã»ã¼ãã«é¢ããä¸å ·åã®ä¿®æ­£ã«ã¤ãã¦ | ã¢ãããã¼ãæ å ± | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
     },
     "https://www.inazuma.jp/victory-road/patchnote/switch/ver_1_5_0/": {
       "etag": "",
@@ -512,12 +785,26 @@
       "last_modified": "",
       "title": "ver.2.0.1é ä¿¡ã®ãç¥ãã | ã¢ãããã¼ãæ å ± | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
     },
+    "https://www.inazuma.jp/victory-road/patchnote/switch/ver_3_0_0/": {
+      "etag": "",
+      "hash": "b090b0df9ede4e5be0ce2d67461eac7fbaf28b874e616360219d57dd586d9f70",
+      "last_checked": "2026-09-06T15:22:54+00:00",
+      "last_modified": "",
+      "title": "ver.3.0.0é ä¿¡ã®ãç¥ãã | ã¢ãããã¼ãæ å ± | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
+    },
     "https://www.inazuma.jp/victory-road/patchnote/switch/ver_4_0_0/": {
       "etag": "",
       "hash": "9b38e262b9fa7e022604e9d99b6b06b144892a9d41bd444f4463610d1d6fb2e5",
       "last_checked": "2026-09-06T15:16:47+00:00",
       "last_modified": "",
       "title": "ver.4.0.0é ä¿¡ã®ãç¥ãã | ã¢ãããã¼ãæ å ± | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
+    },
+    "https://www.inazuma.jp/victory-road/patchnote/switch/ver_6_0_0/": {
+      "etag": "",
+      "hash": "955852cad21f888adfe75e94572928f05278851c5830d1e64249b4fe7f6d4b50",
+      "last_checked": "2026-09-06T15:23:21+00:00",
+      "last_modified": "",
+      "title": "ver.6.0.0é ä¿¡ã®ãç¥ãã | ã¢ãããã¼ãæ å ± | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
     },
     "https://www.inazuma.jp/victory-road/patchnote/switch/ver_6_1_0/": {
       "etag": "",
@@ -529,7 +816,7 @@
     "https://www.inazuma.jp/victory-road/patchnote/xbox/ver_1_3_2/": {
       "etag": "",
       "hash": "635494d0e2026209ec89ad15eea19457a389025820e4f9dcdff751269c748305",
-      "last_checked": "2026-09-06T15:16:50+00:00",
+      "last_checked": "2026-09-06T15:23:10+00:00",
       "last_modified": "",
       "title": "ver.1.3.2é ä¿¡ã®ãç¥ãã | ã¢ãããã¼ãæ å ± | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
     },
@@ -540,6 +827,13 @@
       "last_modified": "",
       "title": "ver.1.3.4é ä¿¡ã®ãç¥ãã | ã¢ãããã¼ãæ å ± | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
     },
+    "https://www.inazuma.jp/victory-road/patchnote/xbox/ver_1_5_2/": {
+      "etag": "",
+      "hash": "fbcb5347156e9070797157f755790440212d6c07feddf886a65898fca3bc0811",
+      "last_checked": "2026-09-06T15:23:03+00:00",
+      "last_modified": "",
+      "title": "ver.1.5.2é ä¿¡ã®ãç¥ãã | ã¢ãããã¼ãæ å ± | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
+    },
     "https://www.inazuma.jp/victory-road/patchnote/xbox/ver_2_0_2/": {
       "etag": "",
       "hash": "234ca8701ed82734e9786caef495f97e751d5306648aed78bfc82631206c1122",
@@ -547,17 +841,52 @@
       "last_modified": "",
       "title": "ver.2.0.2é ä¿¡ã®ãç¥ãã | ã¢ãããã¼ãæ å ± | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
     },
+    "https://www.inazuma.jp/victory-road/patchnote/xbox/ver_2_0_3/": {
+      "etag": "",
+      "hash": "349599abf4f865a971d29a4d74052cdc784ed6731aead51d2043c726b4d5b29c",
+      "last_checked": "2026-09-06T15:23:22+00:00",
+      "last_modified": "",
+      "title": "ver.2.0.3é ä¿¡ã®ãç¥ãã | ã¢ãããã¼ãæ å ± | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
+    },
+    "https://www.inazuma.jp/victory-road/patchnote/xbox/ver_2_0_4/": {
+      "etag": "",
+      "hash": "db6fc4206914b95e1d8f4ce6ce09362d887e973b60c502b3e477d014da39db15",
+      "last_checked": "2026-09-06T15:23:20+00:00",
+      "last_modified": "",
+      "title": "ver.2.0.4é ä¿¡ã®ãç¥ãã | ã¢ãããã¼ãæ å ± | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
+    },
+    "https://www.inazuma.jp/victory-road/patchnote/xbox/ver_3_0_1/": {
+      "etag": "",
+      "hash": "07effebd2c5844e3a660d34fa6b21449a1ef53b3a451e794cc82c2c2c997ad00",
+      "last_checked": "2026-09-06T15:22:53+00:00",
+      "last_modified": "",
+      "title": "ver.3.0.1é ä¿¡ã®ãç¥ãã | ã¢ãããã¼ãæ å ± | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
+    },
     "https://www.inazuma.jp/victory-road/patchnote/xbox/ver_3_1_1/": {
       "etag": "",
       "hash": "3eee82253e25290299815e83ca0b00c178c0c73f48cd0ad94c7585d36f054514",
-      "last_checked": "2026-09-06T15:16:40+00:00",
+      "last_checked": "2026-09-06T15:23:02+00:00",
       "last_modified": "",
       "title": "ver.3.1.1é ä¿¡ã®ãç¥ãã | ã¢ãããã¼ãæ å ± | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
+    },
+    "https://www.inazuma.jp/victory-road/patchnote/xbox/ver_4_0_1/": {
+      "etag": "",
+      "hash": "b0438907da590341cf7d665e80e01f811e395db41b1a4906cf5a527d3700e3a3",
+      "last_checked": "2026-09-06T15:23:09+00:00",
+      "last_modified": "",
+      "title": "ver.4.0.1é ä¿¡ã®ãç¥ãã | ã¢ãããã¼ãæ å ± | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
+    },
+    "https://www.inazuma.jp/victory-road/patchnote/xbox/ver_6_1_1/": {
+      "etag": "",
+      "hash": "775c3a9c07bf1e8f4ce4614fd7f2ebe7c95e69a64b63f7cdb50ff7c194431a2a",
+      "last_checked": "2026-09-06T15:23:06+00:00",
+      "last_modified": "",
+      "title": "ver.6.1.1é ä¿¡ã®ãç¥ãã | ã¢ãããã¼ãæ å ± | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
     },
     "https://www.inazuma.jp/victory-road/patchnote/xbox/ver_7_0_1/": {
       "etag": "",
       "hash": "3594c8a367142e47c819f600531ce02140dc0adf99a0da373d318036c390318e",
-      "last_checked": "2026-09-06T15:16:29+00:00",
+      "last_checked": "2026-09-06T15:22:57+00:00",
       "last_modified": "",
       "title": "ver.7.0.1é ä¿¡ã®ãç¥ãã | ã¢ãããã¼ãæ å ± | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
     },
@@ -571,9 +900,23 @@
     "https://www.inazuma.jp/victory-road/product/": {
       "etag": "",
       "hash": "87b43f1c267c9a61a53c30ed5bba255b8e74fb560187636565dddbe8a1707623",
-      "last_checked": "2026-09-06T15:16:38+00:00",
+      "last_checked": "2026-09-06T15:23:04+00:00",
       "last_modified": "",
       "title": "ååæ å ± | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
+    },
+    "https://www.inazuma.jp/victory-road/product/?product=pkg": {
+      "etag": "",
+      "hash": "87b43f1c267c9a61a53c30ed5bba255b8e74fb560187636565dddbe8a1707623",
+      "last_checked": "2026-09-06T15:23:00+00:00",
+      "last_modified": "",
+      "title": "ååæ å ± | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
+    },
+    "https://www.inazuma.jp/victory-road/questionnaire/": {
+      "etag": "",
+      "hash": "357701e8be96e6326f02ed8d994c7b7edc22fa916b38adec5ab1f5c355f41dde",
+      "last_checked": "2026-09-06T15:23:01+00:00",
+      "last_modified": "",
+      "title": "ã¤ããºãå½å¢èª¿æ» | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
     },
     "https://www.inazuma.jp/victory-road/questionnaire/result2/": {
       "etag": "",
@@ -592,9 +935,16 @@
     "https://www.inazuma.jp/victory-road/questionnaire/result4/": {
       "etag": "",
       "hash": "8671c0a48723d81c07c22499679e8bdf8f9327f3ef676dd6d337a959bda4c8a8",
-      "last_checked": "2026-09-06T15:16:51+00:00",
+      "last_checked": "2026-09-06T15:22:55+00:00",
       "last_modified": "",
       "title": "çµæçºè¡¨ | ã¤ããºãå½å¢èª¿æ» | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
+    },
+    "https://www.inazuma.jp/victory-road/special/": {
+      "etag": "",
+      "hash": "bfede673e6613b6d9a976303fff4c815225a706672a71aacc5a6c5fb94f4e5e9",
+      "last_checked": "2026-09-06T15:23:05+00:00",
+      "last_modified": "",
+      "title": "ã¹ãã·ã£ã«æ å ± | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
     },
     "https://www.inazuma.jp/victory-road/system/": {
       "etag": "",
@@ -610,10 +960,31 @@
       "last_modified": "",
       "title": "ãããã¯ã¹ | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
     },
+    "https://www.inazuma.jp/victory-road/topics/230924/": {
+      "etag": "",
+      "hash": "2616b8c5ac0f19e907c09051f0d1d9e31c38ca8426ae3b2eaa908ccbc83f4e25",
+      "last_checked": "2026-09-06T15:23:15+00:00",
+      "last_modified": "",
+      "title": "ãããã¯ã¹ | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
+    },
     "https://www.inazuma.jp/victory-road/topics/231129/": {
       "etag": "",
       "hash": "cd5ad6c143bee7e7c03324ea6acf398146d35017d82107e42b07eb58f08931bb",
       "last_checked": "2026-09-06T15:16:42+00:00",
+      "last_modified": "",
+      "title": "ãããã¯ã¹ | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
+    },
+    "https://www.inazuma.jp/victory-road/topics/240924/": {
+      "etag": "",
+      "hash": "eadfb2a934846b80f84f1b869360f7a00b7a6eba664f11095e1ad502f003ebff",
+      "last_checked": "2026-09-06T15:23:13+00:00",
+      "last_modified": "",
+      "title": "ãããã¯ã¹ | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
+    },
+    "https://www.inazuma.jp/victory-road/topics/251113_02/": {
+      "etag": "",
+      "hash": "4518b94e6a1b3c29dbf1d37894e9bda567be89cb2d56a4a335a4d1b12286e480",
+      "last_checked": "2026-09-06T15:23:19+00:00",
       "last_modified": "",
       "title": "ãããã¯ã¹ | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
     },
@@ -631,24 +1002,31 @@
       "last_modified": "",
       "title": "ãããã¯ã¹ | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
     },
+    "https://www.inazuma.jp/victory-road/topics/251121/": {
+      "etag": "",
+      "hash": "0e6b355045ea020ef57cd21bb1c3755505e3d293f9b711abee1bb90124ef2fb9",
+      "last_checked": "2026-09-06T15:23:08+00:00",
+      "last_modified": "",
+      "title": "ãããã¯ã¹ | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
+    },
     "https://www.inazuma.jp/victory-road/topics/251212_01/": {
       "etag": "",
       "hash": "b3e9e4349adb73706471255bd06f7782b15ab392085f015032fd10738d851565",
-      "last_checked": "2026-09-06T15:16:56+00:00",
+      "last_checked": "2026-09-06T15:23:20+00:00",
       "last_modified": "",
       "title": "ãããã¯ã¹ | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
     },
     "https://www.inazuma.jp/victory-road/topics/251212_02/": {
       "etag": "",
       "hash": "e1bd2331b9a92d55547592d2ccfe8245350162559457efa15aca7306a7c9ad69",
-      "last_checked": "2026-09-06T15:16:49+00:00",
+      "last_checked": "2026-09-06T15:23:12+00:00",
       "last_modified": "",
       "title": "ãããã¯ã¹ | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
     },
     "https://www.inazuma.jp/victory-road/topics/251223/": {
       "etag": "",
       "hash": "338f1f876f86063dbadc81c6529deb41dcc599f9cb72149425c30a60c7dd573d",
-      "last_checked": "2026-09-06T15:16:24+00:00",
+      "last_checked": "2026-09-06T15:22:59+00:00",
       "last_modified": "",
       "title": "ãããã¯ã¹ | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
     },
@@ -659,6 +1037,13 @@
       "last_modified": "",
       "title": "ãããã¯ã¹ | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
     },
+    "https://www.inazuma.jp/victory-road/topics/260128/": {
+      "etag": "",
+      "hash": "cd0156109241dda3bd3d97fa551f00b57e96607faee4b97686c3ae3c71b56b59",
+      "last_checked": "2026-09-06T15:22:50+00:00",
+      "last_modified": "",
+      "title": "ãããã¯ã¹ | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
+    },
     "https://www.inazuma.jp/victory-road/topics/260331_01/": {
       "etag": "",
       "hash": "274514a0ae46318844603570d5374073313b2a83e724594ea2967a14378e1001",
@@ -666,10 +1051,31 @@
       "last_modified": "",
       "title": "ãããã¯ã¹ | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
     },
+    "https://www.inazuma.jp/victory-road/topics/260427/": {
+      "etag": "",
+      "hash": "7d2d124e71c601219df256ea8bd29e5ded54a916b0d38cab9f21e886b1d02e53",
+      "last_checked": "2026-09-06T15:22:51+00:00",
+      "last_modified": "",
+      "title": "ãããã¯ã¹ | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
+    },
     "https://www.inazuma.jp/victory-road/topics/260611/": {
       "etag": "",
       "hash": "82ece56adcf26e24577903bbd8ec07c2922f7bb66bb7d5c155a705ca615d95a4",
-      "last_checked": "2026-09-06T15:16:49+00:00",
+      "last_checked": "2026-09-06T15:22:54+00:00",
+      "last_modified": "",
+      "title": "ãããã¯ã¹ | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
+    },
+    "https://www.inazuma.jp/victory-road/topics/260703_01/": {
+      "etag": "",
+      "hash": "86da0877a3b63e007174f016ac614ad05a469e1ccbbcb6efba6c6011ac0006c6",
+      "last_checked": "2026-09-06T15:23:14+00:00",
+      "last_modified": "",
+      "title": "ãããã¯ã¹ | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
+    },
+    "https://www.inazuma.jp/victory-road/topics/260706/": {
+      "etag": "",
+      "hash": "9e4d98ff8ffd5f22841b92b215cf343bbb860cb841e5a8f236fccbebd269d8ba",
+      "last_checked": "2026-09-06T15:22:51+00:00",
       "last_modified": "",
       "title": "ãããã¯ã¹ | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
     },
@@ -687,129 +1093,136 @@
       "last_modified": "",
       "title": "ãããã¯ã¹ | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
     },
+    "https://www.inazuma.jp/victory-road/tournament_guideline/": {
+      "etag": "",
+      "hash": "526cd0fd9de83300e653b459cd4ce549b621e5be77f2319ebd47e45e9b7cd552",
+      "last_checked": "2026-09-06T15:23:07+00:00",
+      "last_modified": "",
+      "title": "ã¦ã¼ã¶ã¼ä¸»å¬å¤§ä¼ã«é¢ããã¬ã¤ãã©ã¤ã³ | ã¤ããºãã¤ã¬ãã³ è±éãã¡ã®ã´ã£ã¯ããªã¼ã­ã¼ã"
+    },
     "https://www.layton.jp/": {
       "etag": "",
       "hash": "6c0a15d0fb2bf70da064c7ec47676934b12bf4d09692c7be2cbed452c41618b7",
-      "last_checked": "2026-09-06T15:15:44+00:00",
+      "last_checked": "2026-09-06T15:22:13+00:00",
       "last_modified": "",
       "title": "ã¬ã¤ãã³ ã·ãªã¼ãº"
     },
     "https://www.layton.jp/15th-anniversary/": {
       "etag": "",
       "hash": "c6f3acf3a2f331018ab3bf07c2bc463bd2ad8e88750e0045149a86f580584083",
-      "last_checked": "2026-09-06T15:16:10+00:00",
+      "last_checked": "2026-09-06T15:22:32+00:00",
       "last_modified": "",
       "title": "ãã¬ã¤ãã³ãã·ãªã¼ãº15å¨å¹´è¨å¿µ ã¤ã©ã¹ãã³ã³ãã¹ãä¸çå¤§ä¼"
     },
     "https://www.layton.jp/akuma-app/": {
       "etag": "",
       "hash": "65495a4127f33627ea047937ae1f4dd80f49d3d85a7ca6bf83f714431d0ea1d9",
-      "last_checked": "2026-09-06T15:15:47+00:00",
+      "last_checked": "2026-09-06T15:22:20+00:00",
       "last_modified": "",
       "title": "ã¬ã¤ãã³ææã¨æªé­ã®ç®± EXHD for ã¹ãã¼ããã©ã³"
     },
     "https://www.layton.jp/akuma/index.html": {
       "etag": "",
       "hash": "a4469815f82c19a1ee37fdb8170ca1702c96c4e0e7666b5c6cec388bc5bc883b",
-      "last_checked": "2026-09-06T15:16:01+00:00",
+      "last_checked": "2026-09-06T15:22:24+00:00",
       "last_modified": "",
       "title": "ä»»å¤©å  DS ã½ãã | ã¬ã¤ãã³ææã¨æªé­ã®ç®±"
     },
     "https://www.layton.jp/choubunmei/": {
       "etag": "",
       "hash": "f8b87866b41d4a918a52d98805cc70fd110bd9d7c2bebbc7873b2237969af484",
-      "last_checked": "2026-09-06T15:16:09+00:00",
+      "last_checked": "2026-09-06T15:22:37+00:00",
       "last_modified": "",
       "title": "ã¬ã¤ãã³ææã¨è¶ ææAã®éºç£"
     },
     "https://www.layton.jp/choubunmei/index.html": {
       "etag": "",
       "hash": "f8b87866b41d4a918a52d98805cc70fd110bd9d7c2bebbc7873b2237969af484",
-      "last_checked": "2026-09-06T15:16:03+00:00",
+      "last_checked": "2026-09-06T15:22:19+00:00",
       "last_modified": "",
       "title": "ã¬ã¤ãã³ææã¨è¶ ææAã®éºç£"
     },
     "https://www.layton.jp/fushigi-app/": {
       "etag": "",
       "hash": "4f02cea27e242b7cb2b4899f43349ac04e0c2935ba833e22bfe30e4b747f15ba",
-      "last_checked": "2026-09-06T15:15:46+00:00",
+      "last_checked": "2026-09-06T15:22:14+00:00",
       "last_modified": "",
       "title": "ã¬ã¤ãã³ææã¨ä¸æè­°ãªçº EXHD for ã¹ãã¼ããã©ã³"
     },
     "https://www.layton.jp/fushigi/index.html": {
       "etag": "",
       "hash": "e512222ffd56fec4d8b0a39574248b1dff4d87c186072ec5fd49be980d0b192d",
-      "last_checked": "2026-09-06T15:15:49+00:00",
+      "last_checked": "2026-09-06T15:22:28+00:00",
       "last_modified": "",
       "title": "ä»»å¤©å  DS ã½ãã | ã¬ã¤ãã³ææã¨ä¸æè­°ãªçº"
     },
     "https://www.layton.jp/fushigi/tago/": {
       "etag": "",
       "hash": "06b5fc021537aed38cc2a70b5c04962f913aef4e8256180e3216b107374e8737",
-      "last_checked": "2026-09-06T15:16:10+00:00",
+      "last_checked": "2026-09-06T15:22:38+00:00",
       "last_modified": "",
       "title": "ä»»å¤©å  DS ã½ãã | ã¬ã¤ãã³ææã¨ä¸æè­°ãªçº"
     },
     "https://www.layton.jp/guideline/": {
       "etag": "",
       "hash": "a4ffdbebcb33d11ae076eeb253c24529174c7c62d30f33d331536126b4355f81",
-      "last_checked": "2026-09-06T15:15:55+00:00",
+      "last_checked": "2026-09-06T15:22:33+00:00",
       "last_modified": "",
       "title": "ãã¬ã¤ãã³ãã·ãªã¼ãº åç»ã»éæ­¢ç»æç¨¿ã«é¢ããã¬ã¤ãã©ã¤ã³"
     },
     "https://www.layton.jp/jikan-app/": {
       "etag": "",
       "hash": "49c4a5ee7683ba4441f41fa8a0db5309643f7f53be5895cf95a93ab964ee70c8",
-      "last_checked": "2026-09-06T15:15:46+00:00",
+      "last_checked": "2026-09-06T15:22:36+00:00",
       "last_modified": "",
       "title": "ã¬ã¤ãã³ææã¨æå¾ã®æéæ è¡ EXHD for ã¹ãã¼ããã©ã³"
     },
     "https://www.layton.jp/jikan-app/contest/": {
       "etag": "",
       "hash": "21b724a39f85152c4b997e5e80ad67e90c830de2b9dbe6f92eb3e01e9190813d",
-      "last_checked": "2026-09-06T15:16:03+00:00",
+      "last_checked": "2026-09-06T15:22:25+00:00",
       "last_modified": "",
       "title": "ã¤ã©ã¹ãã³ã³ãã¹ãä¸çå¤§ä¼ çµæçºè¡¨ | ã¬ã¤ãã³ææã¨æå¾ã®æéæ è¡ EXHD for ã¹ãã¼ããã©ã³"
     },
     "https://www.layton.jp/jikan/index.html": {
       "etag": "",
       "hash": "831afa121052560c4793bfd8a68922aa84e05c43dc7fde32067bf05b69a3e48c",
-      "last_checked": "2026-09-06T15:16:01+00:00",
+      "last_checked": "2026-09-06T15:22:27+00:00",
       "last_modified": "",
       "title": "ä»»å¤©å  DS ã½ãã | ã¬ã¤ãã³ææã¨æå¾ã®æéæ è¡"
     },
     "https://www.layton.jp/jouki/": {
       "etag": "",
       "hash": "72964fdc35e9fabacbe32674da8d5ae0a3bf02831e0f2b8dee855ac0372c687c",
-      "last_checked": "2026-09-06T15:16:04+00:00",
+      "last_checked": "2026-09-06T15:22:17+00:00",
       "last_modified": "",
       "title": "ã¬ã¤ãã³ææã¨è¸æ°ã®æ°ä¸ç"
     },
     "https://www.layton.jp/jouki/topics/250925/": {
       "etag": "",
       "hash": "424e127a1828d662118cb56f093dbd326fea0fc331d6755035a8d905a765259b",
-      "last_checked": "2026-09-06T15:15:59+00:00",
+      "last_checked": "2026-09-06T15:22:22+00:00",
       "last_modified": "",
       "title": "ãããã¯ã¹ | ã¬ã¤ãã³ææã¨è¸æ°ã®æ°ä¸ç"
     },
     "https://www.layton.jp/kiseki/index.html": {
       "etag": "",
       "hash": "be949016b62bd7a72639498bafa7431c6d7ac28d51c40bc53533fe6d9eb5a6be",
-      "last_checked": "2026-09-06T15:16:04+00:00",
+      "last_checked": "2026-09-06T15:22:27+00:00",
       "last_modified": "",
       "title": "ã¬ã¤ãã³ææã¨å¥è·¡ã®ä»®é¢ãã©ã¹"
     },
     "https://www.layton.jp/majin/index.html": {
       "etag": "",
       "hash": "f81cd630ef91cc5fcdd9448737161b06366e716b9f7b27d1b892ab16f437892e",
-      "last_checked": "2026-09-06T15:15:54+00:00",
+      "last_checked": "2026-09-06T15:22:31+00:00",
       "last_modified": "",
       "title": "ä»»å¤©å  DS ã½ãã | ã¬ã¤ãã³ææã¨é­ç¥ã®ç¬"
     },
     "https://www.layton.jp/mystery-journey-dx/": {
       "etag": "",
       "hash": "8b74270b9309b1045ee94972e89520a91eb08acc86202cfdbfcf2d4dfa34e01a",
-      "last_checked": "2026-09-06T15:15:50+00:00",
+      "last_checked": "2026-09-06T15:22:36+00:00",
       "last_modified": "",
       "title": "ã¬ã¤ãã³ ãã¹ããªã¼ã¸ã£ã¼ãã¼ ã«ããªã¼ã¨ã¤ã«ã¨å¤§å¯è±ªã®é°è¬ DX+"
     },
@@ -837,14 +1250,14 @@
     "https://www.layton.jp/mystery-journey-dx/movie/": {
       "etag": "",
       "hash": "2b080964933d70bef4a3cac56f4ab3fb8c537fd76d02e5022be03c90de026e6e",
-      "last_checked": "2026-09-06T15:15:44+00:00",
+      "last_checked": "2026-09-06T15:22:26+00:00",
       "last_modified": "",
       "title": "ã ã¼ãã¼ | ã¬ã¤ãã³ ãã¹ããªã¼ã¸ã£ã¼ãã¼ ã«ããªã¼ã¨ã¤ã«ã¨å¤§å¯è±ªã®é°è¬ DX+"
     },
     "https://www.layton.jp/mystery-journey-dx/powerup/": {
       "etag": "",
       "hash": "84eaf1c9820f84947955e09b0a7903b1e1283d4551e8452fba3ebf0cf4c42d8b",
-      "last_checked": "2026-09-06T15:15:49+00:00",
+      "last_checked": "2026-09-06T15:22:22+00:00",
       "last_modified": "",
       "title": "ãDXãã«ãªã£ã¦ãã¯ã¼ã¢ããï¼ | ã¬ã¤ãã³ ãã¹ããªã¼ã¸ã£ã¼ãã¼ ã«ããªã¼ã¨ã¤ã«ã¨å¤§å¯è±ªã®é°è¬ DX+"
     },
@@ -865,49 +1278,63 @@
     "https://www.layton.jp/mystery-journey-dx/topics/190322/": {
       "etag": "",
       "hash": "d43fa2716dc55c42735e2bbf83883c5a95af5fd344b318eeb8e9c7fdb859fd2c",
-      "last_checked": "2026-09-06T15:15:52+00:00",
+      "last_checked": "2026-09-06T15:22:31+00:00",
       "last_modified": "",
       "title": "ãããã¯ã¹ | ã¬ã¤ãã³ ãã¹ããªã¼ã¸ã£ã¼ãã¼ ã«ããªã¼ã¨ã¤ã«ã¨å¤§å¯è±ªã®é°è¬ DX+"
     },
     "https://www.layton.jp/mystery-journey-dx/topics/210507/": {
       "etag": "",
       "hash": "c5dd9e62261a8ab9f96f4514fe0e273ce3ac77798fa94284aac7fa8e1cd391e9",
-      "last_checked": "2026-09-06T15:16:05+00:00",
+      "last_checked": "2026-09-06T15:22:34+00:00",
       "last_modified": "",
       "title": "ãããã¯ã¹ | ã¬ã¤ãã³ ãã¹ããªã¼ã¸ã£ã¼ãã¼ ã«ããªã¼ã¨ã¤ã«ã¨å¤§å¯è±ªã®é°è¬ DX+"
     },
     "https://www.layton.jp/mystery-journey-dx/topics/famitsu/": {
       "etag": "",
       "hash": "4bb6ba1afc2b05ca8e4f6dee7547e710a9c84b33fdd63b436d13c8aba0aa099d",
-      "last_checked": "2026-09-06T15:15:54+00:00",
+      "last_checked": "2026-09-06T15:22:15+00:00",
       "last_modified": "",
       "title": "ãããã¯ã¹ | ã¬ã¤ãã³ ãã¹ããªã¼ã¸ã£ã¼ãã¼ ã«ããªã¼ã¨ã¤ã«ã¨å¤§å¯è±ªã®é°è¬ DX+"
     },
     "https://www.layton.jp/mystery-journey/": {
       "etag": "",
       "hash": "324b6a44f46e56345bf4306cf07e9f0b34315d81828717930eed7b0416a17091",
-      "last_checked": "2026-09-06T15:15:51+00:00",
+      "last_checked": "2026-09-06T15:22:20+00:00",
       "last_modified": "",
       "title": "ã¬ã¤ãã³ ãã¹ããªã¼ã¸ã£ã¼ãã¼ ã«ããªã¼ã¨ã¤ã«ã¨å¤§å¯è±ªã®é°è¬"
     },
     "https://www.layton.jp/mystery-journey/campaign/": {
       "etag": "",
       "hash": "92cca3a98dad141553cd20e09d053241acf91bc4319f0bfa5aa2d4c5d96b199c",
-      "last_checked": "2026-09-06T15:15:56+00:00",
+      "last_checked": "2026-09-06T15:22:28+00:00",
       "last_modified": "",
       "title": "ã¹ã¿ã¼ã¿ã¼ããã¯é ä¿¡è¨å¿µ 7æ¥éé£ç¶ã¬ã¤ãã³ãã¾ãã­ã­ã£ã³ãã¼ã³ | ã¬ã¤ãã³ ãã¹ããªã¼ã¸ã£ã¼ãã¼ ã«ããªã¼ã¨ã¤ã«ã¨å¤§å¯è±ªã®é°è¬"
     },
     "https://www.layton.jp/mystery-journey/chara/": {
       "etag": "",
       "hash": "4aaf439acac04581bfb6d6f17b6dbfea2ed2d6b0ba4b44395f18271962830b0c",
-      "last_checked": "2026-09-06T15:15:47+00:00",
+      "last_checked": "2026-09-06T15:22:15+00:00",
+      "last_modified": "",
+      "title": "ã¬ã¤ãã³ ãã¹ããªã¼ã¸ã£ã¼ãã¼ ã«ããªã¼ã¨ã¤ã«ã¨å¤§å¯è±ªã®é°è¬"
+    },
+    "https://www.layton.jp/mystery-journey/enq/": {
+      "etag": "",
+      "hash": "0c4d7f2a9f3bd8fe419c9cc9a1ac4d1dc16fbfb5d12b16eb0d3b69b970e59719",
+      "last_checked": "2026-09-06T15:22:44+00:00",
       "last_modified": "",
       "title": "ã¬ã¤ãã³ ãã¹ããªã¼ã¸ã£ã¼ãã¼ ã«ããªã¼ã¨ã¤ã«ã¨å¤§å¯è±ªã®é°è¬"
     },
     "https://www.layton.jp/mystery-journey/game/": {
       "etag": "",
       "hash": "804f628894ffbab23785935a76f98b795bb9b625f1930276ab663583bbeb57c7",
-      "last_checked": "2026-09-06T15:16:12+00:00",
+      "last_checked": "2026-09-06T15:22:21+00:00",
+      "last_modified": "",
+      "title": "ã¬ã¤ãã³ ãã¹ããªã¼ã¸ã£ã¼ãã¼ ã«ããªã¼ã¨ã¤ã«ã¨å¤§å¯è±ªã®é°è¬"
+    },
+    "https://www.layton.jp/mystery-journey/guide/dl/": {
+      "etag": "",
+      "hash": "765de5ad8483a84879b8cf3775e90786eec1cdcc8beba1adf7d98578ff8c315f",
+      "last_checked": "2026-09-06T15:22:42+00:00",
       "last_modified": "",
       "title": "ã¬ã¤ãã³ ãã¹ããªã¼ã¸ã£ã¼ãã¼ ã«ããªã¼ã¨ã¤ã«ã¨å¤§å¯è±ªã®é°è¬"
     },
@@ -918,164 +1345,171 @@
       "last_modified": "",
       "title": "ã¬ã¤ãã³ ãã¹ããªã¼ã¸ã£ã¼ãã¼ ã«ããªã¼ã¨ã¤ã«ã¨å¤§å¯è±ªã®é°è¬"
     },
+    "https://www.layton.jp/mystery-journey/law/": {
+      "etag": "",
+      "hash": "578587d1accd81041c2425e21a15416a2cf9a0728a63b24f94bdfe9d852e5511",
+      "last_checked": "2026-09-06T15:22:40+00:00",
+      "last_modified": "",
+      "title": "ç¹å®ååå¼æ³ã«åºã¥ãè¡¨ç¤º"
+    },
     "https://www.layton.jp/mystery-journey/laytonworld/": {
       "etag": "",
       "hash": "55501bf53d9ed3486280a60e50d538913c11640756e416119d26f0c4bd83e93c",
-      "last_checked": "2026-09-06T15:15:55+00:00",
+      "last_checked": "2026-09-06T15:22:37+00:00",
       "last_modified": "",
       "title": "ãªã¢ã«ãã¾ãã­ä¼ç» ãã¬ã¤ãã³ ãã¹ããªã¼ã¸ã£ã¼ãã¼ ä¸çãã¾ãã­å¤§åéºãã¬ãã¼ã"
     },
     "https://www.layton.jp/mystery-journey/movie/": {
       "etag": "",
       "hash": "49c2432a56c60e0338148d1998dcb0b9b182309c3f4411261de3d92469dd8302",
-      "last_checked": "2026-09-06T15:16:00+00:00",
+      "last_checked": "2026-09-06T15:22:30+00:00",
       "last_modified": "",
       "title": "ã¬ã¤ãã³ ãã¹ããªã¼ã¸ã£ã¼ãã¼ ã«ããªã¼ã¨ã¤ã«ã¨å¤§å¯è±ªã®é°è¬"
     },
     "https://www.layton.jp/mystery-journey/story/": {
       "etag": "",
       "hash": "33eec4a75c995b3ae7e3518bd5428a3d847d95ecd908c9de29bc02bdde61fe87",
-      "last_checked": "2026-09-06T15:16:07+00:00",
+      "last_checked": "2026-09-06T15:22:24+00:00",
       "last_modified": "",
       "title": "ã¬ã¤ãã³ ãã¹ããªã¼ã¸ã£ã¼ãã¼ ã«ããªã¼ã¨ã¤ã«ã¨å¤§å¯è±ªã®é°è¬"
     },
     "https://www.layton.jp/mystery-journey/topics/170720.html": {
       "etag": "",
       "hash": "cf8221b968bb98c6c2a059190bc74b0f4fb82f576edecf5886913751c19c6f48",
-      "last_checked": "2026-09-06T15:15:58+00:00",
+      "last_checked": "2026-09-06T15:22:30+00:00",
       "last_modified": "",
       "title": "ã¬ã¤ãã³ ãã¹ããªã¼ã¸ã£ã¼ãã¼ ã«ããªã¼ã¨ã¤ã«ã¨å¤§å¯è±ªã®é°è¬"
     },
     "https://www.layton.jp/mystery-journey/topics/180123.html": {
       "etag": "",
       "hash": "c7e9d4752844dc4acb8fb676ce43336825e9a1e5f3574c9387a392d40dacb9fe",
-      "last_checked": "2026-09-06T15:15:51+00:00",
+      "last_checked": "2026-09-06T15:22:23+00:00",
       "last_modified": "",
       "title": "ã¬ã¤ãã³ ãã¹ããªã¼ã¸ã£ã¼ãã¼ ã«ããªã¼ã¨ã¤ã«ã¨å¤§å¯è±ªã®é°è¬"
     },
     "https://www.layton.jp/mystery-journey/topics/180910.html": {
       "etag": "",
       "hash": "5a20a35c6cd50b343325f241f63e1898dda9c1b8158cf4907bac67ce7ecc5cda",
-      "last_checked": "2026-09-06T15:15:57+00:00",
+      "last_checked": "2026-09-06T15:22:17+00:00",
       "last_modified": "",
       "title": "ã¬ã¤ãã³ ãã¹ããªã¼ã¸ã£ã¼ãã¼ ã«ããªã¼ã¨ã¤ã«ã¨å¤§å¯è±ªã®é°è¬"
     },
     "https://www.layton.jp/mystery-journey/topics/210903.html": {
       "etag": "",
       "hash": "79a73d2df6fa024f721dd127e94cb88ff5d4d6a72ba1acdcc92925ad21bf15c1",
-      "last_checked": "2026-09-06T15:16:06+00:00",
+      "last_checked": "2026-09-06T15:22:35+00:00",
       "last_modified": "",
       "title": "ã¬ã¤ãã³ ãã¹ããªã¼ã¸ã£ã¼ãã¼ ã«ããªã¼ã¨ã¤ã«ã¨å¤§å¯è±ªã®é°è¬"
     },
     "https://www.layton.jp/mystery-journey/topics/240712.html": {
       "etag": "",
       "hash": "33ffab46c3fd9d9a678bd5c1a96f84755b92c23496f734e2566dbf4d77ede3ce",
-      "last_checked": "2026-09-06T15:16:00+00:00",
+      "last_checked": "2026-09-06T15:22:14+00:00",
       "last_modified": "",
       "title": "ã¬ã¤ãã³ ãã¹ããªã¼ã¸ã£ã¼ãã¼ ã«ããªã¼ã¨ã¤ã«ã¨å¤§å¯è±ªã®é°è¬"
     },
     "https://www.layton.jp/mystery-journey/topics/deluxe.html": {
       "etag": "",
       "hash": "5fc5e166c5e369d5cfbfb1c6398011cc8e4de9c58843251794613ad34a45ec51",
-      "last_checked": "2026-09-06T15:15:52+00:00",
+      "last_checked": "2026-09-06T15:22:35+00:00",
       "last_modified": "",
       "title": "ã¬ã¤ãã³ ãã¹ããªã¼ã¸ã£ã¼ãã¼ ã«ããªã¼ã¨ã¤ã«ã¨å¤§å¯è±ªã®é°è¬"
     },
     "https://www.layton.jp/mystery-journey/topics/report.html": {
       "etag": "",
       "hash": "569faba45348b6a0961a7bebab1b5a42157e61ea63d84ca1ee78cfef9545cdb2",
-      "last_checked": "2026-09-06T15:16:09+00:00",
+      "last_checked": "2026-09-06T15:22:39+00:00",
       "last_modified": "",
       "title": "ã¬ã¤ãã³ ãã¹ããªã¼ã¸ã£ã¼ãã¼ ã«ããªã¼ã¨ã¤ã«ã¨å¤§å¯è±ªã®é°è¬"
     },
     "https://www.layton.jp/mysteryroom/": {
       "etag": "",
       "hash": "8d4b7d4045ae3af690b7f63edeb7371f223fb8a95e70d4765e8fb73a7eb276a3",
-      "last_checked": "2026-09-06T15:16:02+00:00",
+      "last_checked": "2026-09-06T15:22:26+00:00",
       "last_modified": "",
       "title": "ã¬ã¤ãã³ãã©ã¶ã¼ãºã»ãã¹ããªã¼ã«ã¼ã"
     },
     "https://www.layton.jp/topics/": {
       "etag": "",
       "hash": "ef47d567be2c1a1b5d26559087e43f5f798f5173cbddb1221754da4f61e4a9a8",
-      "last_checked": "2026-09-06T15:15:45+00:00",
+      "last_checked": "2026-09-06T15:22:19+00:00",
       "last_modified": "",
       "title": "ã¬ã¤ãã³ ã·ãªã¼ãº"
     },
     "https://www.layton.jp/topics/190305/": {
       "etag": "",
       "hash": "a3b29cf7a822f3d3eb2c4c16388ece634fa6a07ee19bf72d48354e28e57dd729",
-      "last_checked": "2026-09-06T15:15:58+00:00",
+      "last_checked": "2026-09-06T15:22:32+00:00",
       "last_modified": "",
       "title": "ã¬ã¤ãã³ ã·ãªã¼ãº"
     },
     "https://www.layton.jp/topics/220215/": {
       "etag": "",
       "hash": "5db82852a577f0eba1b9afe32f0307146c7c123551bc2da693a97b2b9dec2249",
-      "last_checked": "2026-09-06T15:16:08+00:00",
+      "last_checked": "2026-09-06T15:22:29+00:00",
       "last_modified": "",
       "title": "ã¬ã¤ãã³ ã·ãªã¼ãº"
     },
     "https://www.level5.co.jp/": {
       "etag": "",
       "hash": "6600d3344dc11907fc360bce19b13e39eda00f94f7e1da8c011bab29c6ed34e7",
-      "last_checked": "2026-09-06T15:15:05+00:00",
+      "last_checked": "2026-09-06T15:21:32+00:00",
       "last_modified": "",
       "title": "æ ªå¼ä¼ç¤¾ã¬ãã«ãã¡ã¤ã"
     },
     "https://www.level5.co.jp/about/customer_harassment_policy.html": {
       "etag": "",
       "hash": "301861ceea5bf8da638c1f8a55cb2f568046ed6add045c5cbee38078a22b5dd2",
-      "last_checked": "2026-09-06T15:15:27+00:00",
+      "last_checked": "2026-09-06T15:21:40+00:00",
       "last_modified": "",
       "title": "ã«ã¹ã¿ãã¼ãã©ã¹ã¡ã³ãããªã·ã¼ï½æ ªå¼ä¼ç¤¾ã¬ãã«ãã¡ã¤ã"
     },
     "https://www.level5.co.jp/about/policy.html": {
       "etag": "",
       "hash": "4f54eac2753717dbfb48c9dad68e40f7f9d873b144f480cb9393f24cad3cef12",
-      "last_checked": "2026-09-06T15:15:23+00:00",
+      "last_checked": "2026-09-06T15:21:45+00:00",
       "last_modified": "",
       "title": "ãµã¤ãããªã·ã¼ï½æ ªå¼ä¼ç¤¾ã¬ãã«ãã¡ã¤ã"
     },
     "https://www.level5.co.jp/about/privacy.html": {
       "etag": "",
       "hash": "be96871b2cd2d1aa4604189a23b7d720323fe6cfcbfe4a91cfb2e5ab6544c9ca",
-      "last_checked": "2026-09-06T15:15:17+00:00",
+      "last_checked": "2026-09-06T15:21:44+00:00",
       "last_modified": "",
       "title": "ãã©ã¤ãã·ã¼ããªã·ã¼ï½æ ªå¼ä¼ç¤¾ã¬ãã«ãã¡ã¤ã"
     },
     "https://www.level5.co.jp/about/sitemap.html": {
       "etag": "",
       "hash": "3a0ff78e10d37b34e83b666a8a29109dee7e48d403448f28a800e7505f011712",
-      "last_checked": "2026-09-06T15:15:30+00:00",
+      "last_checked": "2026-09-06T15:21:54+00:00",
       "last_modified": "",
       "title": "ãµã¤ããããï½æ ªå¼ä¼ç¤¾ã¬ãã«ãã¡ã¤ã"
     },
     "https://www.level5.co.jp/blog/": {
       "etag": "",
       "hash": "7d28035608d385fd6d08c7522b3a4182386d9079c1df4750b6937135aa2b1b6c",
-      "last_checked": "2026-09-06T15:15:07+00:00",
+      "last_checked": "2026-09-06T15:21:37+00:00",
       "last_modified": "",
       "title": "5ã¤æå·¥æ¿æ¥è¨"
     },
     "https://www.level5.co.jp/ccc/": {
       "etag": "",
       "hash": "c19e8e76fcc3f180c0f60b6b9d336a5e4799a4feef6ce32e22dffcf2530e761f",
-      "last_checked": "2026-09-06T15:15:09+00:00",
+      "last_checked": "2026-09-06T15:21:37+00:00",
       "last_modified": "",
       "title": "ã¬ãã«ãã¡ã¤ã ã¯ãªã¨ã¤ãã£ãã»ã³ãã¥ããã£ã»ã¯ã©ã"
     },
     "https://www.level5.co.jp/company/": {
       "etag": "",
       "hash": "d67b508e17bbe4714194ea4b3d03ca2c95d5853dd62e8d6afdb42800108de3a1",
-      "last_checked": "2026-09-06T15:15:23+00:00",
+      "last_checked": "2026-09-06T15:21:45+00:00",
       "last_modified": "",
       "title": "ä¼ç¤¾æ å ±ï½æ ªå¼ä¼ç¤¾ã¬ãã«ãã¡ã¤ã"
     },
     "https://www.level5.co.jp/index.php": {
       "etag": "",
       "hash": "a7f7fff72f0bac194271c362da31bb02ae8b0795d88642d22b89b0bd9704f6fa",
-      "last_checked": "2026-09-06T15:15:05+00:00",
+      "last_checked": "2026-09-06T15:21:36+00:00",
       "last_modified": "",
       "title": "æ ªå¼ä¼ç¤¾ã¬ãã«ãã¡ã¤ã"
     },
@@ -1103,7 +1537,7 @@
     "https://www.level5.co.jp/new-office/": {
       "etag": "",
       "hash": "8851a793b01299223608c49dd1a59789bac5cf5466dc87cae3cb7594f6590081",
-      "last_checked": "2026-09-06T15:15:08+00:00",
+      "last_checked": "2026-09-06T15:21:35+00:00",
       "last_modified": "",
       "title": "ã¬ãã«ãã¡ã¤ã æ°ãªãã£ã¹ç´¹ä»"
     },
@@ -1124,7 +1558,7 @@
     "https://www.level5.co.jp/news/20260812_03/": {
       "etag": "",
       "hash": "025ff49ec6b15861950039f4f3892296e4d7cd9a36aab4c3d0efc6813c85e503",
-      "last_checked": "2026-09-06T15:15:06+00:00",
+      "last_checked": "2026-09-06T15:21:33+00:00",
       "last_modified": "",
       "title": "ãç¥ããï½æ ªå¼ä¼ç¤¾ã¬ãã«ãã¡ã¤ã"
     },
@@ -1159,7 +1593,7 @@
     "https://www.level5.co.jp/products/": {
       "etag": "",
       "hash": "bdd24150151c0a982f2bf1b4105b448211e92253edcb24bf19032a49f93bb777",
-      "last_checked": "2026-09-06T15:15:22+00:00",
+      "last_checked": "2026-09-06T15:21:43+00:00",
       "last_modified": "",
       "title": "è£½åæ å ±ä¸è¦§ï½æ ªå¼ä¼ç¤¾ã¬ãã«ãã¡ã¤ã"
     },
@@ -1278,21 +1712,21 @@
     "https://www.level5.co.jp/recruit/": {
       "etag": "",
       "hash": "758cbd8fc597858c05ea36b72218b8fb193dd911d9b7ecbcf93953fcd1eaf1b6",
-      "last_checked": "2026-09-06T15:15:07+00:00",
+      "last_checked": "2026-09-06T15:21:35+00:00",
       "last_modified": "",
       "title": "æ¡ç¨æ å ±ï½æ ªå¼ä¼ç¤¾ã¬ãã«ãã¡ã¤ã"
     },
     "https://www.level5.co.jp/recruit/career/": {
       "etag": "",
       "hash": "af9a178651ce61f2e73e35b7766f3991e1c3df4eaf0775edd8c8491d312563c3",
-      "last_checked": "2026-09-06T15:15:32+00:00",
+      "last_checked": "2026-09-06T15:21:57+00:00",
       "last_modified": "",
       "title": "ä¸­éæ¡ç¨æ å ±ï½æ°åæ¡ç¨æ å ±ï½æ¡ç¨æ å ±ï½æ ªå¼ä¼ç¤¾ã¬ãã«ãã¡ã¤ã"
     },
     "https://www.level5.co.jp/recruit/career/comic_editor.html": {
       "etag": "",
       "hash": "ad5b2639d70aaedb44547c162ac839f2186780fa99feabcb85ef7016b0f60e50",
-      "last_checked": "2026-09-06T15:15:41+00:00",
+      "last_checked": "2026-09-06T15:22:06+00:00",
       "last_modified": "",
       "title": "ä¸­éæ¡ç¨æ å ±ï½æ¡ç¨æ å ±ï½æ ªå¼ä¼ç¤¾ã¬ãã«ãã¡ã¤ã"
     },
@@ -1303,24 +1737,80 @@
       "last_modified": "",
       "title": "ä¸­éæ¡ç¨æ å ±ï½æ¡ç¨æ å ±ï½æ ªå¼ä¼ç¤¾ã¬ãã«ãã¡ã¤ã"
     },
+    "https://www.level5.co.jp/recruit/career/development.html": {
+      "etag": "",
+      "hash": "1f95c75525b09b6165e467653d39c40fa2cedd197c1f00d36df2d605d8778d4e",
+      "last_checked": "2026-09-06T15:22:08+00:00",
+      "last_modified": "",
+      "title": "ä¸­éæ¡ç¨æ å ±ï½æ¡ç¨æ å ±ï½æ ªå¼ä¼ç¤¾ã¬ãã«ãã¡ã¤ã"
+    },
+    "https://www.level5.co.jp/recruit/career/development02.html": {
+      "etag": "",
+      "hash": "0918645cd9095d62f22a984125cc3d472ae48ae202d3560591a771a4e886151d",
+      "last_checked": "2026-09-06T15:22:07+00:00",
+      "last_modified": "",
+      "title": "ä¸­éæ¡ç¨æ å ±ï½æ¡ç¨æ å ±ï½æ ªå¼ä¼ç¤¾ã¬ãã«ãã¡ã¤ã"
+    },
+    "https://www.level5.co.jp/recruit/career/dtp_staff.html": {
+      "etag": "",
+      "hash": "71980075b8f666b6359d63cd3220b2057467e0cdd6f3274ad00a65549d401f61",
+      "last_checked": "2026-09-06T15:22:09+00:00",
+      "last_modified": "",
+      "title": "ä¸­éæ¡ç¨æ å ±ï½æ¡ç¨æ å ±ï½æ ªå¼ä¼ç¤¾ã¬ãã«ãã¡ã¤ã"
+    },
     "https://www.level5.co.jp/recruit/career/game-translator.html": {
       "etag": "",
       "hash": "55e176f3a70a753fcb728ee5fe5f0f0021f5464108191a23a90999b065d7e447",
-      "last_checked": "2026-09-06T15:15:39+00:00",
+      "last_checked": "2026-09-06T15:22:09+00:00",
+      "last_modified": "",
+      "title": "ä¸­éæ¡ç¨æ å ±ï½æ¡ç¨æ å ±ï½æ ªå¼ä¼ç¤¾ã¬ãã«ãã¡ã¤ã"
+    },
+    "https://www.level5.co.jp/recruit/career/hr_staff.html": {
+      "etag": "",
+      "hash": "a1bea2d7c8cc979ccfdc50af93cbd5826a1ec540d7f72356bade3b9ac254aa7a",
+      "last_checked": "2026-09-06T15:22:05+00:00",
+      "last_modified": "",
+      "title": "ä¸­éæ¡ç¨æ å ±ï½æ¡ç¨æ å ±ï½æ ªå¼ä¼ç¤¾ã¬ãã«ãã¡ã¤ã"
+    },
+    "https://www.level5.co.jp/recruit/career/localization-coordinator.html": {
+      "etag": "",
+      "hash": "ae50fc555475614c615937c6c783b9f46fccfd7ceb59308b17ca02cd443b424a",
+      "last_checked": "2026-09-06T15:22:10+00:00",
+      "last_modified": "",
+      "title": "ä¸­éæ¡ç¨æ å ±ï½æ¡ç¨æ å ±ï½æ ªå¼ä¼ç¤¾ã¬ãã«ãã¡ã¤ã"
+    },
+    "https://www.level5.co.jp/recruit/career/ma_staff.html": {
+      "etag": "",
+      "hash": "cabc5ca711f877d833fbbf17b2646e1070b4fefcb6335d388b6d5fb13bf51307",
+      "last_checked": "2026-09-06T15:22:11+00:00",
       "last_modified": "",
       "title": "ä¸­éæ¡ç¨æ å ±ï½æ¡ç¨æ å ±ï½æ ªå¼ä¼ç¤¾ã¬ãã«ãã¡ã¤ã"
     },
     "https://www.level5.co.jp/recruit/career/publisher_business_support.html": {
       "etag": "",
       "hash": "5252f2d9df1f2675d05e2137f14b2ac5543a5cc80920ee96e529efaa77944d44",
-      "last_checked": "2026-09-06T15:15:38+00:00",
+      "last_checked": "2026-09-06T15:22:06+00:00",
       "last_modified": "",
       "title": "ä¸­éæ¡ç¨æ å ±ï½æ¡ç¨æ å ±ï½æ ªå¼ä¼ç¤¾ã¬ãã«ãã¡ã¤ã"
     },
     "https://www.level5.co.jp/recruit/career/qa.html": {
       "etag": "",
       "hash": "a598b5d21e02105467cfe28e525a2160984da95488c7c56b74bc3e251c0b3657",
-      "last_checked": "2026-09-06T15:15:39+00:00",
+      "last_checked": "2026-09-06T15:22:05+00:00",
+      "last_modified": "",
+      "title": "ä¸­éæ¡ç¨æ å ±ï½æ¡ç¨æ å ±ï½æ ªå¼ä¼ç¤¾ã¬ãã«ãã¡ã¤ã"
+    },
+    "https://www.level5.co.jp/recruit/career/secretary.html": {
+      "etag": "",
+      "hash": "ed778880f649d34fe1506dc265f9eb1e654e4ebd8daeedcca4db52e06f700eea",
+      "last_checked": "2026-09-06T15:22:11+00:00",
+      "last_modified": "",
+      "title": "ä¸­éæ¡ç¨æ å ±ï½æ¡ç¨æ å ±ï½æ ªå¼ä¼ç¤¾ã¬ãã«ãã¡ã¤ã"
+    },
+    "https://www.level5.co.jp/recruit/career/test_player.html": {
+      "etag": "",
+      "hash": "70e4737e7e4603a738262721a4ae8f968b5b5b1fdfe822a35ce72dc78263462f",
+      "last_checked": "2026-09-06T15:22:08+00:00",
       "last_modified": "",
       "title": "ä¸­éæ¡ç¨æ å ±ï½æ¡ç¨æ å ±ï½æ ªå¼ä¼ç¤¾ã¬ãã«ãã¡ã¤ã"
     },
@@ -1331,31 +1821,122 @@
       "last_modified": "",
       "title": "ä¸­éæ¡ç¨æ å ±ï½æ¡ç¨æ å ±ï½æ ªå¼ä¼ç¤¾ã¬ãã«ãã¡ã¤ã"
     },
+    "https://www.level5.co.jp/recruit/challenged/": {
+      "etag": "",
+      "hash": "08d06b8f94976db329ebf30e44891b51e9453141dc6c1975b1b014dbbc7c1a4e",
+      "last_checked": "2026-09-06T15:21:48+00:00",
+      "last_modified": "",
+      "title": "éããè æ¡ç¨æ å ±ï½æ°åæ¡ç¨æ å ±ï½æ¡ç¨æ å ±ï½æ ªå¼ä¼ç¤¾ã¬ãã«ãã¡ã¤ã"
+    },
+    "https://www.level5.co.jp/recruit/interview/": {
+      "etag": "",
+      "hash": "48d042ef1b42811069939b41097642983006f517453fe8eb54d0ef6ae084c4c1",
+      "last_checked": "2026-09-06T15:21:55+00:00",
+      "last_modified": "",
+      "title": "ã¹ã¿ããã¤ã³ã¿ãã¥ã¼ï½æ¡ç¨æ å ±ï½æ ªå¼ä¼ç¤¾ã¬ãã«ãã¡ã¤ã"
+    },
+    "https://www.level5.co.jp/recruit/navigator/": {
+      "etag": "",
+      "hash": "87cf3a1e066da30a0256ba4c565dd98a7702c4fafcb6e3a2a0546704410d3596",
+      "last_checked": "2026-09-06T15:21:48+00:00",
+      "last_modified": "",
+      "title": "ã«ã³ããã¼ããã²ã¼ã¿ã¼ï½æ¡ç¨æ å ±ï½æ ªå¼ä¼ç¤¾ã¬ãã«ãã¡ã¤ã"
+    },
     "https://www.level5.co.jp/recruit/newgraduates/": {
       "etag": "",
       "hash": "a4f910bb42a8ff5657426707636246d5d1e6babfdd3129c7457b81888d14819d",
-      "last_checked": "2026-09-06T15:15:10+00:00",
+      "last_checked": "2026-09-06T15:21:33+00:00",
       "last_modified": "",
       "title": "æ°åæ¡ç¨æ å ±ï½æ¡ç¨æ å ±ï½æ ªå¼ä¼ç¤¾ã¬ãã«ãã¡ã¤ã"
+    },
+    "https://www.level5.co.jp/recruit/newgraduates/2027/designer.html": {
+      "etag": "",
+      "hash": "67582f54efabbe4f48b748b6df1244f5a0f712ff5ca79be5ce39c157a2e196cc",
+      "last_checked": "2026-09-06T15:21:56+00:00",
+      "last_modified": "",
+      "title": "ãã¶ã¤ãã¼ï½æ°åæ¡ç¨æ å ±ï½æ¡ç¨æ å ±ï½æ ªå¼ä¼ç¤¾ã¬ãã«ãã¡ã¤ã"
+    },
+    "https://www.level5.co.jp/recruit/newgraduates/2027/management.html": {
+      "etag": "",
+      "hash": "1ef50929d7a4723945dbed06f34dd39d7c15ceb2693f540691e4427f94605199",
+      "last_checked": "2026-09-06T15:21:58+00:00",
+      "last_modified": "",
+      "title": "ç·åè·ï¼ç®¡çï¼ï½æ°åæ¡ç¨æ å ±ï½æ¡ç¨æ å ±ï½æ ªå¼ä¼ç¤¾ã¬ãã«ãã¡ã¤ã"
+    },
+    "https://www.level5.co.jp/recruit/newgraduates/2027/plan.html": {
+      "etag": "",
+      "hash": "74e0618e66f26b0b61b64ccbab110e42d5fed2a5b3e46afd718550ef0e2710e2",
+      "last_checked": "2026-09-06T15:21:49+00:00",
+      "last_modified": "",
+      "title": "ç·åè·ï¼ä¼ç»ï¼ï½æ°åæ¡ç¨æ å ±ï½æ¡ç¨æ å ±ï½æ ªå¼ä¼ç¤¾ã¬ãã«ãã¡ã¤ã"
+    },
+    "https://www.level5.co.jp/recruit/newgraduates/2027/programmer.html": {
+      "etag": "",
+      "hash": "fef45278922fa80a592268f2f48f05d47cc6b93babafa25e4b20994198ac352c",
+      "last_checked": "2026-09-06T15:21:57+00:00",
+      "last_modified": "",
+      "title": "ãã­ã°ã©ãã¼ï½æ°åæ¡ç¨æ å ±ï½æ¡ç¨æ å ±ï½æ ªå¼ä¼ç¤¾ã¬ãã«ãã¡ã¤ã"
+    },
+    "https://www.level5.co.jp/recruit/newgraduates/2027/sound_creator.html": {
+      "etag": "",
+      "hash": "15b66f62fd1e5211a408224fef5e96f9acc66a99cf393d580fb5bd99f67fbe32",
+      "last_checked": "2026-09-06T15:21:40+00:00",
+      "last_modified": "",
+      "title": "ãµã¦ã³ãã¯ãªã¨ã¤ã¿ã¼ï½æ°åæ¡ç¨æ å ±ï½æ¡ç¨æ å ±ï½æ ªå¼ä¼ç¤¾ã¬ãã«ãã¡ã¤ã"
+    },
+    "https://www.level5.co.jp/recruit/newgraduates/faq.html": {
+      "etag": "",
+      "hash": "64cb2bb29ff944e666dfd9c1685c198398bbbc1ab8888b2c04c1399ccea52992",
+      "last_checked": "2026-09-06T15:21:43+00:00",
+      "last_modified": "",
+      "title": "æ°åæ¡ç¨ FAQï¼ãããããè³ªåï¼ï½æ°åæ¡ç¨æ å ±ï½æ¡ç¨æ å ±ï½æ ªå¼ä¼ç¤¾ã¬ãã«ãã¡ã¤ã"
+    },
+    "https://www.level5.co.jp/recruit/newgraduates/message.html": {
+      "etag": "",
+      "hash": "7cbe0035150717905f0856ca2b68a777a2d59f4b6c7804504a269fb93cfbf4fc",
+      "last_checked": "2026-09-06T15:21:42+00:00",
+      "last_modified": "",
+      "title": "æ°åã®çããã¸ï½æ°åæ¡ç¨æ å ±ï½æ¡ç¨æ å ±ï½æ ªå¼ä¼ç¤¾ã¬ãã«ãã¡ã¤ã"
+    },
+    "https://www.level5.co.jp/recruit/newgraduates/work.html": {
+      "etag": "",
+      "hash": "3cd84db2f425f3d5af909c16af32f576a1d1caf741a2ec46c5425a4551bda8ea",
+      "last_checked": "2026-09-06T15:21:41+00:00",
+      "last_modified": "",
+      "title": "å¾ éã¨å¤åï¼å ¨è·ç¨®å ±éï¼ï½æ°åæ¡ç¨æ å ±ï½æ¡ç¨æ å ±ï½æ ªå¼ä¼ç¤¾ã¬ãã«ãã¡ã¤ã"
     },
     "https://www.level5.co.jp/recruit/parttime/": {
       "etag": "",
       "hash": "00a3e3260bd9ba9ba526a08f7f7ec9c4c3e9f41f94ae2b933ceccc604dc17393",
-      "last_checked": "2026-09-06T15:15:40+00:00",
+      "last_checked": "2026-09-06T15:21:41+00:00",
       "last_modified": "",
       "title": "ã¢ã«ãã¤ãæ¡ç¨æ å ±ï½æ°åæ¡ç¨æ å ±ï½æ¡ç¨æ å ±ï½æ ªå¼ä¼ç¤¾ã¬ãã«ãã¡ã¤ã"
+    },
+    "https://www.level5.co.jp/recruit/parttime/fukuoka/test_player.html": {
+      "etag": "",
+      "hash": "aaab88c391fc5855e67567fcf32ad20e1e295882491db59477b6fbe731b4d256",
+      "last_checked": "2026-09-06T15:22:04+00:00",
+      "last_modified": "",
+      "title": "ã¢ã«ãã¤ãæ¡ç¨æ å ±ï½æ¡ç¨æ å ±ï½æ ªå¼ä¼ç¤¾ã¬ãã«ãã¡ã¤ã"
     },
     "https://www.level5.co.jp/vision2026-2/": {
       "etag": "",
       "hash": "9d762d8284fcaa8edd8cbadb597b5e6b9f09fa465ed6b9511da861047e14d0bb",
-      "last_checked": "2026-09-06T15:15:10+00:00",
+      "last_checked": "2026-09-06T15:21:34+00:00",
       "last_modified": "",
       "title": "ã¬ãã«ãã¡ã¤ã ãªã³ã©ã¤ã³ã¤ãã³ããLEVEL5 VISION 2026 â ¡ å¤¢ã"
+    },
+    "https://www.level5.co.jp/vision2026-2/en/": {
+      "etag": "",
+      "hash": "461674e053a2be1a22e43f23abd1c619f18916407c83dc898f458cf806fb24f8",
+      "last_checked": "2026-09-06T15:22:02+00:00",
+      "last_modified": "",
+      "title": "LEVEL5 Online Event \"LEVEL5 VISION 2026 â ¡ Dream\""
     },
     "https://www.youkai-watch.jp/": {
       "etag": "",
       "hash": "84ec96de1bd7e6fc41c9ccc162549541daa305ddf8af57637c7192e58a0b6b68",
-      "last_checked": "2026-09-06T15:17:01+00:00",
+      "last_checked": "2026-09-06T15:23:26+00:00",
       "last_modified": "",
       "title": "å¦æªã¦ã©ãã ã·ãªã¼ãº"
     },
@@ -1390,9 +1971,23 @@
     "https://www.youkai-watch.jp/archive/eiga/04/": {
       "etag": "",
       "hash": "0d2cf3da7f3e528bbe9f618add1abff32c5c68b4953bd244df3a7b3bd2c25647",
-      "last_checked": "2026-09-06T15:17:23+00:00",
+      "last_checked": "2026-09-06T15:23:59+00:00",
       "last_modified": "",
       "title": "æ ç» å¦æªã¦ã©ãã ã·ã£ãã¦ãµã¤ã é¬¼çã®å¾©æ´»"
+    },
+    "https://www.youkai-watch.jp/archive/eiga/05/": {
+      "etag": "",
+      "hash": "f14ca1ce7ed127f2cbb96743f17df0511ee15829099be44d5dcff9d2f8ea8d27",
+      "last_checked": "2026-09-06T15:23:40+00:00",
+      "last_modified": "",
+      "title": "æ ç» å¦æªã¦ã©ãã FOREVER FRIENDS"
+    },
+    "https://www.youkai-watch.jp/archive/eiga/06/": {
+      "etag": "",
+      "hash": "c981d4d80dffaba7ba78c71a75db56472dbb26bb312e0b62ace137a32b511aad",
+      "last_checked": "2026-09-06T15:23:47+00:00",
+      "last_modified": "",
+      "title": "æ ç» å¦æªå­¦åY ç«ã¯HEROã«ãªããã"
     },
     "https://www.youkai-watch.jp/archive/eiga/07/": {
       "etag": "",
@@ -1401,10 +1996,24 @@
       "last_modified": "",
       "title": "æ ç» å¦æªã¦ã©ãã&#9834; ã±ã¼ã¿ã¨ãªã¬ã£ã¡ã®åºä¼ãç·¨ã ãã£ã³&#9834;ã¯ãã¯ã¿ã¯ã·ãï½&#9834;&#9834;"
     },
+    "https://www.youkai-watch.jp/busters/": {
+      "etag": "",
+      "hash": "78a343f2dd7af843e1264f5c5985400520adc57c3b267d2825b3429df39650ba",
+      "last_checked": "2026-09-06T15:24:04+00:00",
+      "last_modified": "",
+      "title": "å¦æªã¦ã©ãããã¹ã¿ã¼ãº èµ¤ç«å£ï¼ç½ç¬é"
+    },
+    "https://www.youkai-watch.jp/busters2/": {
+      "etag": "",
+      "hash": "28ea9471a78e3a99828f6e246fc8e7e0e0d35ac805167e479ae0af7a313a07fe",
+      "last_checked": "2026-09-06T15:23:35+00:00",
+      "last_modified": "",
+      "title": "å¦æªã¦ã©ãããã¹ã¿ã¼ãº2 ç§å®ä¼èª¬ãã³ãã©ã¤ã¼ ã½ã¼ãï¼ãã°ãã"
+    },
     "https://www.youkai-watch.jp/busters2/about/": {
       "etag": "",
       "hash": "45a4bf694c3e8a6759c3c5a9917a7642397f17423cd344dc85996ea23c8e5baf",
-      "last_checked": "2026-09-06T15:17:33+00:00",
+      "last_checked": "2026-09-06T15:24:01+00:00",
       "last_modified": "",
       "title": "å¦æªã¦ã©ãããã¹ã¿ã¼ãº2ã¨ã¯ | å¦æªã¦ã©ãããã¹ã¿ã¼ãº2 ç§å®ä¼èª¬ãã³ãã©ã¤ã¼ ã½ã¼ãï¼ãã°ãã"
     },
@@ -1422,10 +2031,17 @@
       "last_modified": "",
       "title": "ãã¹ã¯ã¼ããå ¥åãã¦ãéé¬¼ã¹ãã¼ã³ããæã«å ¥ãããï¼ | å¦æªã¦ã©ãããã¹ã¿ã¼ãº2 ç§å®ä¼èª¬ãã³ãã©ã¤ã¼ ã½ã¼ãï¼ãã°ãã"
     },
+    "https://www.youkai-watch.jp/busters2/topics/ff14.html": {
+      "etag": "",
+      "hash": "0ae62d76398b49957ec5ae9c3d0058cf3f5615b8189cc4fc5c778c9326081f88",
+      "last_checked": "2026-09-06T15:24:02+00:00",
+      "last_modified": "",
+      "title": "ãã®ããã¡ã¤ãã«ãã¡ã³ã¿ã¸ã¼XIVãã¨ãå¦æªã¦ã©ãããã®ã³ã©ãå¦æªããã§ã³ããã£ã³ããã¢ã¼ã°ãªãã£ã³ãããå¦æªã¦ã©ãããã¹ã¿ã¼ãº2 ç§å®ä¼èª¬"
+    },
     "https://www.youkai-watch.jp/busters2/topics/movie_rendou.html": {
       "etag": "",
       "hash": "9c4b6ceab2a5d19bbc8b382986a78e3fe45ed2e45c5cce7aa212e4105850a4a7",
-      "last_checked": "2026-09-06T15:17:11+00:00",
+      "last_checked": "2026-09-06T15:23:41+00:00",
       "last_modified": "",
       "title": "æ ç»ã§å¤§æ´»èºããä¸åæçãä»²éã«ï¼ï¼ | ãããã¯ã¹ | å¦æªã¦ã©ãããã¹ã¿ã¼ãº2 ç§å®ä¼èª¬ãã³ãã©ã¤ã¼ ã½ã¼ãï¼ãã°ãã"
     },
@@ -1436,6 +2052,13 @@
       "last_modified": "",
       "title": "æ°ããã°ãã¹ãã¸ã«ã³ã³ãã«ãç»å ´ï¼ | ãããã¯ã¹ | å¦æªã¦ã©ãããã¹ã¿ã¼ãº2 ç§å®ä¼èª¬ãã³ãã©ã¤ã¼ ã½ã¼ãï¼ãã°ãã"
     },
+    "https://www.youkai-watch.jp/busters2/topics/punipuni.html": {
+      "etag": "",
+      "hash": "a280a0319863fd50a968b54651c22108473431e20396a61cb4fff765f5c2f941",
+      "last_checked": "2026-09-06T15:23:36+00:00",
+      "last_modified": "",
+      "title": "ãã·ã«ãããããã·ã«ãã¦ãã®åºç¾æ¹æ³ | ãããã¯ã¹ | å¦æªã¦ã©ãããã¹ã¿ã¼ãº2 ç§å®ä¼èª¬ãã³ãã©ã¤ã¼ ã½ã¼ãï¼ãã°ãã"
+    },
     "https://www.youkai-watch.jp/busters2/topics/release171013.html": {
       "etag": "",
       "hash": "82faa86f9a3689e3cab34dc3d993bf7352a2b8e956e1ab64a39a3ca008369046",
@@ -1443,10 +2066,31 @@
       "last_modified": "",
       "title": "ãå¦æªã¦ã©ãããã¹ã¿ã¼ãº2 ç§å®ä¼èª¬ãã³ãã©ã¤ã¼ ã½ã¼ãï¼ãã°ãã ã2ãã¼ã¸ã§ã³ã®éããæããã«ï¼ããã«ããå¦æªã¦ã©ãã3ããå¦æªã¦ã©ããã"
     },
+    "https://www.youkai-watch.jp/busters2/topics/release171115.html": {
+      "etag": "",
+      "hash": "3e99aa18b56afbecb3b9b0b25f2c0c7c9f1a0bb84735c5cab74f27d050a07315",
+      "last_checked": "2026-09-06T15:23:38+00:00",
+      "last_modified": "",
+      "title": "ãå¦æªã¦ã©ãããã¹ã¿ã¼ãº2 ç§å®ä¼èª¬ãã³ãã©ã¤ã¼ ã½ã¼ãï¼ãã°ãã ãåéºã®ã«ã®ã¨ãªãããã³ãã©ã¤ã¼ããæ ç»ã§æ´»èºããå¦æªã®æ å ±ãå ¬éï¼ | ã"
+    },
+    "https://www.youkai-watch.jp/busters2/topics/release171216.html": {
+      "etag": "",
+      "hash": "47fb457add26c84d5b3ca687e6cdcb7fd5a24ed03473578acd013ed1dcb6a81c",
+      "last_checked": "2026-09-06T15:23:31+00:00",
+      "last_modified": "",
+      "title": "ã¤ãã«12æ16æ¥ï¼åï¼çºå£²ï¼ãã¾ãªãç¾é¬¼å§«ãããããã°ãã¶ãã¾ãã»ããããããããï¼ | ãããã¯ã¹ | å¦æªã¦ã©ãããã¹ã¿ã¼ãº2 ç§å®ä¼èª¬ãã³ãã"
+    },
+    "https://www.youkai-watch.jp/gerapo/topics/180615.html": {
+      "etag": "",
+      "hash": "3d932b87526fbde0fc203091f04074219da85791384b3dbfa2b25cd232332ce2",
+      "last_checked": "2026-09-06T15:24:04+00:00",
+      "last_modified": "",
+      "title": "å¦æªã¦ã©ãã ã²ã©ããªãºã"
+    },
     "https://www.youkai-watch.jp/gerapo/topics/190612.html": {
       "etag": "",
       "hash": "d84f79c172ba04096868a90a07b11ad089c47f17035b4d9c12de611ab97c0cd3",
-      "last_checked": "2026-09-06T15:17:16+00:00",
+      "last_checked": "2026-09-06T15:23:48+00:00",
       "last_modified": "",
       "title": "å¦æªã¦ã©ãã ã²ã©ããªãºã"
     },
@@ -1460,14 +2104,21 @@
     "https://www.youkai-watch.jp/sangokushi-kunitori/topics/180608.html": {
       "etag": "",
       "hash": "dc3a7b8dbee7ef2c26cb1a2430ed16277367e3e0051fb13a31228c307bd9e57f",
-      "last_checked": "2026-09-06T15:17:32+00:00",
+      "last_checked": "2026-09-06T15:23:53+00:00",
       "last_modified": "",
       "title": "å¦æªä¸å½å¿ å½çãã¦ã©ã¼ãºï½æ ªå¼ä¼ç¤¾ã¬ãã«ãã¡ã¤ã"
     },
     "https://www.youkai-watch.jp/sangokushi-kunitori/topics/1901/": {
       "etag": "",
       "hash": "dc3a7b8dbee7ef2c26cb1a2430ed16277367e3e0051fb13a31228c307bd9e57f",
-      "last_checked": "2026-09-06T15:17:07+00:00",
+      "last_checked": "2026-09-06T15:23:46+00:00",
+      "last_modified": "",
+      "title": "å¦æªä¸å½å¿ å½çãã¦ã©ã¼ãºï½æ ªå¼ä¼ç¤¾ã¬ãã«ãã¡ã¤ã"
+    },
+    "https://www.youkai-watch.jp/sangokushi-kunitori/topics/210322.html": {
+      "etag": "",
+      "hash": "dc3a7b8dbee7ef2c26cb1a2430ed16277367e3e0051fb13a31228c307bd9e57f",
+      "last_checked": "2026-09-06T15:23:49+00:00",
       "last_modified": "",
       "title": "å¦æªä¸å½å¿ å½çãã¦ã©ã¼ãºï½æ ªå¼ä¼ç¤¾ã¬ãã«ãã¡ã¤ã"
     },
@@ -1478,12 +2129,47 @@
       "last_modified": "",
       "title": "å¦æªä¸å½å¿ å½çãã¦ã©ã¼ãºï½æ ªå¼ä¼ç¤¾ã¬ãã«ãã¡ã¤ã"
     },
+    "https://www.youkai-watch.jp/sangokushi-kunitori/topics/211012/": {
+      "etag": "",
+      "hash": "dc3a7b8dbee7ef2c26cb1a2430ed16277367e3e0051fb13a31228c307bd9e57f",
+      "last_checked": "2026-09-06T15:23:45+00:00",
+      "last_modified": "",
+      "title": "å¦æªä¸å½å¿ å½çãã¦ã©ã¼ãºï½æ ªå¼ä¼ç¤¾ã¬ãã«ãã¡ã¤ã"
+    },
     "https://www.youkai-watch.jp/sangokushi-kunitori/topics/230525/": {
       "etag": "",
       "hash": "dc3a7b8dbee7ef2c26cb1a2430ed16277367e3e0051fb13a31228c307bd9e57f",
       "last_checked": "2026-09-06T15:17:24+00:00",
       "last_modified": "",
       "title": "å¦æªä¸å½å¿ å½çãã¦ã©ã¼ãºï½æ ªå¼ä¼ç¤¾ã¬ãã«ãã¡ã¤ã"
+    },
+    "https://www.youkai-watch.jp/sangokushi/": {
+      "etag": "",
+      "hash": "7c2909c03fab0f077c942c944efe2c7c28a66bbbedc1786309f461339b4c5e94",
+      "last_checked": "2026-09-06T15:23:32+00:00",
+      "last_modified": "",
+      "title": "å¦æªä¸å½å¿"
+    },
+    "https://www.youkai-watch.jp/the-best/sp2/": {
+      "etag": "",
+      "hash": "96c6716b0b62e905f417ac99f8ee2f7fd300cf7747845d02745c71d0b622f866",
+      "last_checked": "2026-09-06T15:23:30+00:00",
+      "last_modified": "",
+      "title": "ä¸çã«ã²ã¨ã¤ã ãï¼ãªãªã¸ãã«ããã±ã¼ã¸ãã¤ãããï¼"
+    },
+    "https://www.youkai-watch.jp/topics/180215.html": {
+      "etag": "",
+      "hash": "8f09a5c0cbbfeb07b7edd85118371c49f8ef89caf19351af409a07cbfd307e88",
+      "last_checked": "2026-09-06T15:23:31+00:00",
+      "last_modified": "",
+      "title": "å¦æªã¦ã©ãã ã·ãªã¼ãº"
+    },
+    "https://www.youkai-watch.jp/topics/180501.html": {
+      "etag": "",
+      "hash": "8c2a24bfc58b279a79822343c54162684e5ab5868447e7abe5cc8e8465e81cd5",
+      "last_checked": "2026-09-06T15:23:34+00:00",
+      "last_modified": "",
+      "title": "å¦æªã¦ã©ãã ã·ãªã¼ãº"
     },
     "https://www.youkai-watch.jp/topics/191115.html": {
       "etag": "",
@@ -1506,10 +2192,17 @@
       "last_modified": "",
       "title": "ããã¡ã§éå¥ä¼åå ã­ãã | å¦æªå­¦åY æ å ±å±"
     },
+    "https://www.youkai-watch.jp/yokai-gakuen-y-info/map/": {
+      "etag": "",
+      "hash": "2e24202be0eb0cdd013c20234fdb5d6b52076e6d8c018bc15967bd0d36355374",
+      "last_checked": "2026-09-06T15:23:56+00:00",
+      "last_modified": "",
+      "title": "Yå­¦åMAP | å¦æªå­¦åY æ å ±å±"
+    },
     "https://www.youkai-watch.jp/yokai-gakuen-y-info/movie/": {
       "etag": "",
       "hash": "26f409cb86cde9085f55279f80037945e210e2f6e014191feb000577b3dfb295",
-      "last_checked": "2026-09-06T15:17:25+00:00",
+      "last_checked": "2026-09-06T15:23:39+00:00",
       "last_modified": "",
       "title": "ã ã¼ãã¼ | å¦æªå­¦åY æ å ±å±"
     },
@@ -1537,16 +2230,23 @@
     "https://www.youkai-watch.jp/yokai-gakuen-y-info/topics/201204/": {
       "etag": "",
       "hash": "ce7665c4dd945d24fdbbed552b9024e24e787ee7fe16bdd04aff9475144a6bcb",
-      "last_checked": "2026-09-06T15:17:18+00:00",
+      "last_checked": "2026-09-06T15:24:05+00:00",
       "last_modified": "",
       "title": "ãããã¯ã¹ | å¦æªå­¦åY æ å ±å±"
     },
     "https://www.youkai-watch.jp/yokai-gakuen-y-info/topics/210115/": {
       "etag": "",
       "hash": "d2fda850afeba259053fbbad7240b51e78995acf0bcd8ffbab7b8eeb1b9c8743",
-      "last_checked": "2026-09-06T15:17:30+00:00",
+      "last_checked": "2026-09-06T15:24:01+00:00",
       "last_modified": "",
       "title": "ãããã¯ã¹ | å¦æªå­¦åY æ å ±å±"
+    },
+    "https://www.youkai-watch.jp/yokai-gakuen-y-info/topics/special/": {
+      "etag": "",
+      "hash": "19ef2e67ad8e98c46b02bcfa4d0b03eecbeb82d234c1e07175130910ad3b620c",
+      "last_checked": "2026-09-06T15:23:45+00:00",
+      "last_modified": "",
+      "title": "ã¹ãã·ã£ã«æ å ± | ãããã¯ã¹ | å¦æªå­¦åY æ å ±å±"
     },
     "https://www.youkai-watch.jp/yokai-gakuen-y/": {
       "etag": "",
@@ -1562,6 +2262,20 @@
       "last_modified": "",
       "title": "ã¯ã¤ã¯ã¤å­¦åçæ´»ã¨ã¯ | å¦æªå­¦åY ï½ã¯ã¤ã¯ã¤å­¦åçæ´»ï½"
     },
+    "https://www.youkai-watch.jp/yokai-gakuen-y/character/": {
+      "etag": "",
+      "hash": "2ff9835f9d4a6b0f25d7e327578e7493b363ca752e57eece80323a67c8d8e7f5",
+      "last_checked": "2026-09-06T15:23:27+00:00",
+      "last_modified": "",
+      "title": "ã­ã£ã©ã¯ã¿ã¼&å¦æªHERO | å¦æªå­¦åY ï½ã¯ã¤ã¯ã¤å­¦åçæ´»ï½"
+    },
+    "https://www.youkai-watch.jp/yokai-gakuen-y/cp1/": {
+      "etag": "",
+      "hash": "abf9a37a3faf227b7e38f25c09a4befd43ed8a717ca976cb0a1c88c2128f60f1",
+      "last_checked": "2026-09-06T15:23:54+00:00",
+      "last_modified": "",
+      "title": "æãã¬ã¨ããã«Yãããï¼åã®å¨ãã®#Yãæ¢ã çµæçºè¡¨ | å¦æªå­¦åY ï½ã¯ã¤ã¯ã¤å­¦åçæ´»ï½"
+    },
     "https://www.youkai-watch.jp/yokai-gakuen-y/guide/ariyoshi/": {
       "etag": "",
       "hash": "7852ddced591b8c080dc93eb80f6848a3db4fc7ef36d3b5f6a7a67057dfd2839",
@@ -1576,6 +2290,13 @@
       "last_modified": "",
       "title": "Q&A | å¦æªå­¦åY ï½ã¯ã¤ã¯ã¤å­¦åçæ´»ï½"
     },
+    "https://www.youkai-watch.jp/yokai-gakuen-y/guide/guide01/": {
+      "etag": "",
+      "hash": "80cd717eaa6fa8d0b67b62f81e6fcb8ca831d4b796a285c0db76308c2ed4126b",
+      "last_checked": "2026-09-06T15:23:34+00:00",
+      "last_modified": "",
+      "title": "ã³ã­ã³ã­ã³ããã¯1æå·ä»é²ç¹å ¸ãã¨ã³ããã®å ¥ææ¹æ³ | å¦æªå­¦åY ï½ã¯ã¤ã¯ã¤å­¦åçæ´»ï½"
+    },
     "https://www.youkai-watch.jp/yokai-gakuen-y/guide/system/": {
       "etag": "",
       "hash": "c26f1b0e6c6012b2d6d302527daa7d4956dd089308abd891d43d41d8d9687b40",
@@ -1583,17 +2304,38 @@
       "last_modified": "",
       "title": "å¦æªYã¡ãã«ã¨ã®é£åæ¹æ³ | å¦æªå­¦åY ï½ã¯ã¤ã¯ã¤å­¦åçæ´»ï½"
     },
+    "https://www.youkai-watch.jp/yokai-gakuen-y/guide/trial/": {
+      "etag": "",
+      "hash": "cc92c11ef2266d41f74a62095d5b62291d69cfef6ae21ba17f6930718a195e1c",
+      "last_checked": "2026-09-06T15:23:58+00:00",
+      "last_modified": "",
+      "title": "ä½é¨çããã®ã»ã¼ããã¼ã¿å¼ãç¶ãæ¹æ³ | å¦æªå­¦åY ï½ã¯ã¤ã¯ã¤å­¦åçæ´»ï½"
+    },
+    "https://www.youkai-watch.jp/yokai-gakuen-y/movie/": {
+      "etag": "",
+      "hash": "b9676611f32fc0faf361a099ca29d8b4514a93538685452f532d49b49d45063a",
+      "last_checked": "2026-09-06T15:24:00+00:00",
+      "last_modified": "",
+      "title": "ã ã¼ãã¼ | å¦æªå­¦åY ï½ã¯ã¤ã¯ã¤å­¦åçæ´»ï½"
+    },
     "https://www.youkai-watch.jp/yokai-gakuen-y/mystery/": {
       "etag": "",
       "hash": "4e7e6a5a6c4620119bc48d84af89657a99209444372b4036a3bbc927ac138e2d",
-      "last_checked": "2026-09-06T15:17:31+00:00",
+      "last_checked": "2026-09-06T15:23:41+00:00",
       "last_modified": "",
       "title": "å¦æªHEROãè¬ãè§£æ±º | å¦æªå­¦åY ï½ã¯ã¤ã¯ã¤å­¦åçæ´»ï½"
+    },
+    "https://www.youkai-watch.jp/yokai-gakuen-y/patchnote/patch_1_1_0/": {
+      "etag": "",
+      "hash": "90b5b8758d98fb12be1e46d33205a3a89ac518227f991f7cc653adb11ce2c2d4",
+      "last_checked": "2026-09-06T15:23:49+00:00",
+      "last_modified": "",
+      "title": "æ´æ°ãã¼ã¿é ä¿¡ã®ãç¥ãã | å¦æªå­¦åY ï½ã¯ã¤ã¯ã¤å­¦åçæ´»ï½"
     },
     "https://www.youkai-watch.jp/yokai-gakuen-y/patchnote/patch_1_2_0/": {
       "etag": "",
       "hash": "9a9a9b48ae8577abe49c64db546a19a04686a836ba23d3fc94baef42afb9eb74",
-      "last_checked": "2026-09-06T15:17:13+00:00",
+      "last_checked": "2026-09-06T15:23:29+00:00",
       "last_modified": "",
       "title": "æ´æ°ãã¼ã¿é ä¿¡ã®ãç¥ãã | å¦æªå­¦åY ï½ã¯ã¤ã¯ã¤å­¦åçæ´»ï½"
     },
@@ -1618,6 +2360,13 @@
       "last_modified": "",
       "title": "ãã¬ã¼ã³ãã­ãã | å¦æªå­¦åY ï½ã¯ã¤ã¯ã¤å­¦åçæ´»ï½"
     },
+    "https://www.youkai-watch.jp/yokai-gakuen-y/sp/news/200811/": {
+      "etag": "",
+      "hash": "df62280f97054879ab6679bd582fa596bbe0be9ba95a82dfed90bccc571128b2",
+      "last_checked": "2026-09-06T15:23:57+00:00",
+      "last_modified": "",
+      "title": "ãç¥ãã | ã²ã¼ã ãå¦æªå­¦åYãç¹è¨­ãµã¤ããã¯ã¤ã¯ã¤ãªã¼ãã³ã­ã£ã³ãã¹ã"
+    },
     "https://www.youkai-watch.jp/yokai-gakuen-y/tokuten/": {
       "etag": "",
       "hash": "03d227f38cbb8dc58ff76d09fbebe20f2d4e1984b264aa435a0d4a0ac47d9183",
@@ -1625,10 +2374,24 @@
       "last_modified": "",
       "title": "ç¹å ¸æ å ± | å¦æªå­¦åY ï½ã¯ã¤ã¯ã¤å­¦åçæ´»ï½"
     },
+    "https://www.youkai-watch.jp/yokai-gakuen-y/topics/200703/": {
+      "etag": "",
+      "hash": "e95ecc3c5ec5a91aa87c5df0ab92fce38cdd3adbba7f3976bc79566adda55af5",
+      "last_checked": "2026-09-06T15:24:03+00:00",
+      "last_modified": "",
+      "title": "ãããã¯ã¹ | å¦æªå­¦åY ï½ã¯ã¤ã¯ã¤å­¦åçæ´»ï½"
+    },
     "https://www.youkai-watch.jp/yokai-gakuen-y/topics/200728/": {
       "etag": "",
       "hash": "9edd4a002f7a0807266cb8a9ac8509a8be62236e4f08d596b234d21f2b4d56ad",
-      "last_checked": "2026-09-06T15:17:21+00:00",
+      "last_checked": "2026-09-06T15:23:37+00:00",
+      "last_modified": "",
+      "title": "ãããã¯ã¹ | å¦æªå­¦åY ï½ã¯ã¤ã¯ã¤å­¦åçæ´»ï½"
+    },
+    "https://www.youkai-watch.jp/yokai-gakuen-y/topics/200731/": {
+      "etag": "",
+      "hash": "c334149e1f5448934687c4356151630906cec016d4c798d200370f6fb751b13c",
+      "last_checked": "2026-09-06T15:23:30+00:00",
       "last_modified": "",
       "title": "ãããã¯ã¹ | å¦æªå­¦åY ï½ã¯ã¤ã¯ã¤å­¦åçæ´»ï½"
     },
@@ -1639,12 +2402,40 @@
       "last_modified": "",
       "title": "ãããã¯ã¹ | å¦æªå­¦åY ï½ã¯ã¤ã¯ã¤å­¦åçæ´»ï½"
     },
+    "https://www.youkai-watch.jp/yokai-gakuen-y/topics/201029/": {
+      "etag": "",
+      "hash": "ecbd4cc6fb9addece68b6002b37c7e92316f5060ddee3d99788e0ae76215da67",
+      "last_checked": "2026-09-06T15:23:28+00:00",
+      "last_modified": "",
+      "title": "ãããã¯ã¹ | å¦æªå­¦åY ï½ã¯ã¤ã¯ã¤å­¦åçæ´»ï½"
+    },
+    "https://www.youkai-watch.jp/yokai-gakuen-y/trial/": {
+      "etag": "",
+      "hash": "395d8b1af1a108e1c8619b393decbde860a0dc7667859c994668316ded5fa405",
+      "last_checked": "2026-09-06T15:23:56+00:00",
+      "last_modified": "",
+      "title": "ç¡æã§éã¹ãä½é¨ç | å¦æªå­¦åY ï½ã¯ã¤ã¯ã¤å­¦åçæ´»ï½"
+    },
+    "https://www.youkai-watch.jp/yokai-gakuen-y/update/": {
+      "etag": "",
+      "hash": "dd161e80539c68df543a4243aa462b7aa4d078baea54bfd030a23035bcc7c6b3",
+      "last_checked": "2026-09-06T15:24:03+00:00",
+      "last_modified": "",
+      "title": "å¤§åç¡æã¢ãããã¼ãæ å ± | å¦æªå­¦åY ï½ã¯ã¤ã¯ã¤å­¦åçæ´»ï½"
+    },
     "https://www.youkai-watch.jp/yokai-gakuen-y/update3/": {
       "etag": "",
       "hash": "2b91a76800b38b12d1fd8ff54c49bcba4238ebf4c95faea1e41e927994e2948c",
       "last_checked": "2026-09-06T15:17:13+00:00",
       "last_modified": "",
       "title": "å¤§åç¡æã¢ãããã¼ãæ å ± | å¦æªå­¦åY ï½ã¯ã¤ã¯ã¤å­¦åçæ´»ï½"
+    },
+    "https://www.youkai-watch.jp/yw-sp/": {
+      "etag": "",
+      "hash": "5f446658c56e33cc1ce90738d7ad926d400d04b0d5cd0b51c5a5ce4a3191bfd4",
+      "last_checked": "2026-09-06T15:23:38+00:00",
+      "last_modified": "",
+      "title": "å¦æªã¦ã©ãã1 ã¹ãã"
     },
     "https://www.youkai-watch.jp/yw-sp/topics/210713/": {
       "etag": "",
@@ -1681,6 +2472,13 @@
       "last_modified": "",
       "title": "å¦æªã¦ã©ãã1 for Nintendo Switch"
     },
+    "https://www.youkai-watch.jp/yw-switch/guideline/": {
+      "etag": "",
+      "hash": "738082e14b5aa659cdf03073a16c88fc6e762740f7fa0d4802b710ea9d3946a8",
+      "last_checked": "2026-09-06T15:23:40+00:00",
+      "last_modified": "",
+      "title": "åç»ã»éæ­¢ç»æç¨¿ã«é¢ããã¬ã¤ãã©ã¤ã³ | å¦æªã¦ã©ãã1 for Nintendo Switch"
+    },
     "https://www.youkai-watch.jp/yw-switch/tokuten/": {
       "etag": "",
       "hash": "7439fea9e6af2149a548c1d27675f4323346a425767aada8d3bdc6e23e3e5256",
@@ -1688,10 +2486,24 @@
       "last_modified": "",
       "title": "ç¹å ¸æ å ± | å¦æªã¦ã©ãã1 for Nintendo Switch"
     },
+    "https://www.youkai-watch.jp/yw/": {
+      "etag": "",
+      "hash": "c2150e2fa072bb70879dfd55fa4df79b527ea07d15352b1ea61f410ebb870f0c",
+      "last_checked": "2026-09-06T15:23:42+00:00",
+      "last_modified": "",
+      "title": "å¦æªã¦ã©ãã"
+    },
+    "https://www.youkai-watch.jp/yw2/topics/accessory.html": {
+      "etag": "",
+      "hash": "90bf6cf1c82d17b79aca47d6ed262ab575340b7fc82bced01a958b37be95569e",
+      "last_checked": "2026-09-06T15:23:50+00:00",
+      "last_modified": "",
+      "title": "ãå¦æªã¦ã©ãããå ¬å¼é¢é£ååãã¤ãã«ã¬ãã«ãã¡ã¤ãããç»å ´ï¼ | å¦æªã¦ã©ãã2 å ç¥ï¼æ¬å®¶ï¼çæ"
+    },
     "https://www.youkai-watch.jp/yw3/": {
       "etag": "",
       "hash": "8815eb3b23f2b575477683d015d48d1feee718b71a3c253073976b762c6c57f7",
-      "last_checked": "2026-09-06T15:17:03+00:00",
+      "last_checked": "2026-09-06T15:23:37+00:00",
       "last_modified": "",
       "title": "å¦æªã¦ã©ãã3 ã¹ã·ï¼ãã³ãã©ï¼ã¹ã­ã¤ã­"
     },
@@ -1709,12 +2521,26 @@
       "last_modified": "",
       "title": "ã ã¼ãã¼ | å¦æªã¦ã©ãã3 ã¹ã·ï¼ãã³ãã©ï¼ã¹ã­ã¤ã­"
     },
+    "https://www.youkai-watch.jp/yw3/topics/line.html": {
+      "etag": "",
+      "hash": "70b2e42010728c608a3942f3f75a605f9e62ffddefdde3a69b6a138924e307d5",
+      "last_checked": "2026-09-06T15:24:00+00:00",
+      "last_modified": "",
+      "title": "LINEã¹ã¿ã³ãã»LINEçãããé ä¿¡ | ãããã¯ã¹ | å¦æªã¦ã©ãã3 ã¹ã·ï¼ãã³ãã©ï¼ã¹ã­ã¤ã­"
+    },
     "https://www.youkai-watch.jp/yw4/": {
       "etag": "",
       "hash": "90e886319c428aa0fb6e14a366023f130bb02cfc02ee512a0323fd2cca7fd821",
       "last_checked": "2026-09-06T15:17:22+00:00",
       "last_modified": "",
       "title": "å¦æªã¦ã©ãã4++"
+    },
+    "https://www.youkai-watch.jp/yw4/about": {
+      "etag": "",
+      "hash": "918bc75e8ebc4e378f37e30c7c2da3281203935a0b2db4ed54b34d1992bc0f6b",
+      "last_checked": "2026-09-06T15:23:51+00:00",
+      "last_modified": "",
+      "title": "å¦æªã¦ã©ãã4ã¨ã¯ | å¦æªã¦ã©ãã4++"
     },
     "https://www.youkai-watch.jp/yw4/battle/index.html": {
       "etag": "",
@@ -1733,7 +2559,7 @@
     "https://www.youkai-watch.jp/yw4/game/": {
       "etag": "",
       "hash": "6152aed4a3a78e5a9c53aae19713e6da322bb7cf9d156ebdf7362dd5af3689a1",
-      "last_checked": "2026-09-06T15:17:37+00:00",
+      "last_checked": "2026-09-06T15:23:58+00:00",
       "last_modified": "",
       "title": "ã²ã¼ã ç´¹ä» | å¦æªã¦ã©ãã4++"
     },
@@ -1744,12 +2570,40 @@
       "last_modified": "",
       "title": "ããããã®ä¸çã«ç»å ´ããå¦æªãã¡ | å¦æªã¦ã©ãã4++"
     },
+    "https://www.youkai-watch.jp/yw4/guide/faq/": {
+      "etag": "",
+      "hash": "ea3a613415bcf0cf1c58b174ffbbfe8a76e5950fe5aef25df1058636543b84b8",
+      "last_checked": "2026-09-06T15:23:55+00:00",
+      "last_modified": "",
+      "title": "Q&A | å¦æªã¦ã©ãã4++"
+    },
+    "https://www.youkai-watch.jp/yw4/guide/update/": {
+      "etag": "",
+      "hash": "a1561dfb0c1528c2bbb889da64a8ba96bf112ed76eeb1c17bd0fde40a5e95396",
+      "last_checked": "2026-09-06T15:23:28+00:00",
+      "last_modified": "",
+      "title": "æ´æ°ãã¼ã¿é ä¿¡ã®ãç¥ãã | å¦æªã¦ã©ãã4++"
+    },
+    "https://www.youkai-watch.jp/yw4/guideline/": {
+      "etag": "",
+      "hash": "9842ba076f5abdf0f2c6e4890d5837289f96fd5980712e351c8a47ec2f2050c7",
+      "last_checked": "2026-09-06T15:23:53+00:00",
+      "last_modified": "",
+      "title": "åç»ã»éæ­¢ç»æç¨¿ã«é¢ããã¬ã¤ãã©ã¤ã³ | å¦æªã¦ã©ãã4++"
+    },
     "https://www.youkai-watch.jp/yw4/movie/": {
       "etag": "",
       "hash": "a6e6055560d959e8946c783d1d60e1a6498a10c89b8fbc0415cde1efc5d0105d",
-      "last_checked": "2026-09-06T15:17:21+00:00",
+      "last_checked": "2026-09-06T15:23:52+00:00",
       "last_modified": "",
       "title": "ã ã¼ãã¼ | å¦æªã¦ã©ãã4++"
+    },
+    "https://www.youkai-watch.jp/yw4/purapura/": {
+      "etag": "",
+      "hash": "fa0cedeb61b551b24d9db60d132a409a4a393f41f6907b3e6a22bda0ebddfcc9",
+      "last_checked": "2026-09-06T15:23:47+00:00",
+      "last_modified": "",
+      "title": "ãå¦æªã¦ã©ãã4ããã++ãã«ãªã£ã¦ããã«ãã¯ã¼ã¢ãã! | å¦æªã¦ã©ãã4++"
     },
     "https://www.youkai-watch.jp/yw4/spec/": {
       "etag": "",
@@ -1757,6 +2611,34 @@
       "last_checked": "2026-09-06T15:17:08+00:00",
       "last_modified": "",
       "title": "ååæ å ± | å¦æªã¦ã©ãã4++"
+    },
+    "https://www.youkai-watch.jp/yw4/tokuten/": {
+      "etag": "",
+      "hash": "dc9887099e3366370709adf8abf7955d4b590b76a3c0d2277aeb631a49b5e840",
+      "last_checked": "2026-09-06T15:23:50+00:00",
+      "last_modified": "",
+      "title": "è³¼å ¥ç¹å ¸ãã¼ã¸ | å¦æªã¦ã©ãã4++"
+    },
+    "https://www.youkai-watch.jp/yw4/topics/190606/": {
+      "etag": "",
+      "hash": "9c5c70ac219e78f4931293b5a087951d44620d9b6481cb1f8a9f1be509dce69c",
+      "last_checked": "2026-09-06T15:23:33+00:00",
+      "last_modified": "",
+      "title": "ãããã¯ã¹ | å¦æªã¦ã©ãã4++"
+    },
+    "https://www.youkai-watch.jp/yw4/topics/famitsu/": {
+      "etag": "",
+      "hash": "513cf0e6d0e341f9ed161ca987cae09e729f2abaea5cd4b0f9ab321a17c3699a",
+      "last_checked": "2026-09-06T15:23:55+00:00",
+      "last_modified": "",
+      "title": "ãé±åãã¡ãéãæ°ä½ã²ã¼ã ã¯ã­ã¹ã¬ãã¥ã¼ | å¦æªã¦ã©ãã4++"
+    },
+    "https://www.youkai-watch.jp/yw4/topics/rendou/movie/": {
+      "etag": "",
+      "hash": "b3256d3cca53f0a9bd0714efb10080433335e2fa95734277b8e320e0957b57e8",
+      "last_checked": "2026-09-06T15:23:26+00:00",
+      "last_modified": "",
+      "title": "ãç«åå¦æªã¢ã¼ã¯ãé£åç¹å ¸ | å¦æªã¦ã©ãã4++"
     },
     "https://www.youkai-watch.jp/yw4/update/ver1-3/": {
       "etag": "",
