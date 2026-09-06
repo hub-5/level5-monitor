@@ -43,6 +43,18 @@ TITLE_RE = re.compile(r"<title[^>]*>(.*?)</title>", re.I | re.S)
 HREF_RE = re.compile(r'href=["\']([^"\'#]+)', re.I)
 SITEMAP_LOC_RE = re.compile(r"<loc>\s*(.*?)\s*</loc>", re.I)
 
+# Patrones de valores que cambian en cada petición HTTP aunque el contenido
+# visible de la página sea idéntico (nonces de seguridad CSP, tokens CSRF,
+# metaetiquetas de verificación con marca de tiempo). Si no se ignoran,
+# generan avisos de "página modificada" que en realidad son falsos positivos.
+NONCE_ATTR_RE = re.compile(r'\snonce=["\'][^"\']*["\']', re.I)
+CSRF_META_RE = re.compile(
+    r'<meta\b[^>]*name=["\'](?:csrf-token|csrf-param|_token)["\'][^>]*>', re.I
+)
+CSRF_INPUT_RE = re.compile(
+    r'<input\b[^>]*name=["\'][^"\']*(?:csrf|_token)[^"\']*["\'][^>]*>', re.I
+)
+
 
 # --------------------------------------------------------------------------- #
 # Utilidades de E/S
@@ -75,9 +87,14 @@ def now_iso() -> str:
 
 def normalize_html(html: str) -> str:
     """Elimina script/style/comentarios y colapsa espacios para reducir
-    falsos positivos causados por analítica, contadores o cache-busting."""
+    falsos positivos causados por analítica, contadores o cache-busting.
+    También quita nonces CSP y tokens CSRF, que cambian en cada petición
+    HTTP sin que el contenido real de la página haya cambiado."""
     html = SCRIPT_STYLE_RE.sub("", html)
     html = COMMENT_RE.sub("", html)
+    html = NONCE_ATTR_RE.sub("", html)
+    html = CSRF_META_RE.sub("", html)
+    html = CSRF_INPUT_RE.sub("", html)
     html = WHITESPACE_RE.sub(" ", html)
     return html.strip()
 
