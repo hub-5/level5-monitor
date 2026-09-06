@@ -15,6 +15,7 @@ No requiere dependencias externas más allá de "requests".
 
 from __future__ import annotations
 
+import difflib
 import hashlib
 import json
 import os
@@ -24,6 +25,7 @@ import time
 import urllib.robotparser
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
+from html import unescape as unescape_html
 from urllib.parse import urljoin, urlparse
 
 import requests
@@ -55,6 +57,21 @@ CSRF_INPUT_RE = re.compile(
     r'<input\b[^>]*name=["\'][^"\']*(?:csrf|_token)[^"\']*["\'][^>]*>', re.I
 )
 
+# Etiquetas que separan bloques de contenido visible (párrafos, listas,
+# celdas de tabla, etc.). Se sustituyen por un salto de línea antes de quitar
+# el resto de etiquetas, para que extract_text() produzca texto legible
+# línea a línea en vez de una sola frase larga sin cortes.
+BLOCK_TAG_RE = re.compile(
+    r"</?(?:p|div|li|ul|ol|h[1-6]|br|tr|table|thead|tbody|section|article|"
+    r"header|footer|nav|main|form)\b[^>]*>",
+    re.I,
+)
+TAG_RE = re.compile(r"<[^>]+>")
+
+# Número de fallos consecutivos de una URL ya conocida antes de considerar
+# que la página ha sido retirada y avisar de ello.
+REMOVED_AFTER_FAILURES = 2
+
 
 # --------------------------------------------------------------------------- #
 # Utilidades de E/S
@@ -85,24 +102,6 @@ def now_iso() -> str:
 # Normalización y hashing de contenido
 # --------------------------------------------------------------------------- #
 
-def normalize_html(html: str) -> str:
-    """Elimina script/style/comentarios y colapsa espacios para reducir
-    falsos positivos causados por analítica, contadores o cache-busting.
-    También quita nonces CSP y tokens CSRF, que cambian en cada petición
-    HTTP sin que el contenido real de la página haya cambiado."""
-    html = SCRIPT_STYLE_RE.sub("", html)
-    html = COMMENT_RE.sub("", html)
-    html = NONCE_ATTR_RE.sub("", html)
-    html = CSRF_META_RE.sub("", html)
-    html = CSRF_INPUT_RE.sub("", html)
-    html = WHITESPACE_RE.sub(" ", html)
-    return html.strip()
-
-
-def content_hash(html: str) -> str:
-    return hashlib.sha256(normalize_html(html).encode("utf-8", "ignore")).hexdigest()
-
-
 def extract_title(html: str) -> str:
     m = TITLE_RE.search(html)
     if not m:
@@ -121,6 +120,65 @@ def extract_links(html: str, base_url: str) -> set[str]:
         except ValueError:
             continue
     return links
+
+
+def extract_text(html: str) -> str:
+    """Convierte el HTML de una página en su texto visible "limpio", una
+    línea por bloque. Se usa para poder comparar el contenido real entre
+    ejecuciones y generar diffs exactos (qué se ha añadido/quitado), en vez
+    de un simple hash que solo dice "algo cambió".
+
+    Igual que normalize_html(), quita antes script/style, comentarios,
+    nonces CSP y tokens CSRF: no son contenido visible y solo
+    ensuciarían los diffs con "cambios" que en realidad no lo son."""
+    html = SCRIPT_STYLE_RE.sub("", html)
+    html = COMMENT_RE.sub("", html)
+    html = NONCE_ATTR_RE.sub("", html)
+    html = CSRF_META_RE.sub("", html)
+    html = CSRF_INPUT_RE.sub("", html)
+    html = BLOCK_TAG_RE.sub("\n", html)
+    html = TAG_RE.sub(" ", html)
+    html = unescape_html(html)
+
+    lines = []
+    for line in html.splitlines():
+        line = WHITESPACE_RE.sub(" ", line).strip()
+        if line:
+            lines.append(line)
+    return "\n".join(lines)
+
+
+def make_diff(old_text: str, new_text: str, max_lines: int = 8, max_chars: int = 600) -> str:
+    """Genera un diff línea a línea legible entre dos versiones del texto
+    visible de una página: qué líneas se han quitado (➖) y cuáles se han
+    añadido (➕). Se recorta para no desbordar el mensaje de Discord."""
+    old_lines = old_text.splitlines()
+    new_lines = new_text.splitlines()
+    matcher = difflib.SequenceMatcher(a=old_lines, b=new_lines, autojunk=False)
+
+    diff_lines: list[str] = []
+    for tag, i1, i2, j1, j2 in matcher.get_opcodes():
+        if tag == "equal":
+            continue
+        if tag in ("delete", "replace"):
+            diff_lines.extend(f"➖ {line}" for line in old_lines[i1:i2])
+        if tag in ("insert", "replace"):
+            diff_lines.extend(f"➕ {line}" for line in new_lines[j1:j2])
+
+    if not diff_lines:
+        return (
+            "(se detectó un cambio pero sin diferencias de texto visible; "
+            "puede tratarse de una imagen, un enlace o un atributo no visible)"
+        )
+
+    shown = diff_lines[:max_lines]
+    text = "\n".join(shown)
+    if len(text) > max_chars:
+        text = text[:max_chars].rstrip() + "…"
+    extra = len(diff_lines) - len(shown)
+    if extra > 0:
+        text += f"\n…y {extra} líneas más de diferencia."
+    return text
 
 
 # --------------------------------------------------------------------------- #
@@ -183,10 +241,28 @@ def discover_sitemap_urls(seed: str, session: requests.Session) -> set[str]:
 @dataclass
 class CrawlResult:
     site_name: str
-    new_pages: list[str] = field(default_factory=list)
-    changed_pages: list[str] = field(default_factory=list)
+    new_pages: list[tuple[str, str]] = field(default_factory=list)
+    changed_pages: list[tuple[str, str]] = field(default_factory=list)
+    removed_pages: list[str] = field(default_factory=list)
     errors: list[str] = field(default_factory=list)
     visited_count: int = 0
+
+
+def _register_failure(url: str, state_pages: dict, result: CrawlResult) -> None:
+    """Cuenta fallos consecutivos de una URL que ya conocíamos (existe en
+    state_pages). Tras REMOVED_AFTER_FAILURES fallos seguidos, se considera
+    que la página ha sido retirada y se avisa una única vez. Las URLs que
+    nunca respondieron con éxito (p. ej. una página todavía no publicada)
+    no están en state_pages, así que no generan aviso de "eliminada": solo
+    quedan registradas como error en el log."""
+    entry = state_pages.get(url)
+    if entry is None:
+        return
+    entry["consecutive_errors"] = entry.get("consecutive_errors", 0) + 1
+    entry["last_checked"] = now_iso()
+    if entry["consecutive_errors"] >= REMOVED_AFTER_FAILURES and not entry.get("removed"):
+        entry["removed"] = True
+        result.removed_pages.append(url)
 
 
 def is_internal(url: str, domain: str) -> bool:
@@ -252,6 +328,7 @@ def crawl_site(site: dict, state_pages: dict, session: requests.Session,
             resp = session.get(url, headers=headers, timeout=timeout, allow_redirects=True)
         except requests.RequestException as exc:
             result.errors.append(f"{url} -> {exc}")
+            _register_failure(url, state_pages, result)
             time.sleep(delay)
             continue
 
@@ -261,11 +338,13 @@ def crawl_site(site: dict, state_pages: dict, session: requests.Session,
             # Sin cambios; ya conocemos esta página, no hace falta reprocesarla.
             state_pages.setdefault(url, prev)
             state_pages[url]["last_checked"] = now_iso()
+            state_pages[url]["consecutive_errors"] = 0
             time.sleep(delay)
             continue
 
         if resp.status_code != 200:
             result.errors.append(f"{url} -> HTTP {resp.status_code}")
+            _register_failure(url, state_pages, result)
             time.sleep(delay)
             continue
 
@@ -275,20 +354,41 @@ def crawl_site(site: dict, state_pages: dict, session: requests.Session,
             continue
 
         html = resp.text
-        new_hash = content_hash(html)
+        new_text = extract_text(html)
+        new_hash = hashlib.sha256(new_text.encode("utf-8", "ignore")).hexdigest()
         title = extract_title(html)
 
-        if url not in state_pages:
-            result.new_pages.append(url)
-        elif state_pages[url].get("hash") != new_hash:
-            result.changed_pages.append(url)
+        prev_text = prev.get("text")
+        is_new = url not in state_pages
+        # Una entrada ya existía pero fue guardada por una versión anterior
+        # del monitor (basada en hash de HTML, sin texto legible). No hay
+        # forma de calcular un diff fiable contra ella, así que se migra en
+        # silencio al nuevo formato: no se avisa de "cambio" solo por el
+        # cambio de formato interno. El primer cambio real posterior sí
+        # generará ya un diff exacto.
+        is_migration = (not is_new) and prev_text is None
+        was_removed = prev.get("removed", False)
+
+        if is_new:
+            result.new_pages.append((url, new_text[:300]))
+        elif is_migration:
+            print(f"[INFO]   Migrando estado de {url} al nuevo formato (sin aviso).")
+        elif was_removed:
+            # Había sido marcada como eliminada y ha vuelto a responder: se
+            # trata como una "reaparición", no como una modificación.
+            result.new_pages.append((url, new_text[:300]))
+        elif prev.get("hash_text") != new_hash:
+            result.changed_pages.append((url, make_diff(prev_text, new_text)))
 
         state_pages[url] = {
-            "hash": new_hash,
+            "text": new_text,
+            "hash_text": new_hash,
             "title": title,
             "etag": resp.headers.get("ETag", ""),
             "last_modified": resp.headers.get("Last-Modified", ""),
             "last_checked": now_iso(),
+            "consecutive_errors": 0,
+            "removed": False,
         }
 
         # Solo seguimos enlaces de páginas nuevas para nosotros o recién
@@ -314,24 +414,45 @@ def crawl_site(site: dict, state_pages: dict, session: requests.Session,
 # Notificaciones
 # --------------------------------------------------------------------------- #
 
+def _truncate(text: str, limit: int = 220) -> str:
+    text = text.strip()
+    if len(text) <= limit:
+        return text
+    return text[:limit].rstrip() + "…"
+
+
 def build_message_lines(results: list[CrawlResult], max_urls: int) -> list[str]:
     lines = []
     for r in results:
-        if not r.new_pages and not r.changed_pages:
+        if not r.new_pages and not r.changed_pages and not r.removed_pages:
             continue
         lines.append(f"**{r.site_name}**")
         shown = 0
-        for url in r.changed_pages:
+        total = len(r.changed_pages) + len(r.new_pages) + len(r.removed_pages)
+
+        for url, diff in r.changed_pages:
             if shown >= max_urls:
                 break
             lines.append(f"🔄 Modificada: {url}")
+            for diff_line in diff.splitlines():
+                lines.append(f"      {diff_line}")
             shown += 1
-        for url in r.new_pages:
+
+        for url, snippet in r.new_pages:
             if shown >= max_urls:
                 break
             lines.append(f"🆕 Nueva página: {url}")
+            snippet = _truncate(snippet)
+            if snippet:
+                lines.append(f"      {snippet}")
             shown += 1
-        total = len(r.changed_pages) + len(r.new_pages)
+
+        for url in r.removed_pages:
+            if shown >= max_urls:
+                break
+            lines.append(f"🗑️ Eliminada: {url}")
+            shown += 1
+
         if total > shown:
             lines.append(f"…y {total - shown} más en este sitio.")
         lines.append("")
@@ -407,7 +528,7 @@ def main() -> int:
         print(
             f"[INFO]   -> {r.visited_count} páginas comprobadas, "
             f"{len(r.new_pages)} nuevas, {len(r.changed_pages)} modificadas, "
-            f"{len(r.errors)} errores."
+            f"{len(r.removed_pages)} eliminadas, {len(r.errors)} errores."
         )
         for err in r.errors[:5]:
             print(f"[WARN]   {err}", file=sys.stderr)

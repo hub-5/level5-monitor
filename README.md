@@ -22,14 +22,16 @@ Webs incluidas por defecto (`config.json`):
 ## Cómo funciona
 
 `monitor.py` visita cada web configurada en `config.json`, sigue los enlaces
-internos (hasta un límite de páginas por sitio) y calcula un hash del
-contenido de cada página (quitando scripts, comentarios y espacios, para no
-disparar avisos falsos por banners de cookies o contadores). Ese hash se
-guarda en `state.json`. En cada ejecución compara el hash nuevo contra el
-guardado: si cambia, o si aparece una URL que no existía antes, lo añade al
-aviso. `state.json` se hace *commit* al propio repositorio al final de cada
-ejecución para que la siguiente ejecución (que arranca desde cero, en una
-máquina nueva) sepa qué vio la vez anterior.
+internos (hasta un límite de páginas por sitio) y extrae el texto visible de
+cada página (quitando scripts, estilos, comentarios, nonces CSP y tokens
+CSRF, para no disparar avisos falsos por banners de cookies, contadores o
+protecciones de seguridad que cambian en cada petición). Ese texto se guarda
+en `state.json`. En cada ejecución compara el texto nuevo contra el
+guardado línea a línea: si cambia, el aviso incluye exactamente qué línea se
+quitó y cuál se añadió (no solo "esta página cambió"). `state.json` se hace
+*commit* al propio repositorio al final de cada ejecución para que la
+siguiente ejecución (que arranca desde cero, en una máquina nueva) sepa qué
+vio la vez anterior.
 
 Un `GitHub Actions workflow` (`.github/workflows/monitor.yml`) ejecuta este
 script cada 10 minutos automáticamente. Con los 7 sitios de arriba (330
@@ -129,10 +131,51 @@ como `{"pages": {}, "last_run": null}` para resetear todo), haz commit, y
 lanza el workflow a mano otra vez — esa(s) página(s) se reportarán como
 "nuevas" y te debería llegar el aviso a Discord.
 
-## Cómo añadir una web nueva en el futuro
+## Diff exacto: qué se ha añadido, cambiado o eliminado
 
-No hace falta tocar ni una línea de código. Solo edita `config.json` y añade
-un objeto nuevo al array `"sites"`:
+Los avisos de Discord ya no dicen solo "esta página cambió": muestran la
+diferencia real, línea a línea, entre la versión anterior y la nueva. Tres
+tipos de aviso:
+
+- **🔄 Modificada** — la página ya existía y su contenido visible ha
+  cambiado. Debajo del enlace verás las líneas quitadas (➖) y las añadidas
+  (➕). Por ejemplo, si LEVEL-5 cambia la fecha de lanzamiento de un juego,
+  el aviso mostrará algo como:
+
+  ```
+  🔄 Modificada: https://www.layton.jp/jouki/
+        ➖ Fecha de lanzamiento: Invierno 2026
+        ➕ Fecha de lanzamiento: 15 de diciembre de 2026
+  ```
+
+  El diff se recorta a un número razonable de líneas para no desbordar el
+  mensaje de Discord; si hay más cambios de los que se muestran, se indica
+  cuántas líneas más hay.
+- **🆕 Nueva página** — una URL que no existía antes en ese sitio (por
+  ejemplo, la web de TGS2026 activándose). Se muestra un fragmento del
+  contenido para que tengas contexto sin tener que abrir el enlace.
+- **🗑️ Eliminada** — una página que sí conocíamos deja de responder de
+  forma sostenida (dos comprobaciones seguidas fallando), así que se
+  entiende que ha sido retirada. Si más adelante vuelve a responder, se
+  trata como una reaparición y se notifica de nuevo con 🆕.
+
+**Nota sobre la transición**: como esta función es nueva, la primera vez que
+cada página se vuelva a comprobar con esta versión del script, el monitor
+migra en silencio su formato interno de almacenamiento (de "hash" a "texto
+completo") — **no vas a recibir un aluvión de avisos de "modificada" por
+este cambio**, igual que no lo hubo al aplicar las correcciones anteriores.
+Solo a partir de ese momento, el siguiente cambio real que ocurra en cada
+página generará ya un diff exacto.
+
+## Añadir, modificar o eliminar una web vigilada
+
+Todo se controla desde el array `"sites"` de `config.json`. No hace falta
+tocar `monitor.py` para nada de esto — ni añadir, ni modificar, ni quitar
+una web.
+
+### Añadir una web nueva
+
+Añade un objeto nuevo al array `"sites"`:
 
 ```json
 {
@@ -153,17 +196,42 @@ un objeto nuevo al array `"sites"`:
   ejecuciones vayan más rápido).
 
 Guarda, haz `git add config.json && git commit -m "Añadir web X" && git push`
-(o edítalo directamente en GitHub con el botón del lápiz, sin terminal) y en
-la siguiente ejecución programada ya se estará vigilando. La primera vez que
-vigile ese sitio nuevo, igual que en el arranque inicial, solo crea la
-fotografía base sin avisar — a partir de la segunda comprobación de ese
-sitio ya notificará cambios reales.
+(o edítalo directamente en GitHub con el botón del lápiz, sin terminal).
+
+**Importante — esto no es silencioso como el arranque inicial**: la
+"primera ejecución sin avisos" solo pasa cuando `state.json` está
+completamente vacío (el arranque de todo el proyecto). Si añades una web a
+un monitor que ya lleva tiempo funcionando, en cuanto la rastree por primera
+vez vas a recibir de golpe un aviso con todas sus páginas descubiertas como
+"🆕 Nueva página" (igual que pasó al añadir Yo-kai Watch, Fantasy Life i,
+Decapolice y Holy Horror Mansion) — es el comportamiento esperado, no un
+fallo. Si prefieres que ese primer rastreo sea silencioso, pon
+`"notify_on_new_page": false` en `config.json`, haz push, deja que corra una
+vez (crea la fotografía base de la web nueva sin avisar de nada), y luego
+vuelve a poner `"notify_on_new_page": true` y haz push otra vez.
 
 Antes de añadir una web, conviene confirmar cuál es su dominio oficial
 exacto (algunas franquicias de LEVEL-5 aún no tienen web propia y su
 contenido vive dentro de `level5.co.jp`, como le pasaba a Decapolice o
 Fantasy Life i hasta que se les creó su propio dominio) — si no estás
 seguro, pregúntamelo y lo verifico antes de añadirlo.
+
+### Modificar una web (nombre, alcance, url de partida)
+
+Edita directamente los campos (`name`, `seed`, `domain` o `max_pages`) de su
+objeto dentro de `"sites"`, guarda y haz push. Cambiar `max_pages` afecta ya
+a la siguiente ejecución. Cambiar `seed` o `domain` hace que, en la
+práctica, se trate como una web parcialmente nueva (puede volver a reportar
+como "nuevas" páginas que con el dominio/semilla anterior no se habían
+explorado).
+
+### Eliminar una web
+
+Borra su objeto completo del array `"sites"`, guarda y haz push. A partir de
+ahí deja de rastrearse y de generar avisos. Sus páginas ya guardadas se
+quedan para siempre dentro de `state.json` (no se borran solas) — es
+inofensivo, solo ocupan algo de espacio en el archivo; si en algún momento
+quieres que te ayude a limpiarlas de `state.json` también, dímelo.
 
 ## Ajustar la frecuencia y el alcance
 
@@ -196,19 +264,57 @@ ahí (puedes tener Discord y Telegram activos a la vez, o solo uno).
   minutos (según la frecuencia que elijas), no de segundos. Un cron que
   comprobara cada pocos segundos no es viable gratis ni respetuoso con las
   webs de LEVEL-5.
+- **Cobertura parcial en sitios grandes, no literalmente "toda la web"**:
+  `max_pages` limita cuántas páginas se comprueban por sitio en cada
+  ejecución (60 por defecto en las webs grandes). El recorrido es
+  determinista — siempre visita el mismo conjunto de páginas mientras el
+  sitio no cambie de estructura — pero si una web tiene más páginas que su
+  `max_pages`, las que queden fuera de ese límite simplemente no se vigilan.
+  Subir `max_pages` amplía la cobertura a costa de que cada ejecución tarde
+  más (ver "Ajustar la frecuencia y el alcance" más arriba).
+- **Añadir una web nueva genera un aviso "en bloque"**: la primera vez que
+  se rastrea, todas sus páginas descubiertas llegan como "🆕 Nueva página"
+  de golpe — es esperado, no un fallo (con la excepción de poner
+  `notify_on_new_page` en `false` temporalmente, como se explica arriba).
 - **Sitios con protección anti-bot**: si alguna web devuelve error 403 o un
-  CAPTCHA de forma sistemática, este enfoque (peticiones HTTP simples) no lo
-  esquiva; el log del workflow (pestaña Actions → la ejecución → "Ejecutar
-  el monitor") mostrará esos errores.
-- **Falsos positivos residuales**: se normaliza el HTML para ignorar
-  scripts, comentarios y espacios, pero algunas webs incrustan contenido que
-  cambia solo (p. ej. IDs de sesión visibles en el HTML) y podría generar
-  algún aviso irrelevante de vez en cuando.
+  CAPTCHA de forma sistemática, este enfoque (peticiones HTTP simples, sin
+  navegador real) no lo esquiva; el log del workflow (pestaña Actions → la
+  ejecución → "Ejecutar el monitor") mostrará esos errores.
+- **Falsos positivos residuales**: se compara el texto visible ya limpio de
+  scripts, estilos, comentarios, nonces de seguridad (CSP) y tokens CSRF —
+  las causas más comunes de que una página "cambie" sin cambiar nada
+  visible — pero pueden existir otros patrones dinámicos no contemplados
+  (contadores, banners rotativos, fechas de "última actualización" en el
+  propio texto visible, etc.) que todavía generen algún aviso ocasional sin
+  cambio real. Si eso pasa, el propio diff del aviso te dejará ver de un
+  vistazo si es un cambio real o ruido; si detectas uno, dime la URL y lo
+  reviso.
+- **Carreras al guardar el estado**: cada ejecución termina haciendo un
+  commit a `state.json`. Si dos ejecuciones coinciden casi en el mismo
+  instante (por ejemplo, lanzar una manual justo cuando toca la programada),
+  el workflow reintenta automáticamente varias veces; en el caso raro de que
+  aun así falle, no se pierde nada — simplemente esa ejecución en concreto
+  no guarda su resultado y la siguiente (10 minutos después) continúa con
+  normalidad. Evita lanzar ejecuciones manuales innecesarias mientras el
+  cron esté activo para minimizar esto.
+- **`state.json` solo crece (y ahora pesa más)**: las páginas descubiertas
+  no se borran solas aunque quites una web de `config.json` (si una página
+  deja de existir de verdad en el sitio real, ver el aviso 🗑️ arriba: sí se
+  detecta, pero su entrada se conserva marcada como "eliminada", no se
+  borra). Además, ahora se guarda el texto completo de cada página, no solo
+  un hash, para poder mostrar diffs exactos — así que `state.json` pesará
+  notablemente más que antes. No causa ningún problema de funcionamiento
+  (GitHub no tiene un límite práctico relevante para esto), solo ocupa más
+  espacio en el repositorio con el tiempo.
 - **Se respeta `robots.txt`**: si una sección concreta de una web lo
   prohíbe expresamente, el script no la rastrea.
 - **Webs sin dominio propio todavía**: alguna franquicia anunciada pero sin
   lanzar puede no tener web dedicada aún; en ese caso su contenido se
   detecta igualmente porque aparece dentro de `level5.co.jp`.
+- **Sin interfaz visual**: todo se gestiona editando `config.json` a mano
+  (o pidiéndome a mí que lo haga) y los avisos llegan solo por Discord (o
+  Telegram si lo activas) — no hay una web ni panel propio para ver el
+  histórico de cambios más allá de lo que cada app de chat conserve.
 
 ## ¿Y cómo encaja Claude / Claude Code aquí?
 
