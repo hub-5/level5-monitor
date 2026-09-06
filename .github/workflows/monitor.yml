@@ -44,9 +44,32 @@ jobs:
           git config user.name "level5-monitor-bot"
           git config user.email "actions@users.noreply.github.com"
           git add state.json
-          if ! git diff --cached --quiet; then
-            git commit -m "chore: actualizar estado del monitor"
-            git push
-          else
+
+          if git diff --cached --quiet; then
             echo "Sin cambios de estado que commitear."
+            exit 0
           fi
+
+          git commit -m "chore: actualizar estado del monitor"
+
+          # Reintenta si otra ejecución ha subido cambios justo antes que
+          # nosotros (p. ej. una ejecución manual solapada con la programada).
+          # Como el "concurrency" del workflow ya evita que corran dos a la
+          # vez, esto es solo un cinturón de seguridad extra.
+          for intento in 1 2 3 4 5; do
+            if git push; then
+              echo "Estado guardado correctamente."
+              exit 0
+            fi
+            echo "Push rechazado (intento $intento/5), sincronizando y reintentando..."
+            git fetch origin main
+            if ! git rebase origin/main; then
+              echo "No se pudo fusionar automáticamente, abortando este intento."
+              git rebase --abort || true
+              exit 1
+            fi
+            sleep $(( (RANDOM % 5) + 2 ))
+          done
+
+          echo "No se pudo subir el estado tras varios intentos."
+          exit 1
