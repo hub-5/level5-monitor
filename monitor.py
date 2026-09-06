@@ -188,7 +188,14 @@ def crawl_site(site: dict, state_pages: dict, session: requests.Session,
 
     to_visit: list[str] = [seed]
     seen: set[str] = {seed}
-    for sm_url in discover_sitemap_urls(seed, session):
+    # IMPORTANTE: discover_sitemap_urls() devuelve un set (sin orden garantizado
+    # entre ejecuciones distintas, por la aleatoriedad de hashing de Python en
+    # cada proceso nuevo). Si no lo ordenamos, cada ejecución en GitHub Actions
+    # recorrería un subconjunto distinto de páginas cuando el sitio tiene más
+    # páginas que "max_pages", generando falsos avisos de "página nueva" cada
+    # vez que cambia el orden. Ordenar alfabéticamente hace el recorrido
+    # determinista: mismas páginas visitadas mientras el sitio no cambie.
+    for sm_url in sorted(discover_sitemap_urls(seed, session)):
         if is_internal(sm_url, domain) and sm_url not in seen:
             to_visit.append(sm_url)
             seen.add(sm_url)
@@ -252,7 +259,10 @@ def crawl_site(site: dict, state_pages: dict, session: requests.Session,
         # Solo seguimos enlaces de páginas nuevas para nosotros o recién
         # descubiertas por el sitemap; si no ha cambiado no hace falta
         # reextraer enlaces (ya los vimos en una pasada anterior).
-        for link in extract_links(html, url):
+        # Igual que con el sitemap: extract_links() devuelve un set, así que
+        # lo ordenamos antes de añadirlo a la cola para que el recorrido sea
+        # determinista entre ejecuciones (ver comentario más arriba).
+        for link in sorted(extract_links(html, url)):
             link = link.split("#", 1)[0]
             if link in seen:
                 continue
