@@ -1,0 +1,50 @@
+{
+  "sites": [
+    {
+      "name": "LEVEL-5 (web corporativa)",
+      "seed": "https://www.level5.co.jp/",
+      "domain": "level5.co.jp",
+      "max_pages": 60
+    },
+    {
+      "name": "Professor Layton",
+      "seed": "https://www.layton.jp/",
+      "domain": "layton.jp",
+      "max_pages": 60
+    },
+    {
+      "name": "Inazuma Eleven",
+      "seed": "https://www.inazuma.jp/",
+      "domain": "inazuma.jp",
+      "max_pages": 60
+    },
+    {
+      "name": "Yo-kai Watch",
+      "seed": "https://www.youkai-watch.jp/",
+      "domain": "youkai-watch.jp",
+      "max_pages": 60
+    },
+    {
+      "name": "Fantasy Life i",
+      "seed": "https://www.fantasylife.jp/fli/",
+      "domain": "fantasylife.jp",
+      "max_pages": 40
+    },
+    {
+      "name": "Decapolice",
+      "seed": "https://www.decapolice.jp/",
+      "domain": "decapolice.jp",
+      "max_pages": 30
+    },
+    {
+      "name": "Holy Horror Mansion",
+      "seed": "https://www.holy-horror.jp/",
+      "domain": "holy-horror.jp",
+      "max_pages": 20
+    }
+  ],
+  "request_delay_seconds": 0.35,
+  "request_timeout_seconds": 15,
+  "notify_on_new_page": true,
+  "max_urls_per_notification": 15
+}
