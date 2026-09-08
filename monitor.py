@@ -68,9 +68,22 @@ BLOCK_TAG_RE = re.compile(
 )
 TAG_RE = re.compile(r"<[^>]+>")
 
+CHARSET_META_RE = re.compile(
+    rb'<meta[^>]+charset=["\']?\s*([a-zA-Z0-9_\-]+)', re.I
+)
+
 # Número de fallos consecutivos de una URL ya conocida antes de considerar
 # que la página ha sido retirada y avisar de ello.
 REMOVED_AFTER_FAILURES = 2
+
+# Versión del formato en que se guarda cada página en state.json. Cuando la
+# forma de decodificar/comparar el contenido cambia (como aquí, al corregir
+# la detección de codificación de caracteres), se sube este número: cualquier
+# entrada guardada con una versión distinta se vuelve a guardar en silencio
+# (sin generar aviso de "modificada"), igual que la migración del formato
+# hash -> texto. Así, una mejora interna del monitor nunca se confunde con
+# un cambio real de contenido.
+STATE_FORMAT_VERSION = 2
 
 
 # --------------------------------------------------------------------------- #
@@ -120,6 +133,40 @@ def extract_links(html: str, base_url: str) -> set[str]:
         except ValueError:
             continue
     return links
+
+
+def decode_response(resp: requests.Response) -> str:
+    """Decodifica el cuerpo de la respuesta a texto, adivinando bien la
+    codificación de caracteres.
+
+    "requests" decodifica resp.text usando el charset declarado en la
+    cabecera HTTP Content-Type; si esa cabecera no incluye un charset (algo
+    muy habitual: muchas webs, incluidas las japonesas de este proyecto,
+    solo lo declaran dentro de una etiqueta <meta charset> en el propio
+    HTML), requests asume ISO-8859-1 por defecto, que es lo que exige el
+    estándar HTTP para texto sin charset declarado. Esto rompe cualquier
+    texto no-ASCII (japonés, tildes, etc.), convirtiéndolo en secuencias
+    ilegibles del tipo "å ±ï¼...". Aquí se busca primero el charset real
+    dentro del propio HTML y, si no aparece en ningún sitio, se prueba UTF-8
+    (con diferencia el más común) antes de rendirnos al que haya adivinado
+    "requests"."""
+    content_type = resp.headers.get("Content-Type", "")
+    if "charset=" in content_type.lower():
+        return resp.text
+
+    m = CHARSET_META_RE.search(resp.content[:4096])
+    if m:
+        charset = m.group(1).decode("ascii", "ignore")
+        try:
+            return resp.content.decode(charset, errors="replace")
+        except LookupError:
+            pass
+
+    try:
+        return resp.content.decode("utf-8")
+    except UnicodeDecodeError:
+        resp.encoding = resp.apparent_encoding
+        return resp.text
 
 
 def extract_text(html: str) -> str:
@@ -353,20 +400,23 @@ def crawl_site(site: dict, state_pages: dict, session: requests.Session,
             time.sleep(delay)
             continue
 
-        html = resp.text
+        html = decode_response(resp)
         new_text = extract_text(html)
         new_hash = hashlib.sha256(new_text.encode("utf-8", "ignore")).hexdigest()
         title = extract_title(html)
 
         prev_text = prev.get("text")
         is_new = url not in state_pages
-        # Una entrada ya existía pero fue guardada por una versión anterior
-        # del monitor (basada en hash de HTML, sin texto legible). No hay
-        # forma de calcular un diff fiable contra ella, así que se migra en
-        # silencio al nuevo formato: no se avisa de "cambio" solo por el
-        # cambio de formato interno. El primer cambio real posterior sí
-        # generará ya un diff exacto.
-        is_migration = (not is_new) and prev_text is None
+        # Una entrada ya existía pero se guardó con una versión anterior del
+        # monitor: bien en el formato antiguo (solo hash de HTML, sin texto
+        # legible), bien con una versión de STATE_FORMAT_VERSION distinta
+        # (p. ej. antes de corregir la detección de codificación de
+        # caracteres). En ambos casos no hay forma de calcular un diff
+        # fiable contra el valor guardado, así que se migra/recalcula en
+        # silencio: no se avisa de "cambio" solo por una mejora interna del
+        # monitor. El primer cambio real posterior sí generará ya un diff
+        # exacto.
+        is_migration = (not is_new) and prev.get("fmt") != STATE_FORMAT_VERSION
         was_removed = prev.get("removed", False)
 
         if is_new:
@@ -381,6 +431,7 @@ def crawl_site(site: dict, state_pages: dict, session: requests.Session,
             result.changed_pages.append((url, make_diff(prev_text, new_text)))
 
         state_pages[url] = {
+            "fmt": STATE_FORMAT_VERSION,
             "text": new_text,
             "hash_text": new_hash,
             "title": title,
