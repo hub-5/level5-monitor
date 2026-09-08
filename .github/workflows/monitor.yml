@@ -73,3 +73,23 @@ jobs:
 
           echo "No se pudo subir el estado tras varios intentos."
           exit 1
+
+      - name: Avisar por Discord si algo ha fallado
+        # Se ejecuta solo si algún paso anterior de este job ha fallado (el
+        # monitor.py ha cascado, o no se ha podido guardar el estado tras
+        # los reintentos). Así te enteras sin tener que entrar a mirar la
+        # pestaña Actions cada vez.
+        if: failure()
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: |
+          if [ -z "$DISCORD_WEBHOOK_URL" ]; then
+            echo "Sin DISCORD_WEBHOOK_URL configurado; no se puede avisar del fallo."
+            exit 0
+          fi
+          RUN_URL="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          curl -sS -X POST "$DISCORD_WEBHOOK_URL" \
+            -H "Content-Type: application/json" \
+            --data-binary @- <<PAYLOAD
+          {"content": "⚠️ **El LEVEL-5 Website Monitor ha fallado.** Revisa el log de esta ejecución: $RUN_URL"}
+          PAYLOAD

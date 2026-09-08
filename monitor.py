@@ -44,6 +44,15 @@ WHITESPACE_RE = re.compile(r"\s+")
 TITLE_RE = re.compile(r"<title[^>]*>(.*?)</title>", re.I | re.S)
 HREF_RE = re.compile(r'href=["\']([^"\'#]+)', re.I)
 SITEMAP_LOC_RE = re.compile(r"<loc>\s*(.*?)\s*</loc>", re.I)
+IMG_SRC_RE = re.compile(r'<img\b[^>]*\bsrc=["\']([^"\']+)', re.I)
+OG_IMAGE_RE = re.compile(
+    r'<meta\b[^>]*\bproperty=["\']og:image["\'][^>]*\bcontent=["\']([^"\']+)', re.I
+)
+# El orden de los atributos en <meta> no está garantizado; algunas webs
+# escriben content antes que property.
+OG_IMAGE_ALT_RE = re.compile(
+    r'<meta\b[^>]*\bcontent=["\']([^"\']+)["\'][^>]*\bproperty=["\']og:image["\']', re.I
+)
 
 # Patrones de valores que cambian en cada petición HTTP aunque el contenido
 # visible de la página sea idéntico (nonces de seguridad CSP, tokens CSRF,
@@ -133,6 +142,39 @@ def extract_links(html: str, base_url: str) -> set[str]:
         except ValueError:
             continue
     return links
+
+
+def extract_images(html: str, base_url: str) -> list[str]:
+    """Devuelve las URLs de imagen "interesantes" de una página, absolutas y
+    sin duplicados, en orden de aparición: primero la og:image (la imagen
+    "representativa" que usan las redes sociales al compartir el enlace, si
+    la declara la página), luego el resto de <img src=...>. Se usa para
+    detectar cuándo aparece una imagen nueva en una página ya conocida
+    (artwork, capturas de pantalla de un anuncio) y mostrarla incrustada en
+    el aviso de Discord."""
+    urls: list[str] = []
+    seen: set[str] = set()
+
+    def add(raw: str) -> None:
+        raw = raw.strip()
+        if not raw:
+            return
+        try:
+            abs_url = urljoin(base_url, raw)
+        except ValueError:
+            return
+        if abs_url not in seen:
+            seen.add(abs_url)
+            urls.append(abs_url)
+
+    for m in OG_IMAGE_RE.finditer(html):
+        add(m.group(1))
+    for m in OG_IMAGE_ALT_RE.finditer(html):
+        add(m.group(1))
+    for m in IMG_SRC_RE.finditer(html):
+        add(m.group(1))
+
+    return urls
 
 
 def decode_response(resp: requests.Response) -> str:
@@ -285,12 +327,30 @@ def discover_sitemap_urls(seed: str, session: requests.Session) -> set[str]:
 # Rastreo (crawl) de un sitio
 # --------------------------------------------------------------------------- #
 
+def _truncate(text: str, limit: int = 220) -> str:
+    text = text.strip()
+    if len(text) <= limit:
+        return text
+    return text[:limit].rstrip() + "…"
+
+
+@dataclass
+class PageChange:
+    """Una novedad concreta detectada en una página: nueva, modificada,
+    eliminada o reaparecida. title e image_url dan contexto en el aviso
+    (Discord los muestra sin que haga falta abrir el enlace)."""
+    url: str
+    title: str = ""
+    detail: str = ""       # diff exacto (modificada) o fragmento (nueva)
+    image_url: str = ""    # imagen nueva/destacada de la página, si la hay
+
+
 @dataclass
 class CrawlResult:
     site_name: str
-    new_pages: list[tuple[str, str]] = field(default_factory=list)
-    changed_pages: list[tuple[str, str]] = field(default_factory=list)
-    removed_pages: list[str] = field(default_factory=list)
+    new_pages: list[PageChange] = field(default_factory=list)
+    changed_pages: list[PageChange] = field(default_factory=list)
+    removed_pages: list[PageChange] = field(default_factory=list)
     errors: list[str] = field(default_factory=list)
     visited_count: int = 0
 
@@ -309,7 +369,7 @@ def _register_failure(url: str, state_pages: dict, result: CrawlResult) -> None:
     entry["last_checked"] = now_iso()
     if entry["consecutive_errors"] >= REMOVED_AFTER_FAILURES and not entry.get("removed"):
         entry["removed"] = True
-        result.removed_pages.append(url)
+        result.removed_pages.append(PageChange(url=url, title=entry.get("title", "")))
 
 
 def is_internal(url: str, domain: str) -> bool:
@@ -404,8 +464,10 @@ def crawl_site(site: dict, state_pages: dict, session: requests.Session,
         new_text = extract_text(html)
         new_hash = hashlib.sha256(new_text.encode("utf-8", "ignore")).hexdigest()
         title = extract_title(html)
+        images = extract_images(html, url)
 
         prev_text = prev.get("text")
+        prev_images = set(prev.get("images") or [])
         is_new = url not in state_pages
         # Una entrada ya existía pero se guardó con una versión anterior del
         # monitor: bien en el formato antiguo (solo hash de HTML, sin texto
@@ -420,21 +482,32 @@ def crawl_site(site: dict, state_pages: dict, session: requests.Session,
         was_removed = prev.get("removed", False)
 
         if is_new:
-            result.new_pages.append((url, new_text[:300]))
+            result.new_pages.append(PageChange(
+                url=url, title=title, detail=_truncate(new_text),
+                image_url=images[0] if images else "",
+            ))
         elif is_migration:
             print(f"[INFO]   Migrando estado de {url} al nuevo formato (sin aviso).")
         elif was_removed:
             # Había sido marcada como eliminada y ha vuelto a responder: se
             # trata como una "reaparición", no como una modificación.
-            result.new_pages.append((url, new_text[:300]))
+            result.new_pages.append(PageChange(
+                url=url, title=title, detail=_truncate(new_text),
+                image_url=images[0] if images else "",
+            ))
         elif prev.get("hash_text") != new_hash:
-            result.changed_pages.append((url, make_diff(prev_text, new_text)))
+            new_images = [img for img in images if img not in prev_images]
+            result.changed_pages.append(PageChange(
+                url=url, title=title, detail=make_diff(prev_text, new_text),
+                image_url=new_images[0] if new_images else "",
+            ))
 
         state_pages[url] = {
             "fmt": STATE_FORMAT_VERSION,
             "text": new_text,
             "hash_text": new_hash,
             "title": title,
+            "images": images,
             "etag": resp.headers.get("ETag", ""),
             "last_modified": resp.headers.get("Last-Modified", ""),
             "last_checked": now_iso(),
@@ -465,64 +538,103 @@ def crawl_site(site: dict, state_pages: dict, session: requests.Session,
 # Notificaciones
 # --------------------------------------------------------------------------- #
 
-def _truncate(text: str, limit: int = 220) -> str:
-    text = text.strip()
-    if len(text) <= limit:
-        return text
-    return text[:limit].rstrip() + "…"
+KIND_EMOJI = {"changed": "🔄", "new": "🆕", "removed": "🗑️"}
+KIND_LABEL = {"changed": "Modificada", "new": "Nueva página", "removed": "Eliminada"}
+# Colores de los embeds de Discord (decimal, formato 0xRRGGBB).
+KIND_COLOR = {"changed": 0xF5A623, "new": 0x2ECC71, "removed": 0xE74C3C}
+
+# Embeds por mensaje de Discord. El límite real de la plataforma es 10, pero
+# nos quedamos por debajo para no arriesgarnos a chocar con el límite de
+# 6000 caracteres combinados de un mensaje si varias páginas cambian a la
+# vez con diffs largos.
+EMBEDS_PER_MESSAGE = 5
 
 
-def build_message_lines(results: list[CrawlResult], max_urls: int) -> list[str]:
+def _site_entries(r: CrawlResult) -> list[tuple[str, PageChange]]:
+    """Todas las novedades de un sitio, etiquetadas por tipo, en el orden en
+    que se muestran: primero modificadas, luego nuevas, luego eliminadas."""
+    return (
+        [("changed", pc) for pc in r.changed_pages]
+        + [("new", pc) for pc in r.new_pages]
+        + [("removed", pc) for pc in r.removed_pages]
+    )
+
+
+def build_text_lines(results: list[CrawlResult], max_urls: int) -> list[str]:
+    """Todos los cambios como texto plano, con el título de cada página
+    junto a su URL. Se usa para Telegram y para el resumen que se imprime
+    en el log de la ejecución (Discord usa embeds, ver build_discord_payloads)."""
     lines = []
     for r in results:
-        if not r.new_pages and not r.changed_pages and not r.removed_pages:
+        entries = _site_entries(r)
+        if not entries:
             continue
         lines.append(f"**{r.site_name}**")
-        shown = 0
-        total = len(r.changed_pages) + len(r.new_pages) + len(r.removed_pages)
-
-        for url, diff in r.changed_pages:
-            if shown >= max_urls:
-                break
-            lines.append(f"🔄 Modificada: {url}")
-            for diff_line in diff.splitlines():
-                lines.append(f"      {diff_line}")
-            shown += 1
-
-        for url, snippet in r.new_pages:
-            if shown >= max_urls:
-                break
-            lines.append(f"🆕 Nueva página: {url}")
-            snippet = _truncate(snippet)
-            if snippet:
-                lines.append(f"      {snippet}")
-            shown += 1
-
-        for url in r.removed_pages:
-            if shown >= max_urls:
-                break
-            lines.append(f"🗑️ Eliminada: {url}")
-            shown += 1
-
-        if total > shown:
-            lines.append(f"…y {total - shown} más en este sitio.")
+        shown = entries[:max_urls]
+        for kind, pc in shown:
+            label = f"{pc.title} — {pc.url}" if pc.title else pc.url
+            lines.append(f"{KIND_EMOJI[kind]} {KIND_LABEL[kind]}: {label}")
+            for detail_line in pc.detail.splitlines():
+                lines.append(f"      {detail_line}")
+        extra = len(entries) - len(shown)
+        if extra > 0:
+            lines.append(f"…y {extra} más en este sitio.")
         lines.append("")
     return lines
 
 
-def send_discord(webhook_url: str, lines: list[str]) -> None:
-    content = "\n".join(lines).strip()
-    if not content:
-        return
-    # Discord limita cada mensaje a 2000 caracteres.
-    chunks = [content[i:i + 1900] for i in range(0, len(content), 1900)] or [content]
-    for i, chunk in enumerate(chunks):
-        payload = {
-            "content": (
-                f"📢 **Cambios detectados en webs de LEVEL-5** ({now_iso()})\n\n{chunk}"
-                if i == 0 else chunk
-            )
-        }
+def _build_embed(site_name: str, kind: str, pc: PageChange) -> dict:
+    embed = {
+        "author": {"name": f"{KIND_EMOJI[kind]} {KIND_LABEL[kind]} · {site_name}"},
+        "title": _truncate(pc.title, 256) if pc.title else pc.url,
+        "url": pc.url,
+        "color": KIND_COLOR[kind],
+    }
+    if pc.detail:
+        embed["description"] = pc.detail
+    if pc.image_url:
+        embed["image"] = {"url": pc.image_url}
+    return embed
+
+
+def build_discord_payloads(results: list[CrawlResult], max_urls: int) -> list[dict]:
+    """Construye los payloads listos para el webhook de Discord. Cada página
+    con novedades se muestra como un "embed" propio: título real de la
+    página (sin tener que abrir el enlace), el diff exacto o fragmento, y
+    una imagen incrustada si se detectó alguna nueva. Se agrupan en mensajes
+    de hasta EMBEDS_PER_MESSAGE embeds."""
+    embeds: list[dict] = []
+    summary_lines: list[str] = []
+
+    for r in results:
+        entries = _site_entries(r)
+        if not entries:
+            continue
+        shown = entries[:max_urls]
+        for kind, pc in shown:
+            embeds.append(_build_embed(r.site_name, kind, pc))
+        extra = len(entries) - len(shown)
+        if extra > 0:
+            summary_lines.append(f"**{r.site_name}**: …y {extra} más no mostradas arriba.")
+
+    if not embeds:
+        return []
+
+    header = f"📢 **Cambios detectados en webs de LEVEL-5** ({now_iso()})"
+    if summary_lines:
+        header += "\n" + "\n".join(summary_lines)
+
+    payloads = []
+    for i in range(0, len(embeds), EMBEDS_PER_MESSAGE):
+        payload = {"embeds": embeds[i:i + EMBEDS_PER_MESSAGE]}
+        if i == 0:
+            payload["content"] = header
+        payloads.append(payload)
+    return payloads
+
+
+def send_discord(webhook_url: str, payloads: list[dict]) -> None:
+    for payload in payloads:
         try:
             resp = requests.post(webhook_url, json=payload, timeout=15)
             if resp.status_code >= 300:
@@ -598,8 +710,7 @@ def main() -> int:
         for r in results:
             r.new_pages = []
 
-    lines = build_message_lines(results, max_urls)
-    if not lines:
+    if not any(_site_entries(r) for r in results):
         print("[INFO] Sin cambios detectados.")
         return 0
 
@@ -608,16 +719,16 @@ def main() -> int:
     telegram_chat_id = os.environ.get("TELEGRAM_CHAT_ID", "").strip()
 
     if webhook_url:
-        send_discord(webhook_url, lines)
+        send_discord(webhook_url, build_discord_payloads(results, max_urls))
     if telegram_token and telegram_chat_id:
-        send_telegram(telegram_token, telegram_chat_id, lines)
+        send_telegram(telegram_token, telegram_chat_id, build_text_lines(results, max_urls))
     if not webhook_url and not (telegram_token and telegram_chat_id):
         print("[WARN] No hay DISCORD_WEBHOOK_URL ni TELEGRAM_BOT_TOKEN/CHAT_ID configurados; "
               "los cambios se han detectado pero no se ha enviado ninguna notificación.",
               file=sys.stderr)
 
     print("[INFO] Cambios notificados:")
-    print("\n".join(lines))
+    print("\n".join(build_text_lines(results, max_urls)))
     return 0
 
 
