@@ -13,6 +13,12 @@
       "max_pages": 40
     },
     {
+      "name": "LEVEL5 VISION 2026 II",
+      "seed": "https://www.level5.co.jp/vision2026-2/",
+      "domain": "level5.co.jp",
+      "max_pages": 10
+    },
+    {
       "name": "LEVEL-5 TGS2026",
       "seed": "https://www.level5.co.jp/tgs2026/",
       "domain": "level5.co.jp",
