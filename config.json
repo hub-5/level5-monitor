@@ -13,16 +13,16 @@
       "max_pages": 40
     },
     {
-      "name": "LEVEL5 VISION 2026 II",
-      "seed": "https://www.level5.co.jp/vision2026-2/",
-      "domain": "level5.co.jp",
-      "max_pages": 10
-    },
-    {
       "name": "LEVEL-5 TGS2026",
       "seed": "https://www.level5.co.jp/tgs2026/",
       "domain": "level5.co.jp",
       "max_pages": 40
+    },
+    {
+      "name": "LEVEL5 VISION 2026 II",
+      "seed": "https://www.level5.co.jp/vision2026-2/",
+      "domain": "level5.co.jp",
+      "max_pages": 10
     },
     {
       "name": "Fantasy Life i (FLI)",
@@ -64,6 +64,12 @@
       "name": "Snack World RELOADED (SWRE)",
       "seed": "https://www.snack-world.jp/reloaded/",
       "domain": "snack-world.jp",
+      "max_pages": 40
+    },
+    {
+      "name": "Yo-kai Watch 2: Hadou (YW2)",
+      "seed": "https://www.youkai-watch.jp/yw2-hadou/",
+      "domain": "youkai-watch.jp",
       "max_pages": 40
     }
   ],
