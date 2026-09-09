@@ -237,10 +237,56 @@ def extract_text(html: str) -> str:
     return "\n".join(lines)
 
 
+# Umbral de similitud (0-1, según SequenceMatcher.ratio()) para decidir si
+# dos líneas emparejadas dentro de un mismo bloque de cambio son "la misma
+# frase con un cambio pequeño" (se resalta solo el fragmento que cambió) o
+# son lo bastante distintas como para mostrarlas completas por separado.
+INLINE_DIFF_MIN_RATIO = 0.5
+
+
+def _inline_diff(old_line: str, new_line: str) -> str | None:
+    """Resalta, dentro de una sola línea, solo el fragmento que cambió entre
+    old_line y new_line (tachado lo quitado, en negrita lo añadido) en vez
+    de repetir la línea completa dos veces. Un espacio añadido o quitado se
+    muestra como "␣" para que se note (en negrita/tachado, un espacio en
+    blanco pasaría totalmente desapercibido).
+
+    Devuelve None cuando las dos líneas son demasiado distintas entre sí
+    (por debajo de INLINE_DIFF_MIN_RATIO) para que resaltar un fragmento
+    tenga sentido; en ese caso es más claro mostrarlas enteras, por
+    separado, como con cualquier otro cambio grande."""
+    matcher = difflib.SequenceMatcher(a=old_line, b=new_line, autojunk=False)
+    if matcher.ratio() < INLINE_DIFF_MIN_RATIO:
+        return None
+
+    parts: list[str] = []
+    for tag, i1, i2, j1, j2 in matcher.get_opcodes():
+        if tag == "equal":
+            parts.append(old_line[i1:i2])
+            continue
+        if tag in ("delete", "replace"):
+            removed = old_line[i1:i2]
+            shown = removed if removed.strip() else "␣" * len(removed)
+            parts.append(f"~~{shown}~~")
+        if tag in ("insert", "replace"):
+            added = new_line[j1:j2]
+            shown = added if added.strip() else "␣" * len(added)
+            parts.append(f"**{shown}**")
+    return "".join(parts)
+
+
 def make_diff(old_text: str, new_text: str, max_lines: int = 8, max_chars: int = 600) -> str:
     """Genera un diff línea a línea legible entre dos versiones del texto
-    visible de una página: qué líneas se han quitado (➖) y cuáles se han
-    añadido (➕). Se recorta para no desbordar el mensaje de Discord."""
+    visible de una página. Cuando una línea se sustituye por otra muy
+    parecida (un cambio pequeño: un espacio, una palabra, una fecha...), se
+    muestra una sola vez con solo el fragmento que cambió resaltado (✏️,
+    tachado lo quitado y en negrita lo añadido) en vez de repetir la línea
+    completa como quitada (➖) y añadida (➕) por separado — mucho más fácil
+    de leer de un vistazo, sobre todo con texto en japonés, donde dos
+    frases casi idénticas son difíciles de comparar a ojo. Los cambios más
+    grandes (líneas realmente distintas, o añadidas/quitadas del todo)
+    siguen mostrándose completos. Se recorta para no desbordar el mensaje
+    de Discord."""
     old_lines = old_text.splitlines()
     new_lines = new_text.splitlines()
     matcher = difflib.SequenceMatcher(a=old_lines, b=new_lines, autojunk=False)
@@ -248,6 +294,18 @@ def make_diff(old_text: str, new_text: str, max_lines: int = 8, max_chars: int =
     diff_lines: list[str] = []
     for tag, i1, i2, j1, j2 in matcher.get_opcodes():
         if tag == "equal":
+            continue
+        if tag == "replace" and (i2 - i1) == (j2 - j1):
+            # Mismo número de líneas a cada lado del cambio: lo habitual es
+            # que cada línea vieja se corresponda con la nueva en la misma
+            # posición.
+            for old_line, new_line in zip(old_lines[i1:i2], new_lines[j1:j2]):
+                highlighted = _inline_diff(old_line, new_line)
+                if highlighted is not None:
+                    diff_lines.append(f"✏️ {highlighted}")
+                else:
+                    diff_lines.append(f"➖ {old_line}")
+                    diff_lines.append(f"➕ {new_line}")
             continue
         if tag in ("delete", "replace"):
             diff_lines.extend(f"➖ {line}" for line in old_lines[i1:i2])
