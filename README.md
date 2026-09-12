@@ -14,10 +14,7 @@ Webs incluidas por defecto (`config.json`):
 - **Fantasy Life i** — `fantasylife.jp`
 - **Decapolice** — `decapolice.jp`
 - **Holy Horror Mansion** — `holy-horror.jp`
-
-> **Nota sobre Inazuma Eleven RE**: no tiene web propia, se anuncia dentro de
-> `inazuma.jp`, así que ya queda cubierto por la entrada "Inazuma Eleven" —
-> no hace falta (ni conviene) añadirlo por separado.
+- **¡Y más!**
 
 ## Cómo funciona
 
