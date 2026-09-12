@@ -71,6 +71,12 @@
       "seed": "https://www.youkai-watch.jp/yw2-hadou/",
       "domain": "youkai-watch.jp",
       "max_pages": 40
+    },
+    {
+     "name": "Professor Layton y la Villa Misteriosa: Remake",
+     "seed": "https://www.layton.jp/fushigi-remake/",
+     "domain": "layton.jp",
+     "max_pages": 40
     }
   ],
   "request_delay_seconds": 0.35,
