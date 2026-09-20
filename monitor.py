@@ -32,6 +32,10 @@ import requests
 
 CONFIG_PATH = os.environ.get("MONITOR_CONFIG", "config.json")
 STATE_PATH = os.environ.get("MONITOR_STATE", "state.json")
+EVENTS_PATH = os.environ.get("MONITOR_EVENTS", "events.json")
+# Fichero temporal (en .gitignore, nunca se commitea) con el push pendiente;
+# lo escribe el monitor y lo envía "--send-pending" en un paso posterior.
+PENDING_PATH = os.environ.get("MONITOR_PUSH_PENDING", "push_pending.json")
 
 USER_AGENT = (
     "LEVEL5-WebsiteMonitor/1.0 "
@@ -723,11 +727,14 @@ def send_telegram(bot_token: str, chat_id: str, lines: list[str]) -> None:
 FCM_SCOPE = "https://www.googleapis.com/auth/firebase.messaging"
 
 
-def send_push(title: str, body: str, topic: str = "radar") -> bool:
+def send_push(title: str, body: str, topic: str = "radar",
+              data: dict | None = None) -> bool:
     """Envía una notificación push por Firebase Cloud Messaging (HTTP v1) a
     un topic. Se autentica con la cuenta de servicio leída del JSON de la
     variable de entorno FIREBASE_SERVICE_ACCOUNT (el project_id sale de ese
-    mismo JSON). Nunca se imprime el JSON ni el token de acceso."""
+    mismo JSON). Nunca se imprime el JSON ni el token de acceso. `data` es
+    opcional (FCM exige que todos sus valores sean texto, así que se
+    convierten a str)."""
     raw = os.environ.get("FIREBASE_SERVICE_ACCOUNT", "").strip()
     if not raw:
         print("[ERROR] FIREBASE_SERVICE_ACCOUNT no está definida.", file=sys.stderr)
@@ -757,7 +764,10 @@ def send_push(title: str, body: str, topic: str = "radar") -> bool:
         return False
 
     url = f"https://fcm.googleapis.com/v1/projects/{project_id}/messages:send"
-    payload = {"message": {"topic": topic, "notification": {"title": title, "body": body}}}
+    message = {"topic": topic, "notification": {"title": title, "body": body}}
+    if data:
+        message["data"] = {str(k): str(v) for k, v in data.items()}
+    payload = {"message": message}
     try:
         resp = requests.post(
             url,
@@ -777,6 +787,67 @@ def send_push(title: str, body: str, topic: str = "radar") -> bool:
 
 
 # --------------------------------------------------------------------------- #
+# Feed de eventos (events.json)
+# --------------------------------------------------------------------------- #
+
+def record_feed(config: dict, results: list[CrawlResult], previously_removed: set[str],
+                state_pages: dict, dry_run: bool) -> None:
+    """Genera los eventos de esta ejecución (ver events.py). Aislado: cualquier
+    fallo, incluido el import, se avisa y se ignora; Discord, state.json y el
+    resto del monitor siguen exactamente igual."""
+    try:
+        import events
+        events.record_events(
+            results, previously_removed, state_pages,
+            events.build_franchise_map(config), EVENTS_PATH, dry_run=dry_run,
+            pending_path=PENDING_PATH,
+            franchise_names=config.get("franchise_names") or {},
+        )
+    except Exception as exc:  # noqa: BLE001
+        print(f"[WARN] No se pudo generar el feed de eventos ({type(exc).__name__}).",
+              file=sys.stderr)
+
+
+def emit_test_event() -> int:
+    """--emit-test-event: añade un evento TEST al feed y deja su push
+    pendiente por el mismo camino que un cambio real (lo usa el workflow
+    manual test-events.yml). Sale con 1 si falla, para que se note."""
+    config = load_json(CONFIG_PATH, {}) or {}
+    run_url = os.environ.get("TEST_EVENT_URL", "")
+    try:
+        import events
+        ok = events.emit_test_event(
+            EVENTS_PATH, PENDING_PATH, config.get("franchise_names") or {}, url=run_url)
+    except Exception as exc:  # noqa: BLE001
+        print(f"[ERROR] No se pudo añadir el evento de prueba ({type(exc).__name__}).",
+              file=sys.stderr)
+        return 1
+    return 0 if ok else 1
+
+
+def send_pending() -> int:
+    """Envía el push pendiente (UNO) que dejó el monitor, tras haber
+    commiteado el feed. Sin fichero no hay nada que enviar (código 0). Si FCM
+    falla devuelve 1; el workflow lo ejecuta con continue-on-error, así que
+    nunca pone la ejecución en rojo."""
+    if not os.path.exists(PENDING_PATH):
+        print("[INFO] No hay push pendiente.")
+        return 0
+    pending = load_json(PENDING_PATH, None)
+    if (not isinstance(pending, dict) or not isinstance(pending.get("title"), str)
+            or not isinstance(pending.get("body"), str)):
+        print(f"[ERROR] {PENDING_PATH} no tiene el formato esperado.", file=sys.stderr)
+        return 1
+    if not send_push(pending["title"], pending["body"], data=pending.get("data")):
+        return 1
+    try:
+        os.remove(PENDING_PATH)  # evita reenviarlo si el paso se repite
+    except OSError:
+        pass
+    return 0
+
+
+# --------------------------------------------------------------------------- #
 # main
 # --------------------------------------------------------------------------- #
 
@@ -784,6 +855,23 @@ def main() -> int:
     if "--test-push" in sys.argv[1:]:
         ok = send_push("Prueba de SrHub", "El monitor ya puede avisar a la app")
         return 0 if ok else 1
+
+    if "--send-pending" in sys.argv[1:]:
+        return send_pending()
+
+    if "--emit-test-event" in sys.argv[1:]:
+        return emit_test_event()
+
+    # --dry-run: rastrea (solo lecturas) y muestra los eventos que se
+    # generarían, sin guardar state.json ni events.json y sin enviar nada.
+    dry_run = "--dry-run" in sys.argv[1:]
+
+    # Un push pendiente de una ejecución anterior no debe reenviarse.
+    if not dry_run:
+        try:
+            os.remove(PENDING_PATH)
+        except OSError:
+            pass
 
     config = load_json(CONFIG_PATH, None)
     if config is None:
@@ -802,6 +890,10 @@ def main() -> int:
 
     results: list[CrawlResult] = []
     first_run = len(state_pages) == 0
+    # Foto (solo lectura) de las páginas ya marcadas como eliminadas antes de
+    # rastrear: el feed la usa para distinguir "reaparecida" de "nueva".
+    previously_removed = {u for u, e in state_pages.items()
+                          if isinstance(e, dict) and e.get("removed")}
 
     for site in config["sites"]:
         print(f"[INFO] Rastreando {site['name']} ({site['seed']}) ...")
@@ -816,7 +908,8 @@ def main() -> int:
         results.append(r)
 
     state["last_run"] = now_iso()
-    save_json(STATE_PATH, state)
+    if not dry_run:
+        save_json(STATE_PATH, state)
 
     if first_run:
         # En la primera ejecución solo se establece la línea base:
@@ -830,6 +923,15 @@ def main() -> int:
 
     if not any(_site_entries(r) for r in results):
         print("[INFO] Sin cambios detectados.")
+        return 0
+
+    # Feed de eventos: mismos puntos y mismo diff que Discord, y antes de
+    # enviar nada para que un fallo posterior no lo deje sin registrar.
+    record_feed(config, results, previously_removed, state_pages, dry_run)
+
+    if dry_run:
+        print("[DRY-RUN] Ni state.json ni events.json se han modificado y no se "
+              "ha enviado ninguna notificación.")
         return 0
 
     webhook_url = os.environ.get("DISCORD_WEBHOOK_URL", "").strip()

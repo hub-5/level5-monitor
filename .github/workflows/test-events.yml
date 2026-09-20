@@ -1,0 +1,82 @@
+name: Test eventos (extremo a extremo)
+
+# Añade un evento de tipo TEST al feed, lo commitea y envía el push, por el
+# mismo camino que un cambio real de LEVEL-5. Sirve para comprobar de punta a
+# punta (feed -> commit -> push -> app) sin esperar a un cambio real.
+# Solo manual. Nota: el paso de commit es una copia del de monitor.yml; si se
+# cambia uno, conviene revisar el otro.
+
+on:
+  workflow_dispatch:
+    inputs:
+      send_push:
+        description: "Enviar también el push FCM"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write   # necesario para commitear events.json
+
+concurrency:
+  group: level5-monitor   # el mismo que monitor.yml: nunca a la vez que el monitor
+  cancel-in-progress: false
+
+jobs:
+  test-events:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      - name: Añadir evento de prueba al feed
+        env:
+          TEST_EVENT_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: python monitor.py --emit-test-event
+
+      - name: Guardar el feed en el repositorio
+        run: |
+          git config user.name "level5-monitor-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add events.json
+
+          if git diff --cached --quiet; then
+            echo "Sin cambios que commitear."
+            exit 0
+          fi
+
+          git commit -m "chore: evento de prueba del monitor"
+
+          for intento in 1 2 3 4 5; do
+            if git push; then
+              echo "Feed guardado correctamente."
+              exit 0
+            fi
+            echo "Push rechazado (intento $intento/5), sincronizando y reintentando..."
+            git fetch origin "$GITHUB_REF_NAME"
+            if ! git rebase "origin/$GITHUB_REF_NAME"; then
+              echo "No se pudo fusionar automáticamente, abortando este intento."
+              git rebase --abort || true
+              exit 1
+            fi
+            sleep $(( (RANDOM % 5) + 2 ))
+          done
+
+          echo "No se pudo subir el feed tras varios intentos."
+          exit 1
+
+      - name: Enviar push de prueba (FCM)
+        # Solo tras un commit correcto; un fallo de FCM no pone el job en rojo.
+        if: ${{ inputs.send_push }}
+        continue-on-error: true
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        run: python monitor.py --send-pending

@@ -1,0 +1,232 @@
+{
+  "payloads": [
+    {
+      "embeds": [
+        {
+          "author": {
+            "name": "🔄 Modificada · Inazuma Eleven RE (IERE)"
+          },
+          "title": "ニュース",
+          "url": "https://www.inazuma.jp/re/news/",
+          "color": 16098851,
+          "description": "✏️ 発売日は~~未定~~**2026年12月**です\n➕ 新キャラクター公開 🎉",
+          "image": {
+            "url": "https://www.inazuma.jp/re/img/a.png"
+          }
+        },
+        {
+          "author": {
+            "name": "🆕 Nueva página · Inazuma Eleven RE (IERE)"
+          },
+          "title": "新ページ",
+          "url": "https://www.inazuma.jp/re/new/",
+          "color": 3066993,
+          "description": "イナズマイレブン 最新情報\n発売日は2026年12月です\n公式サイトへようこそ\n新キャラクター公開 🎉\nお問い合わせ"
+        },
+        {
+          "author": {
+            "name": "🗑️ Eliminada · Inazuma Eleven RE (IERE)"
+          },
+          "title": "旧ページ",
+          "url": "https://www.inazuma.jp/re/old/",
+          "color": 15158332
+        },
+        {
+          "author": {
+            "name": "🆕 Nueva página · Professor Layton"
+          },
+          "title": "P0",
+          "url": "https://www.layton.jp/x/0",
+          "color": 3066993,
+          "description": "texto"
+        },
+        {
+          "author": {
+            "name": "🆕 Nueva página · Professor Layton"
+          },
+          "title": "P1",
+          "url": "https://www.layton.jp/x/1",
+          "color": 3066993,
+          "description": "texto"
+        }
+      ],
+      "content": "📢 **Cambios detectados en webs de LEVEL-5** (2026-01-01T00:00:00+00:00)\n**Professor Layton**: …y 5 más no mostradas arriba."
+    },
+    {
+      "embeds": [
+        {
+          "author": {
+            "name": "🆕 Nueva página · Professor Layton"
+          },
+          "title": "P2",
+          "url": "https://www.layton.jp/x/2",
+          "color": 3066993,
+          "description": "texto"
+        },
+        {
+          "author": {
+            "name": "🆕 Nueva página · Professor Layton"
+          },
+          "title": "P3",
+          "url": "https://www.layton.jp/x/3",
+          "color": 3066993,
+          "description": "texto"
+        },
+        {
+          "author": {
+            "name": "🆕 Nueva página · Professor Layton"
+          },
+          "title": "P4",
+          "url": "https://www.layton.jp/x/4",
+          "color": 3066993,
+          "description": "texto"
+        },
+        {
+          "author": {
+            "name": "🆕 Nueva página · Professor Layton"
+          },
+          "title": "P5",
+          "url": "https://www.layton.jp/x/5",
+          "color": 3066993,
+          "description": "texto"
+        },
+        {
+          "author": {
+            "name": "🆕 Nueva página · Professor Layton"
+          },
+          "title": "P6",
+          "url": "https://www.layton.jp/x/6",
+          "color": 3066993,
+          "description": "texto"
+        }
+      ]
+    },
+    {
+      "embeds": [
+        {
+          "author": {
+            "name": "🆕 Nueva página · Professor Layton"
+          },
+          "title": "P7",
+          "url": "https://www.layton.jp/x/7",
+          "color": 3066993,
+          "description": "texto"
+        },
+        {
+          "author": {
+            "name": "🆕 Nueva página · Professor Layton"
+          },
+          "title": "P8",
+          "url": "https://www.layton.jp/x/8",
+          "color": 3066993,
+          "description": "texto"
+        },
+        {
+          "author": {
+            "name": "🆕 Nueva página · Professor Layton"
+          },
+          "title": "P9",
+          "url": "https://www.layton.jp/x/9",
+          "color": 3066993,
+          "description": "texto"
+        },
+        {
+          "author": {
+            "name": "🆕 Nueva página · Professor Layton"
+          },
+          "title": "P10",
+          "url": "https://www.layton.jp/x/10",
+          "color": 3066993,
+          "description": "texto"
+        },
+        {
+          "author": {
+            "name": "🆕 Nueva página · Professor Layton"
+          },
+          "title": "P11",
+          "url": "https://www.layton.jp/x/11",
+          "color": 3066993,
+          "description": "texto"
+        }
+      ]
+    },
+    {
+      "embeds": [
+        {
+          "author": {
+            "name": "🆕 Nueva página · Professor Layton"
+          },
+          "title": "P12",
+          "url": "https://www.layton.jp/x/12",
+          "color": 3066993,
+          "description": "texto"
+        },
+        {
+          "author": {
+            "name": "🆕 Nueva página · Professor Layton"
+          },
+          "title": "P13",
+          "url": "https://www.layton.jp/x/13",
+          "color": 3066993,
+          "description": "texto"
+        },
+        {
+          "author": {
+            "name": "🆕 Nueva página · Professor Layton"
+          },
+          "title": "P14",
+          "url": "https://www.layton.jp/x/14",
+          "color": 3066993,
+          "description": "texto"
+        }
+      ]
+    }
+  ],
+  "text": [
+    "**Inazuma Eleven RE (IERE)**",
+    "🔄 Modificada: ニュース — https://www.inazuma.jp/re/news/",
+    "      ✏️ 発売日は~~未定~~**2026年12月**です",
+    "      ➕ 新キャラクター公開 🎉",
+    "🆕 Nueva página: 新ページ — https://www.inazuma.jp/re/new/",
+    "      イナズマイレブン 最新情報",
+    "      発売日は2026年12月です",
+    "      公式サイトへようこそ",
+    "      新キャラクター公開 🎉",
+    "      お問い合わせ",
+    "🗑️ Eliminada: 旧ページ — https://www.inazuma.jp/re/old/",
+    "",
+    "**Professor Layton**",
+    "🆕 Nueva página: P0 — https://www.layton.jp/x/0",
+    "      texto",
+    "🆕 Nueva página: P1 — https://www.layton.jp/x/1",
+    "      texto",
+    "🆕 Nueva página: P2 — https://www.layton.jp/x/2",
+    "      texto",
+    "🆕 Nueva página: P3 — https://www.layton.jp/x/3",
+    "      texto",
+    "🆕 Nueva página: P4 — https://www.layton.jp/x/4",
+    "      texto",
+    "🆕 Nueva página: P5 — https://www.layton.jp/x/5",
+    "      texto",
+    "🆕 Nueva página: P6 — https://www.layton.jp/x/6",
+    "      texto",
+    "🆕 Nueva página: P7 — https://www.layton.jp/x/7",
+    "      texto",
+    "🆕 Nueva página: P8 — https://www.layton.jp/x/8",
+    "      texto",
+    "🆕 Nueva página: P9 — https://www.layton.jp/x/9",
+    "      texto",
+    "🆕 Nueva página: P10 — https://www.layton.jp/x/10",
+    "      texto",
+    "🆕 Nueva página: P11 — https://www.layton.jp/x/11",
+    "      texto",
+    "🆕 Nueva página: P12 — https://www.layton.jp/x/12",
+    "      texto",
+    "🆕 Nueva página: P13 — https://www.layton.jp/x/13",
+    "      texto",
+    "🆕 Nueva página: P14 — https://www.layton.jp/x/14",
+    "      texto",
+    "…y 5 más en este sitio.",
+    ""
+  ]
+}
