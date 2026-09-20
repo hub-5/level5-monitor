@@ -3,78 +3,91 @@
     {
       "name": "LEVEL-5 (portada)",
       "seed": "https://www.level5.co.jp/",
+      "franchise": "level5",
       "domain": "level5.co.jp",
       "max_pages": 1
     },
     {
       "name": "Blog de Akihiro Hino",
       "seed": "https://www.level5.co.jp/blog/",
+      "franchise": "level5",
       "domain": "level5.co.jp",
       "max_pages": 40
     },
     {
       "name": "LEVEL-5 TGS2026",
       "seed": "https://www.level5.co.jp/tgs2026/",
+      "franchise": "level5",
       "domain": "level5.co.jp",
       "max_pages": 40
     },
     {
       "name": "LEVEL5 VISION 2026 II",
       "seed": "https://www.level5.co.jp/vision2026-2/",
+      "franchise": "level5",
       "domain": "level5.co.jp",
       "max_pages": 10
     },
     {
       "name": "Fantasy Life i (FLI)",
       "seed": "https://www.fantasylife.jp/fli/",
+      "franchise": "fantasy-life",
       "domain": "fantasylife.jp",
       "max_pages": 40
     },
     {
       "name": "Inazuma Eleven: Victory Road (IEVR)",
       "seed": "https://www.inazuma.jp/victory-road/",
+      "franchise": "inazuma-eleven",
       "domain": "inazuma.jp",
       "max_pages": 40
     },
     {
       "name": "Professor Layton: New World of Steam (PLNWOS)",
       "seed": "https://www.layton.jp/jouki/",
+      "franchise": "professor-layton",
       "domain": "layton.jp",
       "max_pages": 40
     },
     {
       "name": "Holy Horror Mansion (HHM)",
       "seed": "https://www.holy-horror.jp",
+      "franchise": "holy-horror-mansion",
       "domain": "holy-horror.jp",
       "max_pages": 40
     },
     {
       "name": "Inazuma Eleven RE (IERE)",
       "seed": "https://www.inazuma.jp/re/",
+      "franchise": "inazuma-eleven",
       "domain": "inazuma.jp",
       "max_pages": 40
     },
     {
       "name": "Decapolice (DP)",
       "seed": "https://www.decapolice.jp",
+      "franchise": "decapolice",
       "domain": "decapolice.jp",
       "max_pages": 40
     },
     {
       "name": "Snack World RELOADED (SWRE)",
       "seed": "https://www.snack-world.jp/reloaded/",
+      "franchise": "snack-world",
       "domain": "snack-world.jp",
       "max_pages": 40
     },
     {
       "name": "Yo-kai Watch 2: Hadou (YW2)",
       "seed": "https://www.youkai-watch.jp/yw2-hadou/",
+      "franchise": "yokai-watch",
       "domain": "youkai-watch.jp",
       "max_pages": 40
     },
     {
      "name": "Professor Layton y la Villa Misteriosa: Remake",
      "seed": "https://www.layton.jp/fushigi-remake/",
+     "franchise": "professor-layton",
      "domain": "layton.jp",
      "max_pages": 40
     }
@@ -82,5 +95,16 @@
   "request_delay_seconds": 0.35,
   "request_timeout_seconds": 15,
   "notify_on_new_page": true,
-  "max_urls_per_notification": 15
+  "max_urls_per_notification": 15,
+  "franchise_names": {
+    "level5": "LEVEL-5",
+    "fantasy-life": "Fantasy Life",
+    "inazuma-eleven": "Inazuma Eleven",
+    "professor-layton": "Professor Layton",
+    "holy-horror-mansion": "Holy Horror Mansion",
+    "decapolice": "Decapolice",
+    "snack-world": "Snack World",
+    "yokai-watch": "Yo-kai Watch",
+    "general": "General"
+  }
 }
