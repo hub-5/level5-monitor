@@ -32,6 +32,7 @@ import requests
 
 CONFIG_PATH = os.environ.get("MONITOR_CONFIG", "config.json")
 STATE_PATH = os.environ.get("MONITOR_STATE", "state.json")
+EVENTS_PATH = os.environ.get("MONITOR_EVENTS", "events.json")
 
 USER_AGENT = (
     "LEVEL5-WebsiteMonitor/1.0 "
@@ -777,6 +778,26 @@ def send_push(title: str, body: str, topic: str = "radar") -> bool:
 
 
 # --------------------------------------------------------------------------- #
+# Feed de eventos (events.json)
+# --------------------------------------------------------------------------- #
+
+def record_feed(config: dict, results: list[CrawlResult], previously_removed: set[str],
+                state_pages: dict, dry_run: bool) -> None:
+    """Genera los eventos de esta ejecución (ver events.py). Aislado: cualquier
+    fallo, incluido el import, se avisa y se ignora; Discord, state.json y el
+    resto del monitor siguen exactamente igual."""
+    try:
+        import events
+        events.record_events(
+            results, previously_removed, state_pages,
+            events.build_franchise_map(config), EVENTS_PATH, dry_run=dry_run,
+        )
+    except Exception as exc:  # noqa: BLE001
+        print(f"[WARN] No se pudo generar el feed de eventos ({type(exc).__name__}).",
+              file=sys.stderr)
+
+
+# --------------------------------------------------------------------------- #
 # main
 # --------------------------------------------------------------------------- #
 
@@ -784,6 +805,10 @@ def main() -> int:
     if "--test-push" in sys.argv[1:]:
         ok = send_push("Prueba de SrHub", "El monitor ya puede avisar a la app")
         return 0 if ok else 1
+
+    # --dry-run: rastrea (solo lecturas) y muestra los eventos que se
+    # generarían, sin guardar state.json ni events.json y sin enviar nada.
+    dry_run = "--dry-run" in sys.argv[1:]
 
     config = load_json(CONFIG_PATH, None)
     if config is None:
@@ -802,6 +827,10 @@ def main() -> int:
 
     results: list[CrawlResult] = []
     first_run = len(state_pages) == 0
+    # Foto (solo lectura) de las páginas ya marcadas como eliminadas antes de
+    # rastrear: el feed la usa para distinguir "reaparecida" de "nueva".
+    previously_removed = {u for u, e in state_pages.items()
+                          if isinstance(e, dict) and e.get("removed")}
 
     for site in config["sites"]:
         print(f"[INFO] Rastreando {site['name']} ({site['seed']}) ...")
@@ -816,7 +845,8 @@ def main() -> int:
         results.append(r)
 
     state["last_run"] = now_iso()
-    save_json(STATE_PATH, state)
+    if not dry_run:
+        save_json(STATE_PATH, state)
 
     if first_run:
         # En la primera ejecución solo se establece la línea base:
@@ -830,6 +860,15 @@ def main() -> int:
 
     if not any(_site_entries(r) for r in results):
         print("[INFO] Sin cambios detectados.")
+        return 0
+
+    # Feed de eventos: mismos puntos y mismo diff que Discord, y antes de
+    # enviar nada para que un fallo posterior no lo deje sin registrar.
+    record_feed(config, results, previously_removed, state_pages, dry_run)
+
+    if dry_run:
+        print("[DRY-RUN] Ni state.json ni events.json se han modificado y no se "
+              "ha enviado ninguna notificación.")
         return 0
 
     webhook_url = os.environ.get("DISCORD_WEBHOOK_URL", "").strip()
