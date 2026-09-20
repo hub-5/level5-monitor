@@ -13,7 +13,16 @@ El formato está documentado en docs/events-format.md.
 
 from __future__ import annotations
 
+import hashlib
+import json
+import os
 import re
+import sys
+from datetime import datetime, timezone
+
+SCHEMA_VERSION = 1
+MAX_EVENTS = 300
+DEFAULT_FRANCHISE = "general"
 
 # Tope defensivo del texto original del detalle. Hoy make_diff ya recorta a
 # ~600 caracteres y _truncate a 220, así que no se alcanza nunca.
@@ -145,3 +154,169 @@ def detail_fields(event_type: str, detail: str,
         capped = True
     lines, truncated = parse_detail(event_type, raw, new_lines)
     return {"lines": lines, "rawDetail": raw, "truncated": truncated or capped}
+
+
+# --------------------------------------------------------------------------- #
+# Construcción de eventos
+# --------------------------------------------------------------------------- #
+
+def format_timestamp(now: datetime) -> str:
+    return now.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+def make_event_id(timestamp: str, event_type: str, url: str, content_hash: str) -> str:
+    """Id estable (se calcula una vez y se guarda) y único. El timestamp evita
+    que colisionen dos eventos de la misma URL con el mismo contenido (una
+    página que vuelve a un estado anterior)."""
+    raw = "|".join((timestamp, event_type, url, content_hash))
+    return hashlib.sha256(raw.encode("utf-8")).hexdigest()[:16]
+
+
+def _one_line(text: str, limit: int = 200) -> str:
+    text = re.sub(r"\s+", " ", text).strip()
+    return text if len(text) <= limit else text[:limit].rstrip() + "…"
+
+
+_SUMMARY = {
+    TYPE_NEW: "Nueva página en {site}: {label}",
+    TYPE_REMOVED: "Página eliminada en {site}: {label}",
+    TYPE_REAPPEARED: "Página reaparecida en {site}: {label}",
+    TYPE_CHANGED: "Modificada en {site}: {label}",
+}
+
+
+def build_franchise_map(config: dict) -> dict[str, str]:
+    """nombre de la web -> franchise (según config.json)."""
+    return {s["name"]: s.get("franchise") or DEFAULT_FRANCHISE
+            for s in config.get("sites", []) if "name" in s}
+
+
+def build_events(results, previously_removed: set[str], state_pages: dict,
+                 franchise_by_site: dict[str, str], now: datetime) -> list[dict]:
+    """Un evento por cada novedad de `results`, en el mismo orden que Discord
+    (por web; dentro de cada una: modificadas, nuevas, eliminadas). Las
+    "reaparecidas" llegan dentro de new_pages: se distinguen porque la URL
+    figuraba como eliminada en el estado antes del rastreo."""
+    timestamp = format_timestamp(now)
+    events: list[dict] = []
+    seen: set[str] = set()
+    for r in results:
+        entries = (
+            [(TYPE_CHANGED, pc) for pc in r.changed_pages]
+            + [(TYPE_REAPPEARED if pc.url in previously_removed else TYPE_NEW, pc)
+               for pc in r.new_pages]
+            + [(TYPE_REMOVED, pc) for pc in r.removed_pages]
+        )
+        franchise = franchise_by_site.get(r.site_name) or DEFAULT_FRANCHISE
+        for etype, pc in entries:
+            entry = state_pages.get(pc.url) or {}
+            new_lines = None
+            if etype == TYPE_CHANGED and entry.get("text"):
+                new_lines = frozenset(entry["text"].splitlines())
+            event_id = make_event_id(timestamp, etype, pc.url, entry.get("hash_text", ""))
+            if event_id in seen:
+                continue
+            seen.add(event_id)
+            title = pc.title or None
+            events.append({
+                "id": event_id,
+                "timestamp": timestamp,
+                "url": pc.url,
+                "franchise": franchise,
+                "type": etype,
+                "title": title,
+                "summary": _one_line(_SUMMARY[etype].format(
+                    site=r.site_name, label=title or pc.url)),
+                **detail_fields(etype, pc.detail, new_lines),
+            })
+    return events
+
+
+# --------------------------------------------------------------------------- #
+# Lectura / mezcla / escritura
+# --------------------------------------------------------------------------- #
+
+def load_events(path: str) -> tuple[list[dict] | None, bool]:
+    """(eventos existentes, ok). Fichero inexistente -> ([], True). Fichero
+    ilegible, con otro schemaVersion o con forma inesperada -> (None, False):
+    quien llame NO debe sobrescribirlo, para no perder el histórico."""
+    if not os.path.exists(path):
+        return [], True
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            doc = json.load(f)
+    except (OSError, ValueError):
+        return None, False
+    if (not isinstance(doc, dict) or doc.get("schemaVersion") != SCHEMA_VERSION
+            or not isinstance(doc.get("events"), list)):
+        return None, False
+    return doc["events"], True
+
+
+def merge_events(existing: list[dict], new: list[dict], limit: int = MAX_EVENTS) -> list[dict]:
+    """Nuevos primero, luego los existentes (ya en orden más reciente primero),
+    sin ids repetidos y con un máximo de `limit`."""
+    merged: list[dict] = []
+    seen: set[str] = set()
+    for ev in list(new) + list(existing):
+        ev_id = ev.get("id") if isinstance(ev, dict) else None
+        if ev_id is not None:
+            if ev_id in seen:
+                continue
+            seen.add(ev_id)
+        merged.append(ev)
+    return merged[:limit]
+
+
+def atomic_write_json(path: str, data) -> None:
+    """Escribe JSON UTF-8 válido sin reordenar claves: primero se serializa
+    entero (si falla, el fichero no se toca), luego .tmp + fsync + replace."""
+    text = json.dumps(data, ensure_ascii=False, indent=2) + "\n"
+    json.loads(text)
+    tmp_path = f"{path}.tmp"
+    try:
+        with open(tmp_path, "w", encoding="utf-8", newline="\n") as f:
+            f.write(text)
+            f.flush()
+            os.fsync(f.fileno())
+        os.replace(tmp_path, path)
+    except BaseException:
+        try:
+            os.remove(tmp_path)
+        except OSError:
+            pass
+        raise
+
+
+def write_events(path: str, events: list[dict]) -> None:
+    atomic_write_json(path, {"schemaVersion": SCHEMA_VERSION, "events": events})
+
+
+def record_events(results, previously_removed: set[str], state_pages: dict,
+                  franchise_by_site: dict[str, str], events_path: str,
+                  now: datetime | None = None, dry_run: bool = False) -> list[dict]:
+    """Genera y guarda los eventos de esta ejecución. NUNCA propaga una
+    excepción: si algo falla se avisa (solo el tipo de error) y devuelve [];
+    el monitor sigue como siempre. Con dry_run no escribe nada: imprime los
+    eventos por stdout."""
+    try:
+        now = now or datetime.now(timezone.utc)
+        new = build_events(results, previously_removed, state_pages, franchise_by_site, now)
+        if not new:
+            return []
+        if dry_run:
+            print("[DRY-RUN] Eventos que se generarían:")
+            print(json.dumps(new, ensure_ascii=False, indent=2))
+            return new
+        existing, ok = load_events(events_path)
+        if not ok:
+            print(f"[WARN] {events_path} existe pero no es un feed válido; no se "
+                  "sobrescribe y se omiten los eventos de esta ejecución.", file=sys.stderr)
+            return []
+        write_events(events_path, merge_events(existing, new))
+        print(f"[INFO] {len(new)} evento(s) añadidos a {events_path}.")
+        return new
+    except Exception as exc:  # noqa: BLE001 - el feed nunca debe romper el monitor
+        print(f"[WARN] No se pudo generar el feed de eventos ({type(exc).__name__}).",
+              file=sys.stderr)
+        return []
