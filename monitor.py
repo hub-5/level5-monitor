@@ -720,11 +720,71 @@ def send_telegram(bot_token: str, chat_id: str, lines: list[str]) -> None:
             print(f"[WARN] Fallo enviando a Telegram: {exc}", file=sys.stderr)
 
 
+FCM_SCOPE = "https://www.googleapis.com/auth/firebase.messaging"
+
+
+def send_push(title: str, body: str, topic: str = "radar") -> bool:
+    """Envía una notificación push por Firebase Cloud Messaging (HTTP v1) a
+    un topic. Se autentica con la cuenta de servicio leída del JSON de la
+    variable de entorno FIREBASE_SERVICE_ACCOUNT (el project_id sale de ese
+    mismo JSON). Nunca se imprime el JSON ni el token de acceso."""
+    raw = os.environ.get("FIREBASE_SERVICE_ACCOUNT", "").strip()
+    if not raw:
+        print("[ERROR] FIREBASE_SERVICE_ACCOUNT no está definida.", file=sys.stderr)
+        return False
+    try:
+        info = json.loads(raw)
+        project_id = info["project_id"]
+    except (json.JSONDecodeError, KeyError, TypeError):
+        print("[ERROR] FIREBASE_SERVICE_ACCOUNT no es un JSON de cuenta de "
+              "servicio válido (falta project_id o el formato es incorrecto).",
+              file=sys.stderr)
+        return False
+
+    try:
+        # Import perezoso: el monitor normal no necesita google-auth.
+        from google.auth.transport.requests import Request as GoogleRequest
+        from google.oauth2 import service_account
+
+        creds = service_account.Credentials.from_service_account_info(
+            info, scopes=[FCM_SCOPE]
+        )
+        creds.refresh(GoogleRequest())
+        token = creds.token
+    except Exception as exc:  # noqa: BLE001 - no se vuelca el contenido del secret
+        print(f"[ERROR] No se pudo autenticar con la cuenta de servicio "
+              f"({type(exc).__name__}).", file=sys.stderr)
+        return False
+
+    url = f"https://fcm.googleapis.com/v1/projects/{project_id}/messages:send"
+    payload = {"message": {"topic": topic, "notification": {"title": title, "body": body}}}
+    try:
+        resp = requests.post(
+            url,
+            json=payload,
+            headers={"Authorization": f"Bearer {token}"},
+            timeout=15,
+        )
+    except requests.RequestException as exc:
+        print(f"[WARN] Fallo enviando push a FCM: {type(exc).__name__}", file=sys.stderr)
+        return False
+
+    if resp.status_code >= 300:
+        print(f"[WARN] FCM respondió {resp.status_code}: {resp.text}", file=sys.stderr)
+        return False
+    print(f"[INFO] Push enviada al topic '{topic}'.")
+    return True
+
+
 # --------------------------------------------------------------------------- #
 # main
 # --------------------------------------------------------------------------- #
 
 def main() -> int:
+    if "--test-push" in sys.argv[1:]:
+        ok = send_push("Prueba de SrHub", "El monitor ya puede avisar a la app")
+        return 0 if ok else 1
+
     config = load_json(CONFIG_PATH, None)
     if config is None:
         print(f"[ERROR] No se encontró {CONFIG_PATH}", file=sys.stderr)
