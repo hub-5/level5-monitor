@@ -292,13 +292,57 @@ def write_events(path: str, events: list[dict]) -> None:
     atomic_write_json(path, {"schemaVersion": SCHEMA_VERSION, "events": events})
 
 
+# --------------------------------------------------------------------------- #
+# Push resumen (uno por ejecución)
+# --------------------------------------------------------------------------- #
+
+# FCM admite 4 KB de data por mensaje: con ids de 16 caracteres, 50 caben de
+# sobra. "count" lleva el total real y la app completa leyendo el feed.
+MAX_PUSH_IDS = 50
+MAX_PUSH_FRANCHISES_IN_BODY = 4
+
+
+def _join_names(names: list[str]) -> str:
+    if len(names) > MAX_PUSH_FRANCHISES_IN_BODY:
+        rest = len(names) - MAX_PUSH_FRANCHISES_IN_BODY
+        return ", ".join(names[:MAX_PUSH_FRANCHISES_IN_BODY]) + f" y {rest} más"
+    if len(names) <= 1:
+        return "".join(names)
+    return ", ".join(names[:-1]) + " y " + names[-1]
+
+
+def build_push_pending(new_events: list[dict], franchise_names: dict[str, str]) -> dict:
+    """El único push de la ejecución: título con el nº de cambios, cuerpo con
+    las franquicias afectadas y data (todo str, como exige FCM) con los ids."""
+    count = len(new_events)
+    franchises: list[str] = []
+    for ev in new_events:
+        if ev["franchise"] not in franchises:
+            franchises.append(ev["franchise"])
+    names = [franchise_names.get(f) or f for f in franchises]
+    return {
+        "title": "SrHub: 1 cambio detectado" if count == 1
+                 else f"SrHub: {count} cambios detectados",
+        "body": f"Novedades en {_join_names(names)}",
+        "data": {
+            "count": str(count),
+            "ids": ",".join(ev["id"] for ev in new_events[:MAX_PUSH_IDS]),
+            "franchises": ",".join(franchises),
+        },
+    }
+
+
 def record_events(results, previously_removed: set[str], state_pages: dict,
                   franchise_by_site: dict[str, str], events_path: str,
-                  now: datetime | None = None, dry_run: bool = False) -> list[dict]:
+                  now: datetime | None = None, dry_run: bool = False,
+                  pending_path: str | None = None,
+                  franchise_names: dict[str, str] | None = None) -> list[dict]:
     """Genera y guarda los eventos de esta ejecución. NUNCA propaga una
     excepción: si algo falla se avisa (solo el tipo de error) y devuelve [];
     el monitor sigue como siempre. Con dry_run no escribe nada: imprime los
-    eventos por stdout."""
+    eventos por stdout. Si se indica pending_path, y solo después de haber
+    escrito bien events.json, deja ahí el push pendiente (fichero temporal
+    que NO se commitea; lo envía un paso posterior del workflow)."""
     try:
         now = now or datetime.now(timezone.utc)
         new = build_events(results, previously_removed, state_pages, franchise_by_site, now)
@@ -315,6 +359,13 @@ def record_events(results, previously_removed: set[str], state_pages: dict,
             return []
         write_events(events_path, merge_events(existing, new))
         print(f"[INFO] {len(new)} evento(s) añadidos a {events_path}.")
+        if pending_path:
+            try:
+                atomic_write_json(pending_path,
+                                  build_push_pending(new, franchise_names or {}))
+            except Exception as exc:  # noqa: BLE001 - sin push, pero el feed ya está
+                print(f"[WARN] No se pudo dejar el push pendiente ({type(exc).__name__}).",
+                      file=sys.stderr)
         return new
     except Exception as exc:  # noqa: BLE001 - el feed nunca debe romper el monitor
         print(f"[WARN] No se pudo generar el feed de eventos ({type(exc).__name__}).",

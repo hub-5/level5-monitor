@@ -33,6 +33,9 @@ import requests
 CONFIG_PATH = os.environ.get("MONITOR_CONFIG", "config.json")
 STATE_PATH = os.environ.get("MONITOR_STATE", "state.json")
 EVENTS_PATH = os.environ.get("MONITOR_EVENTS", "events.json")
+# Fichero temporal (en .gitignore, nunca se commitea) con el push pendiente;
+# lo escribe el monitor y lo envía "--send-pending" en un paso posterior.
+PENDING_PATH = os.environ.get("MONITOR_PUSH_PENDING", "push_pending.json")
 
 USER_AGENT = (
     "LEVEL5-WebsiteMonitor/1.0 "
@@ -724,11 +727,14 @@ def send_telegram(bot_token: str, chat_id: str, lines: list[str]) -> None:
 FCM_SCOPE = "https://www.googleapis.com/auth/firebase.messaging"
 
 
-def send_push(title: str, body: str, topic: str = "radar") -> bool:
+def send_push(title: str, body: str, topic: str = "radar",
+              data: dict | None = None) -> bool:
     """Envía una notificación push por Firebase Cloud Messaging (HTTP v1) a
     un topic. Se autentica con la cuenta de servicio leída del JSON de la
     variable de entorno FIREBASE_SERVICE_ACCOUNT (el project_id sale de ese
-    mismo JSON). Nunca se imprime el JSON ni el token de acceso."""
+    mismo JSON). Nunca se imprime el JSON ni el token de acceso. `data` es
+    opcional (FCM exige que todos sus valores sean texto, así que se
+    convierten a str)."""
     raw = os.environ.get("FIREBASE_SERVICE_ACCOUNT", "").strip()
     if not raw:
         print("[ERROR] FIREBASE_SERVICE_ACCOUNT no está definida.", file=sys.stderr)
@@ -758,7 +764,10 @@ def send_push(title: str, body: str, topic: str = "radar") -> bool:
         return False
 
     url = f"https://fcm.googleapis.com/v1/projects/{project_id}/messages:send"
-    payload = {"message": {"topic": topic, "notification": {"title": title, "body": body}}}
+    message = {"topic": topic, "notification": {"title": title, "body": body}}
+    if data:
+        message["data"] = {str(k): str(v) for k, v in data.items()}
+    payload = {"message": message}
     try:
         resp = requests.post(
             url,
@@ -791,10 +800,34 @@ def record_feed(config: dict, results: list[CrawlResult], previously_removed: se
         events.record_events(
             results, previously_removed, state_pages,
             events.build_franchise_map(config), EVENTS_PATH, dry_run=dry_run,
+            pending_path=PENDING_PATH,
+            franchise_names=config.get("franchise_names") or {},
         )
     except Exception as exc:  # noqa: BLE001
         print(f"[WARN] No se pudo generar el feed de eventos ({type(exc).__name__}).",
               file=sys.stderr)
+
+
+def send_pending() -> int:
+    """Envía el push pendiente (UNO) que dejó el monitor, tras haber
+    commiteado el feed. Sin fichero no hay nada que enviar (código 0). Si FCM
+    falla devuelve 1; el workflow lo ejecuta con continue-on-error, así que
+    nunca pone la ejecución en rojo."""
+    if not os.path.exists(PENDING_PATH):
+        print("[INFO] No hay push pendiente.")
+        return 0
+    pending = load_json(PENDING_PATH, None)
+    if (not isinstance(pending, dict) or not isinstance(pending.get("title"), str)
+            or not isinstance(pending.get("body"), str)):
+        print(f"[ERROR] {PENDING_PATH} no tiene el formato esperado.", file=sys.stderr)
+        return 1
+    if not send_push(pending["title"], pending["body"], data=pending.get("data")):
+        return 1
+    try:
+        os.remove(PENDING_PATH)  # evita reenviarlo si el paso se repite
+    except OSError:
+        pass
+    return 0
 
 
 # --------------------------------------------------------------------------- #
@@ -806,9 +839,19 @@ def main() -> int:
         ok = send_push("Prueba de SrHub", "El monitor ya puede avisar a la app")
         return 0 if ok else 1
 
+    if "--send-pending" in sys.argv[1:]:
+        return send_pending()
+
     # --dry-run: rastrea (solo lecturas) y muestra los eventos que se
     # generarían, sin guardar state.json ni events.json y sin enviar nada.
     dry_run = "--dry-run" in sys.argv[1:]
+
+    # Un push pendiente de una ejecución anterior no debe reenviarse.
+    if not dry_run:
+        try:
+            os.remove(PENDING_PATH)
+        except OSError:
+            pass
 
     config = load_json(CONFIG_PATH, None)
     if config is None:
