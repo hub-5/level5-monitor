@@ -39,6 +39,14 @@ class ConfigFranchiseTests(unittest.TestCase):
             self.assertIn(site["franchise"], self.names)
         self.assertIn("general", self.names)
 
+    def test_docs_slug_table_matches_config(self):
+        doc_path = os.path.join(os.path.dirname(__file__), "..", "docs", "events-format.md")
+        with open(doc_path, encoding="utf-8") as f:
+            doc = f.read()
+        section = doc.split("## 3. Franquicias", 1)[1].split("\n## ", 1)[0]
+        rows = re.findall(r"^\| `([a-z0-9-]+)` \| ([^|]+) \|", section, re.M)
+        self.assertEqual({slug: name.strip() for slug, name in rows}, self.names)
+
     def test_site_names_unique(self):
         names = [s["name"] for s in self.sites]
         self.assertEqual(len(names), len(set(names)))
