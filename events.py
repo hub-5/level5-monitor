@@ -37,6 +37,7 @@ TYPE_NEW = "PAGE_NEW"
 TYPE_REMOVED = "PAGE_REMOVED"
 TYPE_REAPPEARED = "PAGE_REAPPEARED"
 TYPE_CHANGED = "PAGE_CHANGED"
+TYPE_TEST = "TEST"  # solo lo genera --emit-test-event (prueba extremo a extremo)
 
 # Prefijos que make_diff pone a cada línea: "➕ ", "➖ ", "✏️ " (con selector de
 # variación U+FE0F; se acepta también sin él).
@@ -352,22 +353,80 @@ def record_events(results, previously_removed: set[str], state_pages: dict,
             print("[DRY-RUN] Eventos que se generarían:")
             print(json.dumps(new, ensure_ascii=False, indent=2))
             return new
-        existing, ok = load_events(events_path)
-        if not ok:
-            print(f"[WARN] {events_path} existe pero no es un feed válido; no se "
-                  "sobrescribe y se omiten los eventos de esta ejecución.", file=sys.stderr)
-            return []
-        write_events(events_path, merge_events(existing, new))
-        print(f"[INFO] {len(new)} evento(s) añadidos a {events_path}.")
-        if pending_path:
-            try:
-                atomic_write_json(pending_path,
-                                  build_push_pending(new, franchise_names or {}))
-            except Exception as exc:  # noqa: BLE001 - sin push, pero el feed ya está
-                print(f"[WARN] No se pudo dejar el push pendiente ({type(exc).__name__}).",
-                      file=sys.stderr)
-        return new
+        return new if _store(new, events_path, pending_path, franchise_names) else []
     except Exception as exc:  # noqa: BLE001 - el feed nunca debe romper el monitor
         print(f"[WARN] No se pudo generar el feed de eventos ({type(exc).__name__}).",
               file=sys.stderr)
         return []
+
+
+def _store(new: list[dict], events_path: str, pending_path: str | None,
+           franchise_names: dict[str, str] | None) -> bool:
+    """Añade `new` a events.json y, solo si eso salió bien, deja el push
+    pendiente. Devuelve False sin tocar nada si el feed existente no es válido.
+    Puede lanzar si la escritura falla (lo contienen quienes la llaman)."""
+    existing, ok = load_events(events_path)
+    if not ok:
+        print(f"[WARN] {events_path} existe pero no es un feed válido; no se "
+              "sobrescribe y se omiten los eventos de esta ejecución.", file=sys.stderr)
+        return False
+    write_events(events_path, merge_events(existing, new))
+    print(f"[INFO] {len(new)} evento(s) añadidos a {events_path}.")
+    if pending_path:
+        try:
+            atomic_write_json(pending_path, build_push_pending(new, franchise_names or {}))
+        except Exception as exc:  # noqa: BLE001 - sin push, pero el feed ya está
+            print(f"[WARN] No se pudo dejar el push pendiente ({type(exc).__name__}).",
+                  file=sys.stderr)
+    return True
+
+
+# --------------------------------------------------------------------------- #
+# Evento de prueba (flujo extremo a extremo sin esperar a un cambio real)
+# --------------------------------------------------------------------------- #
+
+def build_test_event(now: datetime, url: str = "") -> dict:
+    timestamp = format_timestamp(now)
+    return {
+        "id": "test-" + make_event_id(timestamp, TYPE_TEST, url, "")[:11],
+        "timestamp": timestamp,
+        "url": url,
+        "franchise": DEFAULT_FRANCHISE,
+        "type": TYPE_TEST,
+        "title": "Evento de prueba",
+        "summary": "Evento de prueba del monitor (no corresponde a un cambio real)",
+        "lines": [],
+        "rawDetail": "",
+        "truncated": False,
+    }
+
+
+def emit_test_event(events_path: str, pending_path: str | None,
+                    franchise_names: dict[str, str] | None,
+                    now: datetime | None = None, url: str = "") -> bool:
+    """Añade un evento TEST al feed y deja el push pendiente, por el mismo
+    camino que los eventos reales. Devuelve False si no se pudo (a diferencia
+    de record_events, aquí interesa que el fallo se note)."""
+    try:
+        ev = build_test_event(now or datetime.now(timezone.utc), url)
+        if not _store([ev], events_path, pending_path, franchise_names):
+            return False
+        if pending_path:
+            pending = load_pending(pending_path)
+            if pending:
+                pending["title"] = "SrHub (prueba): 1 cambio detectado"
+                atomic_write_json(pending_path, pending)
+        return True
+    except Exception as exc:  # noqa: BLE001
+        print(f"[ERROR] No se pudo añadir el evento de prueba ({type(exc).__name__}).",
+              file=sys.stderr)
+        return False
+
+
+def load_pending(path: str) -> dict | None:
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+    except (OSError, ValueError):
+        return None
+    return data if isinstance(data, dict) else None

@@ -141,6 +141,7 @@ algo razonable (por ejemplo, el propio slug) para los slugs que no conozca.
 - Topic: `radar`.
 - Notificación: título `SrHub: N cambios detectados` (`SrHub: 1 cambio detectado` si N=1) y
   cuerpo `Novedades en <franquicias afectadas>` (hasta 4 nombres; después "y N más").
+- El push de un evento `TEST` lleva el título `SrHub (prueba): 1 cambio detectado`.
 - `data` (todos los valores son texto, como exige FCM):
 
 | Clave | Valor |

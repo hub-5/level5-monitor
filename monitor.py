@@ -808,6 +808,23 @@ def record_feed(config: dict, results: list[CrawlResult], previously_removed: se
               file=sys.stderr)
 
 
+def emit_test_event() -> int:
+    """--emit-test-event: añade un evento TEST al feed y deja su push
+    pendiente por el mismo camino que un cambio real (lo usa el workflow
+    manual test-events.yml). Sale con 1 si falla, para que se note."""
+    config = load_json(CONFIG_PATH, {}) or {}
+    run_url = os.environ.get("TEST_EVENT_URL", "")
+    try:
+        import events
+        ok = events.emit_test_event(
+            EVENTS_PATH, PENDING_PATH, config.get("franchise_names") or {}, url=run_url)
+    except Exception as exc:  # noqa: BLE001
+        print(f"[ERROR] No se pudo añadir el evento de prueba ({type(exc).__name__}).",
+              file=sys.stderr)
+        return 1
+    return 0 if ok else 1
+
+
 def send_pending() -> int:
     """Envía el push pendiente (UNO) que dejó el monitor, tras haber
     commiteado el feed. Sin fichero no hay nada que enviar (código 0). Si FCM
@@ -841,6 +858,9 @@ def main() -> int:
 
     if "--send-pending" in sys.argv[1:]:
         return send_pending()
+
+    if "--emit-test-event" in sys.argv[1:]:
+        return emit_test_event()
 
     # --dry-run: rastrea (solo lecturas) y muestra los eventos que se
     # generarían, sin guardar state.json ni events.json y sin enviar nada.
