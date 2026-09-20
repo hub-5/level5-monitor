@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "events": [
+    {
+      "id": "test-b87fd5aec0f",
+      "timestamp": "2026-09-20T20:27:32Z",
+      "url": "https://github.com/hub-5/level5-monitor/actions/runs/35535596926",
+      "franchise": "general",
+      "type": "TEST",
+      "title": "Evento de prueba",
+      "summary": "Evento de prueba del monitor (no corresponde a un cambio real)",
+      "lines": [],
+      "rawDetail": "",
+      "truncated": false
+    }
+  ]
+}
