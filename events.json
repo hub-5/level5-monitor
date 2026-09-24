@@ -2,6 +2,138 @@
   "schemaVersion": 1,
   "events": [
     {
+      "id": "008573eb74cf7c2b",
+      "timestamp": "2026-09-24T07:01:07Z",
+      "url": "https://www.inazuma.jp/victory-road/de/",
+      "franchise": "inazuma-eleven",
+      "type": "PAGE_CHANGED",
+      "title": "INAZUMA ELEVEN: Helden der Siegesstraße",
+      "summary": "Modificada en Inazuma Eleven: Victory Road (IEVR): INAZUMA ELEVEN: Helden der Siegesstraße",
+      "lines": [
+        {
+          "kind": "ADDED",
+          "text": "2026.9.10"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Sequel to Inazuma Eleven: Victory Road Announced!"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "„Wettkampfmodus“ ,"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "„Häufig gestellte Fragen“"
+        },
+        {
+          "kind": "ADDED",
+          "text": "„Wettkampfmodus“ , „Häufig gestellte Fragen“"
+        }
+      ],
+      "rawDetail": "➕ 2026.9.10\n➕ Sequel to Inazuma Eleven: Victory Road Announced!\n➖ „Wettkampfmodus“ ,\n➖ „Häufig gestellte Fragen“\n➕ „Wettkampfmodus“ , „Häufig gestellte Fragen“",
+      "truncated": false
+    },
+    {
+      "id": "71774980644fb2d1",
+      "timestamp": "2026-09-24T07:01:07Z",
+      "url": "https://www.inazuma.jp/victory-road/en/",
+      "franchise": "inazuma-eleven",
+      "type": "PAGE_CHANGED",
+      "title": "INAZUMA ELEVEN: Victory Road",
+      "summary": "Modificada en Inazuma Eleven: Victory Road (IEVR): INAZUMA ELEVEN: Victory Road",
+      "lines": [
+        {
+          "kind": "ADDED",
+          "text": "2026.9.10"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Sequel to Inazuma Eleven: Victory Road Announced!"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "“Competition Mode” ,"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "“Frequently Asked Questions”"
+        },
+        {
+          "kind": "ADDED",
+          "text": "“Competition Mode” , “Frequently Asked Questions”"
+        }
+      ],
+      "rawDetail": "➕ 2026.9.10\n➕ Sequel to Inazuma Eleven: Victory Road Announced!\n➖ “Competition Mode” ,\n➖ “Frequently Asked Questions”\n➕ “Competition Mode” , “Frequently Asked Questions”",
+      "truncated": false
+    },
+    {
+      "id": "68a84c0b7ac5601d",
+      "timestamp": "2026-09-24T07:01:07Z",
+      "url": "https://www.inazuma.jp/victory-road/es/",
+      "franchise": "inazuma-eleven",
+      "type": "PAGE_CHANGED",
+      "title": "INAZUMA ELEVEN: Heroes' Victory Road",
+      "summary": "Modificada en Inazuma Eleven: Victory Road (IEVR): INAZUMA ELEVEN: Heroes' Victory Road",
+      "lines": [
+        {
+          "kind": "ADDED",
+          "text": "2026.9.10"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Sequel to Inazuma Eleven: Victory Road Announced!"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "¡«Modo Competición» ,"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "«Preguntas frecuentes»"
+        },
+        {
+          "kind": "ADDED",
+          "text": "¡«Modo Competición» , «Preguntas frecuentes»"
+        }
+      ],
+      "rawDetail": "➕ 2026.9.10\n➕ Sequel to Inazuma Eleven: Victory Road Announced!\n➖ ¡«Modo Competición» ,\n➖ «Preguntas frecuentes»\n➕ ¡«Modo Competición» , «Preguntas frecuentes»",
+      "truncated": false
+    },
+    {
+      "id": "242f0f6a4563f72f",
+      "timestamp": "2026-09-24T07:01:07Z",
+      "url": "https://www.inazuma.jp/victory-road/fr/",
+      "franchise": "inazuma-eleven",
+      "type": "PAGE_CHANGED",
+      "title": "INAZUMA ELEVEN: Victory Road",
+      "summary": "Modificada en Inazuma Eleven: Victory Road (IEVR): INAZUMA ELEVEN: Victory Road",
+      "lines": [
+        {
+          "kind": "ADDED",
+          "text": "2026.9.10"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Sequel to Inazuma Eleven: Victory Road Announced!"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "« le mode Compétition » ,"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "« Foire aux questions »"
+        },
+        {
+          "kind": "ADDED",
+          "text": "« le mode Compétition » , « Foire aux questions »"
+        }
+      ],
+      "rawDetail": "➕ 2026.9.10\n➕ Sequel to Inazuma Eleven: Victory Road Announced!\n➖ « le mode Compétition » ,\n➖ « Foire aux questions »\n➕ « le mode Compétition » , « Foire aux questions »",
+      "truncated": false
+    },
+    {
       "id": "test-6009bc882d9",
       "timestamp": "2026-09-20T21:33:09Z",
       "url": "https://github.com/hub-5/level5-monitor/actions/runs/35539035199",
