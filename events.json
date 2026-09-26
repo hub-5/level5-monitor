@@ -2,6 +2,23 @@
   "schemaVersion": 1,
   "events": [
     {
+      "id": "2c1cae75a8196ff9",
+      "timestamp": "2026-09-26T01:48:52Z",
+      "url": "https://www.snack-world.jp/reloaded/",
+      "franchise": "snack-world",
+      "type": "PAGE_CHANGED",
+      "title": "スナックワールド RELOADED",
+      "summary": "Modificada en Snack World RELOADED (SWRE): スナックワールド RELOADED",
+      "lines": [
+        {
+          "kind": "ADDED",
+          "text": "東京ゲームショウ2026 試遊体験版プレイ動画"
+        }
+      ],
+      "rawDetail": "➕ 東京ゲームショウ2026 試遊体験版プレイ動画",
+      "truncated": false
+    },
+    {
       "id": "008573eb74cf7c2b",
       "timestamp": "2026-09-24T07:01:07Z",
       "url": "https://www.inazuma.jp/victory-road/de/",
