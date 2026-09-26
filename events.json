@@ -2,6 +2,325 @@
   "schemaVersion": 1,
   "events": [
     {
+      "id": "dc11dafa2db41bef",
+      "timestamp": "2026-09-26T01:58:06Z",
+      "url": "https://www.level5.co.jp/tgs2026/",
+      "franchise": "level5",
+      "type": "PAGE_CHANGED",
+      "title": "レベルファイブ 東京ゲームショウ2026 出展情報",
+      "summary": "Modificada en LEVEL-5 TGS2026: レベルファイブ 東京ゲームショウ2026 出展情報",
+      "lines": [
+        {
+          "kind": "ADDED",
+          "text": "イベントレポート"
+        },
+        {
+          "kind": "ADDED",
+          "text": "&プレイ動画"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "【2026.9.19掲載】"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "台風25号接近に伴う"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "9月20日（日）・21日（月・祝）の"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "開催について"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "台風25号の日本列島への接近に伴う「東京ゲームショウ2026」の開催について、"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "東京ゲームショウ事務局より、下記の通り発表がございましたのでお知らせいたします。"
+        }
+      ],
+      "rawDetail": "➕ イベントレポート\n➕ &プレイ動画\n➖ 【2026.9.19掲載】\n➖ 台風25号接近に伴う\n➖ 9月20日（日）・21日（月・祝）の\n➖ 開催について\n➖ 台風25号の日本列島への接近に伴う「東京ゲームショウ2026」の開催について、\n➖ 東京ゲームショウ事務局より、下記の通り発表がございましたのでお知らせいたします。\n…y 15 líneas más de diferencia.",
+      "truncated": true
+    },
+    {
+      "id": "b1301ae89300db89",
+      "timestamp": "2026-09-26T01:58:06Z",
+      "url": "https://www.level5.co.jp/tgs2026/report/",
+      "franchise": "level5",
+      "type": "PAGE_NEW",
+      "title": "イベントレポート&プレイ動画 | レベルファイブ 東京ゲームショウ2026 出展情報",
+      "summary": "Nueva página en LEVEL-5 TGS2026: イベントレポート&プレイ動画 | レベルファイブ 東京ゲームショウ2026 出展情報",
+      "lines": [
+        {
+          "kind": "OTHER",
+          "text": "イベントレポート&プレイ動画 | レベルファイブ 東京ゲームショウ2026 出展情報"
+        },
+        {
+          "kind": "OTHER",
+          "text": "日本語"
+        },
+        {
+          "kind": "OTHER",
+          "text": "English"
+        },
+        {
+          "kind": "OTHER",
+          "text": "レベルファイブ 東京ゲームショウ2026 出展情報"
+        },
+        {
+          "kind": "OTHER",
+          "text": "イベントレポート"
+        },
+        {
+          "kind": "OTHER",
+          "text": "&プレイ動画"
+        },
+        {
+          "kind": "OTHER",
+          "text": "出展タイトル"
+        },
+        {
+          "kind": "OTHER",
+          "text": "ブース来場者特典"
+        },
+        {
+          "kind": "OTHER",
+          "text": "ブースマップ"
+        },
+        {
+          "kind": "OTHER",
+          "text": "CLOSE"
+        },
+        {
+          "kind": "OTHER",
+          "text": "MENU"
+        },
+        {
+          "kind": "OTHER",
+          "text": "EVENT REPORT"
+        },
+        {
+          "kind": "OTHER",
+          "text": "イベントレポート&プレイ動画"
+        },
+        {
+          "kind": "OTHER",
+          "text": "レベルファイブ"
+        },
+        {
+          "kind": "OTHER",
+          "text": "史上最大規模のブースに"
+        },
+        {
+          "kind": "OTHER",
+          "text": "フォトスポットも！"
+        },
+        {
+          "kind": "OTHER",
+          "text": "最新4タイトルを試遊出展"
+        },
+        {
+          "kind": "OTHER",
+          "text": "「東京ゲームショウ2026」では、『…"
+        }
+      ],
+      "rawDetail": "イベントレポート&プレイ動画 | レベルファイブ 東京ゲームショウ2026 出展情報\n日本語\nEnglish\nレベルファイブ 東京ゲームショウ2026 出展情報\nイベントレポート\n&プレイ動画\n出展タイトル\nブース来場者特典\nブースマップ\nCLOSE\nMENU\nEVENT REPORT\nイベントレポート&プレイ動画\nレベルファイブ\n史上最大規模のブースに\nフォトスポットも！\n最新4タイトルを試遊出展\n「東京ゲームショウ2026」では、『…",
+      "truncated": true
+    },
+    {
+      "id": "6ae54a69de03bc79",
+      "timestamp": "2026-09-26T01:58:06Z",
+      "url": "https://www.layton.jp/jouki/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "レイトン教授と蒸気の新世界",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): レイトン教授と蒸気の新世界",
+      "lines": [
+        {
+          "kind": "ADDED",
+          "text": "2026.9.26"
+        },
+        {
+          "kind": "ADDED",
+          "text": "「東京ゲームショウ2026 試遊体験版 プレイ動画」 を公開しました！"
+        },
+        {
+          "kind": "ADDED",
+          "text": "東京ゲームショウ2026 試遊体験版 プレイ動画"
+        }
+      ],
+      "rawDetail": "➕ 2026.9.26\n➕ 「東京ゲームショウ2026 試遊体験版 プレイ動画」 を公開しました！\n➕ 東京ゲームショウ2026 試遊体験版 プレイ動画",
+      "truncated": false
+    },
+    {
+      "id": "b43cddd24434929b",
+      "timestamp": "2026-09-26T01:58:06Z",
+      "url": "https://www.holy-horror.jp",
+      "franchise": "holy-horror-mansion",
+      "type": "PAGE_CHANGED",
+      "title": "ホーリーホラーマンション",
+      "summary": "Modificada en Holy Horror Mansion (HHM): ホーリーホラーマンション",
+      "lines": [
+        {
+          "kind": "ADDED",
+          "text": "東京ゲームショウ2026 試遊体験版 プレイ動画"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "ティザーPV"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "（TGS 2026 Ver.）"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "ティザーPV"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "（LEVEL5 VISION 2026 Ver.）"
+        },
+        {
+          "kind": "ADDED",
+          "text": "ティザーPV（TGS 2026 Ver.）"
+        },
+        {
+          "kind": "ADDED",
+          "text": "ティザーPV（LEVEL5 VISION 2026 Ver.）"
+        }
+      ],
+      "rawDetail": "➕ 東京ゲームショウ2026 試遊体験版 プレイ動画\n➖ ティザーPV\n➖ （TGS 2026 Ver.）\n➖ ティザーPV\n➖ （LEVEL5 VISION 2026 Ver.）\n➕ ティザーPV（TGS 2026 Ver.）\n➕ ティザーPV（LEVEL5 VISION 2026 Ver.）",
+      "truncated": false
+    },
+    {
+      "id": "7d1fbc01c8ae36a9",
+      "timestamp": "2026-09-26T01:58:06Z",
+      "url": "https://www.holy-horror.jp/",
+      "franchise": "holy-horror-mansion",
+      "type": "PAGE_CHANGED",
+      "title": "ホーリーホラーマンション",
+      "summary": "Modificada en Holy Horror Mansion (HHM): ホーリーホラーマンション",
+      "lines": [
+        {
+          "kind": "ADDED",
+          "text": "東京ゲームショウ2026 試遊体験版 プレイ動画"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "ティザーPV"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "（TGS 2026 Ver.）"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "ティザーPV"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "（LEVEL5 VISION 2026 Ver.）"
+        },
+        {
+          "kind": "ADDED",
+          "text": "ティザーPV（TGS 2026 Ver.）"
+        },
+        {
+          "kind": "ADDED",
+          "text": "ティザーPV（LEVEL5 VISION 2026 Ver.）"
+        }
+      ],
+      "rawDetail": "➕ 東京ゲームショウ2026 試遊体験版 プレイ動画\n➖ ティザーPV\n➖ （TGS 2026 Ver.）\n➖ ティザーPV\n➖ （LEVEL5 VISION 2026 Ver.）\n➕ ティザーPV（TGS 2026 Ver.）\n➕ ティザーPV（LEVEL5 VISION 2026 Ver.）",
+      "truncated": false
+    },
+    {
+      "id": "866a077bd7b4ebac",
+      "timestamp": "2026-09-26T01:58:06Z",
+      "url": "https://www.decapolice.jp",
+      "franchise": "decapolice",
+      "type": "PAGE_CHANGED",
+      "title": "デカポリス",
+      "summary": "Modificada en Decapolice (DP): デカポリス",
+      "lines": [
+        {
+          "kind": "ADDED",
+          "text": "~事件クエスト~ 東京ゲームショウ2026 試遊体験版 プレイ動画"
+        },
+        {
+          "kind": "ADDED",
+          "text": "NEW"
+        },
+        {
+          "kind": "ADDED",
+          "text": "~街パトロール~ 東京ゲームショウ2026 試遊体験版 プレイ動画"
+        },
+        {
+          "kind": "ADDED",
+          "text": "NEW"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "ティザーPV"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "（TGS 2026 Ver.）"
+        },
+        {
+          "kind": "ADDED",
+          "text": "ティザーPV（TGS 2026 Ver.）"
+        }
+      ],
+      "rawDetail": "➕ ~事件クエスト~ 東京ゲームショウ2026 試遊体験版 プレイ動画\n➕ NEW\n➕ ~街パトロール~ 東京ゲームショウ2026 試遊体験版 プレイ動画\n➕ NEW\n➖ ティザーPV\n➖ （TGS 2026 Ver.）\n➕ ティザーPV（TGS 2026 Ver.）",
+      "truncated": false
+    },
+    {
+      "id": "7e8df9936625820d",
+      "timestamp": "2026-09-26T01:58:06Z",
+      "url": "https://www.decapolice.jp/",
+      "franchise": "decapolice",
+      "type": "PAGE_CHANGED",
+      "title": "デカポリス",
+      "summary": "Modificada en Decapolice (DP): デカポリス",
+      "lines": [
+        {
+          "kind": "ADDED",
+          "text": "~事件クエスト~ 東京ゲームショウ2026 試遊体験版 プレイ動画"
+        },
+        {
+          "kind": "ADDED",
+          "text": "NEW"
+        },
+        {
+          "kind": "ADDED",
+          "text": "~街パトロール~ 東京ゲームショウ2026 試遊体験版 プレイ動画"
+        },
+        {
+          "kind": "ADDED",
+          "text": "NEW"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "ティザーPV"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "（TGS 2026 Ver.）"
+        },
+        {
+          "kind": "ADDED",
+          "text": "ティザーPV（TGS 2026 Ver.）"
+        }
+      ],
+      "rawDetail": "➕ ~事件クエスト~ 東京ゲームショウ2026 試遊体験版 プレイ動画\n➕ NEW\n➕ ~街パトロール~ 東京ゲームショウ2026 試遊体験版 プレイ動画\n➕ NEW\n➖ ティザーPV\n➖ （TGS 2026 Ver.）\n➕ ティザーPV（TGS 2026 Ver.）",
+      "truncated": false
+    },
+    {
       "id": "2c1cae75a8196ff9",
       "timestamp": "2026-09-26T01:48:52Z",
       "url": "https://www.snack-world.jp/reloaded/",
