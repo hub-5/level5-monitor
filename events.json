@@ -2,6 +2,84 @@
   "schemaVersion": 1,
   "events": [
     {
+      "id": "814a91aca32b78a6",
+      "timestamp": "2026-10-01T10:52:52Z",
+      "url": "https://www.layton.jp/jouki/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "レイトン教授と蒸気の新世界",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): レイトン教授と蒸気の新世界",
+      "lines": [
+        {
+          "kind": "ADDED",
+          "text": "2026.10.1"
+        },
+        {
+          "kind": "ADDED",
+          "text": "東京ゲームショウ2026 試遊体験版 プレイ動画 修正版公開のお知らせ"
+        }
+      ],
+      "rawDetail": "➕ 2026.10.1\n➕ 東京ゲームショウ2026 試遊体験版 プレイ動画 修正版公開のお知らせ",
+      "truncated": false
+    },
+    {
+      "id": "ab1b873716b4f28d",
+      "timestamp": "2026-10-01T10:52:52Z",
+      "url": "https://www.layton.jp/jouki/topics/261001/",
+      "franchise": "professor-layton",
+      "type": "PAGE_NEW",
+      "title": "トピックス | レイトン教授と蒸気の新世界",
+      "summary": "Nueva página en Professor Layton: New World of Steam (PLNWOS): トピックス | レイトン教授と蒸気の新世界",
+      "lines": [
+        {
+          "kind": "OTHER",
+          "text": "トピックス | レイトン教授と蒸気の新世界"
+        },
+        {
+          "kind": "OTHER",
+          "text": "レイトンシリーズサイト"
+        },
+        {
+          "kind": "OTHER",
+          "text": "日本語"
+        },
+        {
+          "kind": "OTHER",
+          "text": "English"
+        },
+        {
+          "kind": "OTHER",
+          "text": "トップページに戻る"
+        },
+        {
+          "kind": "OTHER",
+          "text": "『レイトン教授と蒸気の新世界』"
+        },
+        {
+          "kind": "OTHER",
+          "text": "東京ゲームショウ2026 試遊体験版"
+        },
+        {
+          "kind": "OTHER",
+          "text": "プレイ動画"
+        },
+        {
+          "kind": "OTHER",
+          "text": "修正版公開のお知らせ"
+        },
+        {
+          "kind": "OTHER",
+          "text": "先日公開いたしました「『レイトン教授と蒸気の新世界』東京ゲームショウ2026 試遊体験版 プレイ動画」につきまして、一部、映像の色調が正しく表示されていない場面がございましたため、修正版を公開いたしました。"
+        },
+        {
+          "kind": "OTHER",
+          "text": "再投稿となってし…"
+        }
+      ],
+      "rawDetail": "トピックス | レイトン教授と蒸気の新世界\nレイトンシリーズサイト\n日本語\nEnglish\nトップページに戻る\n『レイトン教授と蒸気の新世界』\n東京ゲームショウ2026 試遊体験版\nプレイ動画\n修正版公開のお知らせ\n先日公開いたしました「『レイトン教授と蒸気の新世界』東京ゲームショウ2026 試遊体験版 プレイ動画」につきまして、一部、映像の色調が正しく表示されていない場面がございましたため、修正版を公開いたしました。\n再投稿となってし…",
+      "truncated": true
+    },
+    {
       "id": "dc11dafa2db41bef",
       "timestamp": "2026-09-26T01:58:06Z",
       "url": "https://www.level5.co.jp/tgs2026/",
