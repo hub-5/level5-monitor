@@ -23,6 +23,12 @@ jobs:
     steps:
       - name: Checkout del repositorio
         uses: actions/checkout@v4
+        with:
+          # Siempre la última versión de main, no el commit del momento en que
+          # se lanzó la ejecución: si esta ejecución estuvo en cola esperando a
+          # otra, ese commit ya está desfasado (la anterior guardó un
+          # state.json nuevo) y el push final fallaría con un conflicto.
+          ref: main
 
       - name: Configurar Python
         uses: actions/setup-python@v5
