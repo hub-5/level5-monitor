@@ -92,6 +92,13 @@
      "max_pages": 40
     }
   ],
+  "steam_watch": [
+    {
+      "name": "Steam (PLNWOS)",
+      "app_id": 3384600,
+      "franchise": "professor-layton"
+    }
+  ],
   "request_delay_seconds": 0.35,
   "request_timeout_seconds": 15,
   "notify_on_new_page": true,

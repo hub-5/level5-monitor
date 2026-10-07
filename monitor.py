@@ -597,6 +597,95 @@ def crawl_site(site: dict, state_pages: dict, session: requests.Session,
 
 
 # --------------------------------------------------------------------------- #
+# Vigilancia de fichas de Steam
+# --------------------------------------------------------------------------- #
+
+STEAM_APPDETAILS_URL = "https://store.steampowered.com/api/appdetails"
+STEAM_STORE_URL = "https://store.steampowered.com/app/{app_id}/"
+
+
+def _steam_summary(data: dict) -> str:
+    """Texto del aviso cuando una ficha de Steam pasa a ser pública."""
+    lines = ["🎮 ¡La ficha de Steam ya es pública!"]
+    release = (data.get("release_date") or {}).get("date")
+    if release:
+        lines.append(f"📅 Lanzamiento: {release}")
+    price = (data.get("price_overview") or {}).get("final_formatted")
+    if price:
+        lines.append(f"💶 Precio: {price}")
+    return "\n".join(lines)
+
+
+def check_steam_watch(config: dict, state: dict, session: requests.Session,
+                      timeout: int) -> list[CrawlResult]:
+    """Vigila fichas de Steam que aún no son públicas (config.json ->
+    "steam_watch": [{"name", "app_id", "franchise"}]).
+
+    Una ficha sin publicar hace que la API de Steam (appdetails) devuelva
+    {"<id>": {"success": false}}; cuando se publica, devuelve success=true
+    con los datos del juego. Se avisa UNA sola vez, en el paso de "no
+    pública" a "pública" (la marca "notified" queda guardada para siempre en
+    state.json, así un fallo intermitente de Steam no repite el aviso).
+
+    La primera vez que se ve una ficha solo se guarda su estado actual (sin
+    avisar), igual que la primera ejecución del monitor. Si Steam no
+    responde bien, se ignora esa comprobación y el estado no cambia."""
+    results: list[CrawlResult] = []
+    watch_state = state.setdefault("steam_watch", {})
+
+    for item in config.get("steam_watch") or []:
+        app_id = str(item["app_id"])
+        name = item.get("name") or f"Steam app {app_id}"
+        try:
+            resp = session.get(
+                STEAM_APPDETAILS_URL,
+                params={"appids": app_id, "cc": "es", "l": "english"},
+                headers={"User-Agent": USER_AGENT},
+                timeout=timeout,
+            )
+            if resp.status_code != 200:
+                print(f"[WARN] Steam appdetails {app_id} -> HTTP {resp.status_code}",
+                      file=sys.stderr)
+                continue
+            entry = resp.json()[app_id]
+            public = bool(entry.get("success"))
+        except (requests.RequestException, ValueError, KeyError,
+                AttributeError, TypeError) as exc:
+            print(f"[WARN] Steam appdetails {app_id} no se pudo leer "
+                  f"({type(exc).__name__}).", file=sys.stderr)
+            continue
+
+        now = now_iso()
+        prev = watch_state.get(app_id)
+        if prev is None:
+            watch_state[app_id] = {
+                "public": public, "notified": public,
+                "first_seen": now, "last_checked": now,
+            }
+            print(f"[INFO] Steam {app_id} ({name}): estado inicial "
+                  f"{'pública' if public else 'aún no pública'}.")
+            continue
+
+        prev["last_checked"] = now
+        prev["public"] = public
+        if public and not prev.get("notified"):
+            data = entry.get("data") or {}
+            prev["notified"] = True
+            prev["went_public_at"] = now
+            r = CrawlResult(site_name=name, visited_count=1)
+            r.new_pages.append(PageChange(
+                url=STEAM_STORE_URL.format(app_id=app_id),
+                title=data.get("name") or name,
+                detail=_steam_summary(data),
+                image_url=data.get("header_image") or "",
+            ))
+            results.append(r)
+            print(f"[INFO] Steam {app_id} ({name}): ¡la ficha ya es pública!")
+
+    return results
+
+
+# --------------------------------------------------------------------------- #
 # Notificaciones
 # --------------------------------------------------------------------------- #
 
@@ -907,6 +996,12 @@ def main() -> int:
             print(f"[WARN]   {err}", file=sys.stderr)
         results.append(r)
 
+    # Fichas de Steam aún no públicas (ver check_steam_watch). Se comprueban
+    # aquí para que su estado se guarde siempre, pero sus avisos se añaden más
+    # abajo, ya fuera del filtro "notify_on_new_page" (que solo se refiere a
+    # páginas nuevas de las webs rastreadas).
+    steam_results = check_steam_watch(config, state, session, timeout)
+
     state["last_run"] = now_iso()
     if not dry_run:
         save_json(STATE_PATH, state)
@@ -920,6 +1015,8 @@ def main() -> int:
     if not notify_new:
         for r in results:
             r.new_pages = []
+
+    results.extend(steam_results)
 
     if not any(_site_entries(r) for r in results):
         print("[INFO] Sin cambios detectados.")

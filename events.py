@@ -187,9 +187,11 @@ _SUMMARY = {
 
 
 def build_franchise_map(config: dict) -> dict[str, str]:
-    """nombre de la web -> franchise (según config.json)."""
+    """nombre de la web -> franchise (según config.json). Incluye también las
+    fichas de Steam vigiladas ("steam_watch")."""
     return {s["name"]: s.get("franchise") or DEFAULT_FRANCHISE
-            for s in config.get("sites", []) if "name" in s}
+            for s in list(config.get("sites", [])) + list(config.get("steam_watch", []))
+            if "name" in s}
 
 
 def build_events(results, previously_removed: set[str], state_pages: dict,
