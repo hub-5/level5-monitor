@@ -2,6 +2,147 @@
   "schemaVersion": 1,
   "events": [
     {
+      "id": "8cfa29bb3f9e2f0a",
+      "timestamp": "2026-10-09T04:43:15Z",
+      "url": "https://www.layton.jp/jouki/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "レイトン教授と蒸気の新世界",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): レイトン教授と蒸気の新世界",
+      "lines": [
+        {
+          "kind": "ADDED",
+          "text": "2026.10.9"
+        },
+        {
+          "kind": "ADDED",
+          "text": "『レイトン教授と蒸気の新世界』早期購入特典／予約特典が決定！"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "CERO"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "審査予定"
+        }
+      ],
+      "rawDetail": "➕ 2026.10.9\n➕ 『レイトン教授と蒸気の新世界』早期購入特典／予約特典が決定！\n➖ CERO\n➖ 審査予定",
+      "truncated": false
+    },
+    {
+      "id": "b00e67637c7fc565",
+      "timestamp": "2026-10-09T04:43:15Z",
+      "url": "https://www.layton.jp/jouki/topics/240929/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "トピックス | レイトン教授と蒸気の新世界",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): トピックス | レイトン教授と蒸気の新世界",
+      "lines": [
+        {
+          "kind": "REMOVED",
+          "text": "CERO"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "審査予定"
+        }
+      ],
+      "rawDetail": "➖ CERO\n➖ 審査予定",
+      "truncated": false
+    },
+    {
+      "id": "e1fb9114f29431f8",
+      "timestamp": "2026-10-09T04:43:15Z",
+      "url": "https://www.layton.jp/jouki/topics/250925/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "トピックス | レイトン教授と蒸気の新世界",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): トピックス | レイトン教授と蒸気の新世界",
+      "lines": [
+        {
+          "kind": "REMOVED",
+          "text": "CERO"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "審査予定"
+        }
+      ],
+      "rawDetail": "➖ CERO\n➖ 審査予定",
+      "truncated": false
+    },
+    {
+      "id": "70cc19a9bcbea9eb",
+      "timestamp": "2026-10-09T04:43:15Z",
+      "url": "https://www.layton.jp/jouki/topics/261001/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "トピックス | レイトン教授と蒸気の新世界",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): トピックス | レイトン教授と蒸気の新世界",
+      "lines": [
+        {
+          "kind": "REMOVED",
+          "text": "CERO"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "審査予定"
+        }
+      ],
+      "rawDetail": "➖ CERO\n➖ 審査予定",
+      "truncated": false
+    },
+    {
+      "id": "77d082812b8b9a55",
+      "timestamp": "2026-10-09T04:43:15Z",
+      "url": "https://www.layton.jp/jouki/topics/261009/",
+      "franchise": "professor-layton",
+      "type": "PAGE_NEW",
+      "title": "トピックス | レイトン教授と蒸気の新世界",
+      "summary": "Nueva página en Professor Layton: New World of Steam (PLNWOS): トピックス | レイトン教授と蒸気の新世界",
+      "lines": [
+        {
+          "kind": "OTHER",
+          "text": "トピックス | レイトン教授と蒸気の新世界"
+        },
+        {
+          "kind": "OTHER",
+          "text": "レイトンシリーズサイト"
+        },
+        {
+          "kind": "OTHER",
+          "text": "日本語"
+        },
+        {
+          "kind": "OTHER",
+          "text": "English"
+        },
+        {
+          "kind": "OTHER",
+          "text": "トップページに戻る"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Nintendo Switch™ 2 ／Nintendo Switch™ ／PlayStation®5／Steam®"
+        },
+        {
+          "kind": "OTHER",
+          "text": "『レイトン教授と蒸気の新世界』"
+        },
+        {
+          "kind": "OTHER",
+          "text": "早期購入特典／予約特典が決定"
+        },
+        {
+          "kind": "OTHER",
+          "text": "株式会社レベルファイブ（本社：福岡市中央区、代表取締役社長／CEO：日野晃博）は、Nintendo Switch 2／ Nintendo Switc…"
+        }
+      ],
+      "rawDetail": "トピックス | レイトン教授と蒸気の新世界\nレイトンシリーズサイト\n日本語\nEnglish\nトップページに戻る\nNintendo Switch™ 2 ／Nintendo Switch™ ／PlayStation®5／Steam®\n『レイトン教授と蒸気の新世界』\n早期購入特典／予約特典が決定\n株式会社レベルファイブ（本社：福岡市中央区、代表取締役社長／CEO：日野晃博）は、Nintendo Switch 2／ Nintendo Switc…",
+      "truncated": true
+    },
+    {
       "id": "814a91aca32b78a6",
       "timestamp": "2026-10-01T10:52:52Z",
       "url": "https://www.layton.jp/jouki/",
