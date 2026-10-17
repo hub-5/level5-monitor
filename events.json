@@ -2,6 +2,231 @@
   "schemaVersion": 1,
   "events": [
     {
+      "id": "d37008292167c17b",
+      "timestamp": "2026-10-17T09:13:18Z",
+      "url": "https://www.inazuma.jp/victory-road/",
+      "franchise": "inazuma-eleven",
+      "type": "PAGE_CHANGED",
+      "title": "イナズマイレブン 英雄たちのヴィクトリーロード",
+      "summary": "Modificada en Inazuma Eleven: Victory Road (IEVR): イナズマイレブン 英雄たちのヴィクトリーロード",
+      "lines": [
+        {
+          "kind": "ADDED",
+          "text": "2026.10.17"
+        },
+        {
+          "kind": "ADDED",
+          "text": "「公式オンライン大会《ヴィクトリーロード》完全ガイド【シーズン1～】」を公開しました！"
+        },
+        {
+          "kind": "ADDED",
+          "text": "2026.10.17"
+        },
+        {
+          "kind": "ADDED",
+          "text": "「公式オンライン大会《ヴィクトリーロード》シーズン1開催予告PV」を公開しました！"
+        },
+        {
+          "kind": "ADDED",
+          "text": "2026.10.17"
+        },
+        {
+          "kind": "ADDED",
+          "text": "「 オンライン大会」を更新しました！"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "2026.7.6"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "「公式オンライン大会 ヴィクトリーロード完全ガイド」を公開しました！"
+        }
+      ],
+      "rawDetail": "➕ 2026.10.17\n➕ 「公式オンライン大会《ヴィクトリーロード》完全ガイド【シーズン1～】」を公開しました！\n➕ 2026.10.17\n➕ 「公式オンライン大会《ヴィクトリーロード》シーズン1開催予告PV」を公開しました！\n➕ 2026.10.17\n➕ 「 オンライン大会」を更新しました！\n➖ 2026.7.6\n➖ 「公式オンライン大会 ヴィクトリーロード完全ガイド」を公開しました！\n…y 2 líneas más de diferencia.",
+      "truncated": true
+    },
+    {
+      "id": "bc5de0f6d737b462",
+      "timestamp": "2026-10-17T09:13:18Z",
+      "url": "https://www.inazuma.jp/victory-road/de/",
+      "franchise": "inazuma-eleven",
+      "type": "PAGE_CHANGED",
+      "title": "INAZUMA ELEVEN: Helden der Siegesstraße",
+      "summary": "Modificada en Inazuma Eleven: Victory Road (IEVR): INAZUMA ELEVEN: Helden der Siegesstraße",
+      "lines": [
+        {
+          "kind": "REMOVED",
+          "text": "2026.7.6"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "Official Online Tournament Guide Trailer is now live !"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "2026.5.29"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "\"Victory Road Tournament Brief\" is now live !"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "●"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "Basisspiel"
+        },
+        {
+          "kind": "ADDED",
+          "text": "● Basisspiel"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "●"
+        }
+      ],
+      "rawDetail": "➖ 2026.7.6\n➖ Official Online Tournament Guide Trailer is now live !\n➖ 2026.5.29\n➖ \"Victory Road Tournament Brief\" is now live !\n➖ ●\n➖ Basisspiel\n➕ ● Basisspiel\n➖ ●\n…y 26 líneas más de diferencia.",
+      "truncated": true
+    },
+    {
+      "id": "92d499711a31b4d0",
+      "timestamp": "2026-10-17T09:13:18Z",
+      "url": "https://www.inazuma.jp/victory-road/en/",
+      "franchise": "inazuma-eleven",
+      "type": "PAGE_CHANGED",
+      "title": "INAZUMA ELEVEN: Victory Road",
+      "summary": "Modificada en Inazuma Eleven: Victory Road (IEVR): INAZUMA ELEVEN: Victory Road",
+      "lines": [
+        {
+          "kind": "REMOVED",
+          "text": "2026.7.6"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "Official Online Tournament Guide Trailer is now live !"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "2026.5.29"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "\"Victory Road Tournament Brief\" is now live !"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "●"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "Base Game"
+        },
+        {
+          "kind": "ADDED",
+          "text": "● Base Game"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "●"
+        }
+      ],
+      "rawDetail": "➖ 2026.7.6\n➖ Official Online Tournament Guide Trailer is now live !\n➖ 2026.5.29\n➖ \"Victory Road Tournament Brief\" is now live !\n➖ ●\n➖ Base Game\n➕ ● Base Game\n➖ ●\n…y 26 líneas más de diferencia.",
+      "truncated": true
+    },
+    {
+      "id": "f3e722cca08d184b",
+      "timestamp": "2026-10-17T09:13:18Z",
+      "url": "https://www.inazuma.jp/victory-road/es/",
+      "franchise": "inazuma-eleven",
+      "type": "PAGE_CHANGED",
+      "title": "INAZUMA ELEVEN: Heroes' Victory Road",
+      "summary": "Modificada en Inazuma Eleven: Victory Road (IEVR): INAZUMA ELEVEN: Heroes' Victory Road",
+      "lines": [
+        {
+          "kind": "REMOVED",
+          "text": "2026.7.6"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "Official Online Tournament Guide Trailer is now live !"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "2026.5.29"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "\"Victory Road Tournament Brief\" is now live !"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "●"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "Juego básico"
+        },
+        {
+          "kind": "ADDED",
+          "text": "● Juego básico"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "●"
+        }
+      ],
+      "rawDetail": "➖ 2026.7.6\n➖ Official Online Tournament Guide Trailer is now live !\n➖ 2026.5.29\n➖ \"Victory Road Tournament Brief\" is now live !\n➖ ●\n➖ Juego básico\n➕ ● Juego básico\n➖ ●\n…y 26 líneas más de diferencia.",
+      "truncated": true
+    },
+    {
+      "id": "2eee9bc15376fd81",
+      "timestamp": "2026-10-17T09:13:18Z",
+      "url": "https://www.inazuma.jp/victory-road/fr/",
+      "franchise": "inazuma-eleven",
+      "type": "PAGE_CHANGED",
+      "title": "INAZUMA ELEVEN: Victory Road",
+      "summary": "Modificada en Inazuma Eleven: Victory Road (IEVR): INAZUMA ELEVEN: Victory Road",
+      "lines": [
+        {
+          "kind": "REMOVED",
+          "text": "2026.7.6"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "Official Online Tournament Guide Trailer is now live !"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "2026.5.29"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "\"Victory Road Tournament Brief\" is now live !"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "●"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "Jeu de base"
+        },
+        {
+          "kind": "ADDED",
+          "text": "● Jeu de base"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "●"
+        }
+      ],
+      "rawDetail": "➖ 2026.7.6\n➖ Official Online Tournament Guide Trailer is now live !\n➖ 2026.5.29\n➖ \"Victory Road Tournament Brief\" is now live !\n➖ ●\n➖ Jeu de base\n➕ ● Jeu de base\n➖ ●\n…y 26 líneas más de diferencia.",
+      "truncated": true
+    },
+    {
       "id": "8cfa29bb3f9e2f0a",
       "timestamp": "2026-10-09T04:43:15Z",
       "url": "https://www.layton.jp/jouki/",
