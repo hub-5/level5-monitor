@@ -2,6 +2,34 @@
   "schemaVersion": 1,
   "events": [
     {
+      "id": "04f763d8e930b85b",
+      "timestamp": "2026-10-19T08:13:03Z",
+      "url": "https://www.inazuma.jp/victory-road/guideline/",
+      "franchise": "inazuma-eleven",
+      "type": "PAGE_CHANGED",
+      "title": "動画・静止画投稿に関するガイドライン | イナズマイレブン 英雄たちのヴィクトリーロード",
+      "summary": "Modificada en Inazuma Eleven: Victory Road (IEVR): 動画・静止画投稿に関するガイドライン | イナズマイレブン 英雄たちのヴィクトリーロード",
+      "lines": [
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        }
+      ],
+      "rawDetail": "✏️ （2026.~~7~~**10**.~~28~~**19**更新）\n✏️ （2026.~~7~~**10**.~~28~~**19**更新）\n✏️ （2026.~~7~~**10**.~~28~~**19**更新）",
+      "truncated": false
+    },
+    {
       "id": "499e109cd2ded41b",
       "timestamp": "2026-10-19T08:03:45Z",
       "url": "https://www.inazuma.jp/victory-road/",
