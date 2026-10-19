@@ -2,6 +2,502 @@
   "schemaVersion": 1,
   "events": [
     {
+      "id": "499e109cd2ded41b",
+      "timestamp": "2026-10-19T08:03:45Z",
+      "url": "https://www.inazuma.jp/victory-road/",
+      "franchise": "inazuma-eleven",
+      "type": "PAGE_CHANGED",
+      "title": "イナズマイレブン 英雄たちのヴィクトリーロード",
+      "summary": "Modificada en Inazuma Eleven: Victory Road (IEVR): イナズマイレブン 英雄たちのヴィクトリーロード",
+      "lines": [
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        },
+        {
+          "kind": "ADDED",
+          "text": "2026.10.19"
+        },
+        {
+          "kind": "ADDED",
+          "text": "ver.7.2.0配信のお知らせ（Nintendo Switch 2／Nintendo Switch）"
+        },
+        {
+          "kind": "ADDED",
+          "text": "2026.10.19"
+        },
+        {
+          "kind": "ADDED",
+          "text": "ver.7.2.1配信のお知らせ（PlayStation®5／PlayStation®4／Steam）"
+        },
+        {
+          "kind": "ADDED",
+          "text": "2026.10.19"
+        }
+      ],
+      "rawDetail": "✏️ （2026.~~7~~**10**.~~28~~**19**更新）\n✏️ （2026.~~7~~**10**.~~28~~**19**更新）\n✏️ （2026.~~7~~**10**.~~28~~**19**更新）\n➕ 2026.10.19\n➕ ver.7.2.0配信のお知らせ（Nintendo Switch 2／Nintendo Switch）\n➕ 2026.10.19\n➕ ver.7.2.1配信のお知らせ（PlayStation®5／PlayStation®4／Steam）\n➕ 2026.10.19\n…y 7 líneas más de diferencia.",
+      "truncated": true
+    },
+    {
+      "id": "4eecc6fcb1a376ca",
+      "timestamp": "2026-10-19T08:03:45Z",
+      "url": "https://www.inazuma.jp/victory-road/best-shot/",
+      "franchise": "inazuma-eleven",
+      "type": "PAGE_CHANGED",
+      "title": "結果発表 | 感動共有! #イナズマベストショットキャンペーン | イナズマイレブン 英雄たちのヴィクトリーロード",
+      "summary": "Modificada en Inazuma Eleven: Victory Road (IEVR): 結果発表 | 感動共有! #イナズマベストショットキャンペーン | イナズマイレブン 英雄たちのヴィクトリーロード",
+      "lines": [
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        }
+      ],
+      "rawDetail": "✏️ （2026.~~7~~**10**.~~28~~**19**更新）\n✏️ （2026.~~7~~**10**.~~28~~**19**更新）\n✏️ （2026.~~7~~**10**.~~28~~**19**更新）",
+      "truncated": false
+    },
+    {
+      "id": "5a40e77e2b28ada3",
+      "timestamp": "2026-10-19T08:03:45Z",
+      "url": "https://www.inazuma.jp/victory-road/character/",
+      "franchise": "inazuma-eleven",
+      "type": "PAGE_CHANGED",
+      "title": "キャラクター | イナズマイレブン 英雄たちのヴィクトリーロード",
+      "summary": "Modificada en Inazuma Eleven: Victory Road (IEVR): キャラクター | イナズマイレブン 英雄たちのヴィクトリーロード",
+      "lines": [
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        }
+      ],
+      "rawDetail": "✏️ （2026.~~7~~**10**.~~28~~**19**更新）\n✏️ （2026.~~7~~**10**.~~28~~**19**更新）\n✏️ （2026.~~7~~**10**.~~28~~**19**更新）",
+      "truncated": false
+    },
+    {
+      "id": "be33d077c8624135",
+      "timestamp": "2026-10-19T08:03:45Z",
+      "url": "https://www.inazuma.jp/victory-road/character/chronicle/",
+      "franchise": "inazuma-eleven",
+      "type": "PAGE_CHANGED",
+      "title": "クロニクル | キャラクター | イナズマイレブン 英雄たちのヴィクトリーロード",
+      "summary": "Modificada en Inazuma Eleven: Victory Road (IEVR): クロニクル | キャラクター | イナズマイレブン 英雄たちのヴィクトリーロード",
+      "lines": [
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        }
+      ],
+      "rawDetail": "✏️ （2026.~~7~~**10**.~~28~~**19**更新）\n✏️ （2026.~~7~~**10**.~~28~~**19**更新）\n✏️ （2026.~~7~~**10**.~~28~~**19**更新）",
+      "truncated": false
+    },
+    {
+      "id": "62516f0eb01d2f3d",
+      "timestamp": "2026-10-19T08:03:45Z",
+      "url": "https://www.inazuma.jp/victory-road/character/hokuyo/",
+      "franchise": "inazuma-eleven",
+      "type": "PAGE_CHANGED",
+      "title": "北陽学園 | キャラクター | イナズマイレブン 英雄たちのヴィクトリーロード",
+      "summary": "Modificada en Inazuma Eleven: Victory Road (IEVR): 北陽学園 | キャラクター | イナズマイレブン 英雄たちのヴィクトリーロード",
+      "lines": [
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        }
+      ],
+      "rawDetail": "✏️ （2026.~~7~~**10**.~~28~~**19**更新）\n✏️ （2026.~~7~~**10**.~~28~~**19**更新）\n✏️ （2026.~~7~~**10**.~~28~~**19**更新）",
+      "truncated": false
+    },
+    {
+      "id": "e4713173d90ff1d0",
+      "timestamp": "2026-10-19T08:03:45Z",
+      "url": "https://www.inazuma.jp/victory-road/character/nagumohara-select/",
+      "franchise": "inazuma-eleven",
+      "type": "PAGE_CHANGED",
+      "title": "南雲原中 セレクトキャラ | キャラクター | イナズマイレブン 英雄たちのヴィクトリーロード",
+      "summary": "Modificada en Inazuma Eleven: Victory Road (IEVR): 南雲原中 セレクトキャラ | キャラクター | イナズマイレブン 英雄たちのヴィクトリーロード",
+      "lines": [
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        }
+      ],
+      "rawDetail": "✏️ （2026.~~7~~**10**.~~28~~**19**更新）\n✏️ （2026.~~7~~**10**.~~28~~**19**更新）\n✏️ （2026.~~7~~**10**.~~28~~**19**更新）",
+      "truncated": false
+    },
+    {
+      "id": "177e843c93aedaa3",
+      "timestamp": "2026-10-19T08:03:45Z",
+      "url": "https://www.inazuma.jp/victory-road/character/nagumohara/",
+      "franchise": "inazuma-eleven",
+      "type": "PAGE_CHANGED",
+      "title": "南雲原中 | キャラクター | イナズマイレブン 英雄たちのヴィクトリーロード",
+      "summary": "Modificada en Inazuma Eleven: Victory Road (IEVR): 南雲原中 | キャラクター | イナズマイレブン 英雄たちのヴィクトリーロード",
+      "lines": [
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        }
+      ],
+      "rawDetail": "✏️ （2026.~~7~~**10**.~~28~~**19**更新）\n✏️ （2026.~~7~~**10**.~~28~~**19**更新）\n✏️ （2026.~~7~~**10**.~~28~~**19**更新）",
+      "truncated": false
+    },
+    {
+      "id": "1ae1af51953a5f72",
+      "timestamp": "2026-10-19T08:03:45Z",
+      "url": "https://www.inazuma.jp/victory-road/character/nishinomiya/",
+      "franchise": "inazuma-eleven",
+      "type": "PAGE_CHANGED",
+      "title": "西ノ宮中 | キャラクター | イナズマイレブン 英雄たちのヴィクトリーロード",
+      "summary": "Modificada en Inazuma Eleven: Victory Road (IEVR): 西ノ宮中 | キャラクター | イナズマイレブン 英雄たちのヴィクトリーロード",
+      "lines": [
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        }
+      ],
+      "rawDetail": "✏️ （2026.~~7~~**10**.~~28~~**19**更新）\n✏️ （2026.~~7~~**10**.~~28~~**19**更新）\n✏️ （2026.~~7~~**10**.~~28~~**19**更新）",
+      "truncated": false
+    },
+    {
+      "id": "c03b47e49d87f24d",
+      "timestamp": "2026-10-19T08:03:45Z",
+      "url": "https://www.inazuma.jp/victory-road/character/raimon/",
+      "franchise": "inazuma-eleven",
+      "type": "PAGE_CHANGED",
+      "title": "雷門中 | キャラクター | イナズマイレブン 英雄たちのヴィクトリーロード",
+      "summary": "Modificada en Inazuma Eleven: Victory Road (IEVR): 雷門中 | キャラクター | イナズマイレブン 英雄たちのヴィクトリーロード",
+      "lines": [
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        }
+      ],
+      "rawDetail": "✏️ （2026.~~7~~**10**.~~28~~**19**更新）\n✏️ （2026.~~7~~**10**.~~28~~**19**更新）\n✏️ （2026.~~7~~**10**.~~28~~**19**更新）",
+      "truncated": false
+    },
+    {
+      "id": "9db1a3e9df99c566",
+      "timestamp": "2026-10-19T08:03:45Z",
+      "url": "https://www.inazuma.jp/victory-road/character/teikoku/",
+      "franchise": "inazuma-eleven",
+      "type": "PAGE_CHANGED",
+      "title": "帝国学園 | キャラクター | イナズマイレブン 英雄たちのヴィクトリーロード",
+      "summary": "Modificada en Inazuma Eleven: Victory Road (IEVR): 帝国学園 | キャラクター | イナズマイレブン 英雄たちのヴィクトリーロード",
+      "lines": [
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        }
+      ],
+      "rawDetail": "✏️ （2026.~~7~~**10**.~~28~~**19**更新）\n✏️ （2026.~~7~~**10**.~~28~~**19**更新）\n✏️ （2026.~~7~~**10**.~~28~~**19**更新）",
+      "truncated": false
+    },
+    {
+      "id": "a54dd0acda50cbb7",
+      "timestamp": "2026-10-19T08:03:45Z",
+      "url": "https://www.inazuma.jp/victory-road/character/tofuikokukan/",
+      "franchise": "inazuma-eleven",
+      "type": "PAGE_CHANGED",
+      "title": "東風異国館 | キャラクター | イナズマイレブン 英雄たちのヴィクトリーロード",
+      "summary": "Modificada en Inazuma Eleven: Victory Road (IEVR): 東風異国館 | キャラクター | イナズマイレブン 英雄たちのヴィクトリーロード",
+      "lines": [
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        }
+      ],
+      "rawDetail": "✏️ （2026.~~7~~**10**.~~28~~**19**更新）\n✏️ （2026.~~7~~**10**.~~28~~**19**更新）\n✏️ （2026.~~7~~**10**.~~28~~**19**更新）",
+      "truncated": false
+    },
+    {
+      "id": "4b7c9bff050a675a",
+      "timestamp": "2026-10-19T08:03:45Z",
+      "url": "https://www.inazuma.jp/victory-road/chronicle/",
+      "franchise": "inazuma-eleven",
+      "type": "PAGE_CHANGED",
+      "title": "クロニクルモード | イナズマイレブン 英雄たちのヴィクトリーロード",
+      "summary": "Modificada en Inazuma Eleven: Victory Road (IEVR): クロニクルモード | イナズマイレブン 英雄たちのヴィクトリーロード",
+      "lines": [
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        }
+      ],
+      "rawDetail": "✏️ （2026.~~7~~**10**.~~28~~**19**更新）\n✏️ （2026.~~7~~**10**.~~28~~**19**更新）\n✏️ （2026.~~7~~**10**.~~28~~**19**更新）",
+      "truncated": false
+    },
+    {
+      "id": "d4ba94958be46568",
+      "timestamp": "2026-10-19T08:03:45Z",
+      "url": "https://www.inazuma.jp/victory-road/competition/",
+      "franchise": "inazuma-eleven",
+      "type": "PAGE_CHANGED",
+      "title": "対戦 | イナズマイレブン 英雄たちのヴィクトリーロード",
+      "summary": "Modificada en Inazuma Eleven: Victory Road (IEVR): 対戦 | イナズマイレブン 英雄たちのヴィクトリーロード",
+      "lines": [
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        }
+      ],
+      "rawDetail": "✏️ （2026.~~7~~**10**.~~28~~**19**更新）\n✏️ （2026.~~7~~**10**.~~28~~**19**更新）\n✏️ （2026.~~7~~**10**.~~28~~**19**更新）",
+      "truncated": false
+    },
+    {
+      "id": "8eed564ca49f3cd7",
+      "timestamp": "2026-10-19T08:03:45Z",
+      "url": "https://www.inazuma.jp/victory-road/eula/",
+      "franchise": "inazuma-eleven",
+      "type": "PAGE_CHANGED",
+      "title": "エンドユーザーライセンス契約書 | イナズマイレブン 英雄たちのヴィクトリーロード",
+      "summary": "Modificada en Inazuma Eleven: Victory Road (IEVR): エンドユーザーライセンス契約書 | イナズマイレブン 英雄たちのヴィクトリーロード",
+      "lines": [
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        }
+      ],
+      "rawDetail": "✏️ （2026.~~7~~**10**.~~28~~**19**更新）\n✏️ （2026.~~7~~**10**.~~28~~**19**更新）\n✏️ （2026.~~7~~**10**.~~28~~**19**更新）",
+      "truncated": false
+    },
+    {
+      "id": "cc5e2e06b9d21d17",
+      "timestamp": "2026-10-19T08:03:45Z",
+      "url": "https://www.inazuma.jp/victory-road/guide/cross-save/",
+      "franchise": "inazuma-eleven",
+      "type": "PAGE_CHANGED",
+      "title": "クロスセーブを行う方法 | イナズマイレブン 英雄たちのヴィクトリーロード",
+      "summary": "Modificada en Inazuma Eleven: Victory Road (IEVR): クロスセーブを行う方法 | イナズマイレブン 英雄たちのヴィクトリーロード",
+      "lines": [
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        }
+      ],
+      "rawDetail": "✏️ （2026.~~7~~**10**.~~28~~**19**更新）\n✏️ （2026.~~7~~**10**.~~28~~**19**更新）\n✏️ （2026.~~7~~**10**.~~28~~**19**更新）",
+      "truncated": false
+    },
+    {
+      "id": "5e2ae357b7e7f3c5",
+      "timestamp": "2026-10-19T08:03:45Z",
+      "url": "https://www.inazuma.jp/victory-road/guide/faq/",
+      "franchise": "inazuma-eleven",
+      "type": "PAGE_CHANGED",
+      "title": "よくあるご質問 | イナズマイレブン 英雄たちのヴィクトリーロード",
+      "summary": "Modificada en Inazuma Eleven: Victory Road (IEVR): よくあるご質問 | イナズマイレブン 英雄たちのヴィクトリーロード",
+      "lines": [
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        }
+      ],
+      "rawDetail": "✏️ （2026.~~7~~**10**.~~28~~**19**更新）\n✏️ （2026.~~7~~**10**.~~28~~**19**更新）\n✏️ （2026.~~7~~**10**.~~28~~**19**更新）",
+      "truncated": false
+    },
+    {
+      "id": "7272dcf5a48419b5",
+      "timestamp": "2026-10-19T08:03:45Z",
+      "url": "https://www.inazuma.jp/victory-road/guide/password/",
+      "franchise": "inazuma-eleven",
+      "type": "PAGE_CHANGED",
+      "title": "あいことば入力方法 | イナズマイレブン 英雄たちのヴィクトリーロード",
+      "summary": "Modificada en Inazuma Eleven: Victory Road (IEVR): あいことば入力方法 | イナズマイレブン 英雄たちのヴィクトリーロード",
+      "lines": [
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "（2026.7.28更新）",
+          "newText": "（2026.10.19更新）"
+        }
+      ],
+      "rawDetail": "✏️ （2026.~~7~~**10**.~~28~~**19**更新）\n✏️ （2026.~~7~~**10**.~~28~~**19**更新）\n✏️ （2026.~~7~~**10**.~~28~~**19**更新）",
+      "truncated": false
+    },
+    {
       "id": "d37008292167c17b",
       "timestamp": "2026-10-17T09:13:18Z",
       "url": "https://www.inazuma.jp/victory-road/",
