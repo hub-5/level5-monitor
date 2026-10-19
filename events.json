@@ -2,6 +2,205 @@
   "schemaVersion": 1,
   "events": [
     {
+      "id": "ccef089b2997908f",
+      "timestamp": "2026-10-19T10:53:28Z",
+      "url": "https://www.layton.jp/jouki/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "レイトン教授と蒸気の新世界",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): レイトン教授と蒸気の新世界",
+      "lines": [
+        {
+          "kind": "ADDED",
+          "text": "トップページ"
+        },
+        {
+          "kind": "ADDED",
+          "text": "ムービー"
+        },
+        {
+          "kind": "ADDED",
+          "text": "商品情報"
+        },
+        {
+          "kind": "ADDED",
+          "text": "2026.10.19"
+        },
+        {
+          "kind": "ADDED",
+          "text": "「商品情報」 を公開しました！"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "PV（LEVEL5 VISION 2026 Ver.）"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "Interview With the Voice Cast（LEVEL5 VISION 2026 Ver.）"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "PV（TGS 2025 Ver.）"
+        }
+      ],
+      "rawDetail": "➕ トップページ\n➕ ムービー\n➕ 商品情報\n➕ 2026.10.19\n➕ 「商品情報」 を公開しました！\n➖ PV（LEVEL5 VISION 2026 Ver.）\n➖ Interview With the Voice Cast（LEVEL5 VISION 2026 Ver.）\n➖ PV（TGS 2025 Ver.）\n…y 8 líneas más de diferencia.",
+      "truncated": true
+    },
+    {
+      "id": "2274ee25c35372e2",
+      "timestamp": "2026-10-19T10:53:28Z",
+      "url": "https://www.layton.jp/jouki/movie/",
+      "franchise": "professor-layton",
+      "type": "PAGE_NEW",
+      "title": "ムービー | レイトン教授と蒸気の新世界",
+      "summary": "Nueva página en Professor Layton: New World of Steam (PLNWOS): ムービー | レイトン教授と蒸気の新世界",
+      "lines": [
+        {
+          "kind": "OTHER",
+          "text": "ムービー | レイトン教授と蒸気の新世界"
+        },
+        {
+          "kind": "OTHER",
+          "text": "レイトンシリーズサイト"
+        },
+        {
+          "kind": "OTHER",
+          "text": "日本語"
+        },
+        {
+          "kind": "OTHER",
+          "text": "English"
+        },
+        {
+          "kind": "OTHER",
+          "text": "トップページ"
+        },
+        {
+          "kind": "OTHER",
+          "text": "ムービー"
+        },
+        {
+          "kind": "OTHER",
+          "text": "商品情報"
+        },
+        {
+          "kind": "OTHER",
+          "text": "ムービー"
+        },
+        {
+          "kind": "OTHER",
+          "text": "東京ゲームショウ2026 試遊体験版 プレイ動画"
+        },
+        {
+          "kind": "OTHER",
+          "text": "PV（LEVEL5 VISION 2026 II Ver.）"
+        },
+        {
+          "kind": "OTHER",
+          "text": "The Making of \"The New World\" Theme Song"
+        },
+        {
+          "kind": "OTHER",
+          "text": "発売日決定PV"
+        },
+        {
+          "kind": "OTHER",
+          "text": "PV（LEVEL5 VISION 2026 Ver.）"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Interview With the V…"
+        }
+      ],
+      "rawDetail": "ムービー | レイトン教授と蒸気の新世界\nレイトンシリーズサイト\n日本語\nEnglish\nトップページ\nムービー\n商品情報\nムービー\n東京ゲームショウ2026 試遊体験版 プレイ動画\nPV（LEVEL5 VISION 2026 II Ver.）\nThe Making of \"The New World\" Theme Song\n発売日決定PV\nPV（LEVEL5 VISION 2026 Ver.）\nInterview With the V…",
+      "truncated": true
+    },
+    {
+      "id": "e1f290462f78492c",
+      "timestamp": "2026-10-19T10:53:28Z",
+      "url": "https://www.layton.jp/jouki/product/",
+      "franchise": "professor-layton",
+      "type": "PAGE_NEW",
+      "title": "商品情報 | レイトン教授と蒸気の新世界",
+      "summary": "Nueva página en Professor Layton: New World of Steam (PLNWOS): 商品情報 | レイトン教授と蒸気の新世界",
+      "lines": [
+        {
+          "kind": "OTHER",
+          "text": "商品情報 | レイトン教授と蒸気の新世界"
+        },
+        {
+          "kind": "OTHER",
+          "text": "レイトンシリーズサイト"
+        },
+        {
+          "kind": "OTHER",
+          "text": "日本語"
+        },
+        {
+          "kind": "OTHER",
+          "text": "English"
+        },
+        {
+          "kind": "OTHER",
+          "text": "トップページ"
+        },
+        {
+          "kind": "OTHER",
+          "text": "ムービー"
+        },
+        {
+          "kind": "OTHER",
+          "text": "商品情報"
+        },
+        {
+          "kind": "OTHER",
+          "text": "商品情報"
+        },
+        {
+          "kind": "OTHER",
+          "text": "パッケージ版"
+        },
+        {
+          "kind": "OTHER",
+          "text": "（限定機種・日本のみ）"
+        },
+        {
+          "kind": "OTHER",
+          "text": "ダウンロード版"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Nintendo Switch 2／Nintendo Switch"
+        },
+        {
+          "kind": "OTHER",
+          "text": "●レイトン教授と蒸気の新世界"
+        },
+        {
+          "kind": "OTHER",
+          "text": "希望小売価格："
+        },
+        {
+          "kind": "OTHER",
+          "text": "7,920 円(税込)"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Nintendo Switch 2"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Nintendo Switch"
+        },
+        {
+          "kind": "OTHER",
+          "text": "【Nintendo Switch 2／Nint…"
+        }
+      ],
+      "rawDetail": "商品情報 | レイトン教授と蒸気の新世界\nレイトンシリーズサイト\n日本語\nEnglish\nトップページ\nムービー\n商品情報\n商品情報\nパッケージ版\n（限定機種・日本のみ）\nダウンロード版\nNintendo Switch 2／Nintendo Switch\n●レイトン教授と蒸気の新世界\n希望小売価格：\n7,920 円(税込)\nNintendo Switch 2\nNintendo Switch\n【Nintendo Switch 2／Nint…",
+      "truncated": true
+    },
+    {
       "id": "04f763d8e930b85b",
       "timestamp": "2026-10-19T08:13:03Z",
       "url": "https://www.inazuma.jp/victory-road/guideline/",
