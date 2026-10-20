@@ -2,6 +2,51 @@
   "schemaVersion": 1,
   "events": [
     {
+      "id": "6a53c8af133598a3",
+      "timestamp": "2026-10-20T08:53:28Z",
+      "url": "https://www.inazuma.jp/victory-road/",
+      "franchise": "inazuma-eleven",
+      "type": "PAGE_CHANGED",
+      "title": "イナズマイレブン 英雄たちのヴィクトリーロード",
+      "summary": "Modificada en Inazuma Eleven: Victory Road (IEVR): イナズマイレブン 英雄たちのヴィクトリーロード",
+      "lines": [
+        {
+          "kind": "ADDED",
+          "text": "2026.10.20"
+        },
+        {
+          "kind": "ADDED",
+          "text": "オンライン大会「ヴィクトリーロード」が本格始動 システムを刷新してシーズン１が開幕！"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "2026.8.22"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "「イナズマイレブン18周年記念 特設サイト」を公開しました！"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "2026.7.31"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "『イナズマイレブン 英雄たちのヴィクトリーロード』「コロツアー2026」開催中止のお知らせ"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "2026.7.28"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "ver.7.1.2配信のお知らせ（Nintendo Switch 2／Nintendo Switch）"
+        }
+      ],
+      "rawDetail": "➕ 2026.10.20\n➕ オンライン大会「ヴィクトリーロード」が本格始動 システムを刷新してシーズン１が開幕！\n➖ 2026.8.22\n➖ 「イナズマイレブン18周年記念 特設サイト」を公開しました！\n➖ 2026.7.31\n➖ 『イナズマイレブン 英雄たちのヴィクトリーロード』「コロツアー2026」開催中止のお知らせ\n➖ 2026.7.28\n➖ ver.7.1.2配信のお知らせ（Nintendo Switch 2／Nintendo Switch）\n…y 56 líneas más de diferencia.",
+      "truncated": true
+    },
+    {
       "id": "ccef089b2997908f",
       "timestamp": "2026-10-19T10:53:28Z",
       "url": "https://www.layton.jp/jouki/",
