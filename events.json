@@ -2,6 +2,48 @@
   "schemaVersion": 1,
   "events": [
     {
+      "id": "dc1f8e164d0e046b",
+      "timestamp": "2026-10-23T05:23:36Z",
+      "url": "https://www.level5.co.jp/tgs2026/",
+      "franchise": "level5",
+      "type": "PAGE_CHANGED",
+      "title": "レベルファイブ 東京ゲームショウ2026 出展情報",
+      "summary": "Modificada en LEVEL-5 TGS2026: レベルファイブ 東京ゲームショウ2026 出展情報",
+      "lines": [
+        {
+          "kind": "REMOVED",
+          "text": "メディア／インフルエンサー"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "試遊予約はこちら"
+        }
+      ],
+      "rawDetail": "➖ メディア／インフルエンサー\n➖ 試遊予約はこちら",
+      "truncated": false
+    },
+    {
+      "id": "fb11de04ff6a1c02",
+      "timestamp": "2026-10-23T05:23:36Z",
+      "url": "https://www.level5.co.jp/tgs2026/en/",
+      "franchise": "level5",
+      "type": "PAGE_CHANGED",
+      "title": "LEVEL5 TOKYO GAME SHOW 2026 Exhibition Information",
+      "summary": "Modificada en LEVEL-5 TGS2026: LEVEL5 TOKYO GAME SHOW 2026 Exhibition Information",
+      "lines": [
+        {
+          "kind": "REMOVED",
+          "text": "Hands-On Demo Reservations"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "for Media & Influencers"
+        }
+      ],
+      "rawDetail": "➖ Hands-On Demo Reservations\n➖ for Media & Influencers",
+      "truncated": false
+    },
+    {
       "id": "6a53c8af133598a3",
       "timestamp": "2026-10-20T08:53:28Z",
       "url": "https://www.inazuma.jp/victory-road/",
