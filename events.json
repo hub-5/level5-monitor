@@ -2,6 +2,43 @@
   "schemaVersion": 1,
   "events": [
     {
+      "id": "df029982fb49585a",
+      "timestamp": "2026-11-04T11:53:10Z",
+      "url": "https://www.layton.jp/jouki/product/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "商品情報 | レイトン教授と蒸気の新世界",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): 商品情報 | レイトン教授と蒸気の新世界",
+      "lines": [
+        {
+          "kind": "ADDED",
+          "text": "あみあみ"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Nintendo Switch 2版"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Nintendo Switch版"
+        },
+        {
+          "kind": "ADDED",
+          "text": "あみあみ"
+        },
+        {
+          "kind": "ADDED",
+          "text": "あみあみ限定特典"
+        },
+        {
+          "kind": "ADDED",
+          "text": "A2クリアシート"
+        }
+      ],
+      "rawDetail": "➕ あみあみ\n➕ Nintendo Switch 2版\n➕ Nintendo Switch版\n➕ あみあみ\n➕ あみあみ限定特典\n➕ A2クリアシート",
+      "truncated": false
+    },
+    {
       "id": "507e06b5ca46143d",
       "timestamp": "2026-11-04T08:53:34Z",
       "url": "https://www.inazuma.jp/victory-road/de/",
