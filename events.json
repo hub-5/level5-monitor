@@ -2,6 +2,198 @@
   "schemaVersion": 1,
   "events": [
     {
+      "id": "507e06b5ca46143d",
+      "timestamp": "2026-11-04T08:53:34Z",
+      "url": "https://www.inazuma.jp/victory-road/de/",
+      "franchise": "inazuma-eleven",
+      "type": "PAGE_CHANGED",
+      "title": "INAZUMA ELEVEN: Helden der Siegesstraße",
+      "summary": "Modificada en Inazuma Eleven: Victory Road (IEVR): INAZUMA ELEVEN: Helden der Siegesstraße",
+      "lines": [
+        {
+          "kind": "CHANGED",
+          "oldText": "(Update Date: 2026.7.28 [JST])",
+          "newText": "(Update Date: 2026.10.19 [JST])"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "(Update Date: 2026.7.28 [JST])",
+          "newText": "(Update Date: 2026.10.19 [JST])"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "(Update Date: 2026.7.28 [JST])",
+          "newText": "(Update Date: 2026.10.19 [JST])"
+        },
+        {
+          "kind": "ADDED",
+          "text": "2026.10.19"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Announcement of Version 7.2.0 Release（Nintendo Switch 2 / Nintendo Switch）"
+        },
+        {
+          "kind": "ADDED",
+          "text": "2026.10.19"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Announcement of Version 7.2.1 Release（PlayStation®5 / PlayStation®4 / Steam）"
+        },
+        {
+          "kind": "ADDED",
+          "text": "2026.10.19"
+        }
+      ],
+      "rawDetail": "✏️ (Update Date: 2026.~~7~~**10**.~~28~~**19** [JST])\n✏️ (Update Date: 2026.~~7~~**10**.~~28~~**19** [JST])\n✏️ (Update Date: 2026.~~7~~**10**.~~28~~**19** [JST])\n➕ 2026.10.19\n➕ Announcement of Version 7.2.0 Release（Nintendo Switch 2 / Nintendo Switch）\n➕ 2026.10.19\n➕ Announcement of Version 7.2.1 Release（PlayStation®5 / PlayStation®4 / Steam）\n➕ 2026.10.19\n…y 7 líneas más de diferencia.",
+      "truncated": true
+    },
+    {
+      "id": "eceab32796f65c4c",
+      "timestamp": "2026-11-04T08:53:34Z",
+      "url": "https://www.inazuma.jp/victory-road/en/",
+      "franchise": "inazuma-eleven",
+      "type": "PAGE_CHANGED",
+      "title": "INAZUMA ELEVEN: Victory Road",
+      "summary": "Modificada en Inazuma Eleven: Victory Road (IEVR): INAZUMA ELEVEN: Victory Road",
+      "lines": [
+        {
+          "kind": "CHANGED",
+          "oldText": "(Update Date: 2026.7.28 [JST])",
+          "newText": "(Update Date: 2026.10.19 [JST])"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "(Update Date: 2026.7.28 [JST])",
+          "newText": "(Update Date: 2026.10.19 [JST])"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "(Update Date: 2026.7.28 [JST])",
+          "newText": "(Update Date: 2026.10.19 [JST])"
+        },
+        {
+          "kind": "ADDED",
+          "text": "2026.10.19"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Announcement of Version 7.2.0 Release（Nintendo Switch 2 / Nintendo Switch）"
+        },
+        {
+          "kind": "ADDED",
+          "text": "2026.10.19"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Announcement of Version 7.2.1 Release（PlayStation®5 / PlayStation®4 / Steam）"
+        },
+        {
+          "kind": "ADDED",
+          "text": "2026.10.19"
+        }
+      ],
+      "rawDetail": "✏️ (Update Date: 2026.~~7~~**10**.~~28~~**19** [JST])\n✏️ (Update Date: 2026.~~7~~**10**.~~28~~**19** [JST])\n✏️ (Update Date: 2026.~~7~~**10**.~~28~~**19** [JST])\n➕ 2026.10.19\n➕ Announcement of Version 7.2.0 Release（Nintendo Switch 2 / Nintendo Switch）\n➕ 2026.10.19\n➕ Announcement of Version 7.2.1 Release（PlayStation®5 / PlayStation®4 / Steam）\n➕ 2026.10.19\n…y 7 líneas más de diferencia.",
+      "truncated": true
+    },
+    {
+      "id": "dfc77499ea116330",
+      "timestamp": "2026-11-04T08:53:34Z",
+      "url": "https://www.inazuma.jp/victory-road/es/",
+      "franchise": "inazuma-eleven",
+      "type": "PAGE_CHANGED",
+      "title": "INAZUMA ELEVEN: Heroes' Victory Road",
+      "summary": "Modificada en Inazuma Eleven: Victory Road (IEVR): INAZUMA ELEVEN: Heroes' Victory Road",
+      "lines": [
+        {
+          "kind": "CHANGED",
+          "oldText": "(Update Date: 2026.7.28 [JST])",
+          "newText": "(Update Date: 2026.10.19 [JST])"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "(Update Date: 2026.7.28 [JST])",
+          "newText": "(Update Date: 2026.10.19 [JST])"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "(Update Date: 2026.7.28 [JST])",
+          "newText": "(Update Date: 2026.10.19 [JST])"
+        },
+        {
+          "kind": "ADDED",
+          "text": "2026.10.19"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Announcement of Version 7.2.0 Release（Nintendo Switch 2 / Nintendo Switch）"
+        },
+        {
+          "kind": "ADDED",
+          "text": "2026.10.19"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Announcement of Version 7.2.1 Release（PlayStation®5 / PlayStation®4 / Steam）"
+        },
+        {
+          "kind": "ADDED",
+          "text": "2026.10.19"
+        }
+      ],
+      "rawDetail": "✏️ (Update Date: 2026.~~7~~**10**.~~28~~**19** [JST])\n✏️ (Update Date: 2026.~~7~~**10**.~~28~~**19** [JST])\n✏️ (Update Date: 2026.~~7~~**10**.~~28~~**19** [JST])\n➕ 2026.10.19\n➕ Announcement of Version 7.2.0 Release（Nintendo Switch 2 / Nintendo Switch）\n➕ 2026.10.19\n➕ Announcement of Version 7.2.1 Release（PlayStation®5 / PlayStation®4 / Steam）\n➕ 2026.10.19\n…y 7 líneas más de diferencia.",
+      "truncated": true
+    },
+    {
+      "id": "38410e7d12f4de86",
+      "timestamp": "2026-11-04T08:53:34Z",
+      "url": "https://www.inazuma.jp/victory-road/fr/",
+      "franchise": "inazuma-eleven",
+      "type": "PAGE_CHANGED",
+      "title": "INAZUMA ELEVEN: Victory Road",
+      "summary": "Modificada en Inazuma Eleven: Victory Road (IEVR): INAZUMA ELEVEN: Victory Road",
+      "lines": [
+        {
+          "kind": "CHANGED",
+          "oldText": "(Update Date: 2026.7.28 [JST])",
+          "newText": "(Update Date: 2026.10.19 [JST])"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "(Update Date: 2026.7.28 [JST])",
+          "newText": "(Update Date: 2026.10.19 [JST])"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "(Update Date: 2026.7.28 [JST])",
+          "newText": "(Update Date: 2026.10.19 [JST])"
+        },
+        {
+          "kind": "ADDED",
+          "text": "2026.10.19"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Announcement of Version 7.2.0 Release（Nintendo Switch 2 / Nintendo Switch）"
+        },
+        {
+          "kind": "ADDED",
+          "text": "2026.10.19"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Announcement of Version 7.2.1 Release（PlayStation®5 / PlayStation®4 / Steam）"
+        },
+        {
+          "kind": "ADDED",
+          "text": "2026.10.19"
+        }
+      ],
+      "rawDetail": "✏️ (Update Date: 2026.~~7~~**10**.~~28~~**19** [JST])\n✏️ (Update Date: 2026.~~7~~**10**.~~28~~**19** [JST])\n✏️ (Update Date: 2026.~~7~~**10**.~~28~~**19** [JST])\n➕ 2026.10.19\n➕ Announcement of Version 7.2.0 Release（Nintendo Switch 2 / Nintendo Switch）\n➕ 2026.10.19\n➕ Announcement of Version 7.2.1 Release（PlayStation®5 / PlayStation®4 / Steam）\n➕ 2026.10.19\n…y 7 líneas más de diferencia.",
+      "truncated": true
+    },
+    {
       "id": "dc1f8e164d0e046b",
       "timestamp": "2026-10-23T05:23:36Z",
       "url": "https://www.level5.co.jp/tgs2026/",
