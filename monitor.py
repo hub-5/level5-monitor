@@ -522,68 +522,86 @@ def crawl_site(site: dict, state_pages: dict, session: requests.Session,
             time.sleep(delay)
             continue
 
-        html = decode_response(resp)
-        new_text = extract_text(html)
-        new_hash = hashlib.sha256(new_text.encode("utf-8", "ignore")).hexdigest()
-        title = extract_title(html)
-        images = extract_images(html, url)
+        # Todo el procesado del contenido (decodificar, extraer texto/título/
+        # imágenes, calcular el diff) va envuelto en un único try/except.
+        # Antes, un error inesperado aquí (p. ej. HTML raro de una sola
+        # página) se propagaba sin capturar y tiraba abajo TODA la ejecución
+        # del monitor, dejando sin comprobar el resto de webs de la cola.
+        # Ahora se trata igual que un fallo de red: se registra como error de
+        # esa página concreta y se continúa con la siguiente.
+        try:
+            html = decode_response(resp)
+            new_text = extract_text(html)
+            new_hash = hashlib.sha256(new_text.encode("utf-8", "ignore")).hexdigest()
+            title = extract_title(html)
+            images = extract_images(html, url)
 
-        prev_text = prev.get("text")
-        prev_images = set(prev.get("images") or [])
-        is_new = url not in state_pages
-        # Una entrada ya existía pero se guardó con una versión anterior del
-        # monitor: bien en el formato antiguo (solo hash de HTML, sin texto
-        # legible), bien con una versión de STATE_FORMAT_VERSION distinta
-        # (p. ej. antes de corregir la detección de codificación de
-        # caracteres). En ambos casos no hay forma de calcular un diff
-        # fiable contra el valor guardado, así que se migra/recalcula en
-        # silencio: no se avisa de "cambio" solo por una mejora interna del
-        # monitor. El primer cambio real posterior sí generará ya un diff
-        # exacto.
-        is_migration = (not is_new) and prev.get("fmt") != STATE_FORMAT_VERSION
-        was_removed = prev.get("removed", False)
+            prev_text = prev.get("text")
+            prev_images = set(prev.get("images") or [])
+            is_new = url not in state_pages
+            # Una entrada ya existía pero se guardó con una versión anterior del
+            # monitor: bien en el formato antiguo (solo hash de HTML, sin texto
+            # legible), bien con una versión de STATE_FORMAT_VERSION distinta
+            # (p. ej. antes de corregir la detección de codificación de
+            # caracteres). En ambos casos no hay forma de calcular un diff
+            # fiable contra el valor guardado, así que se migra/recalcula en
+            # silencio: no se avisa de "cambio" solo por una mejora interna del
+            # monitor. El primer cambio real posterior sí generará ya un diff
+            # exacto.
+            is_migration = (not is_new) and prev.get("fmt") != STATE_FORMAT_VERSION
+            was_removed = prev.get("removed", False)
 
-        if is_new:
-            result.new_pages.append(PageChange(
-                url=url, title=title, detail=_truncate(new_text),
-                image_url=images[0] if images else "",
-            ))
-        elif is_migration:
-            print(f"[INFO]   Migrando estado de {url} al nuevo formato (sin aviso).")
-        elif was_removed:
-            # Había sido marcada como eliminada y ha vuelto a responder: se
-            # trata como una "reaparición", no como una modificación.
-            result.new_pages.append(PageChange(
-                url=url, title=title, detail=_truncate(new_text),
-                image_url=images[0] if images else "",
-            ))
-        elif prev.get("hash_text") != new_hash:
-            new_images = [img for img in images if img not in prev_images]
-            result.changed_pages.append(PageChange(
-                url=url, title=title, detail=make_diff(prev_text, new_text),
-                image_url=new_images[0] if new_images else "",
-            ))
+            if is_new:
+                result.new_pages.append(PageChange(
+                    url=url, title=title, detail=_truncate(new_text),
+                    image_url=images[0] if images else "",
+                ))
+            elif is_migration:
+                print(f"[INFO]   Migrando estado de {url} al nuevo formato (sin aviso).")
+            elif was_removed:
+                # Había sido marcada como eliminada y ha vuelto a responder: se
+                # trata como una "reaparición", no como una modificación.
+                result.new_pages.append(PageChange(
+                    url=url, title=title, detail=_truncate(new_text),
+                    image_url=images[0] if images else "",
+                ))
+            elif prev.get("hash_text") != new_hash:
+                new_images = [img for img in images if img not in prev_images]
+                result.changed_pages.append(PageChange(
+                    url=url, title=title, detail=make_diff(prev_text, new_text),
+                    image_url=new_images[0] if new_images else "",
+                ))
 
-        state_pages[url] = {
-            "fmt": STATE_FORMAT_VERSION,
-            "text": new_text,
-            "hash_text": new_hash,
-            "title": title,
-            "images": images,
-            "etag": resp.headers.get("ETag", ""),
-            "last_modified": resp.headers.get("Last-Modified", ""),
-            "last_checked": now_iso(),
-            "consecutive_errors": 0,
-            "removed": False,
-        }
+            state_pages[url] = {
+                "fmt": STATE_FORMAT_VERSION,
+                "text": new_text,
+                "hash_text": new_hash,
+                "title": title,
+                "images": images,
+                "etag": resp.headers.get("ETag", ""),
+                "last_modified": resp.headers.get("Last-Modified", ""),
+                "last_checked": now_iso(),
+                "consecutive_errors": 0,
+                "removed": False,
+            }
 
-        # Solo seguimos enlaces de páginas nuevas para nosotros o recién
-        # descubiertas por el sitemap; si no ha cambiado no hace falta
-        # reextraer enlaces (ya los vimos en una pasada anterior).
-        # Igual que con el sitemap: extract_links() devuelve un set, así que
-        # lo ordenamos antes de añadirlo a la cola para que el recorrido sea
-        # determinista entre ejecuciones (ver comentario más arriba).
-        for link in sorted(extract_links(html, url)):
+            # Solo seguimos enlaces de páginas nuevas para nosotros o recién
+            # descubiertas por el sitemap; si no ha cambiado no hace falta
+            # reextraer enlaces (ya los vimos en una pasada anterior).
+            # Igual que con el sitemap: extract_links() devuelve un set, así que
+            # lo ordenamos antes de añadirlo a la cola para que el recorrido sea
+            # determinista entre ejecuciones (ver comentario más arriba).
+            new_links = sorted(extract_links(html, url))
+        except Exception as exc:
+            result.errors.append(
+                f"{url} -> error al procesar la página "
+                f"({type(exc).__name__}: {exc})"
+            )
+            _register_failure(url, state_pages, result)
+            time.sleep(delay)
+            continue
+
+        for link in new_links:
             link = link.split("#", 1)[0]
             if link in seen:
                 continue
