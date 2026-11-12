@@ -2,6 +2,27 @@
   "schemaVersion": 1,
   "events": [
     {
+      "id": "465eb69bf451e9a1",
+      "timestamp": "2026-11-12T01:13:28Z",
+      "url": "https://store.steampowered.com/app/3384600/",
+      "franchise": "professor-layton",
+      "type": "PAGE_NEW",
+      "title": "Professor Layton and the New World of Steam",
+      "summary": "Nueva página en Steam (PLNWOS): Professor Layton and the New World of Steam",
+      "lines": [
+        {
+          "kind": "OTHER",
+          "text": "🎮 ¡La ficha de Steam ya es pública!"
+        },
+        {
+          "kind": "OTHER",
+          "text": "📅 Lanzamiento: 9 Dec, 2026"
+        }
+      ],
+      "rawDetail": "🎮 ¡La ficha de Steam ya es pública!\n📅 Lanzamiento: 9 Dec, 2026",
+      "truncated": false
+    },
+    {
       "id": "30b8c9ebd93942fd",
       "timestamp": "2026-11-11T08:13:02Z",
       "url": "https://www.inazuma.jp/victory-road/",
