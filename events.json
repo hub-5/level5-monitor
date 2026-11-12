@@ -2,6 +2,679 @@
   "schemaVersion": 1,
   "events": [
     {
+      "id": "005072720f3ee037",
+      "timestamp": "2026-11-12T10:43:00Z",
+      "url": "https://www.layton.jp/jouki/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "レイトン教授と蒸気の新世界",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): レイトン教授と蒸気の新世界",
+      "lines": [
+        {
+          "kind": "REMOVED",
+          "text": "English"
+        },
+        {
+          "kind": "ADDED",
+          "text": "English US"
+        },
+        {
+          "kind": "ADDED",
+          "text": "English UK"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Français"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Italiano"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Deutsch"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Español"
+        },
+        {
+          "kind": "ADDED",
+          "text": "繁體中文"
+        }
+      ],
+      "rawDetail": "➖ English\n➕ English US\n➕ English UK\n➕ Français\n➕ Italiano\n➕ Deutsch\n➕ Español\n➕ 繁體中文\n…y 9 líneas más de diferencia.",
+      "truncated": true
+    },
+    {
+      "id": "d3e88e43cfff760c",
+      "timestamp": "2026-11-12T10:43:00Z",
+      "url": "https://www.layton.jp/jouki/product/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "商品情報 | レイトン教授と蒸気の新世界",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): 商品情報 | レイトン教授と蒸気の新世界",
+      "lines": [
+        {
+          "kind": "REMOVED",
+          "text": "English"
+        },
+        {
+          "kind": "ADDED",
+          "text": "English US"
+        },
+        {
+          "kind": "ADDED",
+          "text": "English UK"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Français"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Italiano"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Deutsch"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Español"
+        },
+        {
+          "kind": "ADDED",
+          "text": "繁體中文"
+        }
+      ],
+      "rawDetail": "➖ English\n➕ English US\n➕ English UK\n➕ Français\n➕ Italiano\n➕ Deutsch\n➕ Español\n➕ 繁體中文\n…y 60 líneas más de diferencia.",
+      "truncated": true
+    },
+    {
+      "id": "47c3f665bc148922",
+      "timestamp": "2026-11-12T10:43:00Z",
+      "url": "https://www.layton.jp/jouki/topics/261009/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "トピックス | レイトン教授と蒸気の新世界",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): トピックス | レイトン教授と蒸気の新世界",
+      "lines": [
+        {
+          "kind": "REMOVED",
+          "text": "English"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "トップページに戻る"
+        },
+        {
+          "kind": "ADDED",
+          "text": "English US"
+        },
+        {
+          "kind": "ADDED",
+          "text": "English UK"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Français"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Italiano"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Deutsch"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Español"
+        }
+      ],
+      "rawDetail": "➖ English\n➖ トップページに戻る\n➕ English US\n➕ English UK\n➕ Français\n➕ Italiano\n➕ Deutsch\n➕ Español\n…y 10 líneas más de diferencia.",
+      "truncated": true
+    },
+    {
+      "id": "86f52bb0f57bfdb3",
+      "timestamp": "2026-11-12T10:43:00Z",
+      "url": "https://www.layton.jp/jouki/zh-cn/",
+      "franchise": "professor-layton",
+      "type": "PAGE_NEW",
+      "title": "雷顿教授与蒸汽新世界",
+      "summary": "Nueva página en Professor Layton: New World of Steam (PLNWOS): 雷顿教授与蒸汽新世界",
+      "lines": [
+        {
+          "kind": "OTHER",
+          "text": "雷顿教授与蒸汽新世界"
+        },
+        {
+          "kind": "OTHER",
+          "text": "雷顿系列官方网站"
+        },
+        {
+          "kind": "OTHER",
+          "text": "日本語"
+        },
+        {
+          "kind": "OTHER",
+          "text": "English US"
+        },
+        {
+          "kind": "OTHER",
+          "text": "English UK"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Français"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Italiano"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Deutsch"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Español"
+        },
+        {
+          "kind": "OTHER",
+          "text": "繁體中文"
+        },
+        {
+          "kind": "OTHER",
+          "text": "简体中文"
+        },
+        {
+          "kind": "OTHER",
+          "text": "한국어"
+        },
+        {
+          "kind": "OTHER",
+          "text": "精美壁纸现已开放下载！"
+        },
+        {
+          "kind": "OTHER",
+          "text": "挑选喜欢的图片，装点你的屏幕吧！"
+        },
+        {
+          "kind": "OTHER",
+          "text": "电脑版：1920 × 1080"
+        },
+        {
+          "kind": "OTHER",
+          "text": "手机版：1284 × 2778"
+        },
+        {
+          "kind": "OTHER",
+          "text": "手机版：1242 × 2208"
+        },
+        {
+          "kind": "OTHER",
+          "text": "平板版：2048 × 2732"
+        },
+        {
+          "kind": "OTHER",
+          "text": "电脑版：1920 × 1080"
+        },
+        {
+          "kind": "OTHER",
+          "text": "手机版：1284 × 2778"
+        },
+        {
+          "kind": "OTHER",
+          "text": "手…"
+        }
+      ],
+      "rawDetail": "雷顿教授与蒸汽新世界\n雷顿系列官方网站\n日本語\nEnglish US\nEnglish UK\nFrançais\nItaliano\nDeutsch\nEspañol\n繁體中文\n简体中文\n한국어\n精美壁纸现已开放下载！\n挑选喜欢的图片，装点你的屏幕吧！\n电脑版：1920 × 1080\n手机版：1284 × 2778\n手机版：1242 × 2208\n平板版：2048 × 2732\n电脑版：1920 × 1080\n手机版：1284 × 2778\n手…",
+      "truncated": true
+    },
+    {
+      "id": "9e19a549dc09775d",
+      "timestamp": "2026-11-12T10:43:00Z",
+      "url": "https://www.layton.jp/jouki/zh-tw/",
+      "franchise": "professor-layton",
+      "type": "PAGE_NEW",
+      "title": "雷頓教授與蒸氣新世界",
+      "summary": "Nueva página en Professor Layton: New World of Steam (PLNWOS): 雷頓教授與蒸氣新世界",
+      "lines": [
+        {
+          "kind": "OTHER",
+          "text": "雷頓教授與蒸氣新世界"
+        },
+        {
+          "kind": "OTHER",
+          "text": "雷頓系列官方網站"
+        },
+        {
+          "kind": "OTHER",
+          "text": "日本語"
+        },
+        {
+          "kind": "OTHER",
+          "text": "English US"
+        },
+        {
+          "kind": "OTHER",
+          "text": "English UK"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Français"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Italiano"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Deutsch"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Español"
+        },
+        {
+          "kind": "OTHER",
+          "text": "繁體中文"
+        },
+        {
+          "kind": "OTHER",
+          "text": "简体中文"
+        },
+        {
+          "kind": "OTHER",
+          "text": "한국어"
+        },
+        {
+          "kind": "OTHER",
+          "text": "精美桌布現正開放下載！"
+        },
+        {
+          "kind": "OTHER",
+          "text": "挑選喜歡的圖片，為你的螢幕增添新風貌吧！"
+        },
+        {
+          "kind": "OTHER",
+          "text": "電腦用：1920 × 1080"
+        },
+        {
+          "kind": "OTHER",
+          "text": "手機用：1284 × 2778"
+        },
+        {
+          "kind": "OTHER",
+          "text": "手機用：1242 × 2208"
+        },
+        {
+          "kind": "OTHER",
+          "text": "平板用：2048 × 2732"
+        },
+        {
+          "kind": "OTHER",
+          "text": "電腦用：1920 × 1080"
+        },
+        {
+          "kind": "OTHER",
+          "text": "手機用：1284 × 27…"
+        }
+      ],
+      "rawDetail": "雷頓教授與蒸氣新世界\n雷頓系列官方網站\n日本語\nEnglish US\nEnglish UK\nFrançais\nItaliano\nDeutsch\nEspañol\n繁體中文\n简体中文\n한국어\n精美桌布現正開放下載！\n挑選喜歡的圖片，為你的螢幕增添新風貌吧！\n電腦用：1920 × 1080\n手機用：1284 × 2778\n手機用：1242 × 2208\n平板用：2048 × 2732\n電腦用：1920 × 1080\n手機用：1284 × 27…",
+      "truncated": true
+    },
+    {
+      "id": "6b4f7ac83511598d",
+      "timestamp": "2026-11-12T10:43:00Z",
+      "url": "https://www.layton.jp/jouki/de/movie/",
+      "franchise": "professor-layton",
+      "type": "PAGE_NEW",
+      "title": "Trailer",
+      "summary": "Nueva página en Professor Layton: New World of Steam (PLNWOS): Trailer",
+      "lines": [
+        {
+          "kind": "OTHER",
+          "text": "Trailer"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Website zur Layton-Serie"
+        },
+        {
+          "kind": "OTHER",
+          "text": "日本語"
+        },
+        {
+          "kind": "OTHER",
+          "text": "English US"
+        },
+        {
+          "kind": "OTHER",
+          "text": "English UK"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Français"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Italiano"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Deutsch"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Español"
+        },
+        {
+          "kind": "OTHER",
+          "text": "繁體中文"
+        },
+        {
+          "kind": "OTHER",
+          "text": "简体中文"
+        },
+        {
+          "kind": "OTHER",
+          "text": "한국어"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Startseite"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Trailer"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Produktinfos"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Trailer"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Trailer (LEVEL5 VISION 2026 II Ver.)"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Das Making-of des Titelsongs „Die Ne…"
+        }
+      ],
+      "rawDetail": "Trailer\nWebsite zur Layton-Serie\n日本語\nEnglish US\nEnglish UK\nFrançais\nItaliano\nDeutsch\nEspañol\n繁體中文\n简体中文\n한국어\nStartseite\nTrailer\nProduktinfos\nTrailer\nTrailer (LEVEL5 VISION 2026 II Ver.)\nDas Making-of des Titelsongs „Die Ne…",
+      "truncated": true
+    },
+    {
+      "id": "fc8cc53ebb76bd89",
+      "timestamp": "2026-11-12T10:43:00Z",
+      "url": "https://www.layton.jp/jouki/de/product/",
+      "franchise": "professor-layton",
+      "type": "PAGE_NEW",
+      "title": "Produktinfos",
+      "summary": "Nueva página en Professor Layton: New World of Steam (PLNWOS): Produktinfos",
+      "lines": [
+        {
+          "kind": "OTHER",
+          "text": "Produktinfos"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Website zur Layton-Serie"
+        },
+        {
+          "kind": "OTHER",
+          "text": "日本語"
+        },
+        {
+          "kind": "OTHER",
+          "text": "English US"
+        },
+        {
+          "kind": "OTHER",
+          "text": "English UK"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Français"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Italiano"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Deutsch"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Español"
+        },
+        {
+          "kind": "OTHER",
+          "text": "繁體中文"
+        },
+        {
+          "kind": "OTHER",
+          "text": "简体中文"
+        },
+        {
+          "kind": "OTHER",
+          "text": "한국어"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Startseite"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Trailer"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Produktinfos"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Produktinfos"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Digitale Version"
+        },
+        {
+          "kind": "OTHER",
+          "text": "● Professor Layton und die Neue Welt des Dampf…"
+        }
+      ],
+      "rawDetail": "Produktinfos\nWebsite zur Layton-Serie\n日本語\nEnglish US\nEnglish UK\nFrançais\nItaliano\nDeutsch\nEspañol\n繁體中文\n简体中文\n한국어\nStartseite\nTrailer\nProduktinfos\nProduktinfos\nDigitale Version\n● Professor Layton und die Neue Welt des Dampf…",
+      "truncated": true
+    },
+    {
+      "id": "882338acdc978d69",
+      "timestamp": "2026-11-12T10:43:00Z",
+      "url": "https://www.layton.jp/jouki/de/topics/240929/",
+      "franchise": "professor-layton",
+      "type": "PAGE_NEW",
+      "title": "NEWS",
+      "summary": "Nueva página en Professor Layton: New World of Steam (PLNWOS): NEWS",
+      "lines": [
+        {
+          "kind": "OTHER",
+          "text": "NEWS"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Website zur Layton-Serie"
+        },
+        {
+          "kind": "OTHER",
+          "text": "日本語"
+        },
+        {
+          "kind": "OTHER",
+          "text": "English US"
+        },
+        {
+          "kind": "OTHER",
+          "text": "English UK"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Français"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Italiano"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Deutsch"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Español"
+        },
+        {
+          "kind": "OTHER",
+          "text": "繁體中文"
+        },
+        {
+          "kind": "OTHER",
+          "text": "简体中文"
+        },
+        {
+          "kind": "OTHER",
+          "text": "한국어"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Startseite"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Trailer"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Produktinfos"
+        },
+        {
+          "kind": "OTHER",
+          "text": "NEWS"
+        },
+        {
+          "kind": "OTHER",
+          "text": "“Professor Layton and the New World of Steam”"
+        },
+        {
+          "kind": "OTHER",
+          "text": "For the Nintendo Switch™"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Has won…"
+        }
+      ],
+      "rawDetail": "NEWS\nWebsite zur Layton-Serie\n日本語\nEnglish US\nEnglish UK\nFrançais\nItaliano\nDeutsch\nEspañol\n繁體中文\n简体中文\n한국어\nStartseite\nTrailer\nProduktinfos\nNEWS\n“Professor Layton and the New World of Steam”\nFor the Nintendo Switch™\nHas won…",
+      "truncated": true
+    },
+    {
+      "id": "7d8b085d12e23281",
+      "timestamp": "2026-11-12T10:43:00Z",
+      "url": "https://www.layton.jp/jouki/de/topics/250925/",
+      "franchise": "professor-layton",
+      "type": "PAGE_NEW",
+      "title": "NEWS",
+      "summary": "Nueva página en Professor Layton: New World of Steam (PLNWOS): NEWS",
+      "lines": [
+        {
+          "kind": "OTHER",
+          "text": "NEWS"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Website zur Layton-Serie"
+        },
+        {
+          "kind": "OTHER",
+          "text": "日本語"
+        },
+        {
+          "kind": "OTHER",
+          "text": "English US"
+        },
+        {
+          "kind": "OTHER",
+          "text": "English UK"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Français"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Italiano"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Deutsch"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Español"
+        },
+        {
+          "kind": "OTHER",
+          "text": "繁體中文"
+        },
+        {
+          "kind": "OTHER",
+          "text": "简体中文"
+        },
+        {
+          "kind": "OTHER",
+          "text": "한국어"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Startseite"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Trailer"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Produktinfos"
+        },
+        {
+          "kind": "OTHER",
+          "text": "NEWS"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Notice of Release Date Change for"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Professor Layton and the New World of Steam"
+        },
+        {
+          "kind": "OTHER",
+          "text": "f…"
+        }
+      ],
+      "rawDetail": "NEWS\nWebsite zur Layton-Serie\n日本語\nEnglish US\nEnglish UK\nFrançais\nItaliano\nDeutsch\nEspañol\n繁體中文\n简体中文\n한국어\nStartseite\nTrailer\nProduktinfos\nNEWS\nNotice of Release Date Change for\nProfessor Layton and the New World of Steam\nf…",
+      "truncated": true
+    },
+    {
       "id": "4b3c0bd3965504b6",
       "timestamp": "2026-11-12T10:33:17Z",
       "url": "https://www.layton.jp/jouki/movie/",
