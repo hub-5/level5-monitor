@@ -2,6 +2,689 @@
   "schemaVersion": 1,
   "events": [
     {
+      "id": "4b3c0bd3965504b6",
+      "timestamp": "2026-11-12T10:33:17Z",
+      "url": "https://www.layton.jp/jouki/movie/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "ムービー | レイトン教授と蒸気の新世界",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): ムービー | レイトン教授と蒸気の新世界",
+      "lines": [
+        {
+          "kind": "REMOVED",
+          "text": "English"
+        },
+        {
+          "kind": "ADDED",
+          "text": "English US"
+        },
+        {
+          "kind": "ADDED",
+          "text": "English UK"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Français"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Italiano"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Deutsch"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Español"
+        },
+        {
+          "kind": "ADDED",
+          "text": "繁體中文"
+        }
+      ],
+      "rawDetail": "➖ English\n➕ English US\n➕ English UK\n➕ Français\n➕ Italiano\n➕ Deutsch\n➕ Español\n➕ 繁體中文\n…y 2 líneas más de diferencia.",
+      "truncated": true
+    },
+    {
+      "id": "4c61216fb4986910",
+      "timestamp": "2026-11-12T10:33:17Z",
+      "url": "https://www.layton.jp/jouki/topics/240929/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "トピックス | レイトン教授と蒸気の新世界",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): トピックス | レイトン教授と蒸気の新世界",
+      "lines": [
+        {
+          "kind": "REMOVED",
+          "text": "English"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "トップページに戻る"
+        },
+        {
+          "kind": "ADDED",
+          "text": "English US"
+        },
+        {
+          "kind": "ADDED",
+          "text": "English UK"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Français"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Italiano"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Deutsch"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Español"
+        }
+      ],
+      "rawDetail": "➖ English\n➖ トップページに戻る\n➕ English US\n➕ English UK\n➕ Français\n➕ Italiano\n➕ Deutsch\n➕ Español\n…y 10 líneas más de diferencia.",
+      "truncated": true
+    },
+    {
+      "id": "dd7601d3e8698831",
+      "timestamp": "2026-11-12T10:33:17Z",
+      "url": "https://www.layton.jp/jouki/topics/250925/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "トピックス | レイトン教授と蒸気の新世界",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): トピックス | レイトン教授と蒸気の新世界",
+      "lines": [
+        {
+          "kind": "REMOVED",
+          "text": "English"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "トップページに戻る"
+        },
+        {
+          "kind": "ADDED",
+          "text": "English US"
+        },
+        {
+          "kind": "ADDED",
+          "text": "English UK"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Français"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Italiano"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Deutsch"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Español"
+        }
+      ],
+      "rawDetail": "➖ English\n➖ トップページに戻る\n➕ English US\n➕ English UK\n➕ Français\n➕ Italiano\n➕ Deutsch\n➕ Español\n…y 10 líneas más de diferencia.",
+      "truncated": true
+    },
+    {
+      "id": "6c0959b28fa2e581",
+      "timestamp": "2026-11-12T10:33:17Z",
+      "url": "https://www.layton.jp/jouki/topics/261001/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "トピックス | レイトン教授と蒸気の新世界",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): トピックス | レイトン教授と蒸気の新世界",
+      "lines": [
+        {
+          "kind": "REMOVED",
+          "text": "English"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "トップページに戻る"
+        },
+        {
+          "kind": "ADDED",
+          "text": "English US"
+        },
+        {
+          "kind": "ADDED",
+          "text": "English UK"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Français"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Italiano"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Deutsch"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Español"
+        }
+      ],
+      "rawDetail": "➖ English\n➖ トップページに戻る\n➕ English US\n➕ English UK\n➕ Français\n➕ Italiano\n➕ Deutsch\n➕ Español\n…y 10 líneas más de diferencia.",
+      "truncated": true
+    },
+    {
+      "id": "7a766c6ec7a52e25",
+      "timestamp": "2026-11-12T10:33:17Z",
+      "url": "https://www.layton.jp/jouki/de/",
+      "franchise": "professor-layton",
+      "type": "PAGE_NEW",
+      "title": "Professor Layton und die Neue Welt des Dampfes",
+      "summary": "Nueva página en Professor Layton: New World of Steam (PLNWOS): Professor Layton und die Neue Welt des Dampfes",
+      "lines": [
+        {
+          "kind": "OTHER",
+          "text": "Professor Layton und die Neue Welt des Dampfes"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Website zur Layton-Serie"
+        },
+        {
+          "kind": "OTHER",
+          "text": "日本語"
+        },
+        {
+          "kind": "OTHER",
+          "text": "English US"
+        },
+        {
+          "kind": "OTHER",
+          "text": "English UK"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Français"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Italiano"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Deutsch"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Español"
+        },
+        {
+          "kind": "OTHER",
+          "text": "繁體中文"
+        },
+        {
+          "kind": "OTHER",
+          "text": "简体中文"
+        },
+        {
+          "kind": "OTHER",
+          "text": "한국어"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Hol dir deine kostenlosen Hintergrundbilder!"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Lade die Hintergrundbilder un…"
+        }
+      ],
+      "rawDetail": "Professor Layton und die Neue Welt des Dampfes\nWebsite zur Layton-Serie\n日本語\nEnglish US\nEnglish UK\nFrançais\nItaliano\nDeutsch\nEspañol\n繁體中文\n简体中文\n한국어\nHol dir deine kostenlosen Hintergrundbilder!\nLade die Hintergrundbilder un…",
+      "truncated": true
+    },
+    {
+      "id": "0d368bf723a4d9d7",
+      "timestamp": "2026-11-12T10:33:17Z",
+      "url": "https://www.layton.jp/jouki/en-gb/",
+      "franchise": "professor-layton",
+      "type": "PAGE_NEW",
+      "title": "Professor Layton and the New World of Steam",
+      "summary": "Nueva página en Professor Layton: New World of Steam (PLNWOS): Professor Layton and the New World of Steam",
+      "lines": [
+        {
+          "kind": "OTHER",
+          "text": "Professor Layton and the New World of Steam"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Layton Series Website"
+        },
+        {
+          "kind": "OTHER",
+          "text": "日本語"
+        },
+        {
+          "kind": "OTHER",
+          "text": "English US"
+        },
+        {
+          "kind": "OTHER",
+          "text": "English UK"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Français"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Italiano"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Deutsch"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Español"
+        },
+        {
+          "kind": "OTHER",
+          "text": "繁體中文"
+        },
+        {
+          "kind": "OTHER",
+          "text": "简体中文"
+        },
+        {
+          "kind": "OTHER",
+          "text": "한국어"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Get your free wallpapers!"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Download the wallpapers below and give your background…"
+        }
+      ],
+      "rawDetail": "Professor Layton and the New World of Steam\nLayton Series Website\n日本語\nEnglish US\nEnglish UK\nFrançais\nItaliano\nDeutsch\nEspañol\n繁體中文\n简体中文\n한국어\nGet your free wallpapers!\nDownload the wallpapers below and give your background…",
+      "truncated": true
+    },
+    {
+      "id": "b878b7d798d8d76d",
+      "timestamp": "2026-11-12T10:33:17Z",
+      "url": "https://www.layton.jp/jouki/en-us/",
+      "franchise": "professor-layton",
+      "type": "PAGE_NEW",
+      "title": "Professor Layton and the New World of Steam",
+      "summary": "Nueva página en Professor Layton: New World of Steam (PLNWOS): Professor Layton and the New World of Steam",
+      "lines": [
+        {
+          "kind": "OTHER",
+          "text": "Professor Layton and the New World of Steam"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Layton Series Website"
+        },
+        {
+          "kind": "OTHER",
+          "text": "日本語"
+        },
+        {
+          "kind": "OTHER",
+          "text": "English US"
+        },
+        {
+          "kind": "OTHER",
+          "text": "English UK"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Français"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Italiano"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Deutsch"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Español"
+        },
+        {
+          "kind": "OTHER",
+          "text": "繁體中文"
+        },
+        {
+          "kind": "OTHER",
+          "text": "简体中文"
+        },
+        {
+          "kind": "OTHER",
+          "text": "한국어"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Get your free wallpapers!"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Download the wallpapers below and give your background…"
+        }
+      ],
+      "rawDetail": "Professor Layton and the New World of Steam\nLayton Series Website\n日本語\nEnglish US\nEnglish UK\nFrançais\nItaliano\nDeutsch\nEspañol\n繁體中文\n简体中文\n한국어\nGet your free wallpapers!\nDownload the wallpapers below and give your background…",
+      "truncated": true
+    },
+    {
+      "id": "8921cd67c60f200d",
+      "timestamp": "2026-11-12T10:33:17Z",
+      "url": "https://www.layton.jp/jouki/es/",
+      "franchise": "professor-layton",
+      "type": "PAGE_NEW",
+      "title": "El profesor Layton y el Nuevo Mundo a vapor",
+      "summary": "Nueva página en Professor Layton: New World of Steam (PLNWOS): El profesor Layton y el Nuevo Mundo a vapor",
+      "lines": [
+        {
+          "kind": "OTHER",
+          "text": "El profesor Layton y el Nuevo Mundo a vapor"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Sitio web de la saga del profesor Layton"
+        },
+        {
+          "kind": "OTHER",
+          "text": "日本語"
+        },
+        {
+          "kind": "OTHER",
+          "text": "English US"
+        },
+        {
+          "kind": "OTHER",
+          "text": "English UK"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Français"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Italiano"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Deutsch"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Español"
+        },
+        {
+          "kind": "OTHER",
+          "text": "繁體中文"
+        },
+        {
+          "kind": "OTHER",
+          "text": "简体中文"
+        },
+        {
+          "kind": "OTHER",
+          "text": "한국어"
+        },
+        {
+          "kind": "OTHER",
+          "text": "¡Consigue fondos de pantalla gratis!"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Descárgalos y dale un ai…"
+        }
+      ],
+      "rawDetail": "El profesor Layton y el Nuevo Mundo a vapor\nSitio web de la saga del profesor Layton\n日本語\nEnglish US\nEnglish UK\nFrançais\nItaliano\nDeutsch\nEspañol\n繁體中文\n简体中文\n한국어\n¡Consigue fondos de pantalla gratis!\nDescárgalos y dale un ai…",
+      "truncated": true
+    },
+    {
+      "id": "ec05dc465e2abdc0",
+      "timestamp": "2026-11-12T10:33:17Z",
+      "url": "https://www.layton.jp/jouki/fr/",
+      "franchise": "professor-layton",
+      "type": "PAGE_NEW",
+      "title": "Professeur Layton et le Nouveau Monde à vapeur",
+      "summary": "Nueva página en Professor Layton: New World of Steam (PLNWOS): Professeur Layton et le Nouveau Monde à vapeur",
+      "lines": [
+        {
+          "kind": "OTHER",
+          "text": "Professeur Layton et le Nouveau Monde à vapeur"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Site de la série du Professeur Layton"
+        },
+        {
+          "kind": "OTHER",
+          "text": "日本語"
+        },
+        {
+          "kind": "OTHER",
+          "text": "English US"
+        },
+        {
+          "kind": "OTHER",
+          "text": "English UK"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Français"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Italiano"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Deutsch"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Español"
+        },
+        {
+          "kind": "OTHER",
+          "text": "繁體中文"
+        },
+        {
+          "kind": "OTHER",
+          "text": "简体中文"
+        },
+        {
+          "kind": "OTHER",
+          "text": "한국어"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Voici des fonds d'écran gratuits en cadeau !"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Téléchargez les…"
+        }
+      ],
+      "rawDetail": "Professeur Layton et le Nouveau Monde à vapeur\nSite de la série du Professeur Layton\n日本語\nEnglish US\nEnglish UK\nFrançais\nItaliano\nDeutsch\nEspañol\n繁體中文\n简体中文\n한국어\nVoici des fonds d'écran gratuits en cadeau !\nTéléchargez les…",
+      "truncated": true
+    },
+    {
+      "id": "4c56bf761196360d",
+      "timestamp": "2026-11-12T10:33:17Z",
+      "url": "https://www.layton.jp/jouki/it/",
+      "franchise": "professor-layton",
+      "type": "PAGE_NEW",
+      "title": "Il professor Layton e il Nuovo Mondo a vapore",
+      "summary": "Nueva página en Professor Layton: New World of Steam (PLNWOS): Il professor Layton e il Nuovo Mondo a vapore",
+      "lines": [
+        {
+          "kind": "OTHER",
+          "text": "Il professor Layton e il Nuovo Mondo a vapore"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Sito web della serie Layton"
+        },
+        {
+          "kind": "OTHER",
+          "text": "日本語"
+        },
+        {
+          "kind": "OTHER",
+          "text": "English US"
+        },
+        {
+          "kind": "OTHER",
+          "text": "English UK"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Français"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Italiano"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Deutsch"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Español"
+        },
+        {
+          "kind": "OTHER",
+          "text": "繁體中文"
+        },
+        {
+          "kind": "OTHER",
+          "text": "简体中文"
+        },
+        {
+          "kind": "OTHER",
+          "text": "한국어"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Ottieni degli sfondi gratuiti!"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Scarica gli sfondi qui sotto e dai al tuo…"
+        }
+      ],
+      "rawDetail": "Il professor Layton e il Nuovo Mondo a vapore\nSito web della serie Layton\n日本語\nEnglish US\nEnglish UK\nFrançais\nItaliano\nDeutsch\nEspañol\n繁體中文\n简体中文\n한국어\nOttieni degli sfondi gratuiti!\nScarica gli sfondi qui sotto e dai al tuo…",
+      "truncated": true
+    },
+    {
+      "id": "fb9ba5a6b8ff4805",
+      "timestamp": "2026-11-12T10:33:17Z",
+      "url": "https://www.layton.jp/jouki/kr/",
+      "franchise": "professor-layton",
+      "type": "PAGE_NEW",
+      "title": "레이튼 교수와 증기의 신세계",
+      "summary": "Nueva página en Professor Layton: New World of Steam (PLNWOS): 레이튼 교수와 증기의 신세계",
+      "lines": [
+        {
+          "kind": "OTHER",
+          "text": "레이튼 교수와 증기의 신세계"
+        },
+        {
+          "kind": "OTHER",
+          "text": "레이튼 시리즈 공식 사이트"
+        },
+        {
+          "kind": "OTHER",
+          "text": "日本語"
+        },
+        {
+          "kind": "OTHER",
+          "text": "English US"
+        },
+        {
+          "kind": "OTHER",
+          "text": "English UK"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Français"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Italiano"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Deutsch"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Español"
+        },
+        {
+          "kind": "OTHER",
+          "text": "繁體中文"
+        },
+        {
+          "kind": "OTHER",
+          "text": "简体中文"
+        },
+        {
+          "kind": "OTHER",
+          "text": "한국어"
+        },
+        {
+          "kind": "OTHER",
+          "text": "특별한 배경화면 증정!"
+        },
+        {
+          "kind": "OTHER",
+          "text": "아래에서 배경화면 이미지를 다운로드할 수 있습니다."
+        },
+        {
+          "kind": "OTHER",
+          "text": "PC 버전: 1920×1080"
+        },
+        {
+          "kind": "OTHER",
+          "text": "모바일 버전: 1284×2778"
+        },
+        {
+          "kind": "OTHER",
+          "text": "모바일 버전: 1242×2208"
+        },
+        {
+          "kind": "OTHER",
+          "text": "태블릿 버전: 2048×2732"
+        },
+        {
+          "kind": "OTHER",
+          "text": "PC…"
+        }
+      ],
+      "rawDetail": "레이튼 교수와 증기의 신세계\n레이튼 시리즈 공식 사이트\n日本語\nEnglish US\nEnglish UK\nFrançais\nItaliano\nDeutsch\nEspañol\n繁體中文\n简体中文\n한국어\n특별한 배경화면 증정!\n아래에서 배경화면 이미지를 다운로드할 수 있습니다.\nPC 버전: 1920×1080\n모바일 버전: 1284×2778\n모바일 버전: 1242×2208\n태블릿 버전: 2048×2732\nPC…",
+      "truncated": true
+    },
+    {
       "id": "465eb69bf451e9a1",
       "timestamp": "2026-11-12T01:13:28Z",
       "url": "https://store.steampowered.com/app/3384600/",
