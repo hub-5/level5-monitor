@@ -2,6 +2,29 @@
   "schemaVersion": 1,
   "events": [
     {
+      "id": "d3a56e230b295273",
+      "timestamp": "2026-11-16T01:43:18Z",
+      "url": "https://www.layton.jp/jouki/product/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "商品情報 | レイトン教授と蒸気の新世界",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): 商品情報 | レイトン教授と蒸気の新世界",
+      "lines": [
+        {
+          "kind": "CHANGED",
+          "oldText": "※Nntendo Switch 2でNintendo Switch版をプレイする場合は、Nintendo Switch版に準拠した機能や性能となります。",
+          "newText": "※Nintendo Switch 2でNintendo Switch版をプレイする場合は、Nintendo Switch版に準拠した機能や性能となります。"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "※Nntendo Switch 2でNintendo Switch版をプレイする場合は、Nintendo Switch版に準拠した機能や性能となります。",
+          "newText": "※Nintendo Switch 2でNintendo Switch版をプレイする場合は、Nintendo Switch版に準拠した機能や性能となります。"
+        }
+      ],
+      "rawDetail": "✏️ ※N**i**ntendo Switch 2でNintendo Switch版をプレイする場合は、Nintendo Switch版に準拠した機能や性能となります。\n✏️ ※N**i**ntendo Switch 2でNintendo Switch版をプレイする場合は、Nintendo Switch版に準拠した機能や性能となります。",
+      "truncated": false
+    },
+    {
       "id": "005072720f3ee037",
       "timestamp": "2026-11-12T10:43:00Z",
       "url": "https://www.layton.jp/jouki/",
