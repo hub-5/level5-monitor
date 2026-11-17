@@ -2,6 +2,245 @@
   "schemaVersion": 1,
   "events": [
     {
+      "id": "d4ae8675ead15b06",
+      "timestamp": "2026-11-17T14:03:35Z",
+      "url": "https://www.layton.jp/jouki/de/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "Professor Layton und die Neue Welt des Dampfes",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): Professor Layton und die Neue Welt des Dampfes",
+      "lines": [
+        {
+          "kind": "CHANGED",
+          "oldText": "Voraussichtlich 10. Dezember 2026",
+          "newText": "Voraussichtlich 10. Dezember 2026 (JST)"
+        }
+      ],
+      "rawDetail": "✏️ Voraussichtlich 10. Dezember 2026** (JST)**",
+      "truncated": false
+    },
+    {
+      "id": "9cdb8e312ea5aeab",
+      "timestamp": "2026-11-17T14:03:35Z",
+      "url": "https://www.layton.jp/jouki/en-gb/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "Professor Layton and the New World of Steam",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): Professor Layton and the New World of Steam",
+      "lines": [
+        {
+          "kind": "CHANGED",
+          "oldText": "Scheduled for release on 10 December 2026",
+          "newText": "Scheduled for release on 10 December 2026 (JST)"
+        }
+      ],
+      "rawDetail": "✏️ Scheduled for release on 10 December 2026** (JST)**",
+      "truncated": false
+    },
+    {
+      "id": "3a424f3b4bfebf75",
+      "timestamp": "2026-11-17T14:03:35Z",
+      "url": "https://www.layton.jp/jouki/en-us/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "Professor Layton and the New World of Steam",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): Professor Layton and the New World of Steam",
+      "lines": [
+        {
+          "kind": "CHANGED",
+          "oldText": "Scheduled for release on December 10, 2026",
+          "newText": "Scheduled for release on December 10, 2026 (JST)"
+        }
+      ],
+      "rawDetail": "✏️ Scheduled for release on December 10, 2026** (JST)**",
+      "truncated": false
+    },
+    {
+      "id": "6701ada2bce49709",
+      "timestamp": "2026-11-17T14:03:35Z",
+      "url": "https://www.layton.jp/jouki/es/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "El profesor Layton y el Nuevo Mundo a vapor",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): El profesor Layton y el Nuevo Mundo a vapor",
+      "lines": [
+        {
+          "kind": "CHANGED",
+          "oldText": "Lanzamiento previsto el 10 de diciembre de 2026",
+          "newText": "Lanzamiento previsto el 10 de diciembre de 2026 (JST)"
+        }
+      ],
+      "rawDetail": "✏️ Lanzamiento previsto el 10 de diciembre de 2026** (JST)**",
+      "truncated": false
+    },
+    {
+      "id": "0c5d24e00cea8c7d",
+      "timestamp": "2026-11-17T14:03:35Z",
+      "url": "https://www.layton.jp/jouki/fr/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "Professeur Layton et le Nouveau Monde à vapeur",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): Professeur Layton et le Nouveau Monde à vapeur",
+      "lines": [
+        {
+          "kind": "CHANGED",
+          "oldText": "Sortie prévue le 10 décembre 2026",
+          "newText": "Sortie prévue le 10 décembre 2026 (JST)"
+        }
+      ],
+      "rawDetail": "✏️ Sortie prévue le 10 décembre 2026** (JST)**",
+      "truncated": false
+    },
+    {
+      "id": "4a569ea116e12d6b",
+      "timestamp": "2026-11-17T14:03:35Z",
+      "url": "https://www.layton.jp/jouki/it/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "Il professor Layton e il Nuovo Mondo a vapore",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): Il professor Layton e il Nuovo Mondo a vapore",
+      "lines": [
+        {
+          "kind": "CHANGED",
+          "oldText": "Uscita prevista per il 10 dicembre 2026",
+          "newText": "Uscita prevista per il 10 dicembre 2026 (JST)"
+        }
+      ],
+      "rawDetail": "✏️ Uscita prevista per il 10 dicembre 2026** (JST)**",
+      "truncated": false
+    },
+    {
+      "id": "fd852b8d89818ef7",
+      "timestamp": "2026-11-17T14:03:35Z",
+      "url": "https://www.layton.jp/jouki/kr/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "레이튼 교수와 증기의 신세계",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): 레이튼 교수와 증기의 신세계",
+      "lines": [
+        {
+          "kind": "CHANGED",
+          "oldText": "2026년 12월 10일(목) 출시 예정",
+          "newText": "2026년 12월 10일(목) 출시 예정（JST）"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "KRW 83,386",
+          "newText": "KRW 83,390"
+        }
+      ],
+      "rawDetail": "✏️ 2026년 12월 10일(목) 출시 예정**（JST）**\n✏️ KRW 83,3~~86~~**90**",
+      "truncated": false
+    },
+    {
+      "id": "93e319d11e059f01",
+      "timestamp": "2026-11-17T14:03:35Z",
+      "url": "https://www.layton.jp/jouki/zh-cn/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "雷顿教授与蒸汽新世界",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): 雷顿教授与蒸汽新世界",
+      "lines": [
+        {
+          "kind": "CHANGED",
+          "oldText": "预定于2026年12月10日发售",
+          "newText": "预定于2026年12月10日发售（日本时间）"
+        }
+      ],
+      "rawDetail": "✏️ 预定于2026年12月10日发售**（日本时间）**",
+      "truncated": false
+    },
+    {
+      "id": "6402b9a473fd8fc8",
+      "timestamp": "2026-11-17T14:03:35Z",
+      "url": "https://www.layton.jp/jouki/zh-tw/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "雷頓教授與蒸氣新世界",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): 雷頓教授與蒸氣新世界",
+      "lines": [
+        {
+          "kind": "CHANGED",
+          "oldText": "預定於2026年12月10日發售",
+          "newText": "預定於2026年12月10日發售（日本時間）"
+        }
+      ],
+      "rawDetail": "✏️ 預定於2026年12月10日發售**（日本時間）**",
+      "truncated": false
+    },
+    {
+      "id": "674968a4d5e6d704",
+      "timestamp": "2026-11-17T14:03:35Z",
+      "url": "https://www.layton.jp/jouki/de/movie/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "Trailer",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): Trailer",
+      "lines": [
+        {
+          "kind": "CHANGED",
+          "oldText": "Voraussichtlich 10. Dezember 2026",
+          "newText": "Voraussichtlich 10. Dezember 2026 (JST)"
+        }
+      ],
+      "rawDetail": "✏️ Voraussichtlich 10. Dezember 2026** (JST)**",
+      "truncated": false
+    },
+    {
+      "id": "3f1044fa80c57386",
+      "timestamp": "2026-11-17T14:03:35Z",
+      "url": "https://www.layton.jp/jouki/de/product/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "Produktinfos",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): Produktinfos",
+      "lines": [
+        {
+          "kind": "CHANGED",
+          "oldText": "Voraussichtlich 10. Dezember 2026",
+          "newText": "Voraussichtlich 10. Dezember 2026 (JST)"
+        }
+      ],
+      "rawDetail": "✏️ Voraussichtlich 10. Dezember 2026** (JST)**",
+      "truncated": false
+    },
+    {
+      "id": "1a6d118309d045a4",
+      "timestamp": "2026-11-17T14:03:35Z",
+      "url": "https://www.layton.jp/jouki/de/topics/240929/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "NEWS",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): NEWS",
+      "lines": [
+        {
+          "kind": "CHANGED",
+          "oldText": "Voraussichtlich 10. Dezember 2026",
+          "newText": "Voraussichtlich 10. Dezember 2026 (JST)"
+        }
+      ],
+      "rawDetail": "✏️ Voraussichtlich 10. Dezember 2026** (JST)**",
+      "truncated": false
+    },
+    {
+      "id": "a9451fee2b8c6c69",
+      "timestamp": "2026-11-17T14:03:35Z",
+      "url": "https://www.layton.jp/jouki/de/topics/250925/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "NEWS",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): NEWS",
+      "lines": [
+        {
+          "kind": "CHANGED",
+          "oldText": "Voraussichtlich 10. Dezember 2026",
+          "newText": "Voraussichtlich 10. Dezember 2026 (JST)"
+        }
+      ],
+      "rawDetail": "✏️ Voraussichtlich 10. Dezember 2026** (JST)**",
+      "truncated": false
+    },
+    {
       "id": "9017d81a5304f1e9",
       "timestamp": "2026-11-17T05:03:37Z",
       "url": "https://www.inazuma.jp/victory-road/",
