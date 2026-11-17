@@ -2,6 +2,27 @@
   "schemaVersion": 1,
   "events": [
     {
+      "id": "9017d81a5304f1e9",
+      "timestamp": "2026-11-17T05:03:37Z",
+      "url": "https://www.inazuma.jp/victory-road/",
+      "franchise": "inazuma-eleven",
+      "type": "PAGE_CHANGED",
+      "title": "イナズマイレブン 英雄たちのヴィクトリーロード",
+      "summary": "Modificada en Inazuma Eleven: Victory Road (IEVR): イナズマイレブン 英雄たちのヴィクトリーロード",
+      "lines": [
+        {
+          "kind": "ADDED",
+          "text": "2026.11.17"
+        },
+        {
+          "kind": "ADDED",
+          "text": "iOS／Android対応『イナズマイレブン クロス』本作初のコラボイベント開催 「英雄たちのヴィクトリーロード」のキャラクターが登場！"
+        }
+      ],
+      "rawDetail": "➕ 2026.11.17\n➕ iOS／Android対応『イナズマイレブン クロス』本作初のコラボイベント開催 「英雄たちのヴィクトリーロード」のキャラクターが登場！",
+      "truncated": false
+    },
+    {
       "id": "c6b5b7db1853071c",
       "timestamp": "2026-11-16T07:33:43Z",
       "url": "https://www.inazuma.jp/victory-road/de/",
