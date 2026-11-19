@@ -2,6 +2,673 @@
   "schemaVersion": 1,
   "events": [
     {
+      "id": "1648b25afb694016",
+      "timestamp": "2026-11-19T13:43:34Z",
+      "url": "https://www.layton.jp/jouki/en-gb/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "Professor Layton and the New World of Steam",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): Professor Layton and the New World of Steam",
+      "lines": [
+        {
+          "kind": "ADDED",
+          "text": "Game"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Overview"
+        },
+        {
+          "kind": "ADDED",
+          "text": "19.11.2026"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Digital Pre-Orders for Professor Layton and the New World of Steam Now Open on Nintendo Switch 2 and Nintendo Switch!"
+        },
+        {
+          "kind": "ADDED",
+          "text": "19.11.2026"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Latest Info on Story ! Game Overview and Professor Layton Timeline Now Available!"
+        },
+        {
+          "kind": "ADDED",
+          "text": "This new adventure takes place one year after the events of Professor Layton and the Lost Future."
+        },
+        {
+          "kind": "ADDED",
+          "text": "The story unfolds in America, where the Wild West era has ended and the country is forging ahead into a new age of development."
+        }
+      ],
+      "rawDetail": "➕ Game\n➕ Overview\n➕ 19.11.2026\n➕ Digital Pre-Orders for Professor Layton and the New World of Steam Now Open on Nintendo Switch 2 and Nintendo Switch!\n➕ 19.11.2026\n➕ Latest Info on Story ! Game Overview and Professor Layton Timeline Now Available!\n➕ This new adventure takes place one year after the events of Professor Layton and the Lost Future.\n➕ The story unfolds in America, where the Wild West era has ended and the country is forging ahead into a new age of development.\n…y 14 líneas más de diferencia.",
+      "truncated": true
+    },
+    {
+      "id": "9e50def3e8abc77b",
+      "timestamp": "2026-11-19T13:43:34Z",
+      "url": "https://www.layton.jp/jouki/en-us/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "Professor Layton and the New World of Steam",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): Professor Layton and the New World of Steam",
+      "lines": [
+        {
+          "kind": "ADDED",
+          "text": "Game"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Overview"
+        },
+        {
+          "kind": "ADDED",
+          "text": "11.19.2026"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Digital Pre-Orders for Professor Layton and the New World of Steam Now Open on Nintendo Switch 2 and Nintendo Switch!"
+        },
+        {
+          "kind": "ADDED",
+          "text": "11.19.2026"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Latest Info on Story ! Game Overview and Professor Layton Timeline Now Available!"
+        },
+        {
+          "kind": "ADDED",
+          "text": "This new adventure takes place one year after the events of Professor Layton and the Unwound Future."
+        },
+        {
+          "kind": "ADDED",
+          "text": "The story unfolds in America, where the Wild West era has ended and the country is forging ahead into a new age of development."
+        }
+      ],
+      "rawDetail": "➕ Game\n➕ Overview\n➕ 11.19.2026\n➕ Digital Pre-Orders for Professor Layton and the New World of Steam Now Open on Nintendo Switch 2 and Nintendo Switch!\n➕ 11.19.2026\n➕ Latest Info on Story ! Game Overview and Professor Layton Timeline Now Available!\n➕ This new adventure takes place one year after the events of Professor Layton and the Unwound Future.\n➕ The story unfolds in America, where the Wild West era has ended and the country is forging ahead into a new age of development.\n…y 14 líneas más de diferencia.",
+      "truncated": true
+    },
+    {
+      "id": "d8dd935a3e8f87c5",
+      "timestamp": "2026-11-19T13:43:34Z",
+      "url": "https://www.layton.jp/jouki/es/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "El profesor Layton y el Nuevo Mundo a vapor",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): El profesor Layton y el Nuevo Mundo a vapor",
+      "lines": [
+        {
+          "kind": "ADDED",
+          "text": "Características"
+        },
+        {
+          "kind": "ADDED",
+          "text": "del juego"
+        },
+        {
+          "kind": "ADDED",
+          "text": "19.11.2026"
+        },
+        {
+          "kind": "ADDED",
+          "text": "¡Ya está disponible el pedido anticipado de la versión digital para Nintendo Switch 2 y Nintendo Switch!"
+        },
+        {
+          "kind": "ADDED",
+          "text": "19.11.2026"
+        },
+        {
+          "kind": "ADDED",
+          "text": "¡Ya está disponible la sección actualizada de Historia , así como las nuevas secciones de Características del juego y Saga del profesor Layton !"
+        },
+        {
+          "kind": "ADDED",
+          "text": "La historia se sitúa un año después de los acontecimientos de"
+        },
+        {
+          "kind": "ADDED",
+          "text": "\"El profesor Layton y el futuro perdido\"."
+        }
+      ],
+      "rawDetail": "➕ Características\n➕ del juego\n➕ 19.11.2026\n➕ ¡Ya está disponible el pedido anticipado de la versión digital para Nintendo Switch 2 y Nintendo Switch!\n➕ 19.11.2026\n➕ ¡Ya está disponible la sección actualizada de Historia , así como las nuevas secciones de Características del juego y Saga del profesor Layton !\n➕ La historia se sitúa un año después de los acontecimientos de\n➕ \"El profesor Layton y el futuro perdido\".\n…y 10 líneas más de diferencia.",
+      "truncated": true
+    },
+    {
+      "id": "f0042ae5ff8a36de",
+      "timestamp": "2026-11-19T13:43:34Z",
+      "url": "https://www.layton.jp/jouki/it/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "Il professor Layton e il Nuovo Mondo a vapore",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): Il professor Layton e il Nuovo Mondo a vapore",
+      "lines": [
+        {
+          "kind": "ADDED",
+          "text": "Panoramica del gioco"
+        },
+        {
+          "kind": "ADDED",
+          "text": "19.11.2026"
+        },
+        {
+          "kind": "ADDED",
+          "text": "I preordini digitali per Il professor Layton e il Nuovo Mondo a vapore sono ora aperti per Nintendo Switch 2 e Nintendo Switch!"
+        },
+        {
+          "kind": "ADDED",
+          "text": "19.11.2026"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Ultime notizie sulla storia ! La panoramica del gioco e la cronologia de Il professor Layton sono ora disponibili!"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Questa nuova avventura ha luogo un anno dopo gli eventi de Il professor Layton e il futuro perduto."
+        },
+        {
+          "kind": "ADDED",
+          "text": "La storia è ambientata in America, dove l'era del Far West è ormai finita e il Paese sta avanzando verso una nuova era dello sviluppo."
+        },
+        {
+          "kind": "ADDED",
+          "text": "Una lettera da Luke conduce Layton a Steam Bison, una città fam…"
+        }
+      ],
+      "rawDetail": "➕ Panoramica del gioco\n➕ 19.11.2026\n➕ I preordini digitali per Il professor Layton e il Nuovo Mondo a vapore sono ora aperti per Nintendo Switch 2 e Nintendo Switch!\n➕ 19.11.2026\n➕ Ultime notizie sulla storia ! La panoramica del gioco e la cronologia de Il professor Layton sono ora disponibili!\n➕ Questa nuova avventura ha luogo un anno dopo gli eventi de Il professor Layton e il futuro perduto.\n➕ La storia è ambientata in America, dove l'era del Far West è ormai finita e il Paese sta avanzando verso una nuova era dello sviluppo.\n➕ Una lettera da Luke conduce Layton a Steam Bison, una città fam…\n…y 13 líneas más de diferencia.",
+      "truncated": true
+    },
+    {
+      "id": "1f0b3a214b84c6b6",
+      "timestamp": "2026-11-19T13:43:34Z",
+      "url": "https://www.layton.jp/jouki/kr/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "레이튼 교수와 증기의 신세계",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): 레이튼 교수와 증기의 신세계",
+      "lines": [
+        {
+          "kind": "ADDED",
+          "text": "게임 개요"
+        },
+        {
+          "kind": "ADDED",
+          "text": "2026.11.19"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Nintendo Switch 2／Nintendo Switch 다운로드 버전 예약 판매 시작!"
+        },
+        {
+          "kind": "ADDED",
+          "text": "2026.11.19"
+        },
+        {
+          "kind": "ADDED",
+          "text": "「 스토리 」 업데이트와 함께 「 게임 개요 」 및 「 『레이튼 교수』 시리즈 소개 」 콘텐츠 전격 공개!"
+        },
+        {
+          "kind": "ADDED",
+          "text": "이번 작품은 『레이튼 교수와 최후의 시간여행』으로부터 1년 후의 이야기다."
+        },
+        {
+          "kind": "ADDED",
+          "text": "무대는 서부 개척 시대가 막을 내리고 눈부신 발전을 거듭하는 미국."
+        },
+        {
+          "kind": "ADDED",
+          "text": "루크의 편지를 받고 발명의 도시 『스팀 바이슨』을 방문한 레이튼."
+        }
+      ],
+      "rawDetail": "➕ 게임 개요\n➕ 2026.11.19\n➕ Nintendo Switch 2／Nintendo Switch 다운로드 버전 예약 판매 시작!\n➕ 2026.11.19\n➕ 「 스토리 」 업데이트와 함께 「 게임 개요 」 및 「 『레이튼 교수』 시리즈 소개 」 콘텐츠 전격 공개!\n➕ 이번 작품은 『레이튼 교수와 최후의 시간여행』으로부터 1년 후의 이야기다.\n➕ 무대는 서부 개척 시대가 막을 내리고 눈부신 발전을 거듭하는 미국.\n➕ 루크의 편지를 받고 발명의 도시 『스팀 바이슨』을 방문한 레이튼.\n…y 9 líneas más de diferencia.",
+      "truncated": true
+    },
+    {
+      "id": "849c43254cc0f35e",
+      "timestamp": "2026-11-19T13:43:34Z",
+      "url": "https://www.layton.jp/jouki/movie/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "ムービー | レイトン教授と蒸気の新世界",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): ムービー | レイトン教授と蒸気の新世界",
+      "lines": [
+        {
+          "kind": "ADDED",
+          "text": "ゲーム概要"
+        },
+        {
+          "kind": "ADDED",
+          "text": "ゲーム概要"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "7,920円(税込)",
+          "newText": "7,920円（税込）"
+        },
+        {
+          "kind": "OTHER",
+          "text": "✏️ 日本語／英語（アメリカ）~~␣~~／英語（イギリス）~~␣~~／中国語（繁体字）／中国語（簡体字）／"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "Nintendo Switch 2／Nintendo Switch"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Nintendo Switch 2"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Nintendo Switch"
+        }
+      ],
+      "rawDetail": "➕ ゲーム概要\n➕ ゲーム概要\n✏️ 7,920円~~(~~**（**税込~~)~~**）**\n✏️ 日本語／英語（アメリカ）~~␣~~／英語（イギリス）~~␣~~／中国語（繁体字）／中国語（簡体字）／\n➖ Nintendo Switch 2／Nintendo Switch\n➕ Nintendo Switch 2\n➕ Nintendo Switch",
+      "truncated": false
+    },
+    {
+      "id": "4e5eaa81801980c4",
+      "timestamp": "2026-11-19T13:43:34Z",
+      "url": "https://www.layton.jp/jouki/topics/240929/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "トピックス | レイトン教授と蒸気の新世界",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): トピックス | レイトン教授と蒸気の新世界",
+      "lines": [
+        {
+          "kind": "ADDED",
+          "text": "ゲーム概要"
+        },
+        {
+          "kind": "ADDED",
+          "text": "ゲーム概要"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "7,920円(税込)",
+          "newText": "7,920円（税込）"
+        },
+        {
+          "kind": "OTHER",
+          "text": "✏️ 日本語／英語（アメリカ）~~␣~~／英語（イギリス）~~␣~~／中国語（繁体字）／中国語（簡体字）／"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "Nintendo Switch 2／Nintendo Switch"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Nintendo Switch 2"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Nintendo Switch"
+        }
+      ],
+      "rawDetail": "➕ ゲーム概要\n➕ ゲーム概要\n✏️ 7,920円~~(~~**（**税込~~)~~**）**\n✏️ 日本語／英語（アメリカ）~~␣~~／英語（イギリス）~~␣~~／中国語（繁体字）／中国語（簡体字）／\n➖ Nintendo Switch 2／Nintendo Switch\n➕ Nintendo Switch 2\n➕ Nintendo Switch",
+      "truncated": false
+    },
+    {
+      "id": "18e3f36743124d59",
+      "timestamp": "2026-11-19T13:43:34Z",
+      "url": "https://www.layton.jp/jouki/topics/250925/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "トピックス | レイトン教授と蒸気の新世界",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): トピックス | レイトン教授と蒸気の新世界",
+      "lines": [
+        {
+          "kind": "ADDED",
+          "text": "ゲーム概要"
+        },
+        {
+          "kind": "ADDED",
+          "text": "ゲーム概要"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "7,920円(税込)",
+          "newText": "7,920円（税込）"
+        },
+        {
+          "kind": "OTHER",
+          "text": "✏️ 日本語／英語（アメリカ）~~␣~~／英語（イギリス）~~␣~~／中国語（繁体字）／中国語（簡体字）／"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "Nintendo Switch 2／Nintendo Switch"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Nintendo Switch 2"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Nintendo Switch"
+        }
+      ],
+      "rawDetail": "➕ ゲーム概要\n➕ ゲーム概要\n✏️ 7,920円~~(~~**（**税込~~)~~**）**\n✏️ 日本語／英語（アメリカ）~~␣~~／英語（イギリス）~~␣~~／中国語（繁体字）／中国語（簡体字）／\n➖ Nintendo Switch 2／Nintendo Switch\n➕ Nintendo Switch 2\n➕ Nintendo Switch",
+      "truncated": false
+    },
+    {
+      "id": "90b19e94e17d9055",
+      "timestamp": "2026-11-19T13:43:34Z",
+      "url": "https://www.layton.jp/jouki/topics/261001/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "トピックス | レイトン教授と蒸気の新世界",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): トピックス | レイトン教授と蒸気の新世界",
+      "lines": [
+        {
+          "kind": "ADDED",
+          "text": "ゲーム概要"
+        },
+        {
+          "kind": "ADDED",
+          "text": "ゲーム概要"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "7,920円(税込)",
+          "newText": "7,920円（税込）"
+        },
+        {
+          "kind": "OTHER",
+          "text": "✏️ 日本語／英語（アメリカ）~~␣~~／英語（イギリス）~~␣~~／中国語（繁体字）／中国語（簡体字）／"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "Nintendo Switch 2／Nintendo Switch"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Nintendo Switch 2"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Nintendo Switch"
+        }
+      ],
+      "rawDetail": "➕ ゲーム概要\n➕ ゲーム概要\n✏️ 7,920円~~(~~**（**税込~~)~~**）**\n✏️ 日本語／英語（アメリカ）~~␣~~／英語（イギリス）~~␣~~／中国語（繁体字）／中国語（簡体字）／\n➖ Nintendo Switch 2／Nintendo Switch\n➕ Nintendo Switch 2\n➕ Nintendo Switch",
+      "truncated": false
+    },
+    {
+      "id": "6db9cc6a614d5706",
+      "timestamp": "2026-11-19T13:43:34Z",
+      "url": "https://www.layton.jp/jouki/topics/261009/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "トピックス | レイトン教授と蒸気の新世界",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): トピックス | レイトン教授と蒸気の新世界",
+      "lines": [
+        {
+          "kind": "ADDED",
+          "text": "ゲーム概要"
+        },
+        {
+          "kind": "ADDED",
+          "text": "ゲーム概要"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "7,920円(税込)",
+          "newText": "7,920円（税込）"
+        },
+        {
+          "kind": "OTHER",
+          "text": "✏️ 日本語／英語（アメリカ）~~␣~~／英語（イギリス）~~␣~~／中国語（繁体字）／中国語（簡体字）／"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "Nintendo Switch 2／Nintendo Switch"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Nintendo Switch 2"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Nintendo Switch"
+        }
+      ],
+      "rawDetail": "➕ ゲーム概要\n➕ ゲーム概要\n✏️ 7,920円~~(~~**（**税込~~)~~**）**\n✏️ 日本語／英語（アメリカ）~~␣~~／英語（イギリス）~~␣~~／中国語（繁体字）／中国語（簡体字）／\n➖ Nintendo Switch 2／Nintendo Switch\n➕ Nintendo Switch 2\n➕ Nintendo Switch",
+      "truncated": false
+    },
+    {
+      "id": "7b36cadc39fdadd1",
+      "timestamp": "2026-11-19T13:43:34Z",
+      "url": "https://www.layton.jp/jouki/zh-cn/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "雷顿教授与蒸汽新世界",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): 雷顿教授与蒸汽新世界",
+      "lines": [
+        {
+          "kind": "ADDED",
+          "text": "游戏介绍"
+        },
+        {
+          "kind": "ADDED",
+          "text": "2026.11.19"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Nintendo Switch 2／Nintendo Switch下载版游戏现已开放预购！"
+        },
+        {
+          "kind": "ADDED",
+          "text": "2026.11.19"
+        },
+        {
+          "kind": "ADDED",
+          "text": "故事 相关内容更新！ 游戏介绍 、 《雷顿教授》系列作品介绍 现已公开！"
+        },
+        {
+          "kind": "ADDED",
+          "text": "本作的故事发生在《雷顿教授与最后的时间旅行》一年后。"
+        },
+        {
+          "kind": "ADDED",
+          "text": "西部开拓时代早已落下帷幕，美国正迎来蓬勃发展的新时代。"
+        },
+        {
+          "kind": "ADDED",
+          "text": "以路克的来信为契机，雷顿教授来到了发明小镇“真契拜森”。"
+        }
+      ],
+      "rawDetail": "➕ 游戏介绍\n➕ 2026.11.19\n➕ Nintendo Switch 2／Nintendo Switch下载版游戏现已开放预购！\n➕ 2026.11.19\n➕ 故事 相关内容更新！ 游戏介绍 、 《雷顿教授》系列作品介绍 现已公开！\n➕ 本作的故事发生在《雷顿教授与最后的时间旅行》一年后。\n➕ 西部开拓时代早已落下帷幕，美国正迎来蓬勃发展的新时代。\n➕ 以路克的来信为契机，雷顿教授来到了发明小镇“真契拜森”。\n…y 10 líneas más de diferencia.",
+      "truncated": true
+    },
+    {
+      "id": "1ea8a1d7253d2673",
+      "timestamp": "2026-11-19T13:43:34Z",
+      "url": "https://www.layton.jp/jouki/zh-tw/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "雷頓教授與蒸氣新世界",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): 雷頓教授與蒸氣新世界",
+      "lines": [
+        {
+          "kind": "ADDED",
+          "text": "遊戲概要"
+        },
+        {
+          "kind": "ADDED",
+          "text": "2026.11.19"
+        },
+        {
+          "kind": "ADDED",
+          "text": "數位版已經於Nintendo Switch 2、Nintendo Switch平台上開始預購！"
+        },
+        {
+          "kind": "ADDED",
+          "text": "2026.11.19"
+        },
+        {
+          "kind": "ADDED",
+          "text": "「 劇情 」資訊更新！「 遊戲概要 」、「 《雷頓教授》系列作品介紹 」現已公開！"
+        },
+        {
+          "kind": "ADDED",
+          "text": "本作的故事發生在《雷頓教授與最後的時間旅行》一年後。"
+        },
+        {
+          "kind": "ADDED",
+          "text": "西部開拓時代早已落下帷幕，美國正迎來蓬勃發展的新時代。"
+        },
+        {
+          "kind": "ADDED",
+          "text": "以路克的來信為契機，雷頓教授來到了發明小鎮「真契拜森」。"
+        }
+      ],
+      "rawDetail": "➕ 遊戲概要\n➕ 2026.11.19\n➕ 數位版已經於Nintendo Switch 2、Nintendo Switch平台上開始預購！\n➕ 2026.11.19\n➕ 「 劇情 」資訊更新！「 遊戲概要 」、「 《雷頓教授》系列作品介紹 」現已公開！\n➕ 本作的故事發生在《雷頓教授與最後的時間旅行》一年後。\n➕ 西部開拓時代早已落下帷幕，美國正迎來蓬勃發展的新時代。\n➕ 以路克的來信為契機，雷頓教授來到了發明小鎮「真契拜森」。\n…y 10 líneas más de diferencia.",
+      "truncated": true
+    },
+    {
+      "id": "b2e2a878ad42b992",
+      "timestamp": "2026-11-19T13:43:34Z",
+      "url": "https://www.layton.jp/jouki/de/movie/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "Trailer",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): Trailer",
+      "lines": [
+        {
+          "kind": "ADDED",
+          "text": "Spielübersicht"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Spielübersicht"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "Nintendo Switch 2 / Nintendo Switch"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Nintendo Switch 2"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Nintendo Switch"
+        }
+      ],
+      "rawDetail": "➕ Spielübersicht\n➕ Spielübersicht\n➖ Nintendo Switch 2 / Nintendo Switch\n➕ Nintendo Switch 2\n➕ Nintendo Switch",
+      "truncated": false
+    },
+    {
+      "id": "1a0e27f497812741",
+      "timestamp": "2026-11-19T13:43:34Z",
+      "url": "https://www.layton.jp/jouki/de/product/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "Produktinfos",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): Produktinfos",
+      "lines": [
+        {
+          "kind": "ADDED",
+          "text": "Spielübersicht"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "*Vorbestellungen für PS5 und Steam sind ab dem 12. November 2026, 00:00 (JST) möglich.",
+          "newText": "*Vorbestellungen für PS5 und Steam sind ab dem 12. November 2026 (JST) möglich."
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "*Informationen zur Vorbestellung der digitalen Versionen für Nintendo Switch 2 und Nintendo Switch werden zu einem späteren Zeitpunkt bekannt gegeben.",
+          "newText": "*Vorbestellungen für die digitalen Versionen auf Nintendo Switch 2 und Nintendo Switch sind ab dem 19. November 2026 (JST) möglich."
+        },
+        {
+          "kind": "ADDED",
+          "text": "Spielübersicht"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "Nintendo Switch 2 / Nintendo Switch"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Nintendo Switch 2"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Nintendo Switch"
+        }
+      ],
+      "rawDetail": "➕ Spielübersicht\n✏️ *Vorbestellungen für PS5 und Steam sind ab dem 12. November 2026~~, 00:00~~ (JST) möglich.\n✏️ *~~Informationen zur ~~Vorbestellung**en für** d**i**e~~r~~ digitalen Versionen **au**f~~ür~~ Nintendo Switch 2 und Nintendo Switch ~~werden zu e~~**s**in**d ab d**em ~~spät~~**19. Novemb**er~~en~~ ~~Ze~~**2026 (JST) mögl**i~~tpunkt bekannt gegeben~~**ch**.\n➕ Spielübersicht\n➖ Nintendo Switch 2 / Nintendo Switch\n➕ Nintendo Switch 2\n➕ Nintendo Switch",
+      "truncated": false
+    },
+    {
+      "id": "5f4ee88d9694f955",
+      "timestamp": "2026-11-19T13:43:34Z",
+      "url": "https://www.layton.jp/jouki/de/topics/240929/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "NEWS",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): NEWS",
+      "lines": [
+        {
+          "kind": "ADDED",
+          "text": "Spielübersicht"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Spielübersicht"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "Nintendo Switch 2 / Nintendo Switch"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Nintendo Switch 2"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Nintendo Switch"
+        }
+      ],
+      "rawDetail": "➕ Spielübersicht\n➕ Spielübersicht\n➖ Nintendo Switch 2 / Nintendo Switch\n➕ Nintendo Switch 2\n➕ Nintendo Switch",
+      "truncated": false
+    },
+    {
+      "id": "1239f5ee9dc4330e",
+      "timestamp": "2026-11-19T13:43:34Z",
+      "url": "https://www.layton.jp/jouki/de/topics/250925/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "NEWS",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): NEWS",
+      "lines": [
+        {
+          "kind": "ADDED",
+          "text": "Spielübersicht"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Spielübersicht"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "Nintendo Switch 2 / Nintendo Switch"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Nintendo Switch 2"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Nintendo Switch"
+        }
+      ],
+      "rawDetail": "➕ Spielübersicht\n➕ Spielübersicht\n➖ Nintendo Switch 2 / Nintendo Switch\n➕ Nintendo Switch 2\n➕ Nintendo Switch",
+      "truncated": false
+    },
+    {
       "id": "d4ae8675ead15b06",
       "timestamp": "2026-11-17T14:03:35Z",
       "url": "https://www.layton.jp/jouki/de/",
