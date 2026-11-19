@@ -2,6 +2,551 @@
   "schemaVersion": 1,
   "events": [
     {
+      "id": "0c739d2e7fa44981",
+      "timestamp": "2026-11-19T13:53:33Z",
+      "url": "https://www.layton.jp/jouki/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "レイトン教授と蒸気の新世界",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): レイトン教授と蒸気の新世界",
+      "lines": [
+        {
+          "kind": "ADDED",
+          "text": "ゲーム概要"
+        },
+        {
+          "kind": "ADDED",
+          "text": "2026.11.19"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Nintendo Switch 2／Nintendo Switchダウンロード版の予約販売を開始！"
+        },
+        {
+          "kind": "ADDED",
+          "text": "2026.11.19"
+        },
+        {
+          "kind": "ADDED",
+          "text": "「ストーリー」 を更新及び、 「ゲーム概要」 、 「「レイトン教授」シリーズ作品紹介」 を公開しました！"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "​PlayStation®5／Steam®ダウンロード版の予約販売を開始​！",
+          "newText": "PlayStation®5／Steam®ダウンロード版の予約販売を開始​！"
+        },
+        {
+          "kind": "ADDED",
+          "text": "今作で描かれるのは"
+        },
+        {
+          "kind": "ADDED",
+          "text": "『レイトン教授と最後の時間旅行』から１年後の物語。"
+        }
+      ],
+      "rawDetail": "➕ ゲーム概要\n➕ 2026.11.19\n➕ Nintendo Switch 2／Nintendo Switchダウンロード版の予約販売を開始！\n➕ 2026.11.19\n➕ 「ストーリー」 を更新及び、 「ゲーム概要」 、 「「レイトン教授」シリーズ作品紹介」 を公開しました！\n✏️ ~~​~~PlayStation®5／Steam®ダウンロード版の予約販売を開始​！\n➕ 今作で描かれるのは\n➕ 『レイトン教授と最後の時間旅行』から１年後の物語。\n…y 18 líneas más de diferencia.",
+      "truncated": true
+    },
+    {
+      "id": "0e2d2b1032fca55e",
+      "timestamp": "2026-11-19T13:53:33Z",
+      "url": "https://www.layton.jp/jouki/de/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "Professor Layton und die Neue Welt des Dampfes",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): Professor Layton und die Neue Welt des Dampfes",
+      "lines": [
+        {
+          "kind": "ADDED",
+          "text": "Spielübersicht"
+        },
+        {
+          "kind": "ADDED",
+          "text": "19.11.2026"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Digitale Vorbestellungen für Professor Layton und die Neue Welt des Dampfes auf Nintendo Switch 2 und Nintendo Switch ab sofort möglich!"
+        },
+        {
+          "kind": "ADDED",
+          "text": "19.11.2026"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Neue Infos zur Geschichte ! Jetzt verfügbar: die Spielübersicht und der Überblick über die Professor-Layton-Reihe !"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Dieses neue Abenteuer spielt ein Jahr nach den Ereignissen von Professor Layton und die verlorene Zukunft."
+        },
+        {
+          "kind": "ADDED",
+          "text": "Die Geschichte findet in Amerika statt, wo die Wildwest-Ära zu Ende gegangen ist und das Land einen rasanten Aufschwung erlebt."
+        },
+        {
+          "kind": "ADDED",
+          "text": "Ein Brief von Luke führt Professor Layton nach Steam Bison,…"
+        }
+      ],
+      "rawDetail": "➕ Spielübersicht\n➕ 19.11.2026\n➕ Digitale Vorbestellungen für Professor Layton und die Neue Welt des Dampfes auf Nintendo Switch 2 und Nintendo Switch ab sofort möglich!\n➕ 19.11.2026\n➕ Neue Infos zur Geschichte ! Jetzt verfügbar: die Spielübersicht und der Überblick über die Professor-Layton-Reihe !\n➕ Dieses neue Abenteuer spielt ein Jahr nach den Ereignissen von Professor Layton und die verlorene Zukunft.\n➕ Die Geschichte findet in Amerika statt, wo die Wildwest-Ära zu Ende gegangen ist und das Land einen rasanten Aufschwung erlebt.\n➕ Ein Brief von Luke führt Professor Layton nach Steam Bison,…\n…y 13 líneas más de diferencia.",
+      "truncated": true
+    },
+    {
+      "id": "f0c09da5dae5e0fc",
+      "timestamp": "2026-11-19T13:53:33Z",
+      "url": "https://www.layton.jp/jouki/fr/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "Professeur Layton et le Nouveau Monde à vapeur",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): Professeur Layton et le Nouveau Monde à vapeur",
+      "lines": [
+        {
+          "kind": "ADDED",
+          "text": "Présentation du jeu"
+        },
+        {
+          "kind": "ADDED",
+          "text": "19/11/2026"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Les précommandes numériques sont désormais disponibles pour Nintendo Switch et Nintendo Switch 2 !"
+        },
+        {
+          "kind": "ADDED",
+          "text": "19/11/2026"
+        },
+        {
+          "kind": "ADDED",
+          "text": "De toutes nouvelles informations au sujet de l' histoire , une présentation du jeu et une chronologie de la saga Professeur Layton sont désormais disponibles !"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Cette nouvelle aventure se déroule un an après les événements de"
+        },
+        {
+          "kind": "ADDED",
+          "text": "« Professeur Layton et le destin perdu »."
+        },
+        {
+          "kind": "ADDED",
+          "text": "L'époque du Far West étant révolue, la société américaine"
+        }
+      ],
+      "rawDetail": "➕ Présentation du jeu\n➕ 19/11/2026\n➕ Les précommandes numériques sont désormais disponibles pour Nintendo Switch et Nintendo Switch 2 !\n➕ 19/11/2026\n➕ De toutes nouvelles informations au sujet de l' histoire , une présentation du jeu et une chronologie de la saga Professeur Layton sont désormais disponibles !\n➕ Cette nouvelle aventure se déroule un an après les événements de\n➕ « Professeur Layton et le destin perdu ».\n➕ L'époque du Far West étant révolue, la société américaine\n…y 11 líneas más de diferencia.",
+      "truncated": true
+    },
+    {
+      "id": "c1ae9f7dd5a697bc",
+      "timestamp": "2026-11-19T13:53:33Z",
+      "url": "https://www.layton.jp/jouki/product/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "商品情報 | レイトン教授と蒸気の新世界",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): 商品情報 | レイトン教授と蒸気の新世界",
+      "lines": [
+        {
+          "kind": "ADDED",
+          "text": "ゲーム概要"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "2026年11月12日（木）00:00[JST]より開始しております。",
+          "newText": "2026年11月12日（木）[JST]より開始しております。"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "※Nintendo Switch 2／Nintendo Switch（ダウンロード版）の予約開始は、",
+          "newText": "※Nintendo Switch 2／Nintendo Switch（ダウンロード版）の予約販売は、"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "後日ご案内します。"
+        },
+        {
+          "kind": "ADDED",
+          "text": "2026年11月19日（木）[JST]より開始しております。"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "2026年11月12日（木）00:00[JST]より開始しております。",
+          "newText": "2026年11月12日（木）[JST]より開始しております。"
+        },
+        {
+          "kind": "CHANGED",
+          "oldText": "※Nintendo Switch 2／Nintendo Switch（ダウンロード版）の予約開始は、",
+          "newText": "※Nintendo Switch 2／Nintendo Switch（ダウンロード版）の予約販売は、"
+        },
+        {
+          "kind": "REMOVED",
+          "text": "後日ご案内します。"
+        }
+      ],
+      "rawDetail": "➕ ゲーム概要\n✏️ 2026年11月12日（木）~~00:00~~[JST]より開始しております。\n✏️ ※Nintendo Switch 2／Nintendo Switch（ダウンロード版）の予約~~開始~~**販売**は、\n➖ 後日ご案内します。\n➕ 2026年11月19日（木）[JST]より開始しております。\n✏️ 2026年11月12日（木）~~00:00~~[JST]より開始しております。\n✏️ ※Nintendo Switch 2／Nintendo Switch（ダウンロード版）の予約~~開始~~**販売**は、\n➖ 後日ご案内します。\n…y 7 líneas más de diferencia.",
+      "truncated": true
+    },
+    {
+      "id": "7170ad01d05ccdcf",
+      "timestamp": "2026-11-19T13:53:33Z",
+      "url": "https://www.layton.jp/jouki/game/",
+      "franchise": "professor-layton",
+      "type": "PAGE_NEW",
+      "title": "ゲーム概要 | レイトン教授と蒸気の新世界",
+      "summary": "Nueva página en Professor Layton: New World of Steam (PLNWOS): ゲーム概要 | レイトン教授と蒸気の新世界",
+      "lines": [
+        {
+          "kind": "OTHER",
+          "text": "ゲーム概要 | レイトン教授と蒸気の新世界"
+        },
+        {
+          "kind": "OTHER",
+          "text": "レイトンシリーズサイト"
+        },
+        {
+          "kind": "OTHER",
+          "text": "日本語"
+        },
+        {
+          "kind": "OTHER",
+          "text": "English US"
+        },
+        {
+          "kind": "OTHER",
+          "text": "English UK"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Français"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Italiano"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Deutsch"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Español"
+        },
+        {
+          "kind": "OTHER",
+          "text": "繁體中文"
+        },
+        {
+          "kind": "OTHER",
+          "text": "简体中文"
+        },
+        {
+          "kind": "OTHER",
+          "text": "한국어"
+        },
+        {
+          "kind": "OTHER",
+          "text": "トップページ"
+        },
+        {
+          "kind": "OTHER",
+          "text": "ゲーム概要"
+        },
+        {
+          "kind": "OTHER",
+          "text": "ムービー"
+        },
+        {
+          "kind": "OTHER",
+          "text": "商品情報"
+        },
+        {
+          "kind": "OTHER",
+          "text": "ゲーム概要"
+        },
+        {
+          "kind": "OTHER",
+          "text": "ナゾを解くことで動き出す物語"
+        },
+        {
+          "kind": "OTHER",
+          "text": "スチームバイソンの町を調査する中で、"
+        },
+        {
+          "kind": "OTHER",
+          "text": "様々なナゾに遭遇する。"
+        },
+        {
+          "kind": "OTHER",
+          "text": "発明家エッグマフィンに会うため、"
+        },
+        {
+          "kind": "OTHER",
+          "text": "部屋の入口を探すナゾに挑戦し…"
+        },
+        {
+          "kind": "OTHER",
+          "text": "見事ナゾ…"
+        }
+      ],
+      "rawDetail": "ゲーム概要 | レイトン教授と蒸気の新世界\nレイトンシリーズサイト\n日本語\nEnglish US\nEnglish UK\nFrançais\nItaliano\nDeutsch\nEspañol\n繁體中文\n简体中文\n한국어\nトップページ\nゲーム概要\nムービー\n商品情報\nゲーム概要\nナゾを解くことで動き出す物語\nスチームバイソンの町を調査する中で、\n様々なナゾに遭遇する。\n発明家エッグマフィンに会うため、\n部屋の入口を探すナゾに挑戦し…\n見事ナゾ…",
+      "truncated": true
+    },
+    {
+      "id": "e71edb008b54ed41",
+      "timestamp": "2026-11-19T13:53:33Z",
+      "url": "https://www.layton.jp/jouki/history/",
+      "franchise": "professor-layton",
+      "type": "PAGE_NEW",
+      "title": "「レイトン教授」シリーズ作品紹介 | レイトン教授と蒸気の新世界",
+      "summary": "Nueva página en Professor Layton: New World of Steam (PLNWOS): 「レイトン教授」シリーズ作品紹介 | レイトン教授と蒸気の新世界",
+      "lines": [
+        {
+          "kind": "OTHER",
+          "text": "「レイトン教授」シリーズ作品紹介 | レイトン教授と蒸気の新世界"
+        },
+        {
+          "kind": "OTHER",
+          "text": "レイトンシリーズサイト"
+        },
+        {
+          "kind": "OTHER",
+          "text": "日本語"
+        },
+        {
+          "kind": "OTHER",
+          "text": "English US"
+        },
+        {
+          "kind": "OTHER",
+          "text": "English UK"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Français"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Italiano"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Deutsch"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Español"
+        },
+        {
+          "kind": "OTHER",
+          "text": "繁體中文"
+        },
+        {
+          "kind": "OTHER",
+          "text": "简体中文"
+        },
+        {
+          "kind": "OTHER",
+          "text": "한국어"
+        },
+        {
+          "kind": "OTHER",
+          "text": "トップページ"
+        },
+        {
+          "kind": "OTHER",
+          "text": "ゲーム概要"
+        },
+        {
+          "kind": "OTHER",
+          "text": "ムービー"
+        },
+        {
+          "kind": "OTHER",
+          "text": "商品情報"
+        },
+        {
+          "kind": "OTHER",
+          "text": "「レイトン教授」シリーズ作品紹介"
+        },
+        {
+          "kind": "OTHER",
+          "text": "レイトン教授と魔神の笛"
+        },
+        {
+          "kind": "OTHER",
+          "text": "レイトン教授のもとに届いたのは、「謎の巨人があらわれて町を破壊している」という旧友クラークからの手…"
+        }
+      ],
+      "rawDetail": "「レイトン教授」シリーズ作品紹介 | レイトン教授と蒸気の新世界\nレイトンシリーズサイト\n日本語\nEnglish US\nEnglish UK\nFrançais\nItaliano\nDeutsch\nEspañol\n繁體中文\n简体中文\n한국어\nトップページ\nゲーム概要\nムービー\n商品情報\n「レイトン教授」シリーズ作品紹介\nレイトン教授と魔神の笛\nレイトン教授のもとに届いたのは、「謎の巨人があらわれて町を破壊している」という旧友クラークからの手…",
+      "truncated": true
+    },
+    {
+      "id": "5b841dcf785af486",
+      "timestamp": "2026-11-19T13:53:33Z",
+      "url": "https://www.layton.jp/jouki/de/game/",
+      "franchise": "professor-layton",
+      "type": "PAGE_NEW",
+      "title": "Spielübersicht",
+      "summary": "Nueva página en Professor Layton: New World of Steam (PLNWOS): Spielübersicht",
+      "lines": [
+        {
+          "kind": "OTHER",
+          "text": "Spielübersicht"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Website zur Layton-Serie"
+        },
+        {
+          "kind": "OTHER",
+          "text": "日本語"
+        },
+        {
+          "kind": "OTHER",
+          "text": "English US"
+        },
+        {
+          "kind": "OTHER",
+          "text": "English UK"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Français"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Italiano"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Deutsch"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Español"
+        },
+        {
+          "kind": "OTHER",
+          "text": "繁體中文"
+        },
+        {
+          "kind": "OTHER",
+          "text": "简体中文"
+        },
+        {
+          "kind": "OTHER",
+          "text": "한국어"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Startseite"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Spielübersicht"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Trailer"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Produktinfos"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Spielübersicht"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Mit jedem gelösten Rätsel geht die Geschicht…"
+        }
+      ],
+      "rawDetail": "Spielübersicht\nWebsite zur Layton-Serie\n日本語\nEnglish US\nEnglish UK\nFrançais\nItaliano\nDeutsch\nEspañol\n繁體中文\n简体中文\n한국어\nStartseite\nSpielübersicht\nTrailer\nProduktinfos\nSpielübersicht\nMit jedem gelösten Rätsel geht die Geschicht…",
+      "truncated": true
+    },
+    {
+      "id": "be716c7b2188ee8d",
+      "timestamp": "2026-11-19T13:53:33Z",
+      "url": "https://www.layton.jp/jouki/de/history/",
+      "franchise": "professor-layton",
+      "type": "PAGE_NEW",
+      "title": "Die Professor-Layton-Reihe im Überblick",
+      "summary": "Nueva página en Professor Layton: New World of Steam (PLNWOS): Die Professor-Layton-Reihe im Überblick",
+      "lines": [
+        {
+          "kind": "OTHER",
+          "text": "Die Professor-Layton-Reihe im Überblick"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Website zur Layton-Serie"
+        },
+        {
+          "kind": "OTHER",
+          "text": "日本語"
+        },
+        {
+          "kind": "OTHER",
+          "text": "English US"
+        },
+        {
+          "kind": "OTHER",
+          "text": "English UK"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Français"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Italiano"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Deutsch"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Español"
+        },
+        {
+          "kind": "OTHER",
+          "text": "繁體中文"
+        },
+        {
+          "kind": "OTHER",
+          "text": "简体中文"
+        },
+        {
+          "kind": "OTHER",
+          "text": "한국어"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Startseite"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Spielübersicht"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Trailer"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Produktinfos"
+        },
+        {
+          "kind": "OTHER",
+          "text": "Die Professor-Layton-Reihe im Über…"
+        }
+      ],
+      "rawDetail": "Die Professor-Layton-Reihe im Überblick\nWebsite zur Layton-Serie\n日本語\nEnglish US\nEnglish UK\nFrançais\nItaliano\nDeutsch\nEspañol\n繁體中文\n简体中文\n한국어\nStartseite\nSpielübersicht\nTrailer\nProduktinfos\nDie Professor-Layton-Reihe im Über…",
+      "truncated": true
+    },
+    {
       "id": "1648b25afb694016",
       "timestamp": "2026-11-19T13:43:34Z",
       "url": "https://www.layton.jp/jouki/en-gb/",
