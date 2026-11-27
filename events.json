@@ -2,6 +2,142 @@
   "schemaVersion": 1,
   "events": [
     {
+      "id": "f5a8b48eee30c415",
+      "timestamp": "2026-11-27T11:33:34Z",
+      "url": "https://www.layton.jp/jouki/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "レイトン教授と蒸気の新世界",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): レイトン教授と蒸気の新世界",
+      "lines": [
+        {
+          "kind": "ADDED",
+          "text": "2026.11.27"
+        },
+        {
+          "kind": "ADDED",
+          "text": "『レイトン教授と蒸気の新世界』12月1日（火）完成披露会を開催！"
+        }
+      ],
+      "rawDetail": "➕ 2026.11.27\n➕ 『レイトン教授と蒸気の新世界』12月1日（火）完成披露会を開催！",
+      "truncated": false
+    },
+    {
+      "id": "cd1fdf8d9c3128d1",
+      "timestamp": "2026-11-27T11:33:34Z",
+      "url": "https://www.layton.jp/jouki/en-gb/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "Professor Layton and the New World of Steam",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): Professor Layton and the New World of Steam",
+      "lines": [
+        {
+          "kind": "ADDED",
+          "text": "27.11.2026"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Professor Layton and the New World of Steam Completion Celebration Event to Be Held on Tuesday 1 December!"
+        }
+      ],
+      "rawDetail": "➕ 27.11.2026\n➕ Professor Layton and the New World of Steam Completion Celebration Event to Be Held on Tuesday 1 December!",
+      "truncated": false
+    },
+    {
+      "id": "2ee8466ebc5f4f49",
+      "timestamp": "2026-11-27T11:33:34Z",
+      "url": "https://www.layton.jp/jouki/en-us/",
+      "franchise": "professor-layton",
+      "type": "PAGE_CHANGED",
+      "title": "Professor Layton and the New World of Steam",
+      "summary": "Modificada en Professor Layton: New World of Steam (PLNWOS): Professor Layton and the New World of Steam",
+      "lines": [
+        {
+          "kind": "ADDED",
+          "text": "11.27.2026"
+        },
+        {
+          "kind": "ADDED",
+          "text": "Professor Layton and the New World of Steam Completion Celebration Event to Be Held on Tuesday, December 1!"
+        }
+      ],
+      "rawDetail": "➕ 11.27.2026\n➕ Professor Layton and the New World of Steam Completion Celebration Event to Be Held on Tuesday, December 1!",
+      "truncated": false
+    },
+    {
+      "id": "c676116407f2defb",
+      "timestamp": "2026-11-27T11:33:34Z",
+      "url": "https://www.layton.jp/jouki/premiere/",
+      "franchise": "professor-layton",
+      "type": "PAGE_NEW",
+      "title": "レイトン教授と蒸気の新世界 完成披露会",
+      "summary": "Nueva página en Professor Layton: New World of Steam (PLNWOS): レイトン教授と蒸気の新世界 完成披露会",
+      "lines": [
+        {
+          "kind": "OTHER",
+          "text": "レイトン教授と蒸気の新世界 完成披露会"
+        },
+        {
+          "kind": "OTHER",
+          "text": "レイトンシリーズサイト"
+        },
+        {
+          "kind": "OTHER",
+          "text": "日本語"
+        },
+        {
+          "kind": "OTHER",
+          "text": "English"
+        },
+        {
+          "kind": "OTHER",
+          "text": "『レイトン教授と蒸気の新世界』の"
+        },
+        {
+          "kind": "OTHER",
+          "text": "完成を記念し、"
+        },
+        {
+          "kind": "OTHER",
+          "text": "完成披露会を開催いたします。"
+        },
+        {
+          "kind": "OTHER",
+          "text": "声優を務めた大泉洋さん、"
+        },
+        {
+          "kind": "OTHER",
+          "text": "今田美桜さん、高杉真宙さんが登壇し、"
+        },
+        {
+          "kind": "OTHER",
+          "text": "作品の魅力を語るトークに加え、"
+        },
+        {
+          "kind": "OTHER",
+          "text": "QuizKnockがこの日のために用意した"
+        },
+        {
+          "kind": "OTHER",
+          "text": "ナゾにキャストの皆さんが挑戦するなど、"
+        },
+        {
+          "kind": "OTHER",
+          "text": "ここでしか見られない内容をお届け。"
+        },
+        {
+          "kind": "OTHER",
+          "text": "※本配信は日本語のみ対応しています。"
+        },
+        {
+          "kind": "OTHER",
+          "text": "※本配信のミラー配…"
+        }
+      ],
+      "rawDetail": "レイトン教授と蒸気の新世界 完成披露会\nレイトンシリーズサイト\n日本語\nEnglish\n『レイトン教授と蒸気の新世界』の\n完成を記念し、\n完成披露会を開催いたします。\n声優を務めた大泉洋さん、\n今田美桜さん、高杉真宙さんが登壇し、\n作品の魅力を語るトークに加え、\nQuizKnockがこの日のために用意した\nナゾにキャストの皆さんが挑戦するなど、\nここでしか見られない内容をお届け。\n※本配信は日本語のみ対応しています。\n※本配信のミラー配…",
+      "truncated": true
+    },
+    {
       "id": "0c739d2e7fa44981",
       "timestamp": "2026-11-19T13:53:33Z",
       "url": "https://www.layton.jp/jouki/",
